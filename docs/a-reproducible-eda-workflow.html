@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Science in Practice</title>
+  <title>8.4 A reproducible EDA workflow | Data Science in Practice</title>
   <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Science in Practice" />
+  <meta property="og:title" content="8.4 A reproducible EDA workflow | Data Science in Practice" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Science in Practice" />
+  <meta name="twitter:title" content="8.4 A reproducible EDA workflow | Data Science in Practice" />
   
   <meta name="twitter:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="how-to-use-this-book.html"/>
+<link rel="prev" href="eda-is-an-investigation.html"/>
+<link rel="next" href="missing-data-decisions.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -569,25 +569,70 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Science in Practice</h1>
-<h2 class="subtitle"><em>A Guide for Capstone, Consulting, and Client-Based Work</em></h2>
-<p class="author"><em>[Author name]; [Department]; [Institution]</em></p>
-<p class="date"><em>[Publication date]</em></p>
+<div id="a-reproducible-eda-workflow" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> A reproducible EDA workflow<a href="a-reproducible-eda-workflow.html#a-reproducible-eda-workflow" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="stage-1-orient-to-the-data" class="section level3 hasAnchor" number="8.4.1">
+<h3><span class="header-section-number">8.4.1</span> Stage 1: Orient to the data<a href="a-reproducible-eda-workflow.html#stage-1-orient-to-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Record the source and version of each file, unit of analysis, dimensions, identifiers, time coverage, geographic coverage, variable types, and relationships between tables. Confirm that the number of records agrees with source documentation when a reference total exists.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="a-reproducible-eda-workflow.html#cb1-1" tabindex="-1"></a><span class="fu">dim</span>(data)</span>
+<span id="cb1-2"><a href="a-reproducible-eda-workflow.html#cb1-2" tabindex="-1"></a><span class="fu">names</span>(data)</span>
+<span id="cb1-3"><a href="a-reproducible-eda-workflow.html#cb1-3" tabindex="-1"></a><span class="fu">str</span>(data)</span>
+<span id="cb1-4"><a href="a-reproducible-eda-workflow.html#cb1-4" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code></pre></div>
+<p>These commands are only an opening inspection. They do not replace business definitions or targeted quality checks.</p>
 </div>
-<div id="welcome" class="section level1 unnumbered hasAnchor">
-<h1>Welcome<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Applied data science is the practice of using data to improve understanding, support decisions, and recommend action in a real setting. The work may take place in a business, public agency, nonprofit organization, consulting engagement, research partnership, or educational project. In every setting, useful analysis requires more than technical accuracy. It requires a clear problem, trustworthy data, appropriate methods, responsible judgment, and communication that helps an audience act.</p>
-<p>Real projects rarely arrive as clean datasets paired with perfectly stated questions. The initial request may be broad. Important variables may be undocumented. Data from different sources may use incompatible definitions. The available evidence may support only part of the desired conclusion. A successful analyst must recognize these conditions, investigate them carefully, and explain how they affect the result.</p>
-<p>This book follows the complete path of an applied data science project. It begins with problem framing and project planning, then develops practices for collaboration, data stewardship, exploratory analysis, secondary research, modelling, forecasting, financial analysis, visualization, storytelling, recommendations, and professional delivery. The central theme is that every analytical choice should contribute to a defensible decision.</p>
+<div id="stage-2-assess-data-quality" class="section level3 hasAnchor" number="8.4.2">
+<h3><span class="header-section-number">8.4.2</span> Stage 2: Assess data quality<a href="a-reproducible-eda-workflow.html#stage-2-assess-data-quality" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Check for:</p>
+<ul>
+<li>duplicate rows and identifiers;</li>
+<li>missing counts and patterns;</li>
+<li>unexpected categories;</li>
+<li>impossible or conflicting values;</li>
+<li>inconsistent dates, units, spelling, or formats;</li>
+<li>numbers stored as text;</li>
+<li>extreme and influential observations;</li>
+<li>incomplete time periods;</li>
+<li>totals that do not reconcile;</li>
+<li>truncated exports;</li>
+<li>selection and coverage limitations; and</li>
+<li>discrepancies between data and dictionary.</li>
+</ul>
+<p>The Quartz guide provides a useful taxonomy of data problems that may require action by the source, analyst, subject expert, or programmer <span class="citation">(<a href="#ref-quartzBadData">Quartz, n.d.</a>)</span>. Classifying ownership prevents analysts from inventing corrections to questions that require domain authority.</p>
+</div>
+<div id="stage-3-examine-variables-individually" class="section level3 hasAnchor" number="8.4.3">
+<h3><span class="header-section-number">8.4.3</span> Stage 3: Examine variables individually<a href="a-reproducible-eda-workflow.html#stage-3-examine-variables-individually" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Choose summaries that match the variable.</p>
+<p>For categorical variables, examine counts, proportions, rare levels, ordering, and missingness. For numeric variables, examine centre, spread, range, quantiles, zeros, shape, and extremes. For dates and times, examine coverage, gaps, seasonality, incomplete periods, and operational cycles.</p>
+<p>Do not report every available statistic. Report the features that affect interpretation or later analysis.</p>
+</div>
+<div id="stage-4-examine-relationships" class="section level3 hasAnchor" number="8.4.4">
+<h3><span class="header-section-number">8.4.4</span> Stage 4: Examine relationships<a href="a-reproducible-eda-workflow.html#stage-4-examine-relationships" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Bivariate analysis should follow from a question. Useful comparisons include outcomes by group, counts and rates over time, numeric outcomes across categories, relationships between numeric variables, and missingness by source or period.</p>
+<p>Always distinguish counts from rates. A facility with more visits may simply serve a larger population or operate more hours. A program with more cancellations may also have far more registrations.</p>
+</div>
+<div id="stage-5-add-relevant-dimensions" class="section level3 hasAnchor" number="8.4.5">
+<h3><span class="header-section-number">8.4.5</span> Stage 5: Add relevant dimensions<a href="a-reproducible-eda-workflow.html#stage-5-add-relevant-dimensions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Multivariate exploration examines whether an apparent relationship changes after another variable is considered. Faceting, stratification, grouped summaries, correlation analysis, and exploratory models can reveal that a system-wide pattern is concentrated in one location, period, or group.</p>
+<p>Identifier codes and arbitrary category numbers should not be placed in a correlation matrix simply because software stores them as numbers.</p>
+</div>
+<div id="stage-6-convert-findings-into-decisions" class="section level3 hasAnchor" number="8.4.6">
+<h3><span class="header-section-number">8.4.6</span> Stage 6: Convert findings into decisions<a href="a-reproducible-eda-workflow.html#stage-6-convert-findings-into-decisions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>End with verified facts, important limitations, patterns requiring explanation, candidate problems or opportunities, next analytical questions, and decisions about exclusions or scope.</p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-quartzBadData" class="csl-entry">
+Quartz. n.d. <span>“The Quartz Guide to Bad Data.”</span> <a href="https://github.com/Quartz/bad-data-guide">https://github.com/Quartz/bad-data-guide</a>.
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="how-to-use-this-book.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="eda-is-an-investigation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="missing-data-decisions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

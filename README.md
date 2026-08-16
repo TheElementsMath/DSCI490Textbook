@@ -20,6 +20,8 @@ bookdown::render_book("index.Rmd", "bookdown::gitbook")
 
 The searchable HTML book will be written to `docs/`.
 
+The GitBook is split by second-level sections. Each `##` heading begins a separate page, while third-level `###` headings remain on the same page as their parent section. This keeps individual topics shorter and easier to navigate, consistent with the page structure used in the Precalculus textbook.
+
 ## Contents
 
 The book contains developed chapters on:

@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Science in Practice</title>
+  <title>7.4 Begin with the unit of analysis | Data Science in Practice</title>
   <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Science in Practice" />
+  <meta property="og:title" content="7.4 Begin with the unit of analysis | Data Science in Practice" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Science in Practice" />
+  <meta name="twitter:title" content="7.4 Begin with the unit of analysis | Data Science in Practice" />
   
   <meta name="twitter:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="how-to-use-this-book.html"/>
+<link rel="prev" href="a-dictionary-controls-meaning.html"/>
+<link rel="next" href="dataset-level-metadata.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -569,25 +569,30 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Science in Practice</h1>
-<h2 class="subtitle"><em>A Guide for Capstone, Consulting, and Client-Based Work</em></h2>
-<p class="author"><em>[Author name]; [Department]; [Institution]</em></p>
-<p class="date"><em>[Publication date]</em></p>
+<div id="begin-with-the-unit-of-analysis" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> Begin with the unit of analysis<a href="begin-with-the-unit-of-analysis.html#begin-with-the-unit-of-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Before documenting individual variables, determine what one row represents. This is the unit of analysis or grain of the table. A table may contain one row per member, membership period, facility visit, program registration, transaction, location-day, or location-month.</p>
+<p>Confusing these units creates serious errors. A member with twenty visits appears twenty times in a visit table. Counting rows would measure visits, not members. Joining a one-row-per-member table to the visit table duplicates member characteristics across visits, which may be appropriate for visit-level analysis but not for estimating the number of members.</p>
+<p>The dictionary should state the unit clearly and explain the keys that identify one observation.</p>
+<div class="example">
+<p><span id="exm:unlabeled-div-15" class="example"><strong>Example 7.1  </strong></span><strong>Recurring case: NVRW data structure</strong></p>
+<p>North Valley Recreation and Wellness provides four files:</p>
+<ul>
+<li><code>members</code>: one row per member;</li>
+<li><code>memberships</code>: one row per membership period;</li>
+<li><code>visits</code>: one row per recorded facility entry; and</li>
+<li><code>transactions</code>: one row per purchase line.</li>
+</ul>
+<p>The four tables cannot be summarized or joined in the same way. The dictionary records each table’s grain, primary identifier, time coverage, and relationship to the other files before the team begins analysis.</p>
 </div>
-<div id="welcome" class="section level1 unnumbered hasAnchor">
-<h1>Welcome<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Applied data science is the practice of using data to improve understanding, support decisions, and recommend action in a real setting. The work may take place in a business, public agency, nonprofit organization, consulting engagement, research partnership, or educational project. In every setting, useful analysis requires more than technical accuracy. It requires a clear problem, trustworthy data, appropriate methods, responsible judgment, and communication that helps an audience act.</p>
-<p>Real projects rarely arrive as clean datasets paired with perfectly stated questions. The initial request may be broad. Important variables may be undocumented. Data from different sources may use incompatible definitions. The available evidence may support only part of the desired conclusion. A successful analyst must recognize these conditions, investigate them carefully, and explain how they affect the result.</p>
-<p>This book follows the complete path of an applied data science project. It begins with problem framing and project planning, then develops practices for collaboration, data stewardship, exploratory analysis, secondary research, modelling, forecasting, financial analysis, visualization, storytelling, recommendations, and professional delivery. The central theme is that every analytical choice should contribute to a defensible decision.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="how-to-use-this-book.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="a-dictionary-controls-meaning.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="dataset-level-metadata.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

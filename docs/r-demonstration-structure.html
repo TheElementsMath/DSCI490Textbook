@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Science in Practice</title>
+  <title>10.11 R demonstration structure | Data Science in Practice</title>
   <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Science in Practice" />
+  <meta property="og:title" content="10.11 R demonstration structure | Data Science in Practice" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Science in Practice" />
+  <meta name="twitter:title" content="10.11 R demonstration structure | Data Science in Practice" />
   
   <meta name="twitter:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="how-to-use-this-book.html"/>
+<link rel="prev" href="evaluation-must-match-the-decision.html"/>
+<link rel="next" href="error-analysis-and-responsible-use.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -569,25 +569,29 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Science in Practice</h1>
-<h2 class="subtitle"><em>A Guide for Capstone, Consulting, and Client-Based Work</em></h2>
-<p class="author"><em>[Author name]; [Department]; [Institution]</em></p>
-<p class="date"><em>[Publication date]</em></p>
-</div>
-<div id="welcome" class="section level1 unnumbered hasAnchor">
-<h1>Welcome<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Applied data science is the practice of using data to improve understanding, support decisions, and recommend action in a real setting. The work may take place in a business, public agency, nonprofit organization, consulting engagement, research partnership, or educational project. In every setting, useful analysis requires more than technical accuracy. It requires a clear problem, trustworthy data, appropriate methods, responsible judgment, and communication that helps an audience act.</p>
-<p>Real projects rarely arrive as clean datasets paired with perfectly stated questions. The initial request may be broad. Important variables may be undocumented. Data from different sources may use incompatible definitions. The available evidence may support only part of the desired conclusion. A successful analyst must recognize these conditions, investigate them carefully, and explain how they affect the result.</p>
-<p>This book follows the complete path of an applied data science project. It begins with problem framing and project planning, then develops practices for collaboration, data stewardship, exploratory analysis, secondary research, modelling, forecasting, financial analysis, visualization, storytelling, recommendations, and professional delivery. The central theme is that every analytical choice should contribute to a defensible decision.</p>
+<div id="r-demonstration-structure" class="section level2 hasAnchor" number="10.11">
+<h2><span class="header-section-number">10.11</span> R demonstration structure<a href="r-demonstration-structure.html#r-demonstration-structure" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The exact package can vary, but the workflow should preserve the separation between training, tuning, and final evaluation.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="r-demonstration-structure.html#cb2-1" tabindex="-1"></a><span class="fu">library</span>(tidymodels)</span>
+<span id="cb2-2"><a href="r-demonstration-structure.html#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="r-demonstration-structure.html#cb2-3" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">490</span>)</span>
+<span id="cb2-4"><a href="r-demonstration-structure.html#cb2-4" tabindex="-1"></a>split <span class="ot">&lt;-</span> <span class="fu">initial_split</span>(member_model_data, <span class="at">strata =</span> retained_12m)</span>
+<span id="cb2-5"><a href="r-demonstration-structure.html#cb2-5" tabindex="-1"></a>train_data <span class="ot">&lt;-</span> <span class="fu">training</span>(split)</span>
+<span id="cb2-6"><a href="r-demonstration-structure.html#cb2-6" tabindex="-1"></a>test_data  <span class="ot">&lt;-</span> <span class="fu">testing</span>(split)</span>
+<span id="cb2-7"><a href="r-demonstration-structure.html#cb2-7" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="r-demonstration-structure.html#cb2-8" tabindex="-1"></a>retention_recipe <span class="ot">&lt;-</span> <span class="fu">recipe</span>(retained_12m <span class="sc">~</span> ., <span class="at">data =</span> train_data) <span class="sc">|&gt;</span></span>
+<span id="cb2-9"><a href="r-demonstration-structure.html#cb2-9" tabindex="-1"></a>  <span class="fu">step_unknown</span>(<span class="fu">all_nominal_predictors</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb2-10"><a href="r-demonstration-structure.html#cb2-10" tabindex="-1"></a>  <span class="fu">step_dummy</span>(<span class="fu">all_nominal_predictors</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb2-11"><a href="r-demonstration-structure.html#cb2-11" tabindex="-1"></a>  <span class="fu">step_normalize</span>(<span class="fu">all_numeric_predictors</span>())</span></code></pre></div>
+<p>Preprocessing steps must be estimated from training data. The final test set should remain untouched until method and tuning decisions are complete.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="how-to-use-this-book.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="evaluation-must-match-the-decision.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="error-analysis-and-responsible-use.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

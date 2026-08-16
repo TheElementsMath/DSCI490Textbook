@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Science in Practice</title>
+  <title>15.5 R and RStudio refresher | Data Science in Practice</title>
   <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Science in Practice" />
+  <meta property="og:title" content="15.5 R and RStudio refresher | Data Science in Practice" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Science in Practice" />
+  <meta name="twitter:title" content="15.5 R and RStudio refresher | Data Science in Practice" />
   
   <meta name="twitter:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="how-to-use-this-book.html"/>
+<link rel="prev" href="statistics-refresher.html"/>
+<link rel="next" href="excel-refresher.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -569,25 +569,67 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Science in Practice</h1>
-<h2 class="subtitle"><em>A Guide for Capstone, Consulting, and Client-Based Work</em></h2>
-<p class="author"><em>[Author name]; [Department]; [Institution]</em></p>
-<p class="date"><em>[Publication date]</em></p>
+<div id="r-and-rstudio-refresher" class="section level2 hasAnchor" number="15.5">
+<h2><span class="header-section-number">15.5</span> R and RStudio refresher<a href="r-and-rstudio-refresher.html#r-and-rstudio-refresher" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="project-organization" class="section level3 hasAnchor" number="15.5.1">
+<h3><span class="header-section-number">15.5.1</span> Project organization<a href="r-and-rstudio-refresher.html#project-organization" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Use a project folder with separate locations for raw data, processed data, code, functions, figures, tables, and documentation. Raw data should remain unchanged. Paths should be project-relative rather than tied to one person’s computer.</p>
 </div>
-<div id="welcome" class="section level1 unnumbered hasAnchor">
-<h1>Welcome<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Applied data science is the practice of using data to improve understanding, support decisions, and recommend action in a real setting. The work may take place in a business, public agency, nonprofit organization, consulting engagement, research partnership, or educational project. In every setting, useful analysis requires more than technical accuracy. It requires a clear problem, trustworthy data, appropriate methods, responsible judgment, and communication that helps an audience act.</p>
-<p>Real projects rarely arrive as clean datasets paired with perfectly stated questions. The initial request may be broad. Important variables may be undocumented. Data from different sources may use incompatible definitions. The available evidence may support only part of the desired conclusion. A successful analyst must recognize these conditions, investigate them carefully, and explain how they affect the result.</p>
-<p>This book follows the complete path of an applied data science project. It begins with problem framing and project planning, then develops practices for collaboration, data stewardship, exploratory analysis, secondary research, modelling, forecasting, financial analysis, visualization, storytelling, recommendations, and professional delivery. The central theme is that every analytical choice should contribute to a defensible decision.</p>
+<div id="import-and-inspection" class="section level3 hasAnchor" number="15.5.2">
+<h3><span class="header-section-number">15.5.2</span> Import and inspection<a href="r-and-rstudio-refresher.html#import-and-inspection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Import dates, missing values, and character fields deliberately. Confirm dimensions, names, types, ranges, and keys immediately after import. Spreadsheet display can hide leading zeros, date conversions, and numbers stored as text.</p>
+</div>
+<div id="transformation" class="section level3 hasAnchor" number="15.5.3">
+<h3><span class="header-section-number">15.5.3</span> Transformation<a href="r-and-rstudio-refresher.html#transformation" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Write transformations as readable steps. Preserve source fields and create standardized or derived variables with documented rules.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="r-and-rstudio-refresher.html#cb4-1" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-2"><a href="r-and-rstudio-refresher.html#cb4-2" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="r-and-rstudio-refresher.html#cb4-3" tabindex="-1"></a>member_summary <span class="ot">&lt;-</span> visits <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a href="r-and-rstudio-refresher.html#cb4-4" tabindex="-1"></a>  <span class="fu">filter</span>(visit_date <span class="sc">&gt;=</span> analysis_start,</span>
+<span id="cb4-5"><a href="r-and-rstudio-refresher.html#cb4-5" tabindex="-1"></a>         visit_date <span class="sc">&lt;=</span> analysis_end) <span class="sc">|&gt;</span></span>
+<span id="cb4-6"><a href="r-and-rstudio-refresher.html#cb4-6" tabindex="-1"></a>  <span class="fu">group_by</span>(member_id) <span class="sc">|&gt;</span></span>
+<span id="cb4-7"><a href="r-and-rstudio-refresher.html#cb4-7" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb4-8"><a href="r-and-rstudio-refresher.html#cb4-8" tabindex="-1"></a>    <span class="at">visits =</span> <span class="fu">n_distinct</span>(visit_episode_id),</span>
+<span id="cb4-9"><a href="r-and-rstudio-refresher.html#cb4-9" tabindex="-1"></a>    <span class="at">centres_used =</span> <span class="fu">n_distinct</span>(centre_id),</span>
+<span id="cb4-10"><a href="r-and-rstudio-refresher.html#cb4-10" tabindex="-1"></a>    <span class="at">last_visit =</span> <span class="fu">max</span>(visit_date),</span>
+<span id="cb4-11"><a href="r-and-rstudio-refresher.html#cb4-11" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">&quot;drop&quot;</span></span>
+<span id="cb4-12"><a href="r-and-rstudio-refresher.html#cb4-12" tabindex="-1"></a>  )</span></code></pre></div>
+<p>The code states the period, episode definition, grouping unit, and summaries. Those choices should agree with the dictionary.</p>
+</div>
+<div id="grouped-summaries" class="section level3 hasAnchor" number="15.5.4">
+<h3><span class="header-section-number">15.5.4</span> Grouped summaries<a href="r-and-rstudio-refresher.html#grouped-summaries" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="r-and-rstudio-refresher.html#cb5-1" tabindex="-1"></a>retention_by_channel <span class="ot">&lt;-</span> members <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a href="r-and-rstudio-refresher.html#cb5-2" tabindex="-1"></a>  <span class="fu">filter</span>(retention_eligible) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="r-and-rstudio-refresher.html#cb5-3" tabindex="-1"></a>  <span class="fu">group_by</span>(acquisition_channel) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="r-and-rstudio-refresher.html#cb5-4" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb5-5"><a href="r-and-rstudio-refresher.html#cb5-5" tabindex="-1"></a>    <span class="at">eligible =</span> <span class="fu">n</span>(),</span>
+<span id="cb5-6"><a href="r-and-rstudio-refresher.html#cb5-6" tabindex="-1"></a>    <span class="at">retained =</span> <span class="fu">sum</span>(retained_12m),</span>
+<span id="cb5-7"><a href="r-and-rstudio-refresher.html#cb5-7" tabindex="-1"></a>    <span class="at">retention_rate =</span> <span class="fu">mean</span>(retained_12m),</span>
+<span id="cb5-8"><a href="r-and-rstudio-refresher.html#cb5-8" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">&quot;drop&quot;</span></span>
+<span id="cb5-9"><a href="r-and-rstudio-refresher.html#cb5-9" tabindex="-1"></a>  )</span></code></pre></div>
+<p>The eligibility filter is essential. Without it, recent members could be misclassified or excluded inconsistently.</p>
+</div>
+<div id="reproducible-outputs" class="section level3 hasAnchor" number="15.5.5">
+<h3><span class="header-section-number">15.5.5</span> Reproducible outputs<a href="r-and-rstudio-refresher.html#reproducible-outputs" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Tables and figures should be generated from code whenever feasible. Set seeds for stochastic procedures, record package versions, and avoid manual edits to exported results. The R references provide deeper programming and EDA review <span class="citation">(<a href="#ref-peng2020r">Peng 2020b</a>, <a href="#ref-peng2020eda">2020a</a>)</span>.</p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-peng2020eda" class="csl-entry">
+Peng, Roger D. 2020a. <em>Exploratory Data Analysis with r</em>. Leanpub.
+</div>
+<div id="ref-peng2020r" class="csl-entry">
+———. 2020b. <em>R Programming for Data Science</em>. Leanpub.
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="how-to-use-this-book.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="statistics-refresher.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="excel-refresher.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

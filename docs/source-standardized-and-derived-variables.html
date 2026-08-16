@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Science in Practice</title>
+  <title>7.7 Source, standardized, and derived variables | Data Science in Practice</title>
   <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Science in Practice" />
+  <meta property="og:title" content="7.7 Source, standardized, and derived variables | Data Science in Practice" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Science in Practice" />
+  <meta name="twitter:title" content="7.7 Source, standardized, and derived variables | Data Science in Practice" />
   
   <meta name="twitter:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="how-to-use-this-book.html"/>
+<link rel="prev" href="variable-level-fields.html"/>
+<link rel="next" href="missing-values-carry-information.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -569,25 +569,77 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Science in Practice</h1>
-<h2 class="subtitle"><em>A Guide for Capstone, Consulting, and Client-Based Work</em></h2>
-<p class="author"><em>[Author name]; [Department]; [Institution]</em></p>
-<p class="date"><em>[Publication date]</em></p>
+<div id="source-standardized-and-derived-variables" class="section level2 hasAnchor" number="7.7">
+<h2><span class="header-section-number">7.7</span> Source, standardized, and derived variables<a href="source-standardized-and-derived-variables.html#source-standardized-and-derived-variables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Preserve the original source field. Create new variables for corrections, standardization, and analysis. This makes the transformation visible and allows the analyst to compare the result with the original.</p>
+<p>For example, NVRW’s source field <code>home_site</code> contains <code>Central</code>, <code>CENTRAL</code>, <code>Ctr</code>, and <code>01</code>. The team creates <code>home_centre_std</code> using a documented mapping. A separate field, <code>centre_region</code>, groups centres for a regional comparison. The dictionary identifies the first field as source data, the second as standardized, and the third as derived.</p>
+<p>Derived variables need enough detail to reproduce them. “Member tenure” is incomplete. A useful entry identifies the dates used, unit, treatment of partial periods, and reference date.</p>
+<div class="example">
+<p><span id="exm:unlabeled-div-16" class="example"><strong>Example 7.2  </strong></span><strong>Sample dictionary entries</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Definition</th>
+<th>Type and format</th>
+<th>Allowed values</th>
+<th>Missing rule</th>
+<th>Source or derivation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>member_id</code></td>
+<td>Anonymous identifier for one member</td>
+<td>Character, 10 positions</td>
+<td>Unique nonblank code</td>
+<td>Missing not permitted</td>
+<td>Membership system</td>
+</tr>
+<tr class="even">
+<td><code>visit_time</code></td>
+<td>Recorded facility check-in time</td>
+<td>Date-time, local time</td>
+<td>Valid time within extract period</td>
+<td>Blank means entry was not recorded</td>
+<td>Access system</td>
+</tr>
+<tr class="odd">
+<td><code>contribution_margin</code></td>
+<td>Revenue less directly attributable service or product cost</td>
+<td>Decimal, dollars</td>
+<td>May be negative after refund</td>
+<td>Missing when direct cost unavailable</td>
+<td><code>net_revenue - direct_cost</code></td>
+</tr>
+<tr class="even">
+<td><code>retained_12m</code></td>
+<td>Whether a member has an active membership 12 months after the initial start</td>
+<td>Logical</td>
+<td><code>TRUE</code>, <code>FALSE</code></td>
+<td>Missing when 12-month observation window is incomplete</td>
+<td>Derived from membership periods</td>
+</tr>
+</tbody>
+</table>
+<p>The entries reveal that <code>retained_12m</code> cannot be calculated for recent members. Treating those cases as non-retained would bias the analysis.</p>
 </div>
-<div id="welcome" class="section level1 unnumbered hasAnchor">
-<h1>Welcome<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Applied data science is the practice of using data to improve understanding, support decisions, and recommend action in a real setting. The work may take place in a business, public agency, nonprofit organization, consulting engagement, research partnership, or educational project. In every setting, useful analysis requires more than technical accuracy. It requires a clear problem, trustworthy data, appropriate methods, responsible judgment, and communication that helps an audience act.</p>
-<p>Real projects rarely arrive as clean datasets paired with perfectly stated questions. The initial request may be broad. Important variables may be undocumented. Data from different sources may use incompatible definitions. The available evidence may support only part of the desired conclusion. A successful analyst must recognize these conditions, investigate them carefully, and explain how they affect the result.</p>
-<p>This book follows the complete path of an applied data science project. It begins with problem framing and project planning, then develops practices for collaboration, data stewardship, exploratory analysis, secondary research, modelling, forecasting, financial analysis, visualization, storytelling, recommendations, and professional delivery. The central theme is that every analytical choice should contribute to a defensible decision.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="how-to-use-this-book.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="variable-level-fields.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="missing-values-carry-information.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

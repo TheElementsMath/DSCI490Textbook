@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Science in Practice</title>
+  <title>7.6 Variable-level fields | Data Science in Practice</title>
   <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Science in Practice" />
+  <meta property="og:title" content="7.6 Variable-level fields | Data Science in Practice" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Science in Practice" />
+  <meta name="twitter:title" content="7.6 Variable-level fields | Data Science in Practice" />
   
   <meta name="twitter:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="how-to-use-this-book.html"/>
+<link rel="prev" href="dataset-level-metadata.html"/>
+<link rel="next" href="source-standardized-and-derived-variables.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -569,25 +569,108 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Science in Practice</h1>
-<h2 class="subtitle"><em>A Guide for Capstone, Consulting, and Client-Based Work</em></h2>
-<p class="author"><em>[Author name]; [Department]; [Institution]</em></p>
-<p class="date"><em>[Publication date]</em></p>
-</div>
-<div id="welcome" class="section level1 unnumbered hasAnchor">
-<h1>Welcome<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Applied data science is the practice of using data to improve understanding, support decisions, and recommend action in a real setting. The work may take place in a business, public agency, nonprofit organization, consulting engagement, research partnership, or educational project. In every setting, useful analysis requires more than technical accuracy. It requires a clear problem, trustworthy data, appropriate methods, responsible judgment, and communication that helps an audience act.</p>
-<p>Real projects rarely arrive as clean datasets paired with perfectly stated questions. The initial request may be broad. Important variables may be undocumented. Data from different sources may use incompatible definitions. The available evidence may support only part of the desired conclusion. A successful analyst must recognize these conditions, investigate them carefully, and explain how they affect the result.</p>
-<p>This book follows the complete path of an applied data science project. It begins with problem framing and project planning, then develops practices for collaboration, data stewardship, exploratory analysis, secondary research, modelling, forecasting, financial analysis, visualization, storytelling, recommendations, and professional delivery. The central theme is that every analytical choice should contribute to a defensible decision.</p>
+<div id="variable-level-fields" class="section level2 hasAnchor" number="7.6">
+<h2><span class="header-section-number">7.6</span> Variable-level fields<a href="variable-level-fields.html#variable-level-fields" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Use one row per variable in a formatted table that can be filtered and reviewed.</p>
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data element name</td>
+<td>Client-friendly name</td>
+</tr>
+<tr class="even">
+<td>Dataset variable name</td>
+<td>Exact name used in code or software</td>
+</tr>
+<tr class="odd">
+<td>Definition</td>
+<td>Detailed business meaning</td>
+</tr>
+<tr class="even">
+<td>Data type</td>
+<td>Character, integer, decimal, date, logical, and so on</td>
+</tr>
+<tr class="odd">
+<td>Format</td>
+<td>Date pattern, precision, or code pattern</td>
+</tr>
+<tr class="even">
+<td>Allowed values or range</td>
+<td>Valid categories or numeric limits</td>
+</tr>
+<tr class="odd">
+<td>Default value</td>
+<td>Value supplied when no other value is entered</td>
+</tr>
+<tr class="even">
+<td>Requirement status</td>
+<td>Required, conditionally required, or optional</td>
+</tr>
+<tr class="odd">
+<td>Constraints and rules</td>
+<td>Uniqueness, business rules, keys, and restrictions</td>
+</tr>
+<tr class="even">
+<td>Source</td>
+<td>Original field, secondary source, or derived field</td>
+</tr>
+<tr class="odd">
+<td>Relationships</td>
+<td>Links to identifiers, tables, or related variables</td>
+</tr>
+<tr class="even">
+<td>Example values</td>
+<td>Safe examples that clarify interpretation</td>
+</tr>
+<tr class="odd">
+<td>Missing-value representation</td>
+<td>Blank, <code>NA</code>, <code>Unknown</code>, special code, and so on</td>
+</tr>
+<tr class="even">
+<td>Missing count or rate</td>
+<td>Extent of missingness for the stated version</td>
+</tr>
+<tr class="odd">
+<td>Unit</td>
+<td>Dollars, minutes, percentage, count, and so on</td>
+</tr>
+<tr class="even">
+<td>Derivation</td>
+<td>Reproducible rule for an engineered variable</td>
+</tr>
+<tr class="odd">
+<td>Sensitivity</td>
+<td>Privacy classification or handling restriction</td>
+</tr>
+<tr class="even">
+<td>Owner or steward</td>
+<td>Person or role responsible for meaning or quality</td>
+</tr>
+<tr class="odd">
+<td>Status and notes</td>
+<td>Changes, ambiguities, corrections, or caveats</td>
+</tr>
+</tbody>
+</table>
+<p>Not every variable will have a default, constraint, or relationship. Record <code>None</code> or <code>Not applicable</code> when the absence matters. Zero missing values should also be documented rather than left blank.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="how-to-use-this-book.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="dataset-level-metadata.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="source-standardized-and-derived-variables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

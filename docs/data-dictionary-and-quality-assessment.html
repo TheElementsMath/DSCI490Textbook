@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Science in Practice</title>
+  <title>18.5 Data dictionary and quality assessment | Data Science in Practice</title>
   <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Science in Practice" />
+  <meta property="og:title" content="18.5 Data dictionary and quality assessment | Data Science in Practice" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Science in Practice" />
+  <meta name="twitter:title" content="18.5 Data dictionary and quality assessment | Data Science in Practice" />
   
   <meta name="twitter:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="how-to-use-this-book.html"/>
+<link rel="prev" href="data-package-and-relationships.html"/>
+<link rel="next" href="exploratory-analysis.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -569,25 +569,28 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Science in Practice</h1>
-<h2 class="subtitle"><em>A Guide for Capstone, Consulting, and Client-Based Work</em></h2>
-<p class="author"><em>[Author name]; [Department]; [Institution]</em></p>
-<p class="date"><em>[Publication date]</em></p>
-</div>
-<div id="welcome" class="section level1 unnumbered hasAnchor">
-<h1>Welcome<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Applied data science is the practice of using data to improve understanding, support decisions, and recommend action in a real setting. The work may take place in a business, public agency, nonprofit organization, consulting engagement, research partnership, or educational project. In every setting, useful analysis requires more than technical accuracy. It requires a clear problem, trustworthy data, appropriate methods, responsible judgment, and communication that helps an audience act.</p>
-<p>Real projects rarely arrive as clean datasets paired with perfectly stated questions. The initial request may be broad. Important variables may be undocumented. Data from different sources may use incompatible definitions. The available evidence may support only part of the desired conclusion. A successful analyst must recognize these conditions, investigate them carefully, and explain how they affect the result.</p>
-<p>This book follows the complete path of an applied data science project. It begins with problem framing and project planning, then develops practices for collaboration, data stewardship, exploratory analysis, secondary research, modelling, forecasting, financial analysis, visualization, storytelling, recommendations, and professional delivery. The central theme is that every analytical choice should contribute to a defensible decision.</p>
+<div id="data-dictionary-and-quality-assessment" class="section level2 hasAnchor" number="18.5">
+<h2><span class="header-section-number">18.5</span> Data dictionary and quality assessment<a href="data-dictionary-and-quality-assessment.html#data-dictionary-and-quality-assessment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The dictionary records the dataset, variable, type, definition, allowed values or unit, and known quality issue. It also distinguishes identifiers from measurements and explicitly defines <code>Censored</code> as a renewal outcome that cannot yet be observed.</p>
+<p>The raw visit data contain 64,131 rows but only 63,734 distinct visit identifiers. There are 397 duplicated visit identifiers, 1,163 missing durations, and 117 durations recorded as 720 minutes. The raw member file also contains missing postal FSAs, unknown service areas, and inconsistent capitalization in membership types.</p>
+<p>An appropriate cleaning procedure is to:</p>
+<ol style="list-style-type: decimal">
+<li>preserve the raw files unchanged;</li>
+<li>remove exact repeated visit identifiers after confirming the duplicate mechanism;</li>
+<li>convert implausible durations above the defined operational limit to missing rather than inventing replacements;</li>
+<li>standardize category labels through a documented mapping;</li>
+<li>retain unknown geography as missing or a separate category when relevant; and</li>
+<li>report how every change affects row counts and downstream analysis.</li>
+</ol>
+<p>Duration should not be imputed automatically. It is unnecessary for visit counts, and an imputed value could create false precision in analyses of time spent at a facility.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="how-to-use-this-book.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-package-and-relationships.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="exploratory-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

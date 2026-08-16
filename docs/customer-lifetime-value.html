@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Data Science in Practice</title>
+  <title>11.12 Customer lifetime value | Data Science in Practice</title>
   <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Data Science in Practice" />
+  <meta property="og:title" content="11.12 Customer lifetime value | Data Science in Practice" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Data Science in Practice" />
+  <meta name="twitter:title" content="11.12 Customer lifetime value | Data Science in Practice" />
   
   <meta name="twitter:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="how-to-use-this-book.html"/>
+<link rel="prev" href="scenario-and-sensitivity-analysis.html"/>
+<link rel="next" href="common-mistakes-5.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -569,25 +569,113 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Data Science in Practice</h1>
-<h2 class="subtitle"><em>A Guide for Capstone, Consulting, and Client-Based Work</em></h2>
-<p class="author"><em>[Author name]; [Department]; [Institution]</em></p>
-<p class="date"><em>[Publication date]</em></p>
+<div id="customer-lifetime-value" class="section level2 hasAnchor" number="11.12">
+<h2><span class="header-section-number">11.12</span> Customer lifetime value<a href="customer-lifetime-value.html#customer-lifetime-value" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>CLV translates customer behaviour into a long-term economic measure. It can support acquisition spending, retention priorities, segment strategy, service design, and evaluation of customer relationships. The formula must match the decision and available data.</p>
+<p>CLV is not one universal formula. Different models answer different questions and require different assumptions <span class="citation">(<a href="#ref-gupta2006">Gupta et al. 2006</a>)</span>.</p>
+<div id="introductory-revenue-clv" class="section level3 hasAnchor" number="11.12.1">
+<h3><span class="header-section-number">11.12.1</span> Introductory revenue CLV<a href="customer-lifetime-value.html#introductory-revenue-clv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A simple revenue-based model is</p>
+<p><span class="math display">\[
+\text{Revenue CLV}
+=(\text{average purchase value})
+\times(\text{purchases per period})
+\times(\text{customer lifespan}).
+\]</span></p>
+<p>This version is useful for understanding the role of value, frequency, and lifespan. It should not be called profit because it ignores cost, margin, acquisition, retention variation, and the time value of money.</p>
 </div>
-<div id="welcome" class="section level1 unnumbered hasAnchor">
-<h1>Welcome<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Applied data science is the practice of using data to improve understanding, support decisions, and recommend action in a real setting. The work may take place in a business, public agency, nonprofit organization, consulting engagement, research partnership, or educational project. In every setting, useful analysis requires more than technical accuracy. It requires a clear problem, trustworthy data, appropriate methods, responsible judgment, and communication that helps an audience act.</p>
-<p>Real projects rarely arrive as clean datasets paired with perfectly stated questions. The initial request may be broad. Important variables may be undocumented. Data from different sources may use incompatible definitions. The available evidence may support only part of the desired conclusion. A successful analyst must recognize these conditions, investigate them carefully, and explain how they affect the result.</p>
-<p>This book follows the complete path of an applied data science project. It begins with problem framing and project planning, then develops practices for collaboration, data stewardship, exploratory analysis, secondary research, modelling, forecasting, financial analysis, visualization, storytelling, recommendations, and professional delivery. The central theme is that every analytical choice should contribute to a defensible decision.</p>
+<div id="margin-based-clv" class="section level3 hasAnchor" number="11.12.2">
+<h3><span class="header-section-number">11.12.2</span> Margin-based CLV<a href="customer-lifetime-value.html#margin-based-clv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>An improved model uses contribution margin:</p>
+<p><span class="math display">\[
+\text{Margin CLV}
+=(\text{average revenue per period})
+\times(\text{contribution margin rate})
+\times(\text{expected active periods})
+-\text{CAC}.
+\]</span></p>
+<p>Define which costs are included in contribution margin. Gross margin, contribution margin, and operating profit are not interchangeable.</p>
+</div>
+<div id="retention-and-churn" class="section level3 hasAnchor" number="11.12.3">
+<h3><span class="header-section-number">11.12.3</span> Retention and churn<a href="customer-lifetime-value.html#retention-and-churn" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For a closed cohort over one period,</p>
+<p><span class="math display">\[
+\text{Retention rate}
+=\frac{\text{eligible customers retained}}{\text{eligible customers at the start}}.
+\]</span></p>
+<p>When every eligible customer is either retained or lost,</p>
+<p><span class="math display">\[
+\text{Churn rate}=1-\text{Retention rate}.
+\]</span></p>
+<p>New customers should not be included in the retention numerator. Net customer growth is a different measure:</p>
+<p><span class="math display">\[
+\text{Net growth rate}
+=\frac{\text{new customers}-\text{customers lost}}
+{\text{customers at the start}}.
+\]</span></p>
+<p>The approximation (1/) is sometimes used for expected lifespan under a constant independent churn process. It is not a universal identity. Churn often changes with tenure, segment, contract type, and period.</p>
+<p>Do not convert annual churn to quarterly churn by simply dividing by four when compounding matters. Under a constant quarterly retention assumption,</p>
+<p><span class="math display">\[
+r_{quarter}=r_{annual}^{1/4},
+\qquad
+c_{quarter}=1-r_{annual}^{1/4}.
+\]</span></p>
+</div>
+<div id="discounted-clv" class="section level3 hasAnchor" number="11.12.4">
+<h3><span class="header-section-number">11.12.4</span> Discounted CLV<a href="customer-lifetime-value.html#discounted-clv" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Future contribution is worth less than contribution received today. A flexible finite-horizon model is</p>
+<p><span class="math display">\[
+CLV=-CAC+\sum_{t=1}^{T}
+\frac{M_tS_t}{(1+d)^t},
+\]</span></p>
+<p>where <span class="math inline">\(M_t\)</span> is expected contribution margin if active in period <span class="math inline">\(t\)</span>, <span class="math inline">\(S_t\)</span> is the probability of remaining active at the start of that period, <span class="math inline">\(d\)</span> is the discount rate per period, and <span class="math inline">\(T\)</span> is the horizon.</p>
+<div class="example">
+<p><span id="exm:unlabeled-div-28" class="example"><strong>Example 11.3  </strong></span><strong>Recurring case: discounted membership CLV</strong></p>
+<p>NVRW estimates annual contribution margin of $144 for a new membership, annual retention of 75 percent, a four-year horizon, an annual discount rate of 8 percent, and CAC of $75. The customer is active in year 1, so survival probabilities are <span class="math inline">\(1\)</span>, <span class="math inline">\(0.75\)</span>, <span class="math inline">\(0.75^2\)</span>, and <span class="math inline">\(0.75^3\)</span>.</p>
+<p><span class="math display">\[
+CLV=-75+
+\frac{144}{1.08}+
+\frac{144(0.75)}{1.08^2}+
+\frac{144(0.75^2)}{1.08^3}+
+\frac{144(0.75^3)}{1.08^4}.
+\]</span></p>
+<p>The estimated CLV is approximately $260. The result is conditional on the margin, retention, discount, horizon, and CAC assumptions. It should be compared with alternative assumptions rather than presented as an exact customer value.</p>
+</div>
+</div>
+<div id="cohorts-and-segments" class="section level3 hasAnchor" number="11.12.5">
+<h3><span class="header-section-number">11.12.5</span> Cohorts and segments<a href="customer-lifetime-value.html#cohorts-and-segments" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Average CLV can hide meaningful differences. Compare cohorts defined by acquisition period, channel, membership type, or another characteristic known at the relevant decision time. Ensure every cohort has enough follow-up. Recent cohorts should not appear to have lower lifetime value merely because less time has passed.</p>
+<p>Segment-level CLV should not encourage the organization to neglect low-value groups when it has public-service, access, or fairness obligations. Economic value is one decision measure, not a complete statement of social or organizational value.</p>
+</div>
+<div id="clv-in-excel" class="section level3 hasAnchor" number="11.12.6">
+<h3><span class="header-section-number">11.12.6</span> CLV in Excel<a href="customer-lifetime-value.html#clv-in-excel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>An auditable spreadsheet should separate inputs, yearly calculations, and outputs. A row for year <span class="math inline">\(t\)</span> can contain:</p>
+<ul>
+<li>survival probability;</li>
+<li>expected revenue;</li>
+<li>contribution margin;</li>
+<li>discount factor;</li>
+<li>present value; and</li>
+<li>cumulative CLV after CAC.</li>
+</ul>
+<p>For a yearly contribution in cell <code>C8</code>, survival probability in <code>D8</code>, discount rate in <code>$B$3</code>, and year in <code>A8</code>, present value can be calculated as:</p>
+<pre class="text"><code>=C8*D8/(1+$B$3)^A8</code></pre>
+<p>Use typed numeric cells for rates and currency. Do not hide assumptions inside long formulas.</p>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-gupta2006" class="csl-entry">
+Gupta, Sunil, Dominique Hanssens, Bruce Hardie, William Kahn, V. Kumar, Nathaniel Lin, Nalini Ravishanker, and S. Sriram. 2006. <span>“Modeling Customer Lifetime Value.”</span> <em>Journal of Service Research</em> 9 (2): 139–55. <a href="https://doi.org/10.1177/1094670506293810">https://doi.org/10.1177/1094670506293810</a>.
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="how-to-use-this-book.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="scenario-and-sensitivity-analysis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="common-mistakes-5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
