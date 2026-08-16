@@ -1,0 +1,206 @@
+# Professional Tables and Visualizations
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- choose a display that matches the comparison and audience;
+- design tables for lookup, comparison, and decision support;
+- reduce clutter without removing necessary context;
+- use position, contrast, annotation, and grouping intentionally;
+- display uncertainty and geographic information responsibly; and
+- evaluate a visual for accuracy, readability, and accessibility.
+
+## Key terms
+
+::: {.definition}
+**Visual encoding:** The use of position, length, colour, shape, size, or another visual property to represent data.
+
+**Data-ink:** The portion of a display used to represent data rather than decoration or redundant structure.
+
+**Preattentive attribute:** A visual feature, such as strong contrast or orientation, that can be noticed rapidly before deliberate attention.
+
+**Gestalt principle:** A principle describing how people visually group and interpret elements through properties such as proximity, similarity, enclosure, and connection.
+
+**Annotation:** Text or a graphical marker added to explain, highlight, or contextualize part of a display.
+
+**Direct label:** A label placed beside the value or series it identifies, reducing the need to look back and forth to a legend.
+
+**Accessibility:** The quality of being usable and understandable by people with diverse visual, cognitive, physical, and technological needs.
+
+**Explanatory title:** A title that states the main conclusion or comparison communicated by a visual.
+:::
+
+## Begin with the comparison
+
+Chart selection begins with what the audience must compare, not with a software menu.
+
+| Communication need | Often useful |
+|---|---|
+| One or two important values | Directly labelled text |
+| Exact lookup across several values | Table |
+| Category comparison | Bar chart |
+| Change over time | Line chart |
+| Numeric relationship | Scatterplot |
+| Distribution | Histogram, density plot, boxplot, or dot plot |
+| Composition | Stacked bar or well-labelled table |
+| Actual versus target | Bullet chart, dot plot, or direct comparison |
+| Geographic pattern | Map when location is analytically meaningful |
+
+The chart type is only the beginning. Scale, ordering, labels, units, colour, annotations, and surrounding text determine whether the comparison is clear.
+
+## Tables are analytical displays
+
+Use a table when readers need exact values or must compare several measures across repeated categories. A strong table:
+
+- places the most important comparison near the left;
+- uses clear units in headings;
+- orders rows meaningfully;
+- aligns numbers by place value;
+- uses consistent precision;
+- distinguishes missing, suppressed, and zero values;
+- avoids decorative colour; and
+- highlights only values that require attention.
+
+Do not export an unedited software table. Field names, excessive decimals, repeated totals, and technical codes place unnecessary work on the audience.
+
+## Use perceptually accurate encodings
+
+Position along a common scale and length are generally easier to compare accurately than angle, area, volume, or colour intensity. This is why bars and dot plots often communicate category differences more clearly than pie charts or bubbles.
+
+Bar charts should normally begin at zero because bar length encodes magnitude. Line charts can use a narrower vertical range when the scale is clearly shown and the purpose is to examine change. The decision should preserve honest perception rather than follow a rule mechanically.
+
+## Reduce clutter
+
+Every element should encode data, explain the data, or help the reader navigate. Remove redundant legends, borders, decoration, unnecessary gridlines, and repeated labels. This reflects the data-ink principle [@tufte2001].
+
+Do not remove units, reference lines, uncertainty, denominators, or source information merely to make a chart look cleaner. Minimalism is not useful when it removes meaning.
+
+Design at the final size. A figure that works on a full monitor may fail when placed on half a report page or projected in a room. Enlarge essential labels, remove detail that cannot be read, and export at sufficient resolution.
+
+## Direct attention
+
+Use position, contrast, size, and annotation to guide attention. When most values provide context and one requires action, a restrained highlight is often more effective than a rainbow palette.
+
+Visual grouping follows familiar principles:
+
+- proximity suggests relatedness;
+- similarity suggests membership;
+- enclosure creates a group;
+- connection implies a relationship; and
+- continuity helps the eye follow a pattern.
+
+Use these effects deliberately. A shared colour may imply that two categories are related even when they are not.
+
+## Explanatory titles and annotation
+
+A topic title names the subject: "Annual Visits by Centre."
+
+An explanatory title states the conclusion: "Visit growth is concentrated at Central and Lakeside."
+
+The title should communicate the intended takeaway without claiming more than the figure shows. An annotation can identify a policy change, missing period, facility closure, or other context required to interpret the pattern.
+
+::: {.example}
+**Recurring case: redesigning an NVRW chart**
+
+The first chart displays monthly visits for four centres using four saturated colours, a dark background, twelve vertical gridlines, a separate legend, and the title "Visits."
+
+The revision uses thin grey lines for stable centres, two direct-labelled accent lines for Central and Lakeside, a light reference line for the facility-expansion month, and the title "Evening visit growth is concentrated at two centres." The underlying values do not change. The design makes the project conclusion easier to see.
+:::
+
+## Showing uncertainty
+
+Forecasts, survey estimates, and model effects should not be presented as exact future facts. Depending on the method, show prediction intervals, confidence intervals, scenario bands, error bars, or a range of plausible outcomes.
+
+The display must label the type of uncertainty. A low-base-high scenario range is not a statistical prediction interval. If intervals become wider over the forecast horizon, the visualization should preserve that feature rather than showing a single smooth line.
+
+## Charts requiring caution
+
+- Pie and donut charts make close comparisons difficult.
+- Three-dimensional effects distort apparent size.
+- Dual axes can create relationships through scale choice.
+- Truncated bar axes exaggerate differences.
+- Stacked areas make internal categories difficult to compare.
+- Dense tables hide the important comparison.
+- Maps of raw counts often reproduce population size.
+
+These forms are not automatically dishonest, but they require a clear reason and careful design.
+
+## Geospatial visualization
+
+Use a map when location is part of the question, not merely because geographic fields exist. A choropleth often needs a relevant denominator such as population, households, eligible customers, or facility capacity.
+
+A reproducible mapping workflow should:
+
+1. choose the geography that matches the decision;
+2. join with stable identifiers rather than labels alone;
+3. inspect unmatched, duplicated, and missing regions;
+4. select an appropriate coordinate reference system;
+5. simplify geometry only after checking important shapes;
+6. use an inset when a dense area would otherwise be unreadable; and
+7. include data, boundary, and basemap attribution.
+
+The UPGo tutorial demonstrates a script-based R workflow using `sf`, `ggplot2`, and census geography, including themes and inset maps [@wachsmuth2019]. CensusMapper and `cancensus` can support identification and retrieval of Canadian census variables and geometries [@censusmapper; @cancensus2026].
+
+::: {.example}
+**Recurring case: visits or utilization?**
+
+An NVRW map of total visits makes the most populated service area appear dominant. A second map shows visits per 1,000 residents. One rural area now has the highest utilization rate despite having fewer total visits.
+
+Neither map is universally better. Counts support total capacity decisions, while rates support comparison of relative service use. The report presents both and explains the different questions.
+:::
+
+## Accessibility
+
+Accessible design benefits every audience. Use sufficient contrast, readable text, descriptive titles, and meaningful ordering. Do not rely on colour alone. Combine colour with line type, shape, position, label, or pattern where necessary.
+
+Provide alternative text for important figures in HTML. Alt text should communicate the purpose and central pattern rather than list every decorative feature. Tables should have meaningful headings and a logical reading order.
+
+## Dashboards and Power BI
+
+A dashboard should be organized around recurring questions and decisions. Each page should have a purpose. Filters should be necessary, clearly labelled, and consistent. Measures should use explicit denominator logic, and totals should be reconciled with source data.
+
+Avoid placing every available visual on one page. A dashboard is not useful because it is interactive; it is useful when interaction helps the audience answer a meaningful question.
+
+::: {.quality}
+**Quality standard:** A figure should communicate its intended comparison accurately at the size, medium, and viewing conditions in which the audience will use it.
+:::
+
+## Visualization checklist
+
+- [ ] The display answers a specific question.
+- [ ] The title states the supported takeaway.
+- [ ] Units, period, population, and source are visible.
+- [ ] Axes and order support accurate comparison.
+- [ ] Colour is purposeful and not the only distinction.
+- [ ] Labels remain readable at final size.
+- [ ] Missing, suppressed, and zero values are distinguishable.
+- [ ] Uncertainty is labelled correctly.
+- [ ] The figure does not imply unsupported precision or causality.
+- [ ] Maps use appropriate geography, denominator, and attribution.
+
+## Exercise
+
+Choose the most appropriate primary display for each task: comparing retention across four acquisition channels, showing monthly visits for three years, reporting exact facility capacity and wait-list counts, and examining the relationship between first-month visits and twelve-month retention.
+
+<details class="answer-dropdown">
+<summary>Suggested answer</summary>
+<p>Use a bar or dot plot for retention by channel, a line chart for monthly visits, a concise table for exact capacity and wait-list values, and a probability plot or grouped retention display for the relationship between early visits and retention. A raw scatterplot is not appropriate when the retention outcome is binary unless it is transformed into a more informative display.</p>
+</details>
+
+## Additional exercises
+
+1. Create one excellent table and one excellent chart from `retention_by_facility.csv`. Give each an explanatory title and a note defining the denominator.
+2. Redesign the monthly visit figure for an audience interested primarily in North Ridge. Preserve the comparison with other facilities without making them visually dominant.
+3. Conduct an accessibility audit of your figure. Check colour dependence, contrast, text size, reading order, alternative text, and whether the main conclusion remains visible in grayscale.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>The retention chart should use a common zero-based percentage scale unless a different scale is explicitly justified. The title should communicate the comparison, and the note should define eligibility and the treatment of censored periods.</p>
+</details>
+
+## Questions for discussion
+
+1. When does highlighting become manipulation?
+2. Should every report figure have an explanatory title?
+3. When are exact values more important than rapid visual comparison?

@@ -1,0 +1,210 @@
+# A Reproducible Exploratory Data Analysis
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- conduct a structured data-quality assessment;
+- select purposeful univariate, bivariate, and multivariate analyses;
+- investigate and justify decisions about missing values and outliers;
+- separate observed findings from possible explanations;
+- document an EDA so that it can be reproduced; and
+- convert exploratory findings into analytical questions and project decisions.
+
+## Key terms
+
+::: {.definition}
+**Exploratory data analysis (EDA):** A structured investigation of data quality, distributions, relationships, patterns, limitations, and analytical possibilities.
+
+**Data quality:** The degree to which data are accurate, complete, consistent, timely, valid, and suitable for their intended use.
+
+**Distribution:** The pattern of values taken by a variable, including their frequency, centre, spread, shape, and extremes.
+
+**Missingness:** The amount, pattern, and process through which expected data values are absent.
+
+**Outlier:** An observation that is unusually distant from or inconsistent with other observations under a relevant definition.
+
+**Unit of analysis:** The entity represented by one observation in an analysis.
+
+**Univariate analysis:** The examination of one variable at a time.
+
+**Bivariate analysis:** The examination of a relationship or comparison involving two variables.
+
+**Multivariate analysis:** The examination of relationships involving three or more variables.
+
+**Reproducibility:** The ability to recreate results from documented data, code, settings, transformations, and decisions.
+:::
+
+## EDA is an investigation
+
+Exploratory data analysis is the disciplined process of learning what the data contain, how they were produced, which problems they have, and which relationships deserve further analysis. It is not a gallery containing one default graph for every variable.
+
+A useful EDA has two audiences. The analytical team needs detailed evidence about quality, definitions, distributions, and feasibility. Decision makers need a clear account of which patterns and limitations affect the problem. The EDA report should serve both purposes without confusing exploration with final explanation.
+
+EDA should help the team:
+
+- verify structure, scope, and coverage;
+- detect errors and limitations;
+- understand important variables and subgroups;
+- identify time, location, and relationship patterns;
+- test whether proposed methods are feasible;
+- refine the question map; and
+- decide what should not be analyzed.
+
+## A reproducible EDA workflow
+
+### Stage 1: Orient to the data
+
+Record the source and version of each file, unit of analysis, dimensions, identifiers, time coverage, geographic coverage, variable types, and relationships between tables. Confirm that the number of records agrees with source documentation when a reference total exists.
+
+```{r}
+dim(data)
+names(data)
+str(data)
+summary(data)
+```
+
+These commands are only an opening inspection. They do not replace business definitions or targeted quality checks.
+
+### Stage 2: Assess data quality
+
+Check for:
+
+- duplicate rows and identifiers;
+- missing counts and patterns;
+- unexpected categories;
+- impossible or conflicting values;
+- inconsistent dates, units, spelling, or formats;
+- numbers stored as text;
+- extreme and influential observations;
+- incomplete time periods;
+- totals that do not reconcile;
+- truncated exports;
+- selection and coverage limitations; and
+- discrepancies between data and dictionary.
+
+The Quartz guide provides a useful taxonomy of data problems that may require action by the source, analyst, subject expert, or programmer [@quartzBadData]. Classifying ownership prevents analysts from inventing corrections to questions that require domain authority.
+
+### Stage 3: Examine variables individually
+
+Choose summaries that match the variable.
+
+For categorical variables, examine counts, proportions, rare levels, ordering, and missingness. For numeric variables, examine centre, spread, range, quantiles, zeros, shape, and extremes. For dates and times, examine coverage, gaps, seasonality, incomplete periods, and operational cycles.
+
+Do not report every available statistic. Report the features that affect interpretation or later analysis.
+
+### Stage 4: Examine relationships
+
+Bivariate analysis should follow from a question. Useful comparisons include outcomes by group, counts and rates over time, numeric outcomes across categories, relationships between numeric variables, and missingness by source or period.
+
+Always distinguish counts from rates. A facility with more visits may simply serve a larger population or operate more hours. A program with more cancellations may also have far more registrations.
+
+### Stage 5: Add relevant dimensions
+
+Multivariate exploration examines whether an apparent relationship changes after another variable is considered. Faceting, stratification, grouped summaries, correlation analysis, and exploratory models can reveal that a system-wide pattern is concentrated in one location, period, or group.
+
+Identifier codes and arbitrary category numbers should not be placed in a correlation matrix simply because software stores them as numbers.
+
+### Stage 6: Convert findings into decisions
+
+End with verified facts, important limitations, patterns requiring explanation, candidate problems or opportunities, next analytical questions, and decisions about exclusions or scope.
+
+## Missing-data decisions
+
+Missingness should be investigated as a process. Ask whether values are missing because the field was not collected, did not apply, failed during entry, was suppressed, or was lost during extraction. Examine whether missingness changes over time, by system, location, group, or outcome.
+
+Possible responses include:
+
+- retaining a meaningful unknown category;
+- excluding a variable that is too incomplete for the intended use;
+- limiting analysis to periods with comparable collection;
+- imputing under a justified statistical process;
+- conducting sensitivity analysis; or
+- reporting that the question cannot be answered reliably.
+
+Imputation creates estimated values. It does not recover the unknown truth, and it should not be performed only to satisfy software that rejects missing data.
+
+## Outlier decisions
+
+An outlier may be a data error, a rare valid event, a different population, or the most important case in the dataset. Investigate its source, units, context, and influence before deciding what to do.
+
+Appropriate actions may include correcting a verified error, retaining and explaining a valid extreme, analyzing with and without the observation, using a robust method, separating a different population, or flagging the case for operational review.
+
+::: {.example}
+**Recurring case: NVRW visit data**
+
+The NVRW EDA finds one member with 642 recorded visits in a year. Automatic deletion would be premature. The team checks timestamps and discovers that many entries occur seconds apart at the same gate, indicating repeated scanner events. After confirming the system behaviour, it creates a visit episode rule that keeps only the first scan within a defined interval.
+
+The source records remain unchanged. The derived episode identifier, interval rule, number of affected scans, and consequence for facility totals are documented in code and in the dictionary.
+:::
+
+## Recurring case: connecting EDA to the problem
+
+NVRW's initial concern is uneven demand and possible capacity pressure. The EDA establishes:
+
+- total visits increased over three complete years;
+- growth is concentrated at Central and Lakeside during weekday evenings;
+- family-program wait lists increased, but one year of capacity data is incomplete;
+- members acquired through community events have lower initial volume but higher twelve-month retention;
+- recent members cannot yet be classified on twelve-month retention; and
+- facility-entry data contain duplicate scanner events requiring an episode rule.
+
+These findings change the project. The team narrows capacity analysis to reliable periods, separates visits from unique users, adds a retention model with a valid observation window, and seeks population projections for the two growing service areas.
+
+## A professional EDA report
+
+A complete report commonly contains:
+
+1. purpose and scope;
+2. data overview and unit of analysis;
+3. quality assessment;
+4. cleaning, transformations, and feature engineering;
+5. selected univariate findings;
+6. purposeful bivariate and multivariate findings;
+7. conclusions and limitations;
+8. follow-up questions and project implications; and
+9. appendices containing the current dictionary, references, and reproducible code or audit trail.
+
+Use prose when a decision or interpretation requires explanation. Number and label tables and figures, and discuss each one in the text.
+
+::: {.common-error}
+**Common mistake:** A visible difference is not automatically meaningful. Consider denominators, sample size, incomplete periods, multiple comparisons, data quality, and practical importance before treating a pattern as a finding.
+:::
+
+## Reproducibility checklist
+
+- [ ] Raw data remain unchanged.
+- [ ] Cleaning and feature engineering are performed by saved code or auditable steps.
+- [ ] The dictionary matches the analyzed dataset.
+- [ ] Every table and figure can be recreated.
+- [ ] Filters, exclusions, and observation windows are documented.
+- [ ] Counts and denominators are stated.
+- [ ] Missing-data and outlier decisions are justified.
+- [ ] File versions and software dependencies are recorded.
+- [ ] Findings are separated from possible explanations.
+
+## Exercise
+
+NVRW has 2,400 missing acquisition-channel values. Almost all occur before a new registration system was introduced. Should the team impute a channel for these records?
+
+<details class="answer-dropdown">
+<summary>Suggested response</summary>
+<p>Not automatically. The missingness is strongly connected to the collection period, so imputation may create unsupported historical detail. The team should document the system change, compare periods with and without reliable channel data, and limit channel-based conclusions to the comparable period unless a defensible reconstruction source exists. A sensitivity analysis may be useful if the older records materially affect a later model.</p>
+</details>
+
+## Additional exercises
+
+1. Use `data/nvrw/raw/visits.csv` to create a data-quality table containing total rows, distinct visit identifiers, duplicate identifiers, missing durations, and durations above 360 minutes. Explain which issues affect visit counts and which affect duration analysis.
+2. Compare monthly visit totals by facility. Then divide visits by active member-periods and explain why the second comparison answers a different question.
+3. Investigate program fill rates. Identify offerings below 60 percent and at or above 95 percent, then examine whether the pattern is stable across year, facility, and program category.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>The raw visit file contains more rows than distinct visit identifiers. A defensible analysis should remove confirmed duplicates before counting visits, but it should not discard complete visit rows merely because duration is missing.</p>
+</details>
+
+## Questions for discussion
+
+1. When should a data-quality finding become a client problem rather than remain a technical note?
+2. How can an EDA be comprehensive without becoming excessively long?
+3. What evidence would justify excluding an outlier from a final analysis?

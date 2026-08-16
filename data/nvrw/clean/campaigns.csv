@@ -1,0 +1,13 @@
+campaign_id,campaign_name,start_date,end_date,channel,target_segment,campaign_spend
+C001,2023 New year membership campaign,2023-01-01,2023-01-28,Paid social,Former members,4500
+C002,2023 Summer membership campaign,2023-04-01,2023-04-28,Email,Former members,2400
+C003,2023 Spring membership campaign,2023-07-01,2023-07-28,Email,Former members,6000
+C004,2023 Summer membership campaign,2023-10-01,2023-10-28,Email,New residents,2400
+C005,2024 Summer membership campaign,2024-01-01,2024-01-28,Community event,Former members,3200
+C006,2024 Fall membership campaign,2024-04-01,2024-04-28,Email,Families,2400
+C007,2024 New year membership campaign,2024-07-01,2024-07-28,Community event,Adults 18-34,2400
+C008,2024 Summer membership campaign,2024-10-01,2024-10-28,Email,Adults 18-34,2400
+C009,2025 Summer membership campaign,2025-01-01,2025-01-28,Search,New residents,7500
+C010,2025 New year membership campaign,2025-04-01,2025-04-28,Paid social,Former members,3200
+C011,2025 Fall membership campaign,2025-07-01,2025-07-28,Email,General,7500
+C012,2025 Fall membership campaign,2025-10-01,2025-10-28,Paid social,Adults 18-34,6000

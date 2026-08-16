@@ -1,0 +1,1401 @@
+member_id,household_id,join_date,home_facility_id,service_area,age_group,membership_type,acquisition_channel,marketing_consent,postal_fsa,engagement_score
+M00001,H00001,2023-02-23,F03,North Valley,35-49,Adult annual,Referral,Yes,V1E,0.635
+M00002,H00002,2024-02-14,F02,East Shore,18-34,Senior annual,Email,Yes,V1C,0.478
+M00003,H00003,2024-03-31,F02,East Shore,50-64,Adult annual,Organic web,No,V1A,1.409
+M00004,H00002,2025-01-26,F01,Central,35-49,Family annual,Walk-in,No,V1E,1.607
+M00005,H00005,2024-05-13,F02,East Shore,50-64,Monthly flexible,Email,Yes,V1A,1.302
+M00006,H00003,2023-08-27,F01,Central,50-64,Adult annual,Referral,No,V1C,1.048
+M00007,H00004,2022-02-09,F01,Central,35-49,Family annual,Organic web,Yes,V1C,0.505
+M00008,H00004,2022-01-29,F01,Central,Under 18,Adult annual,Community event,Yes,V1E,1.631
+M00009,H00009,2024-04-30,F01,Central,50-64,Adult annual,Referral,Yes,V1B,1.261
+M00010,H00010,2024-02-08,F03,North Valley,35-49,Monthly flexible,Referral,No,V1D,0.595
+M00011,H00004,2022-07-24,F02,East Shore,35-49,Adult annual,Email,Yes,V1C,1.19
+M00012,H00012,2024-08-30,F02,East Shore,18-34,Adult annual,Community event,Yes,V1B,0.577
+M00013,H00005,2023-01-14,F01,Central,50-64,Senior annual,Organic web,Yes,V1A,0.842
+M00014,H00014,2024-07-08,F02,East Shore,18-34,Adult annual,Email,Yes,V1A,1.313
+M00015,H00015,2023-04-17,F01,Central,18-34,Monthly flexible,Paid social,Yes,V1A,1.276
+M00016,H00016,2022-02-18,F02,East Shore,50-64,Adult annual,Email,No,V1A,0.902
+M00017,H00017,2024-11-18,F02,East Shore,35-49,Adult annual,Organic web,Yes,V1B,0.546
+M00018,H00018,2024-07-17,F03,North Valley,50-64,Adult annual,Organic web,Yes,V1D,0.898
+M00019,H00019,2023-03-18,F04,West Valley,18-34,Youth annual,Organic web,No,V1B,1.208
+M00020,H00020,2023-03-26,F01,Central,35-49,Monthly flexible,Organic web,No,V1B,1.361
+M00021,H00021,2023-04-07,F03,North Valley,18-34,Family annual,Paid social,Yes,V1A,1.529
+M00022,H00022,2023-06-29,F01,Central,35-49,Monthly flexible,Paid social,Yes,V1D,0.921
+M00023,H00023,2022-09-06,F04,West Valley,50-64,Senior annual,Referral,Yes,V1B,1.263
+M00024,H00008,2025-10-30,F01,Central,18-34,Adult annual,Walk-in,No,V1B,0.546
+M00025,H00025,2025-05-04,F04,West Valley,18-34,Family annual,Organic web,Yes,V1C,1.685
+M00026,H00026,2025-08-16,F02,East Shore,65+,Monthly flexible,Organic web,No,V1E,0.918
+M00027,H00009,2025-04-21,F04,West Valley,35-49,Monthly flexible,Walk-in,Yes,V1E,0.962
+M00028,H00028,2024-08-28,F01,Central,35-49,Family annual,Referral,Yes,V1A,0.616
+M00029,H00029,2023-09-26,F01,Central,18-34,Youth annual,Community event,Yes,V1D,0.55
+M00030,H00010,2022-08-10,F01,Central,35-49,Family annual,Referral,No,V1C,0.877
+M00031,H00011,2023-03-26,F01,Central,18-34,Family annual,Walk-in,Yes,V1D,0.531
+M00032,H00032,2022-04-01,F01,Central,50-64,Youth annual,Referral,Yes,V1E,1.463
+M00033,H00011,2025-02-05,F02,East Shore,35-49,Adult annual,Organic web,Yes,V1C,0.877
+M00034,H00034,2023-11-13,F01,Central,50-64,Senior annual,Paid social,Yes,V1E,0.771
+M00035,H00035,2023-05-27,F01,Central,50-64,Family annual,Organic web,Yes,V1C,0.609
+M00036,H00036,2025-02-05,F04,West Valley,50-64,Family annual,Referral,Yes,V1D,1.114
+M00037,H00037,2024-02-06,F03,North Valley,18-34,Family annual,Paid social,Yes,V1B,1.524
+M00038,H00038,2025-01-24,F03,North Valley,18-34,Adult annual,Paid social,No,V1B,0.783
+M00039,H00039,2023-04-24,F04,West Valley,Under 18,Senior annual,Organic web,No,V1D,1.697
+M00040,H00014,2025-10-21,F01,Central,35-49,Adult annual,Walk-in,No,V1C,0.898
+M00041,H00041,2024-10-28,F03,North Valley,50-64,Senior annual,Referral,Yes,V1D,0.503
+M00042,H00042,2024-05-01,F04,West Valley,35-49,Family annual,Email,Yes,V1E,1.6
+M00043,H00043,2024-02-06,F01,Central,65+,Adult annual,Organic web,Yes,V1E,1.268
+M00044,H00044,2024-11-22,F01,Central,50-64,Monthly flexible,Community event,No,V1B,1.586
+M00045,H00045,2023-02-12,F04,West Valley,50-64,Senior annual,Organic web,No,V1C,1.114
+M00046,H00046,2025-09-14,F01,Central,18-34,Family annual,Referral,No,V1E,1.523
+M00047,H00016,2023-02-12,F01,Central,50-64,Adult annual,Paid social,Yes,V1E,1.263
+M00048,H00048,2024-01-24,F04,West Valley,35-49,Family annual,Organic web,Yes,V1B,1.601
+M00049,H00049,2023-10-31,F03,North Valley,18-34,Family annual,Paid social,Yes,V1A,1.46
+M00050,H00025,2024-03-24,F04,West Valley,18-34,Monthly flexible,Organic web,Yes,V1D,0.696
+M00051,H00051,2023-06-12,F04,West Valley,35-49,Monthly flexible,Organic web,No,V1A,0.865
+M00052,H00052,2023-01-28,F01,Central,18-34,Adult annual,Walk-in,No,V1B,1.114
+M00053,H00053,2024-10-14,F02,East Shore,18-34,Family annual,Walk-in,Yes,V1B,0.893
+M00054,H00054,2023-02-06,F01,Central,35-49,Monthly flexible,Organic web,Yes,V1A,1.061
+M00055,H00055,2023-10-20,F02,East Shore,35-49,Family annual,Community event,Yes,V1B,1.071
+M00056,H00056,2023-05-08,F01,Central,18-34,Adult annual,Walk-in,Yes,V1E,0.77
+M00057,H00057,2022-09-22,F02,East Shore,50-64,Adult annual,Community event,Yes,V1E,1.211
+M00058,H00029,2023-11-25,F04,West Valley,50-64,Adult annual,Walk-in,Yes,V1B,0.672
+M00059,H00059,2023-08-27,F01,Central,50-64,Youth annual,Paid social,No,V1E,1.112
+M00060,H00030,2022-09-01,F01,Central,35-49,Youth annual,Walk-in,No,V1E,0.69
+M00061,H00061,2023-04-23,F03,North Valley,18-34,Senior annual,Referral,Yes,V1A,1.451
+M00062,H00062,2025-02-20,F04,West Valley,65+,Adult annual,Organic web,Yes,V1D,0.73
+M00063,H00063,2024-09-05,F03,North Valley,18-34,Monthly flexible,Paid social,No,V1D,0.78
+M00064,H00064,2023-04-11,F03,North Valley,65+,Senior annual,Paid social,Yes,V1D,1.26
+M00065,H00065,2024-06-05,F04,West Valley,Under 18,Family annual,Organic web,Yes,V1C,0.648
+M00066,H00066,2024-04-23,F02,East Shore,50-64,Monthly flexible,Organic web,Yes,V1C,1.32
+M00067,H00034,2025-09-07,F04,West Valley,35-49,Adult annual,Organic web,Yes,V1C,1.414
+M00068,H00068,2022-03-15,F01,Central,35-49,Monthly flexible,Organic web,Yes,V1B,1.555
+M00069,H00035,2025-03-19,F02,East Shore,50-64,Senior annual,Referral,Yes,V1E,1.448
+M00070,H00070,2024-01-28,F04,West Valley,50-64,Senior annual,Organic web,Yes,V1C,0.517
+M00071,H00036,2024-02-07,F01,Central,35-49,Senior annual,Organic web,No,V1B,1.613
+M00072,H00036,2024-06-03,F03,North Valley,50-64,Family annual,Email,Yes,V1B,0.915
+M00073,H00073,2024-03-18,F03,North Valley,18-34,Family annual,Community event,No,V1C,1.43
+M00074,H00074,2024-11-20,F04,West Valley,35-49,Adult annual,Community event,Yes,V1B,0.691
+M00075,H00025,2025-08-28,F02,East Shore,50-64,Youth annual,Organic web,Yes,V1D,1.537
+M00076,H00076,2025-04-27,F01,Central,50-64,Monthly flexible,Walk-in,Yes,V1A,1.138
+M00077,H00039,2024-09-20,F01,Central,Under 18,Adult annual,Community event,Yes,V1D,0.82
+M00078,H00078,2025-04-06,F01,Central,18-34,Adult annual,Organic web,Yes,V1E,0.979
+M00079,H00040,2023-04-29,F02,East Shore,Under 18,Family annual,Community event,Yes,V1B,1.404
+M00080,H00040,2025-09-11,F04,West Valley,35-49,Adult annual,Community event,No,V1E,1.099
+M00081,H00081,2024-03-24,F02,East Shore,18-34,Monthly flexible,Organic web,Yes,V1E,1.365
+M00082,H00082,2022-08-04,F01,Central,35-49,Youth annual,Organic web,No,V1C,1.11
+M00083,H00042,2022-04-22,F02,East Shore,50-64,Adult annual,Email,Yes,V1D,1.353
+M00084,H00084,2024-04-22,F04,West Valley,18-34,Adult annual,Walk-in,Yes,V1C,1.326
+M00085,H00043,2025-03-24,F02,East Shore,35-49,Family annual,Organic web,Yes,V1E,0.927
+M00086,H00086,2022-03-19,F01,Central,18-34,Monthly flexible,Paid social,Yes,V1E,0.707
+M00087,H00087,2022-08-18,F02,East Shore,18-34,Monthly flexible,Email,Yes,V1A,0.74
+M00088,H00030,2023-03-08,F01,Central,65+,Family annual,Email,Yes,V1A,0.571
+M00089,H00089,2022-10-29,F01,Central,35-49,Senior annual,Paid social,Yes,V1B,1.323
+M00090,H00030,2023-04-24,F02,East Shore,50-64,Adult annual,Walk-in,Yes,V1B,0.779
+M00091,H00091,2024-07-15,F01,Central,35-49,Family annual,Community event,Yes,V1C,0.699
+M00092,H00092,2024-11-09,F04,West Valley,35-49,Adult annual,Paid social,Yes,V1E,1.565
+M00093,H00047,2024-02-03,F04,West Valley,Under 18,Family annual,Walk-in,Yes,V1D,0.994
+M00094,H00094,2022-06-08,F01,Central,50-64,Monthly flexible,Paid social,Yes,V1B,0.529
+M00095,H00032,2023-08-23,F02,East Shore,18-34,Adult annual,Email,No,V1B,0.983
+M00096,H00096,2023-01-23,F01,Central,35-49,Adult annual,Walk-in,Yes,V1A,1.145
+M00097,H00097,2024-03-11,F02,East Shore,Under 18,Adult annual,Walk-in,Yes,V1E,1.668
+M00098,H00049,2024-05-21,F01,Central,50-64,Senior annual,Organic web,Yes,V1D,0.732
+M00099,H00099,2022-04-01,F02,East Shore,50-64,Family annual,Referral,Yes,V1A,1.614
+M00100,H00100,2024-01-29,F03,North Valley,35-49,Monthly flexible,Referral,Yes,V1E,0.557
+M00101,H00101,2023-09-14,F01,Central,18-34,Family annual,Walk-in,Yes,V1A,1.501
+M00102,H00102,2024-05-31,F02,East Shore,65+,Family annual,Walk-in,Yes,V1D,0.75
+M00103,H00103,2024-09-07,F01,Central,35-49,Monthly flexible,Organic web,Yes,V1C,1.384
+M00104,H00104,2023-03-25,F01,Central,35-49,Adult annual,Referral,No,V1C,1.015
+M00105,H00105,2022-02-18,F04,West Valley,35-49,Adult annual,Walk-in,Yes,V1B,0.941
+M00106,H00106,2023-08-13,F04,West Valley,35-49,Youth annual,Community event,Yes,V1C,1.049
+M00107,H00036,2022-05-05,F03,North Valley,Under 18,Senior annual,Community event,Yes,V1A,0.566
+M00108,H00054,2022-07-04,F02,East Shore,35-49,Adult annual,Referral,No,V1D,1.042
+M00109,H00037,2022-05-27,F01,Central,18-34,Adult annual,Referral,No,V1A,1.262
+M00110,H00110,2022-02-26,F04,West Valley,50-64,Youth annual,Walk-in,No,V1C,1.482
+M00111,H00111,2024-03-21,F02,East Shore,35-49,Adult annual,Paid social,No,V1E,1.598
+M00112,H00038,2024-02-12,F04,West Valley,18-34,Youth annual,Referral,Yes,V1B,0.494
+M00113,H00057,2022-09-30,F03,North Valley,18-34,Family annual,Paid social,No,V1C,0.967
+M00114,H00114,2023-01-22,F04,West Valley,65+,Senior annual,Referral,No,V1B,0.865
+M00115,H00115,2025-08-18,F02,East Shore,35-49,Adult annual,Paid social,No,V1B,1.258
+M00116,H00116,2024-06-22,F01,Central,35-49,Family annual,Referral,Yes,V1D,1.453
+M00117,H00117,2023-03-05,F04,West Valley,50-64,Adult annual,Community event,Yes,V1A,1.264
+M00118,H00059,2023-03-06,F01,Central,50-64,Adult annual,Organic web,Yes,V1A,1.451
+M00119,H00040,2024-04-22,F03,North Valley,Under 18,Senior annual,Paid social,No,V1A,0.477
+M00120,H00060,2023-02-02,F01,Central,50-64,Adult annual,Paid social,No,V1C,1.643
+M00121,H00121,2025-11-19,F01,Central,50-64,Youth annual,Paid social,Yes,V1D,0.93
+M00122,H00061,2025-07-28,F02,East Shore,65+,Senior annual,Walk-in,Yes,V1A,1.109
+M00123,H00123,2022-09-02,F04,West Valley,35-49,Monthly flexible,Referral,No,V1C,1.328
+M00124,H00124,2024-11-06,F01,Central,Under 18,Senior annual,Organic web,Yes,V1B,0.833
+M00125,H00042,2022-08-08,F04,West Valley,50-64,Family annual,Walk-in,Yes,V1A,0.803
+M00126,H00063,2025-07-27,F01,Central,18-34,Senior annual,Organic web,Yes,V1A,1.694
+M00127,H00127,2023-05-04,F02,East Shore,35-49,Senior annual,Referral,Yes,V1D,0.83
+M00128,H00128,2022-09-22,F01,Central,50-64,Adult annual,Referral,Yes,V1A,1.273
+M00129,H00129,2023-05-06,F01,Central,50-64,Youth annual,Referral,No,V1D,0.72
+M00130,H00130,2023-08-02,F01,Central,18-34,Monthly flexible,Organic web,Yes,V1B,0.953
+M00131,H00066,2022-09-01,F02,East Shore,35-49,Adult annual,Paid social,Yes,V1A,0.723
+M00132,H00132,2022-07-10,F02,East Shore,50-64,Family annual,Community event,Yes,V1A,1.564
+M00133,H00133,2023-03-06,F04,West Valley,35-49,Senior annual,Walk-in,Yes,V1B,0.919
+M00134,H00045,2024-08-03,F02,East Shore,35-49,Monthly flexible,Walk-in,No,V1D,1.012
+M00135,H00068,2023-11-10,F01,Central,Under 18,Family annual,Paid social,Yes,V1D,1.422
+M00136,H00136,2024-01-18,F01,Central,35-49,Monthly flexible,Referral,No,V1C,1.453
+M00137,H00046,2023-01-06,F02,East Shore,50-64,Adult annual,Walk-in,Yes,V1D,0.966
+M00138,H00069,2022-09-12,F01,Central,65+,Youth annual,Walk-in,Yes,V1D,0.802
+M00139,H00139,2023-11-10,F04,West Valley,Under 18,Monthly flexible,Email,Yes,V1A,0.465
+M00140,H00140,2024-02-02,F02,East Shore,35-49,Family annual,Paid social,Yes,V1C,1.481
+M00141,H00047,2023-09-03,F04,West Valley,Under 18,Family annual,Community event,Yes,V1C,1.253
+M00142,H00142,2022-02-28,F01,Central,50-64,Monthly flexible,Email,No,V1C,0.71
+M00143,H00143,2022-09-20,F02,East Shore,18-34,Family annual,Walk-in,Yes,V1B,0.633
+M00144,H00072,2024-09-10,F01,Central,35-49,Adult annual,Paid social,Yes,V1C,1.118
+M00145,H00049,2022-08-11,F02,East Shore,Under 18,Family annual,Email,Yes,V1B,1.154
+M00146,H00049,2024-07-06,F01,Central,18-34,Senior annual,Referral,Yes,V1B,1.48
+M00147,H00147,2024-02-24,F01,Central,35-49,Family annual,Referral,No,V1A,0.714
+M00148,H00074,2022-07-13,F04,West Valley,35-49,Family annual,Walk-in,Yes,V1E,0.476
+M00149,H00050,2024-07-22,F04,West Valley,18-34,Adult annual,Email,Yes,V1B,1.177
+M00150,H00150,2023-04-15,F01,Central,35-49,Adult annual,Organic web,Yes,V1C,0.552
+M00151,H00051,2024-09-15,F01,Central,65+,Youth annual,Organic web,Yes,V1D,0.551
+M00152,H00152,2024-01-27,F02,East Shore,65+,Youth annual,Email,Yes,V1B,1.193
+M00153,H00077,2025-04-26,F01,Central,50-64,Monthly flexible,Organic web,Yes,V1D,0.949
+M00154,H00052,2022-08-30,F04,West Valley,18-34,Adult annual,Referral,Yes,V1D,0.551
+M00155,H00078,2024-01-13,F02,East Shore,35-49,Senior annual,Paid social,Yes,V1C,0.87
+M00156,H00156,2022-10-04,F03,North Valley,18-34,Monthly flexible,Email,Yes,V1B,1.679
+M00157,H00157,2024-04-29,F01,Central,18-34,Senior annual,Referral,Yes,V1A,1.093
+M00158,H00079,2022-07-24,F03,North Valley,50-64,Family annual,Organic web,No,V1B,0.677
+M00159,H00080,2025-08-14,F01,Central,35-49,Youth annual,Referral,Yes,V1E,1.531
+M00160,H00160,2024-01-26,F04,West Valley,65+,Monthly flexible,Organic web,Yes,V1A,0.932
+M00161,H00161,2024-06-04,F01,Central,18-34,Monthly flexible,Walk-in,No,V1A,1.632
+M00162,H00081,2022-02-11,F01,Central,35-49,Adult annual,Walk-in,Yes,V1B,1.425
+M00163,H00082,2023-10-05,F03,North Valley,35-49,Adult annual,Walk-in,No,V1E,0.882
+M00164,H00164,2022-01-18,F03,North Valley,35-49,Family annual,Organic web,No,V1E,0.555
+M00165,H00165,2024-11-15,F04,West Valley,35-49,Adult annual,Email,Yes,V1C,1.333
+M00166,H00166,2022-02-02,F03,North Valley,35-49,Monthly flexible,Referral,Yes,V1A,1.118
+M00167,H00167,2024-08-24,F04,West Valley,18-34,Family annual,Organic web,No,V1B,0.854
+M00168,H00168,2023-07-13,F01,Central,50-64,Adult annual,Paid social,Yes,V1A,1.216
+M00169,H00169,2023-02-23,F03,North Valley,50-64,Monthly flexible,Community event,Yes,V1D,1.307
+M00170,H00170,2025-11-19,F02,East Shore,50-64,Adult annual,Referral,Yes,V1C,1.186
+M00171,H00171,2023-02-03,F04,West Valley,35-49,Youth annual,Paid social,No,V1C,0.54
+M00172,H00086,2023-11-11,F01,Central,50-64,Family annual,Organic web,Yes,V1C,0.772
+M00173,H00173,2023-03-02,F01,Central,50-64,Adult annual,Walk-in,Yes,V1B,0.703
+M00174,H00174,2024-10-19,F01,Central,18-34,Monthly flexible,Walk-in,Yes,V1D,1.69
+M00175,H00175,2023-07-05,F03,North Valley,65+,Adult annual,Walk-in,No,V1D,0.617
+M00176,H00176,2024-03-13,F01,Central,Under 18,Family annual,Walk-in,Yes,V1A,1.435
+M00177,H00177,2023-07-13,F04,West Valley,18-34,Family annual,Referral,Yes,V1E,1.571
+M00178,H00178,2025-02-20,F02,East Shore,35-49,Adult annual,Organic web,Yes,V1A,1.605
+M00179,H00179,2023-08-11,F03,North Valley,65+,Youth annual,Email,Yes,V1B,0.902
+M00180,H00180,2024-03-24,F02,East Shore,35-49,Monthly flexible,Walk-in,No,V1E,1.416
+M00181,H00181,2023-10-23,F01,Central,50-64,Family annual,Community event,Yes,V1E,1.513
+M00182,H00182,2024-06-30,F02,East Shore,35-49,Adult annual,Community event,Yes,V1C,1.02
+M00183,H00061,2024-06-29,F01,Central,65+,Family annual,Paid social,Yes,V1A,1.481
+M00184,H00062,2024-10-17,F04,West Valley,35-49,Adult annual,Walk-in,No,V1E,0.451
+M00185,H00185,2022-10-09,F01,Central,18-34,Youth annual,Walk-in,Yes,V1A,1.241
+M00186,H00186,2025-01-27,F01,Central,18-34,Adult annual,Referral,Yes,V1D,0.802
+M00187,H00187,2025-01-11,F01,Central,Under 18,Senior annual,Community event,Yes,V1A,0.847
+M00188,H00063,2022-05-22,F03,North Valley,65+,Senior annual,Paid social,Yes,V1C,0.849
+M00189,H00095,2022-07-31,F03,North Valley,65+,Family annual,Walk-in,Yes,V1E,0.801
+M00190,H00190,2022-11-07,F02,East Shore,50-64,Senior annual,Community event,Yes,V1E,0.947
+M00191,H00191,2024-04-08,F04,West Valley,65+,Family annual,Walk-in,Yes,V1A,0.982
+M00192,H00064,2023-02-25,F04,West Valley,18-34,Senior annual,Referral,No,V1A,0.934
+M00193,H00065,2024-03-01,F01,Central,18-34,Senior annual,Email,Yes,V1C,1.03
+M00194,H00097,2022-05-10,F01,Central,50-64,Adult annual,Walk-in,Yes,V1C,1.356
+M00195,H00065,2023-07-20,F04,West Valley,65+,Family annual,Organic web,Yes,V1B,1.259
+M00196,H00196,2024-06-08,F04,West Valley,65+,Adult annual,Walk-in,Yes,V1A,1.433
+M00197,H00099,2022-06-04,F01,Central,50-64,Senior annual,Community event,Yes,V1C,1.335
+M00198,H00099,2024-08-31,F04,West Valley,Under 18,Family annual,Organic web,Yes,V1A,0.687
+M00199,H00199,2023-09-09,F04,West Valley,65+,Monthly flexible,Referral,Yes,V1E,0.941
+M00200,H00067,2025-11-05,F01,Central,50-64,Monthly flexible,Email,No,V1B,0.897
+M00201,H00101,2023-11-23,F02,East Shore,35-49,Adult annual,Organic web,No,V1E,0.997
+M00202,H00202,2022-09-09,F01,Central,35-49,Monthly flexible,Organic web,Yes,V1B,0.795
+M00203,H00203,2023-01-06,F01,Central,18-34,Family annual,Paid social,Yes,V1C,1.008
+M00204,H00204,2022-11-04,F02,East Shore,Under 18,Adult annual,Walk-in,Yes,V1D,1.003
+M00205,H00205,2022-09-06,F02,East Shore,65+,Family annual,Organic web,Yes,V1D,0.821
+M00206,H00206,2023-01-28,F02,East Shore,50-64,Monthly flexible,Paid social,Yes,V1D,0.848
+M00207,H00104,2022-09-21,F02,East Shore,35-49,Family annual,Organic web,Yes,V1D,1.218
+M00208,H00208,2024-06-12,F01,Central,50-64,Adult annual,Paid social,Yes,V1B,1.594
+M00209,H00105,2024-09-21,F02,East Shore,65+,Youth annual,Organic web,No,V1E,1.136
+M00210,H00210,2023-06-25,F01,Central,35-49,Monthly flexible,Walk-in,Yes,V1B,1.005
+M00211,H00071,2025-06-11,F03,North Valley,18-34,Family annual,Walk-in,Yes,V1D,1.608
+M00212,H00212,2024-10-03,F02,East Shore,65+,Youth annual,Paid social,Yes,V1C,1.151
+M00213,H00213,2023-05-20,F02,East Shore,35-49,Monthly flexible,Organic web,Yes,V1E,1.023
+M00214,H00214,2024-07-04,F01,Central,18-34,Family annual,Paid social,Yes,V1C,0.801
+M00215,H00215,2024-09-10,F04,West Valley,35-49,Adult annual,Organic web,No,V1D,1.066
+M00216,H00108,2022-06-23,F02,East Shore,50-64,Senior annual,Organic web,Yes,V1E,0.645
+M00217,H00109,2025-11-13,F04,West Valley,50-64,Adult annual,Walk-in,Yes,V1E,0.592
+M00218,H00109,2023-10-16,F03,North Valley,Under 18,Monthly flexible,Referral,Yes,V1C,0.967
+M00219,H00073,2022-01-31,F02,East Shore,18-34,Adult annual,Walk-in,Yes,V1B,1.142
+M00220,H00110,2022-08-25,F03,North Valley,50-64,Youth annual,Referral,Yes,V1D,0.957
+M00221,H00111,2023-10-16,F01,Central,35-49,Monthly flexible,Community event,Yes,V1C,0.577
+M00222,H00111,2022-07-01,F01,Central,35-49,Adult annual,Walk-in,Yes,V1B,1.536
+M00223,H00223,2023-10-06,F02,East Shore,50-64,Adult annual,Walk-in,Yes,V1C,1.641
+M00224,H00112,2022-03-25,F01,Central,50-64,Family annual,Community event,No,V1D,0.452
+M00225,H00075,2022-01-09,F04,West Valley,50-64,Senior annual,Community event,Yes,V1E,0.695
+M00226,H00226,2025-03-23,F03,North Valley,18-34,Adult annual,Organic web,Yes,V1A,1.535
+M00227,H00114,2025-10-14,F01,Central,Under 18,Senior annual,Community event,No,V1E,1.174
+M00228,H00076,2022-05-01,F04,West Valley,18-34,Family annual,Paid social,Yes,V1B,0.881
+M00229,H00229,2024-06-04,F01,Central,Under 18,Adult annual,Organic web,No,V1D,1.062
+M00230,H00230,2022-08-07,F04,West Valley,65+,Monthly flexible,Organic web,No,V1C,1.316
+M00231,H00231,2024-04-13,F01,Central,35-49,Adult annual,Organic web,Yes,V1C,0.718
+M00232,H00232,2023-07-22,F02,East Shore,65+,Adult annual,Walk-in,No,V1D,1.057
+M00233,H00078,2025-08-26,F04,West Valley,Under 18,Senior annual,Referral,No,V1E,1.601
+M00234,H00117,2023-07-13,F04,West Valley,Under 18,Family annual,Walk-in,Yes,V1C,1.123
+M00235,H00235,2022-09-12,F03,North Valley,50-64,Adult annual,Community event,Yes,V1E,0.522
+M00236,H00118,2022-07-17,F04,West Valley,50-64,Monthly flexible,Referral,Yes,V1E,0.953
+M00237,H00079,2023-08-31,F01,Central,35-49,Family annual,Organic web,Yes,V1C,1.307
+M00238,H00080,2024-07-21,F01,Central,18-34,Family annual,Organic web,No,V1C,1.058
+M00239,H00120,2024-08-22,F02,East Shore,35-49,Family annual,Organic web,Yes,V1B,1.48
+M00240,H00240,2023-03-12,F01,Central,50-64,Monthly flexible,Referral,No,V1C,0.959
+M00241,H00241,2024-10-07,F03,North Valley,18-34,Monthly flexible,Referral,Yes,V1C,1.06
+M00242,H00121,2024-05-01,F04,West Valley,65+,Adult annual,Walk-in,Yes,V1A,1.049
+M00243,H00243,2025-03-30,F01,Central,18-34,Senior annual,Organic web,Yes,V1D,1.61
+M00244,H00244,2022-08-23,F02,East Shore,18-34,Adult annual,Paid social,Yes,V1A,1.634
+M00245,H00245,2023-02-16,F04,West Valley,35-49,Youth annual,Organic web,No,V1D,0.465
+M00246,H00246,2022-09-10,F01,Central,65+,Family annual,Paid social,Yes,V1A,0.706
+M00247,H00247,2025-10-17,F03,North Valley,18-34,Senior annual,Walk-in,Yes,V1A,1.311
+M00248,H00248,2024-07-26,F04,West Valley,18-34,Family annual,Organic web,Yes,V1C,0.764
+M00249,H00249,2025-03-10,F04,West Valley,Under 18,Senior annual,Email,Yes,V1E,0.958
+M00250,H00250,2024-11-13,F02,East Shore,35-49,Youth annual,Paid social,Yes,V1A,0.781
+M00251,H00126,2024-02-19,F01,Central,Under 18,Youth annual,Organic web,Yes,V1B,1.143
+M00252,H00252,2024-01-06,F01,Central,18-34,Adult annual,Organic web,Yes,V1C,0.507
+M00253,H00127,2024-02-21,F01,Central,50-64,Adult annual,Walk-in,Yes,V1E,1.174
+M00254,H00085,2023-02-24,F02,East Shore,18-34,Youth annual,Organic web,Yes,V1A,1.69
+M00255,H00255,2022-04-10,F03,North Valley,50-64,Adult annual,Referral,Yes,V1E,1.229
+M00256,H00086,2023-08-14,F01,Central,Under 18,Family annual,Community event,Yes,V1C,1.437
+M00257,H00086,2022-03-08,F04,West Valley,18-34,Adult annual,Paid social,Yes,V1A,0.617
+M00258,H00258,2025-04-26,F01,Central,65+,Monthly flexible,Community event,Yes,V1B,0.602
+M00259,H00259,2023-04-01,F02,East Shore,65+,Adult annual,Organic web,Yes,V1B,1.262
+M00260,H00260,2024-04-17,F01,Central,35-49,Monthly flexible,Community event,Yes,V1C,0.902
+M00261,H00261,2024-05-12,F02,East Shore,18-34,Adult annual,Walk-in,Yes,V1A,1.348
+M00262,H00262,2024-09-12,F04,West Valley,Under 18,Family annual,Paid social,No,V1B,0.799
+M00263,H00263,2023-06-03,F04,West Valley,35-49,Adult annual,Referral,Yes,V1C,0.514
+M00264,H00264,2024-02-14,F04,West Valley,50-64,Monthly flexible,Walk-in,Yes,V1C,1.145
+M00265,H00089,2023-06-30,F01,Central,18-34,Monthly flexible,Referral,Yes,V1C,0.751
+M00266,H00266,2023-06-24,F02,East Shore,50-64,Adult annual,Organic web,No,V1B,1.114
+M00267,H00267,2025-07-04,F01,Central,50-64,Adult annual,Organic web,Yes,V1D,0.647
+M00268,H00134,2025-10-06,F03,North Valley,Under 18,Family annual,Organic web,No,V1B,1.328
+M00269,H00269,2023-03-16,F02,East Shore,18-34,Family annual,Paid social,No,V1A,0.71
+M00270,H00135,2024-08-21,F02,East Shore,35-49,Adult annual,Referral,No,V1E,1.679
+M00271,H00091,2025-08-23,F03,North Valley,65+,Adult annual,Paid social,Yes,V1B,1.029
+M00272,H00272,2023-03-08,F02,East Shore,50-64,Monthly flexible,Organic web,Yes,V1B,0.983
+M00273,H00273,2023-08-05,F04,West Valley,18-34,Family annual,Paid social,Yes,V1B,0.794
+M00274,H00274,2023-10-03,F01,Central,18-34,Adult annual,Walk-in,Yes,V1C,1.031
+M00275,H00275,2022-03-29,F01,Central,18-34,Family annual,Referral,Yes,V1A,0.53
+M00276,H00138,2022-10-24,F01,Central,35-49,Family annual,Referral,Yes,V1C,1.229
+M00277,H00277,2022-10-29,F01,Central,35-49,Senior annual,Email,Yes,V1D,0.878
+M00278,H00278,2022-07-06,F01,Central,35-49,Monthly flexible,Walk-in,Yes,V1C,1.455
+M00279,H00279,2023-03-03,F04,West Valley,50-64,Family annual,Organic web,Yes,V1C,1.655
+M00280,H00280,2024-04-15,F03,North Valley,50-64,Family annual,Walk-in,Yes,V1B,1.123
+M00281,H00094,2023-11-04,F02,East Shore,35-49,Adult annual,Community event,Yes,V1A,1.353
+M00282,H00141,2023-06-06,F02,East Shore,50-64,Monthly flexible,Paid social,Yes,V1A,0.605
+M00283,H00095,2025-08-09,F03,North Valley,35-49,Adult annual,Referral,Yes,V1C,0.894
+M00284,H00284,2023-08-23,F02,East Shore,35-49,Senior annual,Email,Yes,V1C,1.35
+M00285,H00143,2022-09-08,F03,North Valley,Under 18,Adult annual,Paid social,Yes,V1C,1.53
+M00286,H00286,2025-11-24,F02,East Shore,18-34,Adult annual,Community event,Yes,V1C,0.853
+M00287,H00096,2024-04-24,F04,West Valley,18-34,Adult annual,Referral,Yes,V1A,1.052
+M00288,H00288,2023-02-16,F01,Central,35-49,Adult annual,Community event,No,V1E,1.064
+M00289,H00289,2022-02-04,F02,East Shore,65+,Monthly flexible,Walk-in,Yes,V1B,0.717
+M00290,H00097,2022-08-07,F03,North Valley,18-34,Senior annual,Walk-in,Yes,V1A,1.508
+M00291,H00291,2022-11-19,F03,North Valley,18-34,Adult annual,Referral,Yes,V1E,0.525
+M00292,H00098,2023-10-01,F03,North Valley,18-34,Youth annual,Walk-in,Yes,V1B,0.823
+M00293,H00098,2025-10-07,F02,East Shore,35-49,Senior annual,Email,Yes,V1D,1.603
+M00294,H00098,2024-05-17,F04,West Valley,35-49,Family annual,Paid social,Yes,V1E,0.766
+M00295,H00148,2023-04-11,F03,North Valley,18-34,Monthly flexible,Organic web,Yes,V1E,1.699
+M00296,H00296,2023-07-31,F03,North Valley,18-34,Youth annual,Email,No,V1A,0.459
+M00297,H00297,2023-03-16,F03,North Valley,50-64,Senior annual,Referral,Yes,V1A,1.348
+M00298,H00298,2025-10-01,F01,Central,35-49,Adult annual,Referral,No,V1E,1.586
+M00299,H00299,2024-02-20,F03,North Valley,18-34,Adult annual,Email,No,V1E,1.074
+M00300,H00100,2022-02-10,F01,Central,50-64,Adult annual,Referral,No,V1A,1.53
+M00301,H00151,2024-08-11,F01,Central,35-49,Adult annual,Email,Yes,V1C,1.178
+M00302,H00101,2023-01-21,F04,West Valley,50-64,Adult annual,Community event,Yes,V1D,0.958
+M00303,H00152,2025-05-06,F01,Central,50-64,Senior annual,Referral,Yes,V1A,1.099
+M00304,H00102,2025-11-15,F03,North Valley,18-34,Family annual,Walk-in,Yes,V1E,0.947
+M00305,H00102,2024-01-19,F01,Central,65+,Youth annual,Referral,Yes,V1E,1.4
+M00306,H00153,2024-11-17,F02,East Shore,35-49,Youth annual,Organic web,No,V1E,0.735
+M00307,H00307,2023-07-16,F04,West Valley,18-34,Family annual,Walk-in,No,V1C,0.81
+M00308,H00308,2023-05-18,F03,North Valley,50-64,Adult annual,Organic web,Yes,V1E,0.919
+M00309,H00309,2025-06-29,F03,North Valley,35-49,Family annual,Community event,No,V1C,1.238
+M00310,H00155,2023-05-15,F02,East Shore,65+,Monthly flexible,Referral,Yes,V1D,1.534
+M00311,H00311,2024-03-29,F02,East Shore,65+,Adult annual,Referral,Yes,V1B,1.472
+M00312,H00312,2022-01-25,F03,North Valley,65+,Family annual,Organic web,Yes,V1A,0.914
+M00313,H00313,2022-09-30,F04,West Valley,Under 18,Monthly flexible,Walk-in,No,V1D,1.662
+M00314,H00314,2023-03-02,F03,North Valley,18-34,Monthly flexible,Paid social,Yes,V1B,0.913
+M00315,H00315,2022-02-12,F01,Central,65+,Adult annual,Referral,Yes,V1B,0.847
+M00316,H00316,2023-10-09,F03,North Valley,65+,Family annual,Organic web,Yes,V1B,0.759
+M00317,H00317,2024-05-21,F04,West Valley,65+,Youth annual,Paid social,Yes,V1A,1.22
+M00318,H00318,2022-08-22,F02,East Shore,50-64,Adult annual,Paid social,Yes,V1A,1.662
+M00319,H00319,2022-01-28,F03,North Valley,50-64,Adult annual,Community event,Yes,V1A,1.547
+M00320,H00107,2025-05-22,F04,West Valley,18-34,Family annual,Organic web,No,V1C,0.508
+M00321,H00321,2023-10-04,F03,North Valley,65+,Adult annual,Referral,Yes,V1C,1.358
+M00322,H00322,2023-03-06,F03,North Valley,35-49,Monthly flexible,Referral,Yes,V1A,0.62
+M00323,H00323,2022-05-01,F04,West Valley,35-49,Monthly flexible,Referral,Yes,V1C,1.096
+M00324,H00324,2022-02-12,F02,East Shore,35-49,Monthly flexible,Community event,Yes,V1C,0.913
+M00325,H00109,2024-05-08,F01,Central,50-64,Senior annual,Paid social,Yes,V1D,0.899
+M00326,H00109,2023-07-20,F01,Central,65+,Monthly flexible,Walk-in,Yes,V1B,1.459
+M00327,H00327,2024-01-19,F01,Central,50-64,Adult annual,Walk-in,Yes,V1D,1.651
+M00328,H00110,2023-08-12,F03,North Valley,18-34,Family annual,Walk-in,Yes,V1C,0.505
+M00329,H00110,2024-11-12,F03,North Valley,18-34,Youth annual,Referral,Yes,V1A,0.701
+M00330,H00330,2022-08-02,F01,Central,18-34,Monthly flexible,Organic web,Yes,V1C,1.675
+M00331,H00331,2022-06-18,F03,North Valley,65+,Family annual,Referral,No,V1C,1.283
+M00332,H00332,2025-09-16,F01,Central,18-34,Senior annual,Organic web,No,V1A,1.17
+M00333,H00333,2023-04-24,F03,North Valley,18-34,Family annual,Organic web,Yes,V1C,1.301
+M00334,H00334,2023-10-17,F02,East Shore,50-64,Adult annual,Walk-in,No,V1A,0.846
+M00335,H00168,2023-02-01,F02,East Shore,65+,Family annual,Referral,No,V1D,1.106
+M00336,H00336,2024-02-12,F01,Central,Under 18,Monthly flexible,Organic web,Yes,V1E,1.627
+M00337,H00337,2025-01-28,F01,Central,50-64,Adult annual,Referral,Yes,V1E,0.553
+M00338,H00113,2023-06-22,F04,West Valley,18-34,Adult annual,Referral,No,V1E,1.15
+M00339,H00339,2023-09-21,F01,Central,35-49,Senior annual,Community event,Yes,V1A,0.454
+M00340,H00340,2022-08-07,F03,North Valley,35-49,Adult annual,Walk-in,Yes,V1B,1.01
+M00341,H00341,2023-09-20,F01,Central,35-49,Adult annual,Organic web,No,V1C,1.432
+M00342,H00342,2022-07-07,F03,North Valley,65+,Youth annual,Walk-in,No,V1B,1.682
+M00343,H00172,2024-09-29,F02,East Shore,18-34,Family annual,Organic web,Yes,V1B,1.419
+M00344,H00172,2025-04-25,F01,Central,35-49,Family annual,Email,No,V1D,0.598
+M00345,H00115,2022-06-12,F01,Central,50-64,Monthly flexible,Referral,Yes,V1C,0.953
+M00346,H00346,2024-05-05,F01,Central,18-34,Family annual,Referral,Yes,V1E,1.167
+M00347,H00116,2022-07-13,F01,Central,18-34,Monthly flexible,Organic web,Yes,V1C,0.529
+M00348,H00348,2023-11-21,F02,East Shore,18-34,Family annual,Email,Yes,V1A,1.588
+M00349,H00349,2025-02-16,F01,Central,18-34,Senior annual,Organic web,Yes,V1A,0.94
+M00350,H00350,2024-08-04,F02,East Shore,50-64,Senior annual,Walk-in,Yes,V1D,1.612
+M00351,H00117,2024-01-20,F03,North Valley,50-64,Family annual,Walk-in,Yes,V1A,0.885
+M00352,H00352,2024-03-02,F04,West Valley,65+,Senior annual,Community event,No,V1D,1.156
+M00353,H00353,2023-04-26,F04,West Valley,65+,Senior annual,Walk-in,Yes,V1C,1.475
+M00354,H00177,2025-08-15,F01,Central,65+,Adult annual,Paid social,Yes,V1A,1.038
+M00355,H00355,2024-09-21,F01,Central,50-64,Family annual,Referral,Yes,V1A,1.641
+M00356,H00178,2025-01-11,F04,West Valley,35-49,Adult annual,Paid social,Yes,V1C,0.573
+M00357,H00179,2022-10-09,F04,West Valley,35-49,Monthly flexible,Referral,Yes,V1D,0.617
+M00358,H00358,2022-05-25,F01,Central,Under 18,Senior annual,Organic web,No,V1B,1.577
+M00359,H00180,2022-05-10,F04,West Valley,18-34,Adult annual,Organic web,Yes,V1C,0.664
+M00360,H00360,2024-02-06,F01,Central,35-49,Senior annual,Community event,No,V1B,0.878
+M00361,H00181,2024-06-16,F01,Central,50-64,Adult annual,Referral,Yes,V1D,1.514
+M00362,H00362,2023-10-25,F01,Central,50-64,Adult annual,Referral,No,V1D,1.035
+M00363,H00363,2023-04-16,F03,North Valley,50-64,Senior annual,Community event,No,V1D,1.477
+M00364,H00364,2023-07-08,F02,East Shore,65+,Senior annual,Referral,Yes,V1C,1.294
+M00365,H00183,2023-05-16,F02,East Shore,65+,Family annual,Paid social,Yes,V1C,0.859
+M00366,H00366,2025-11-24,F01,Central,18-34,Senior annual,Referral,Yes,V1A,0.609
+M00367,H00123,2023-09-19,F02,East Shore,18-34,Adult annual,Paid social,Yes,V1A,1.491
+M00368,H00368,2023-11-18,F01,Central,35-49,Monthly flexible,Referral,Yes,V1B,1.08
+M00369,H00369,2024-05-01,F01,Central,18-34,Adult annual,Walk-in,Yes,V1E,0.824
+M00370,H00370,2022-01-24,F04,West Valley,18-34,Monthly flexible,Organic web,Yes,V1D,0.545
+M00371,H00186,2022-04-05,F01,Central,18-34,Monthly flexible,Paid social,No,V1E,0.786
+M00372,H00372,2025-05-29,F04,West Valley,Under 18,Youth annual,Walk-in,Yes,V1A,0.565
+M00373,H00125,2022-05-26,F04,West Valley,65+,Family annual,Referral,Yes,V1A,1.613
+M00374,H00374,2023-04-07,F03,North Valley,35-49,Youth annual,Paid social,No,V1E,1.252
+M00375,H00188,2023-03-13,F01,Central,18-34,Family annual,Organic web,Yes,V1A,1.194
+M00376,H00126,2024-03-28,F03,North Valley,35-49,Adult annual,Referral,Yes,V1C,1.162
+M00377,H00377,2024-07-23,F01,Central,18-34,Monthly flexible,Walk-in,Yes,V1E,0.939
+M00378,H00189,2022-01-21,F01,Central,35-49,Adult annual,Community event,Yes,V1A,0.584
+M00379,H00379,2024-07-29,F04,West Valley,18-34,Monthly flexible,Organic web,Yes,V1D,1.38
+M00380,H00380,2022-06-24,F01,Central,18-34,Senior annual,Referral,Yes,V1C,1.421
+M00381,H00381,2024-08-12,F02,East Shore,Under 18,Monthly flexible,Paid social,Yes,V1B,0.838
+M00382,H00191,2025-05-22,F01,Central,50-64,Monthly flexible,Referral,Yes,V1B,0.736
+M00383,H00128,2023-10-31,F02,East Shore,35-49,Monthly flexible,Walk-in,Yes,V1A,1.646
+M00384,H00384,2024-01-14,F02,East Shore,18-34,Family annual,Community event,No,V1E,1.129
+M00385,H00193,2023-11-23,F04,West Valley,18-34,Family annual,Email,Yes,V1C,0.709
+M00386,H00129,2025-05-28,F01,Central,18-34,Adult annual,Email,Yes,V1B,1.688
+M00387,H00129,2024-04-15,F04,West Valley,50-64,Youth annual,Organic web,Yes,V1A,0.555
+M00388,H00388,2023-10-02,F01,Central,18-34,Youth annual,Organic web,Yes,V1B,0.795
+M00389,H00389,2022-07-27,F01,Central,65+,Monthly flexible,Organic web,Yes,V1E,0.918
+M00390,H00390,2024-10-06,F04,West Valley,65+,Youth annual,Walk-in,Yes,V1B,1.536
+M00391,H00196,2025-11-02,F01,Central,35-49,Senior annual,Organic web,Yes,V1A,0.658
+M00392,H00392,2023-03-21,F04,West Valley,35-49,Monthly flexible,Community event,Yes,V1D,0.864
+M00393,H00197,2023-08-12,F01,Central,18-34,Adult annual,Organic web,Yes,V1E,0.605
+M00394,H00197,2024-07-04,F04,West Valley,18-34,Monthly flexible,Walk-in,Yes,V1C,0.522
+M00395,H00395,2023-10-16,F03,North Valley,18-34,Adult annual,Paid social,Yes,V1B,0.965
+M00396,H00396,2025-04-12,F01,Central,50-64,Monthly flexible,Organic web,Yes,V1C,0.766
+M00397,H00397,2024-08-19,F03,North Valley,50-64,Adult annual,Email,Yes,V1B,0.913
+M00398,H00199,2025-01-31,F01,Central,Under 18,Youth annual,Organic web,No,V1C,1.101
+M00399,H00200,2023-01-20,F01,Central,65+,Family annual,Walk-in,Yes,V1A,0.527
+M00400,H00400,2023-01-22,F04,West Valley,18-34,Adult annual,Walk-in,Yes,V1C,1.047
+M00401,H00134,2022-06-26,F01,Central,65+,Adult annual,Organic web,Yes,V1D,1.241
+M00402,H00402,2023-03-20,F03,North Valley,18-34,Senior annual,Walk-in,No,V1B,1.607
+M00403,H00135,2024-10-01,F01,Central,50-64,Monthly flexible,Paid social,No,V1E,1.03
+M00404,H00404,2025-01-22,F01,Central,18-34,Adult annual,Walk-in,Yes,V1D,0.68
+M00405,H00203,2024-01-21,F03,North Valley,65+,Monthly flexible,Paid social,Yes,V1B,1.466
+M00406,H00406,2025-10-06,F04,West Valley,35-49,Family annual,Referral,No,V1C,1.319
+M00407,H00407,2025-07-13,F04,West Valley,50-64,Adult annual,Organic web,Yes,V1C,0.749
+M00408,H00408,2022-07-15,F02,East Shore,50-64,Monthly flexible,Community event,No,V1E,1.076
+M00409,H00205,2024-01-21,F04,West Valley,35-49,Monthly flexible,Organic web,Yes,V1D,0.894
+M00410,H00410,2023-06-08,F02,East Shore,18-34,Adult annual,Email,Yes,V1B,0.704
+M00411,H00411,2023-10-02,F04,West Valley,18-34,Family annual,Organic web,Yes,V1E,0.619
+M00412,H00412,2023-08-23,F01,Central,35-49,Senior annual,Paid social,Yes,V1B,1.669
+M00413,H00413,2023-03-12,F04,West Valley,Under 18,Monthly flexible,Community event,Yes,V1B,1.253
+M00414,H00414,2022-11-07,F04,West Valley,50-64,Family annual,Referral,Yes,V1A,0.479
+M00415,H00415,2025-03-22,F01,Central,50-64,Family annual,Referral,Yes,V1C,1.543
+M00416,H00416,2022-10-26,F03,North Valley,50-64,Monthly flexible,Referral,Yes,V1A,1.678
+M00417,H00417,2025-11-02,F02,East Shore,50-64,Youth annual,Referral,Yes,V1D,0.501
+M00418,H00140,2022-04-01,F01,Central,35-49,Family annual,Email,Yes,V1C,0.707
+M00419,H00140,2024-04-20,F02,East Shore,18-34,Family annual,Organic web,No,V1D,0.497
+M00420,H00210,2023-11-11,F04,West Valley,50-64,Monthly flexible,Paid social,No,V1A,0.98
+M00421,H00141,2023-01-17,F03,North Valley,Under 18,Family annual,Walk-in,Yes,V1B,1.542
+M00422,H00211,2023-04-09,F02,East Shore,Under 18,Family annual,Walk-in,Yes,V1E,0.999
+M00423,H00212,2023-07-20,F04,West Valley,50-64,Adult annual,Referral,Yes,V1D,1.502
+M00424,H00424,2024-10-29,F03,North Valley,50-64,Monthly flexible,Organic web,No,V1E,0.848
+M00425,H00213,2025-03-03,F04,West Valley,18-34,Youth annual,Organic web,No,V1E,0.967
+M00426,H00426,2025-11-12,F04,West Valley,35-49,Senior annual,Email,Yes,V1C,1.053
+M00427,H00143,2023-03-09,F01,Central,35-49,Family annual,Email,Yes,V1C,0.82
+M00428,H00143,2023-09-24,F04,West Valley,50-64,Adult annual,Organic web,Yes,V1B,1.569
+M00429,H00429,2022-07-11,F01,Central,35-49,Family annual,Referral,Yes,V1C,1.65
+M00430,H00144,2022-01-23,F03,North Valley,65+,Family annual,Community event,Yes,V1A,0.61
+M00431,H00216,2025-04-23,F02,East Shore,35-49,Adult annual,Paid social,No,V1D,1.464
+M00432,H00432,2022-05-06,F03,North Valley,65+,Adult annual,Walk-in,Yes,V1B,1.179
+M00433,H00433,2023-04-14,F04,West Valley,35-49,Youth annual,Organic web,Yes,V1D,0.585
+M00434,H00434,2024-08-21,F01,Central,65+,Senior annual,Organic web,Yes,V1B,1.271
+M00435,H00435,2024-06-19,F03,North Valley,Under 18,Family annual,Paid social,No,V1C,1.402
+M00436,H00218,2023-09-11,F04,West Valley,50-64,Adult annual,Organic web,Yes,V1D,0.816
+M00437,H00437,2022-09-06,F03,North Valley,65+,Adult annual,Organic web,No,V1D,1.564
+M00438,H00438,2023-03-07,F02,East Shore,35-49,Monthly flexible,Community event,Yes,V1C,0.508
+M00439,H00439,2023-05-04,F01,Central,50-64,Monthly flexible,Organic web,Yes,V1A,0.514
+M00440,H00440,2023-06-05,F03,North Valley,65+,Monthly flexible,Walk-in,Yes,V1E,1.171
+M00441,H00441,2023-08-10,F02,East Shore,18-34,Youth annual,Paid social,Yes,V1A,0.944
+M00442,H00221,2024-07-07,F02,East Shore,18-34,Senior annual,Paid social,Yes,V1A,0.617
+M00443,H00148,2022-05-28,F01,Central,50-64,Adult annual,Organic web,Yes,V1E,0.678
+M00444,H00444,2024-04-27,F03,North Valley,65+,Adult annual,Organic web,Yes,V1C,1.505
+M00445,H00445,2025-02-15,F02,East Shore,65+,Family annual,Paid social,Yes,V1C,1.105
+M00446,H00446,2022-05-23,F02,East Shore,50-64,Monthly flexible,Walk-in,Yes,V1E,0.955
+M00447,H00447,2024-01-25,F02,East Shore,35-49,Adult annual,Walk-in,Yes,V1E,0.954
+M00448,H00150,2025-09-13,F01,Central,18-34,Family annual,Walk-in,Yes,V1A,0.961
+M00449,H00449,2023-05-03,F04,West Valley,35-49,Adult annual,Organic web,No,V1C,0.785
+M00450,H00450,2024-06-14,F04,West Valley,50-64,Senior annual,Organic web,No,V1B,1.627
+M00451,H00151,2023-02-11,F04,West Valley,65+,Family annual,Paid social,Yes,V1C,0.635
+M00452,H00452,2023-03-12,F04,West Valley,35-49,Senior annual,Email,Yes,V1B,1.144
+M00453,H00227,2022-06-07,F02,East Shore,35-49,Youth annual,Organic web,Yes,V1E,1.026
+M00454,H00227,2023-09-27,F04,West Valley,35-49,Monthly flexible,Organic web,Yes,V1E,1.143
+M00455,H00455,2022-05-05,F03,North Valley,65+,Adult annual,Email,Yes,V1C,1.627
+M00456,H00456,2023-05-11,F04,West Valley,35-49,Adult annual,Paid social,Yes,V1A,1.446
+M00457,H00229,2022-03-23,F04,West Valley,35-49,Monthly flexible,Walk-in,Yes,V1A,0.577
+M00458,H00229,2024-03-19,F01,Central,65+,Senior annual,Walk-in,Yes,V1A,1.687
+M00459,H00459,2023-04-07,F04,West Valley,18-34,Monthly flexible,Email,No,V1B,1.626
+M00460,H00460,2023-06-17,F03,North Valley,18-34,Monthly flexible,Organic web,Yes,V1E,1.558
+M00461,H00154,2025-10-19,F01,Central,Under 18,Adult annual,Community event,No,V1C,1.584
+M00462,H00462,2023-03-06,F01,Central,35-49,Adult annual,Referral,Yes,V1D,1.519
+M00463,H00463,2022-01-19,F01,Central,50-64,Adult annual,Organic web,No,V1D,0.994
+M00464,H00464,2023-06-13,F01,Central,35-49,Senior annual,Paid social,No,V1A,1.468
+M00465,H00465,2025-06-11,F01,Central,35-49,Senior annual,Paid social,No,V1A,1.223
+M00466,H00156,2025-06-07,F03,North Valley,35-49,Adult annual,Email,Yes,V1A,1.155
+M00467,H00467,2024-11-03,F01,Central,18-34,Family annual,Referral,Yes,V1B,0.889
+M00468,H00234,2025-09-08,F02,East Shore,35-49,Youth annual,Community event,Yes,V1B,0.66
+M00469,H00469,2024-02-02,F01,Central,18-34,Senior annual,Organic web,Yes,V1E,1.335
+M00470,H00235,2023-02-26,F01,Central,65+,Adult annual,Paid social,No,V1A,1.523
+M00471,H00157,2022-04-13,F02,East Shore,18-34,Family annual,Referral,Yes,V1E,0.949
+M00472,H00158,2025-01-19,F01,Central,Under 18,Family annual,Referral,Yes,V1D,0.86
+M00473,H00473,2023-10-14,F01,Central,50-64,Senior annual,Walk-in,Yes,V1C,1.353
+M00474,H00474,2024-07-01,F04,West Valley,35-49,Adult annual,Referral,Yes,V1A,0.688
+M00475,H00475,2022-07-23,F01,Central,18-34,Monthly flexible,Organic web,Yes,V1D,1.417
+M00476,H00238,2024-04-05,F02,East Shore,50-64,Adult annual,Community event,Yes,V1E,1.172
+M00477,H00477,2023-08-29,F02,East Shore,50-64,Monthly flexible,Organic web,No,V1B,1.425
+M00478,H00478,2024-06-02,F02,East Shore,35-49,Monthly flexible,Organic web,Yes,V1A,0.837
+M00479,H00479,2022-03-03,F01,Central,50-64,Adult annual,Community event,Yes,V1E,1.201
+M00480,H00240,2022-04-05,F01,Central,18-34,Adult annual,Community event,No,V1A,1.661
+M00481,H00241,2022-11-18,F02,East Shore,65+,Youth annual,Paid social,No,V1A,0.879
+M00482,H00241,2024-03-26,F01,Central,50-64,Adult annual,Paid social,Yes,V1A,0.658
+M00483,H00483,2025-06-15,F02,East Shore,18-34,Family annual,Referral,Yes,V1C,1.674
+M00484,H00162,2024-06-25,F02,East Shore,65+,Adult annual,Organic web,Yes,V1A,1.374
+M00485,H00162,2024-06-11,F04,West Valley,65+,Youth annual,Paid social,Yes,V1E,0.597
+M00486,H00486,2024-04-29,F04,West Valley,35-49,Family annual,Walk-in,Yes,V1A,0.712
+M00487,H00487,2024-08-04,F01,Central,50-64,Senior annual,Walk-in,Yes,V1A,0.702
+M00488,H00488,2022-08-19,F02,East Shore,35-49,Adult annual,Walk-in,Yes,V1E,0.6
+M00489,H00489,2025-10-25,F01,Central,50-64,Adult annual,Paid social,No,V1C,0.712
+M00490,H00490,2024-07-26,F04,West Valley,18-34,Family annual,Organic web,Yes,V1A,1.153
+M00491,H00491,2024-02-13,F02,East Shore,35-49,Adult annual,Walk-in,No,V1E,0.841
+M00492,H00492,2024-04-09,F04,West Valley,18-34,Family annual,Paid social,Yes,V1D,0.482
+M00493,H00493,2025-05-27,F03,North Valley,65+,Adult annual,Organic web,Yes,V1B,1.516
+M00494,H00165,2024-06-10,F02,East Shore,35-49,Family annual,Walk-in,Yes,V1A,1.127
+M00495,H00165,2022-04-25,F04,West Valley,65+,Family annual,Community event,Yes,V1B,0.99
+M00496,H00496,2025-06-19,F04,West Valley,65+,Monthly flexible,Walk-in,Yes,V1C,0.471
+M00497,H00497,2023-06-20,F04,West Valley,65+,Monthly flexible,Community event,Yes,V1E,0.5
+M00498,H00498,2024-08-06,F04,West Valley,18-34,Family annual,Organic web,Yes,V1A,1.317
+M00499,H00499,2024-06-10,F02,East Shore,18-34,Adult annual,Community event,Yes,V1E,0.47
+M00500,H00250,2023-02-04,F03,North Valley,18-34,Monthly flexible,Community event,No,V1D,1.058
+M00501,H00251,2023-08-21,F03,North Valley,35-49,Family annual,Organic web,No,V1E,1.227
+M00502,H00251,2024-09-22,F01,Central,65+,Adult annual,Email,Yes,V1A,0.513
+M00503,H00168,2025-05-07,F01,Central,50-64,Family annual,Community event,Yes,V1C,0.554
+M00504,H00504,2023-01-20,F02,East Shore,18-34,Adult annual,Organic web,Yes,V1B,1.279
+M00505,H00505,2022-04-03,F04,West Valley,50-64,Senior annual,Paid social,Yes,V1E,1.429
+M00506,H00506,2023-07-14,F03,North Valley,35-49,Adult annual,Walk-in,No,V1A,1.081
+M00507,H00169,2024-06-08,F02,East Shore,Under 18,Monthly flexible,Paid social,Yes,V1E,1.317
+M00508,H00508,2024-10-16,F01,Central,50-64,Adult annual,Walk-in,Yes,V1E,0.691
+M00509,H00509,2023-10-27,F01,Central,18-34,Family annual,Paid social,Yes,V1C,0.95
+M00510,H00510,2025-11-19,F01,Central,35-49,Monthly flexible,Referral,Yes,V1B,0.701
+M00511,H00171,2024-11-02,F02,East Shore,50-64,Adult annual,Walk-in,Yes,V1E,0.613
+M00512,H00512,2023-10-07,F04,West Valley,65+,Adult annual,Organic web,Yes,V1E,1.174
+M00513,H00513,2023-04-11,F03,North Valley,35-49,Adult annual,Organic web,No,V1B,0.689
+M00514,H00257,2022-05-28,F02,East Shore,50-64,Adult annual,Paid social,Yes,V1B,0.603
+M00515,H00172,2024-06-25,F01,Central,18-34,Adult annual,Referral,Yes,V1E,0.747
+M00516,H00172,2024-08-15,F04,West Valley,50-64,Adult annual,Paid social,Yes,V1B,1.179
+M00517,H00517,2023-10-22,F01,Central,50-64,Monthly flexible,Paid social,No,V1D,0.89
+M00518,H00518,2024-07-18,F03,North Valley,18-34,Monthly flexible,Walk-in,Yes,V1C,1.527
+M00519,H00519,2023-11-17,F01,Central,65+,Adult annual,Organic web,Yes,V1D,1.623
+M00520,H00174,2024-10-25,F03,North Valley,50-64,Youth annual,Email,Yes,V1E,1.123
+M00521,H00261,2025-06-30,F01,Central,18-34,Adult annual,Paid social,Yes,V1B,1.365
+M00522,H00522,2022-04-30,F02,East Shore,50-64,Adult annual,Walk-in,Yes,V1E,0.859
+M00523,H00523,2024-09-24,F02,East Shore,50-64,Monthly flexible,Community event,Yes,V1A,0.825
+M00524,H00524,2024-09-13,F01,Central,35-49,Adult annual,Walk-in,Yes,V1B,0.797
+M00525,H00525,2023-07-26,F01,Central,18-34,Monthly flexible,Walk-in,Yes,V1A,0.469
+M00526,H00176,2024-05-07,F04,West Valley,35-49,Senior annual,Referral,Yes,V1D,0.673
+M00527,H00176,2023-02-15,F04,West Valley,35-49,Monthly flexible,Walk-in,No,V1B,1.275
+M00528,H00528,2023-05-21,F02,East Shore,Under 18,Adult annual,Referral,Yes,V1C,0.451
+M00529,H00529,2025-07-15,F02,East Shore,35-49,Senior annual,Referral,Yes,V1C,1.173
+M00530,H00265,2022-06-13,F01,Central,Under 18,Family annual,Organic web,Yes,V1D,1.146
+M00531,H00531,2024-05-08,F04,West Valley,35-49,Monthly flexible,Organic web,Yes,V1A,1.178
+M00532,H00532,2023-06-27,F02,East Shore,65+,Family annual,Paid social,No,V1B,0.932
+M00533,H00533,2022-06-27,F02,East Shore,50-64,Family annual,Referral,No,V1A,0.865
+M00534,H00534,2023-04-25,F04,West Valley,18-34,Adult annual,Organic web,Yes,V1B,0.965
+M00535,H00535,2024-02-27,F01,Central,50-64,Adult annual,Organic web,No,V1E,0.9
+M00536,H00268,2023-06-15,F04,West Valley,18-34,Monthly flexible,Referral,No,V1B,1.144
+M00537,H00179,2023-09-07,F04,West Valley,18-34,Senior annual,Organic web,Yes,V1C,0.808
+M00538,H00538,2025-04-22,F04,West Valley,35-49,Youth annual,Walk-in,Yes,V1C,1.131
+M00539,H00539,2025-06-27,F01,Central,65+,Family annual,Community event,Yes,V1E,1.246
+M00540,H00540,2025-08-25,F03,North Valley,18-34,Monthly flexible,Paid social,Yes,V1C,1.192
+M00541,H00541,2025-09-12,F01,Central,35-49,Family annual,Paid social,Yes,V1E,1.238
+M00542,H00542,2024-03-09,F01,Central,18-34,Monthly flexible,Paid social,Yes,V1D,1.447
+M00543,H00181,2022-06-23,F02,East Shore,18-34,Monthly flexible,Paid social,Yes,V1B,0.854
+M00544,H00544,2025-05-14,F04,West Valley,50-64,Family annual,Community event,No,V1B,1.338
+M00545,H00545,2025-10-10,F01,Central,35-49,Senior annual,Community event,Yes,V1E,1.065
+M00546,H00546,2025-11-11,F04,West Valley,65+,Adult annual,Walk-in,Yes,V1B,1.683
+M00547,H00274,2022-05-12,F01,Central,50-64,Family annual,Email,Yes,V1D,1.286
+M00548,H00183,2023-03-06,F02,East Shore,18-34,Adult annual,Walk-in,No,V1C,1.399
+M00549,H00275,2022-05-29,F03,North Valley,50-64,Senior annual,Referral,Yes,V1A,0.557
+M00550,H00550,2024-02-16,F02,East Shore,Under 18,Adult annual,Referral,Yes,V1B,1.524
+M00551,H00184,2025-10-02,F04,West Valley,50-64,Family annual,Paid social,Yes,V1D,1.183
+M00552,H00552,2023-08-02,F04,West Valley,50-64,Monthly flexible,Walk-in,Yes,V1C,0.914
+M00553,H00185,2024-10-25,F02,East Shore,18-34,Adult annual,Organic web,No,V1A,0.792
+M00554,H00554,2024-08-02,F01,Central,50-64,Adult annual,Email,Yes,V1A,1.59
+M00555,H00278,2023-08-07,F03,North Valley,65+,Adult annual,Community event,Yes,V1A,1.332
+M00556,H00556,2024-06-14,F04,West Valley,Under 18,Monthly flexible,Referral,Yes,V1A,0.79
+M00557,H00557,2024-05-07,F04,West Valley,50-64,Senior annual,Organic web,No,V1E,0.953
+M00558,H00558,2025-05-29,F01,Central,35-49,Adult annual,Walk-in,Yes,V1E,0.55
+M00559,H00559,2022-08-31,F02,East Shore,35-49,Senior annual,Paid social,Yes,V1E,0.956
+M00560,H00187,2023-06-16,F04,West Valley,18-34,Family annual,Walk-in,No,V1C,1.462
+M00561,H00561,2023-08-26,F01,Central,50-64,Youth annual,Referral,No,V1C,0.988
+M00562,H00188,2024-01-09,F01,Central,35-49,Adult annual,Paid social,Yes,V1E,0.762
+M00563,H00188,2023-03-21,F04,West Valley,50-64,Monthly flexible,Paid social,No,V1C,0.581
+M00564,H00564,2024-08-16,F01,Central,35-49,Family annual,Organic web,No,V1E,1.523
+M00565,H00565,2023-04-14,F01,Central,18-34,Adult annual,Walk-in,Yes,V1A,1.139
+M00566,H00566,2022-09-08,F01,Central,Under 18,Adult annual,Walk-in,Yes,V1B,1.446
+M00567,H00567,2025-09-04,F01,Central,18-34,Senior annual,Email,Yes,V1C,0.511
+M00568,H00568,2023-10-05,F01,Central,65+,Family annual,Referral,Yes,V1A,0.546
+M00569,H00190,2022-07-27,F03,North Valley,Under 18,Monthly flexible,Community event,Yes,V1C,1.41
+M00570,H00570,2024-08-30,F01,Central,35-49,Adult annual,Paid social,Yes,V1D,0.608
+M00571,H00286,2022-11-11,F04,West Valley,18-34,Monthly flexible,Organic web,Yes,V1A,1.138
+M00572,H00572,2023-08-16,F03,North Valley,50-64,Family annual,Organic web,Yes,V1E,0.624
+M00573,H00573,2023-08-28,F04,West Valley,65+,Family annual,Organic web,No,V1D,0.958
+M00574,H00287,2022-10-17,F02,East Shore,35-49,Adult annual,Organic web,Yes,V1D,0.975
+M00575,H00288,2025-02-02,F01,Central,50-64,Adult annual,Community event,Yes,V1A,0.729
+M00576,H00576,2022-01-25,F01,Central,65+,Monthly flexible,Community event,Yes,V1A,1.131
+M00577,H00193,2025-06-11,F02,East Shore,65+,Senior annual,Referral,Yes,V1D,0.79
+M00578,H00578,2024-06-17,F04,West Valley,18-34,Adult annual,Walk-in,No,V1D,0.677
+M00579,H00579,2024-08-22,F01,Central,Under 18,Family annual,Paid social,Yes,V1D,1.672
+M00580,H00580,2024-06-07,F03,North Valley,18-34,Adult annual,Community event,Yes,V1B,0.645
+M00581,H00581,2023-07-05,F03,North Valley,35-49,Senior annual,Referral,No,V1B,0.797
+M00582,H00291,2023-08-10,F04,West Valley,50-64,Adult annual,Email,No,V1D,1.239
+M00583,H00195,2024-02-28,F04,West Valley,50-64,Senior annual,Referral,No,V1E,1.386
+M00584,H00584,2024-11-10,F03,North Valley,50-64,Monthly flexible,Organic web,Yes,V1A,1.059
+M00585,H00195,2024-01-10,F02,East Shore,65+,Senior annual,Walk-in,No,V1A,0.812
+M00586,H00293,2024-06-17,F02,East Shore,65+,Adult annual,Organic web,Yes,V1D,1.028
+M00587,H00587,2023-11-04,F01,Central,35-49,Monthly flexible,Walk-in,Yes,V1C,0.558
+M00588,H00588,2025-04-19,F01,Central,18-34,Youth annual,Referral,Yes,V1D,0.84
+M00589,H00589,2023-03-03,F04,West Valley,50-64,Family annual,Organic web,Yes,V1A,1.598
+M00590,H00590,2025-02-24,F03,North Valley,18-34,Adult annual,Paid social,Yes,V1A,1.371
+M00591,H00591,2023-08-04,F03,North Valley,50-64,Adult annual,Paid social,Yes,V1B,1.677
+M00592,H00198,2024-10-19,F03,North Valley,50-64,Adult annual,Referral,Yes,V1C,1.582
+M00593,H00593,2023-01-15,F01,Central,65+,Youth annual,Community event,No,V1D,0.51
+M00594,H00297,2024-05-16,F03,North Valley,35-49,Monthly flexible,Referral,Yes,V1D,1.158
+M00595,H00595,2024-09-11,F01,Central,50-64,Monthly flexible,Referral,Yes,V1A,0.803
+M00596,H00596,2024-01-22,F03,North Valley,65+,Family annual,Walk-in,Yes,V1B,1.097
+M00597,H00597,2025-02-20,F03,North Valley,50-64,Monthly flexible,Organic web,No,V1B,0.914
+M00598,H00200,2024-06-10,F01,Central,50-64,Adult annual,Paid social,Yes,V1D,0.634
+M00599,H00300,2022-01-18,F01,Central,65+,Senior annual,Organic web,No,V1C,0.475
+M00600,H00300,2025-07-28,F03,North Valley,35-49,Monthly flexible,Organic web,No,V1E,1.609
+M00601,H00601,2023-07-25,F03,North Valley,18-34,Youth annual,Email,Yes,V1D,0.726
+M00602,H00201,2023-04-05,F03,North Valley,35-49,Monthly flexible,Referral,Yes,V1C,1.362
+M00603,H00302,2022-01-06,F01,Central,50-64,Senior annual,Walk-in,Yes,V1E,1.215
+M00604,H00604,2023-10-26,F02,East Shore,65+,Adult annual,Referral,Yes,V1C,1.563
+M00605,H00605,2024-01-16,F04,West Valley,18-34,Family annual,Referral,Yes,V1A,0.702
+M00606,H00202,2022-09-27,F02,East Shore,35-49,Adult annual,Walk-in,Yes,V1D,0.92
+M00607,H00607,2023-03-29,F04,West Valley,50-64,Adult annual,Referral,No,V1D,1.063
+M00608,H00608,2022-04-17,F03,North Valley,50-64,Monthly flexible,Community event,Yes,V1C,0.627
+M00609,H00609,2022-10-21,F03,North Valley,50-64,Adult annual,Referral,Yes,V1A,0.675
+M00610,H00204,2023-09-10,F03,North Valley,50-64,Adult annual,Paid social,No,V1C,1.212
+M00611,H00611,2024-03-15,F02,East Shore,35-49,Adult annual,Paid social,Yes,V1C,1.571
+M00612,H00612,2025-09-24,F02,East Shore,50-64,Youth annual,Paid social,Yes,V1B,0.79
+M00613,H00613,2024-02-25,F03,North Valley,18-34,Monthly flexible,Paid social,Yes,V1D,0.74
+M00614,H00614,2022-07-25,F02,East Shore,65+,Adult annual,Organic web,Yes,V1A,1.613
+M00615,H00615,2023-06-26,F03,North Valley,35-49,Monthly flexible,Referral,Yes,V1A,1.022
+M00616,H00616,2023-08-07,F02,East Shore,35-49,Senior annual,Walk-in,No,V1A,1.672
+M00617,H00617,2024-03-04,F01,Central,50-64,Adult annual,Organic web,No,V1C,0.964
+M00618,H00618,2022-03-27,F03,North Valley,35-49,Adult annual,Paid social,Yes,V1A,1.229
+M00619,H00619,2022-10-05,F01,Central,18-34,Adult annual,Email,Yes,V1D,1.1
+M00620,H00620,2023-08-02,F02,East Shore,50-64,Adult annual,Paid social,No,V1A,1.464
+M00621,H00207,2023-11-15,F03,North Valley,35-49,Senior annual,Referral,No,V1C,1.132
+M00622,H00622,2024-09-14,F04,West Valley,Under 18,Family annual,Organic web,Yes,V1B,0.855
+M00623,H00208,2025-09-13,F01,Central,50-64,Monthly flexible,Referral,Yes,V1A,0.624
+M00624,H00624,2023-11-21,F01,Central,35-49,Monthly flexible,Referral,Yes,V1A,1.22
+M00625,H00625,2022-04-14,F03,North Valley,18-34,Monthly flexible,Organic web,Yes,V1C,0.687
+M00626,H00626,2023-01-12,F04,West Valley,Under 18,Adult annual,Community event,No,V1A,1.035
+M00627,H00314,2022-07-24,F04,West Valley,35-49,Youth annual,Referral,Yes,V1D,1.536
+M00628,H00628,2024-10-29,F02,East Shore,35-49,Adult annual,Paid social,Yes,V1A,0.775
+M00629,H00629,2023-10-09,F04,West Valley,50-64,Family annual,Walk-in,Yes,V1E,1.469
+M00630,H00630,2023-08-25,F01,Central,35-49,Family annual,Paid social,Yes,V1C,1.066
+M00631,H00631,2024-07-28,F01,Central,35-49,Adult annual,Walk-in,No,V1A,1.365
+M00632,H00632,2025-01-11,F01,Central,18-34,Senior annual,Community event,Yes,V1E,1.131
+M00633,H00633,2022-07-11,F01,Central,65+,Adult annual,Organic web,No,V1B,0.916
+M00634,H00634,2024-02-13,F04,West Valley,18-34,Adult annual,Walk-in,Yes,V1A,0.779
+M00635,H00212,2024-06-18,F04,West Valley,18-34,Family annual,Walk-in,Yes,V1C,1.072
+M00636,H00318,2024-07-12,F01,Central,65+,Family annual,Community event,No,V1A,1.621
+M00637,H00637,2024-01-26,F04,West Valley,50-64,Adult annual,Walk-in,Yes,V1B,0.981
+M00638,H00638,2023-05-25,F04,West Valley,18-34,Family annual,Organic web,Yes,V1E,0.894
+M00639,H00213,2025-11-16,F01,Central,35-49,Adult annual,Walk-in,Yes,V1D,1.338
+M00640,H00214,2023-03-11,F01,Central,65+,Family annual,Community event,Yes,V1B,1.667
+M00641,H00641,2023-09-14,F02,East Shore,18-34,Senior annual,Paid social,Yes,V1A,1.643
+M00642,H00642,2025-04-27,F02,East Shore,35-49,Youth annual,Organic web,Yes,V1C,0.749
+M00643,H00215,2024-11-16,F01,Central,35-49,Youth annual,Community event,Yes,V1C,0.652
+M00644,H00644,2025-01-30,F04,West Valley,18-34,Family annual,Referral,No,V1C,1.649
+M00645,H00645,2025-02-02,F01,Central,18-34,Monthly flexible,Organic web,Yes,V1C,0.882
+M00646,H00323,2023-02-19,F03,North Valley,35-49,Monthly flexible,Referral,No,V1D,0.53
+M00647,H00324,2024-10-04,F02,East Shore,18-34,Adult annual,Paid social,No,V1A,0.583
+M00648,H00216,2022-07-23,F01,Central,35-49,Monthly flexible,Walk-in,Yes,V1D,0.965
+M00649,H00649,2025-10-30,F01,Central,50-64,Family annual,Organic web,No,V1A,1.019
+M00650,H00650,2024-10-13,F04,West Valley,18-34,Youth annual,Walk-in,No,V1D,1.193
+M00651,H00651,2024-07-05,F04,West Valley,50-64,Adult annual,Organic web,Yes,V1E,0.974
+M00652,H00218,2023-06-05,F01,Central,65+,Family annual,Email,Yes,V1E,1.609
+M00653,H00218,2024-07-26,F04,West Valley,35-49,Monthly flexible,Community event,Yes,V1B,1.277
+M00654,H00327,2024-04-13,F02,East Shore,18-34,Adult annual,Organic web,Yes,V1D,0.525
+M00655,H00219,2025-03-31,F04,West Valley,Under 18,Senior annual,Community event,Yes,V1B,0.995
+M00656,H00656,2024-09-29,F01,Central,65+,Adult annual,Paid social,Yes,V1A,1.535
+M00657,H00219,2024-10-18,F03,North Valley,18-34,Adult annual,Organic web,Yes,V1C,0.569
+M00658,H00658,2024-02-20,F02,East Shore,35-49,Monthly flexible,Community event,Yes,V1B,0.842
+M00659,H00659,2025-04-25,F03,North Valley,18-34,Monthly flexible,Walk-in,Yes,V1B,1.175
+M00660,H00660,2024-10-01,F02,East Shore,65+,Senior annual,Walk-in,No,V1C,1.211
+M00661,H00331,2024-03-04,F04,West Valley,35-49,Youth annual,Walk-in,Yes,V1A,1.264
+M00662,H00662,2022-07-16,F03,North Valley,18-34,Senior annual,Referral,Yes,V1A,0.565
+M00663,H00332,2024-02-19,F01,Central,Under 18,Adult annual,Community event,Yes,V1B,1.691
+M00664,H00332,2025-06-03,F04,West Valley,18-34,Adult annual,Referral,Yes,V1A,1.383
+M00665,H00665,2024-10-28,F02,East Shore,35-49,Adult annual,Paid social,No,V1C,1.475
+M00666,H00666,2025-03-09,F01,Central,35-49,Adult annual,Organic web,Yes,V1C,0.86
+M00667,H00667,2022-10-09,F02,East Shore,35-49,Adult annual,Organic web,Yes,V1C,1.505
+M00668,H00334,2024-03-03,F01,Central,35-49,Family annual,Organic web,No,V1D,1.456
+M00669,H00223,2022-07-05,F02,East Shore,65+,Family annual,Organic web,Yes,V1A,1.557
+M00670,H00224,2025-04-01,F04,West Valley,50-64,Adult annual,Walk-in,Yes,V1B,1.073
+M00671,H00336,2024-01-26,F03,North Valley,18-34,Family annual,Community event,Yes,V1E,1.666
+M00672,H00672,2023-06-26,F02,East Shore,50-64,Senior annual,Community event,Yes,V1D,1.627
+M00673,H00225,2024-06-19,F01,Central,18-34,Adult annual,Walk-in,Yes,V1A,1.245
+M00674,H00674,2023-02-21,F02,East Shore,18-34,Youth annual,Organic web,Yes,V1B,0.969
+M00675,H00675,2023-05-21,F01,Central,35-49,Family annual,Organic web,Yes,V1B,1.527
+M00676,H00676,2022-01-18,F01,Central,Under 18,Adult annual,Community event,Yes,V1E,0.913
+M00677,H00677,2022-03-24,F01,Central,35-49,Adult annual,Walk-in,No,V1A,1.329
+M00678,H00339,2023-10-06,F01,Central,35-49,Senior annual,Community event,No,V1E,0.923
+M00679,H00679,2023-02-28,F04,West Valley,35-49,Adult annual,Organic web,Yes,V1B,0.537
+M00680,H00680,2024-02-12,F01,Central,18-34,Adult annual,Email,No,V1E,0.484
+M00681,H00227,2025-08-27,F02,East Shore,18-34,Senior annual,Referral,Yes,V1C,1.691
+M00682,H00682,2025-04-02,F04,West Valley,18-34,Monthly flexible,Community event,Yes,V1D,1.175
+M00683,H00342,2023-11-17,F03,North Valley,18-34,Adult annual,Paid social,No,V1A,0.634
+M00684,H00684,2022-09-04,F01,Central,Under 18,Senior annual,Organic web,Yes,V1C,0.809
+M00685,H00685,2024-07-04,F02,East Shore,50-64,Family annual,Organic web,No,V1B,1.144
+M00686,H00343,2023-02-04,F01,Central,50-64,Family annual,Paid social,Yes,V1C,0.885
+M00687,H00687,2022-05-13,F04,West Valley,50-64,Adult annual,Referral,Yes,V1E,0.769
+M00688,H00230,2023-05-20,F02,East Shore,50-64,Monthly flexible,Walk-in,No,V1E,0.696
+M00689,H00689,2023-05-06,F02,East Shore,65+,Monthly flexible,Referral,Yes,V1D,1.108
+M00690,H00345,2022-05-14,F02,East Shore,35-49,Monthly flexible,Organic web,Yes,V1A,0.454
+M00691,H00231,2022-09-15,F03,North Valley,50-64,Adult annual,Community event,Yes,V1D,0.996
+M00692,H00692,2024-09-11,F03,North Valley,18-34,Monthly flexible,Organic web,Yes,V1C,1.407
+M00693,H00693,2022-04-03,F01,Central,18-34,Family annual,Organic web,Yes,V1E,0.578
+M00694,H00694,2023-06-23,F03,North Valley,18-34,Monthly flexible,Referral,No,V1C,1.528
+M00695,H00695,2022-10-25,F01,Central,18-34,Senior annual,Referral,Yes,V1E,1.577
+M00696,H00348,2024-09-06,F02,East Shore,50-64,Senior annual,Referral,Yes,V1A,1.188
+M00697,H00697,2022-06-17,F03,North Valley,18-34,Family annual,Walk-in,No,V1A,1.36
+M00698,H00698,2023-10-15,F04,West Valley,18-34,Adult annual,Referral,No,V1E,1.036
+M00699,H00699,2025-09-30,F02,East Shore,18-34,Youth annual,Walk-in,Yes,V1E,1.245
+M00700,H00700,2024-07-18,F04,West Valley,35-49,Adult annual,Walk-in,Yes,V1C,1.235
+M00701,H00701,2025-11-02,F04,West Valley,50-64,Senior annual,Paid social,Yes,V1C,0.843
+M00702,H00351,2023-07-08,F01,Central,65+,Adult annual,Organic web,No,V1C,0.89
+M00703,H00235,2022-01-11,F02,East Shore,18-34,Adult annual,Community event,Yes,V1A,1.29
+M00704,H00352,2024-07-10,F02,East Shore,18-34,Family annual,Email,Yes,V1B,0.596
+M00705,H00235,2024-03-15,F03,North Valley,35-49,Family annual,Organic web,No,V1A,1.034
+M00706,H00706,2023-11-09,F03,North Valley,50-64,Monthly flexible,Referral,Yes,V1D,1.656
+M00707,H00354,2023-07-11,F01,Central,35-49,Youth annual,Walk-in,Yes,V1C,1.09
+M00708,H00354,2022-02-13,F01,Central,50-64,Adult annual,Referral,No,V1B,0.745
+M00709,H00355,2025-04-03,F02,East Shore,65+,Youth annual,Referral,Yes,V1C,1.408
+M00710,H00710,2024-08-14,F01,Central,18-34,Senior annual,Walk-in,Yes,V1C,1.603
+M00711,H00711,2022-11-01,F03,North Valley,18-34,Adult annual,Paid social,No,V1C,0.759
+M00712,H00356,2025-06-18,F01,Central,65+,Family annual,Walk-in,Yes,V1A,1.104
+M00713,H00357,2025-01-22,F02,East Shore,18-34,Adult annual,Organic web,No,V1C,1.386
+M00714,H00238,2024-07-11,F04,West Valley,Under 18,Adult annual,Organic web,Yes,V1C,1.188
+M00715,H00239,2025-06-08,F04,West Valley,50-64,Adult annual,Paid social,Yes,V1B,1.133
+M00716,H00716,2023-04-17,F03,North Valley,35-49,Monthly flexible,Community event,Yes,V1C,0.471
+M00717,H00359,2023-05-06,F04,West Valley,18-34,Monthly flexible,Organic web,No,V1B,0.976
+M00718,H00718,2023-01-17,F02,East Shore,18-34,Family annual,Walk-in,Yes,V1E,0.606
+M00719,H00719,2022-01-15,F01,Central,50-64,Adult annual,Referral,Yes,V1C,1.578
+M00720,H00720,2023-07-30,F03,North Valley,35-49,Adult annual,Walk-in,Yes,V1C,0.889
+M00721,H00241,2025-08-29,F02,East Shore,Under 18,Family annual,Referral,Yes,V1C,1.2
+M00722,H00361,2024-06-09,F04,West Valley,50-64,Adult annual,Organic web,Yes,V1C,1.081
+M00723,H00723,2022-02-03,F04,West Valley,Under 18,Senior annual,Organic web,Yes,V1C,1.034
+M00724,H00724,2022-03-05,F02,East Shore,35-49,Adult annual,Organic web,No,V1D,0.636
+M00725,H00725,2025-05-12,F04,West Valley,50-64,Family annual,Organic web,No,V1D,0.942
+M00726,H00242,2023-02-25,F01,Central,50-64,Adult annual,Paid social,Yes,V1B,1.509
+M00727,H00727,2022-03-15,F03,North Valley,35-49,Monthly flexible,Referral,No,V1A,1.589
+M00728,H00243,2024-09-30,F01,Central,50-64,Monthly flexible,Referral,Yes,V1E,1.101
+M00729,H00365,2023-08-10,F04,West Valley,35-49,Monthly flexible,Organic web,Yes,V1A,0.917
+M00730,H00730,2024-07-22,F03,North Valley,Under 18,Adult annual,Organic web,Yes,V1C,1.014
+M00731,H00731,2025-08-24,F01,Central,35-49,Family annual,Referral,Yes,V1C,0.819
+M00732,H00366,2023-03-20,F02,East Shore,50-64,Senior annual,Organic web,Yes,V1B,1.648
+M00733,H00367,2024-05-24,F04,West Valley,Under 18,Family annual,Referral,Yes,V1A,0.851
+M00734,H00734,2024-05-24,F01,Central,Under 18,Adult annual,Email,Yes,V1D,1.388
+M00735,H00735,2022-03-20,F01,Central,18-34,Family annual,Email,No,V1B,0.53
+M00736,H00736,2023-06-11,F04,West Valley,35-49,Adult annual,Walk-in,Yes,V1A,1.527
+M00737,H00737,2024-09-16,F04,West Valley,65+,Adult annual,Community event,Yes,V1B,1.034
+M00738,H00738,2024-09-09,F02,East Shore,35-49,Senior annual,Organic web,Yes,V1A,0.716
+M00739,H00247,2025-05-16,F04,West Valley,50-64,Adult annual,Organic web,Yes,V1A,0.53
+M00740,H00370,2023-10-25,F03,North Valley,35-49,Family annual,Referral,Yes,V1B,0.952
+M00741,H00371,2025-10-24,F02,East Shore,18-34,Adult annual,Walk-in,No,V1C,1.663
+M00742,H00371,2023-01-19,F02,East Shore,65+,Family annual,Email,No,V1A,1.284
+M00743,H00743,2024-08-27,F03,North Valley,35-49,Youth annual,Walk-in,Yes,V1C,1.661
+M00744,H00372,2023-04-17,F04,West Valley,35-49,Adult annual,Walk-in,Yes,V1B,0.597
+M00745,H00745,2023-03-12,F02,East Shore,18-34,Monthly flexible,Email,Yes,V1B,1.143
+M00746,H00746,2024-03-05,F01,Central,35-49,Adult annual,Organic web,Yes,V1C,0.74
+M00747,H00249,2024-07-31,F03,North Valley,18-34,Senior annual,Organic web,No,V1A,1.681
+M00748,H00250,2022-07-12,F01,Central,50-64,Adult annual,Paid social,No,V1D,0.988
+M00749,H00749,2023-10-30,F02,East Shore,35-49,Senior annual,Email,Yes,V1E,1.181
+M00750,H00750,2024-09-22,F02,East Shore,50-64,Monthly flexible,Paid social,Yes,V1C,1.345
+M00751,H00751,2024-06-18,F04,West Valley,18-34,Monthly flexible,Community event,Yes,V1E,1.438
+M00752,H00376,2025-06-03,F02,East Shore,65+,Family annual,Community event,No,V1B,1.619
+M00753,H00251,2022-07-01,F03,North Valley,50-64,Adult annual,Walk-in,No,V1C,0.5
+M00754,H00754,2025-08-28,F02,East Shore,50-64,Senior annual,Organic web,Yes,V1A,1.387
+M00755,H00755,2022-04-20,F01,Central,18-34,Family annual,Walk-in,Yes,V1E,1.559
+M00756,H00252,2022-07-28,F01,Central,50-64,Youth annual,Organic web,Yes,V1C,1.633
+M00757,H00757,2023-01-30,F03,North Valley,18-34,Monthly flexible,Community event,Yes,V1E,0.684
+M00758,H00253,2022-06-15,F02,East Shore,18-34,Adult annual,Referral,Yes,V1D,1.586
+M00759,H00759,2023-06-10,F03,North Valley,Under 18,Adult annual,Referral,Yes,V1C,0.763
+M00760,H00760,2024-06-30,F03,North Valley,18-34,Adult annual,Email,Yes,V1C,1.551
+M00761,H00761,2023-02-01,F01,Central,18-34,Adult annual,Email,Yes,V1B,0.632
+M00762,H00381,2023-10-15,F01,Central,18-34,Youth annual,Community event,Yes,V1E,0.656
+M00763,H00763,2025-02-25,F01,Central,35-49,Family annual,Walk-in,Yes,V1A,1.508
+M00764,H00764,2024-11-09,F04,West Valley,35-49,Monthly flexible,Organic web,Yes,V1C,1.55
+M00765,H00255,2023-08-07,F01,Central,50-64,Family annual,Organic web,Yes,V1A,0.963
+M00766,H00766,2022-08-14,F01,Central,50-64,Youth annual,Paid social,Yes,V1B,0.696
+M00767,H00767,2024-09-03,F02,East Shore,50-64,Monthly flexible,Paid social,Yes,V1E,0.583
+M00768,H00768,2022-03-09,F04,West Valley,18-34,Adult annual,Organic web,Yes,V1A,1.239
+M00769,H00385,2024-03-03,F04,West Valley,65+,Adult annual,Paid social,Yes,V1A,1.296
+M00770,H00385,2023-03-30,F01,Central,35-49,Senior annual,Paid social,Yes,V1B,0.492
+M00771,H00771,2025-05-17,F01,Central,50-64,Family annual,Email,Yes,V1B,0.641
+M00772,H00772,2022-01-27,F04,West Valley,50-64,Family annual,Community event,No,V1D,0.61
+M00773,H00773,2022-02-18,F01,Central,35-49,Adult annual,Paid social,No,V1E,1.066
+M00774,H00258,2025-06-10,F02,East Shore,Under 18,Family annual,Organic web,Yes,V1A,1.373
+M00775,H00775,2023-09-22,F03,North Valley,18-34,Monthly flexible,Walk-in,Yes,V1A,1.387
+M00776,H00776,2024-02-05,F01,Central,50-64,Family annual,Email,Yes,V1B,1.51
+M00777,H00777,2024-08-03,F01,Central,18-34,Family annual,Paid social,No,V1B,1.496
+M00778,H00778,2025-09-24,F04,West Valley,50-64,Monthly flexible,Community event,Yes,V1A,1.427
+M00779,H00779,2023-05-22,F01,Central,35-49,Monthly flexible,Organic web,Yes,V1A,0.748
+M00780,H00260,2025-02-18,F01,Central,50-64,Family annual,Organic web,Yes,V1D,1.581
+M00781,H00781,2022-05-14,F04,West Valley,35-49,Adult annual,Paid social,Yes,V1C,1.306
+M00782,H00391,2023-06-17,F01,Central,35-49,Family annual,Walk-in,Yes,V1B,1.476
+M00783,H00783,2022-02-06,F02,East Shore,50-64,Adult annual,Walk-in,Yes,V1B,0.721
+M00784,H00784,2023-10-15,F04,West Valley,35-49,Family annual,Walk-in,Yes,V1C,1.577
+M00785,H00785,2025-08-17,F01,Central,35-49,Adult annual,Email,Yes,V1D,1.206
+M00786,H00786,2024-10-28,F03,North Valley,65+,Adult annual,Organic web,Yes,V1A,0.604
+M00787,H00394,2023-10-15,F03,North Valley,18-34,Family annual,Community event,Yes,V1E,1.167
+M00788,H00263,2023-10-07,F03,North Valley,18-34,Monthly flexible,Community event,Yes,V1C,1.017
+M00789,H00263,2023-06-09,F04,West Valley,35-49,Adult annual,Email,Yes,V1A,1.083
+M00790,H00790,2023-04-04,F01,Central,Under 18,Monthly flexible,Walk-in,Yes,V1C,0.674
+M00791,H00264,2023-11-20,F01,Central,50-64,Adult annual,Email,Yes,V1D,1.605
+M00792,H00396,2025-03-08,F03,North Valley,50-64,Adult annual,Referral,No,V1C,1.287
+M00793,H00793,2022-02-28,F02,East Shore,50-64,Monthly flexible,Email,No,V1C,0.718
+M00794,H00794,2024-05-08,F03,North Valley,50-64,Monthly flexible,Referral,No,V1C,0.633
+M00795,H00795,2024-09-18,F02,East Shore,35-49,Monthly flexible,Paid social,Yes,V1E,1.57
+M00796,H00266,2023-11-07,F04,West Valley,50-64,Family annual,Community event,Yes,V1B,1.466
+M00797,H00797,2025-10-03,F01,Central,50-64,Adult annual,Email,Yes,V1A,1.083
+M00798,H00399,2023-08-10,F04,West Valley,35-49,Adult annual,Organic web,Yes,V1C,1.14
+M00799,H00400,2023-04-16,F04,West Valley,18-34,Monthly flexible,Organic web,Yes,V1B,1.656
+M00800,H00267,2024-05-14,F01,Central,65+,Adult annual,Referral,Yes,V1A,1.374
+M00801,H00267,2023-04-16,F04,West Valley,50-64,Family annual,Walk-in,Yes,V1C,1.107
+M00802,H00401,2023-05-28,F04,West Valley,18-34,Senior annual,Referral,Yes,V1B,0.455
+M00803,H00803,2025-08-29,F02,East Shore,50-64,Monthly flexible,Organic web,No,V1C,0.908
+M00804,H00804,2023-01-10,F01,Central,18-34,Youth annual,Organic web,Yes,V1E,1.115
+M00805,H00805,2025-09-18,F03,North Valley,18-34,Monthly flexible,Email,Yes,V1E,0.58
+M00806,H00806,2022-11-06,F02,East Shore,Under 18,Monthly flexible,Organic web,Yes,V1A,0.588
+M00807,H00404,2023-03-09,F01,Central,35-49,Family annual,Organic web,Yes,V1B,1.105
+M00808,H00404,2024-07-23,F04,West Valley,18-34,Family annual,Walk-in,No,V1E,0.555
+M00809,H00270,2025-05-15,F04,West Valley,18-34,Adult annual,Referral,No,V1E,0.554
+M00810,H00270,2023-11-14,F01,Central,18-34,Monthly flexible,Organic web,Yes,V1C,1.484
+M00811,H00406,2025-08-26,F04,West Valley,35-49,Family annual,Referral,Yes,V1C,0.872
+M00812,H00271,2025-05-31,F02,East Shore,50-64,Monthly flexible,Paid social,No,V1A,1.106
+M00813,H00271,2023-03-30,F04,West Valley,35-49,Adult annual,Walk-in,Yes,V1B,1.194
+M00814,H00814,2025-07-24,F02,East Shore,35-49,Monthly flexible,Community event,No,V1B,1.413
+M00815,H00408,2024-08-09,F04,West Valley,18-34,Adult annual,Walk-in,Yes,V1E,1.33
+M00816,H00816,2024-04-27,F03,North Valley,65+,Monthly flexible,Walk-in,No,V1C,0.624
+M00817,H00409,2024-01-21,F04,West Valley,18-34,Youth annual,Paid social,Yes,V1A,1.207
+M00818,H00818,2024-10-02,F04,West Valley,50-64,Adult annual,Community event,Yes,V1D,1.359
+M00819,H00410,2022-08-18,F04,West Valley,18-34,Adult annual,Walk-in,No,V1A,0.667
+M00820,H00820,2024-08-27,F04,West Valley,35-49,Adult annual,Walk-in,No,V1C,1.185
+M00821,H00821,2023-01-19,F01,Central,50-64,Monthly flexible,Walk-in,No,V1D,1.316
+M00822,H00822,2025-10-14,F03,North Valley,35-49,Youth annual,Email,No,V1A,1.374
+M00823,H00823,2025-07-16,F04,West Valley,50-64,Adult annual,Referral,Yes,V1C,1.083
+M00824,H00275,2022-06-09,F03,North Valley,18-34,Adult annual,Walk-in,No,V1B,1.475
+M00825,H00825,2024-11-21,F04,West Valley,35-49,Adult annual,Organic web,No,V1B,1.192
+M00826,H00413,2023-01-05,F03,North Valley,65+,Monthly flexible,Community event,Yes,V1A,1.664
+M00827,H00827,2025-01-17,F01,Central,65+,Senior annual,Organic web,Yes,V1D,0.823
+M00828,H00828,2023-03-28,F04,West Valley,50-64,Adult annual,Organic web,Yes,V1E,0.736
+M00829,H00277,2025-08-12,F03,North Valley,35-49,Adult annual,Walk-in,Yes,V1C,1.599
+M00830,H00277,2024-04-26,F04,West Valley,18-34,Family annual,Referral,No,V1C,0.451
+M00831,H00831,2024-08-03,F04,West Valley,35-49,Adult annual,Organic web,Yes,V1A,0.796
+M00832,H00832,2022-09-23,F02,East Shore,50-64,Monthly flexible,Organic web,Yes,V1C,1.505
+M00833,H00833,2024-09-26,F03,North Valley,50-64,Youth annual,Referral,Yes,V1D,1.581
+M00834,H00278,2024-03-25,F02,East Shore,35-49,Monthly flexible,Organic web,Yes,V1C,1.665
+M00835,H00835,2023-03-09,F01,Central,50-64,Family annual,Paid social,Yes,V1D,1.607
+M00836,H00418,2024-04-15,F02,East Shore,18-34,Family annual,Referral,No,V1B,0.737
+M00837,H00419,2025-06-29,F02,East Shore,50-64,Adult annual,Walk-in,No,V1C,0.726
+M00838,H00838,2024-08-31,F01,Central,18-34,Adult annual,Walk-in,Yes,V1C,1.43
+M00839,H00420,2023-09-29,F01,Central,50-64,Adult annual,Paid social,Yes,V1C,0.558
+M00840,H00840,2023-08-20,F02,East Shore,Under 18,Monthly flexible,Referral,Yes,V1C,1.025
+M00841,H00841,2022-07-14,F02,East Shore,18-34,Family annual,Email,Yes,V1C,0.572
+M00842,H00281,2024-11-19,F04,West Valley,35-49,Senior annual,Walk-in,Yes,V1A,1.027
+M00843,H00281,2024-07-25,F04,West Valley,50-64,Adult annual,Email,No,V1B,0.716
+M00844,H00844,2022-02-23,F03,North Valley,35-49,Senior annual,Community event,No,V1C,0.819
+M00845,H00282,2024-02-29,F02,East Shore,Under 18,Monthly flexible,Referral,Yes,V1A,0.862
+M00846,H00846,2022-07-27,F01,Central,Under 18,Family annual,Organic web,Yes,V1A,0.903
+M00847,H00424,2025-04-03,F01,Central,35-49,Monthly flexible,Walk-in,Yes,V1E,1.668
+M00848,H00424,2022-04-17,F01,Central,50-64,Adult annual,Referral,No,V1D,1.574
+M00849,H00849,2022-08-16,F01,Central,35-49,Family annual,Paid social,Yes,V1A,1.153
+M00850,H00850,2022-03-27,F03,North Valley,18-34,Senior annual,Paid social,No,V1B,1.215
+M00851,H00851,2025-08-04,F01,Central,Under 18,Family annual,Community event,Yes,V1C,0.507
+M00852,H00426,2025-08-25,F02,East Shore,18-34,Family annual,Walk-in,No,V1A,0.992
+M00853,H00853,2022-05-20,F01,Central,50-64,Monthly flexible,Walk-in,No,V1D,1.525
+M00854,H00427,2022-02-26,F01,Central,35-49,Adult annual,Organic web,Yes,V1C,0.768
+M00855,H00855,2025-09-06,F01,Central,65+,Adult annual,Organic web,Yes,V1E,0.506
+M00856,H00286,2022-03-07,F01,Central,18-34,Adult annual,Community event,Yes,V1C,0.98
+M00857,H00857,2025-07-19,F03,North Valley,18-34,Adult annual,Community event,Yes,V1B,1.164
+M00858,H00858,2024-07-09,F04,West Valley,65+,Family annual,Referral,No,V1A,1.082
+M00859,H00859,2023-09-17,F04,West Valley,18-34,Adult annual,Walk-in,Yes,V1D,1.646
+M00860,H00430,2024-10-10,F01,Central,50-64,Senior annual,Referral,No,V1D,1.243
+M00861,H00861,2024-02-09,F03,North Valley,Under 18,Adult annual,Walk-in,Yes,V1D,1.147
+M00862,H00862,2025-02-02,F02,East Shore,18-34,Family annual,Referral,No,V1D,1.675
+M00863,H00432,2024-04-17,F01,Central,35-49,Family annual,Referral,Yes,V1E,1.465
+M00864,H00288,2022-11-20,F01,Central,18-34,Family annual,Referral,Yes,V1C,1.375
+M00865,H00865,2024-03-03,F01,Central,18-34,Monthly flexible,Paid social,Yes,V1D,0.75
+M00866,H00289,2024-10-19,F02,East Shore,50-64,Monthly flexible,Organic web,Yes,V1D,1.288
+M00867,H00434,2024-02-06,F01,Central,35-49,Youth annual,Email,Yes,V1B,1.231
+M00868,H00290,2024-05-08,F04,West Valley,18-34,Monthly flexible,Paid social,No,V1D,1.436
+M00869,H00290,2023-04-09,F02,East Shore,18-34,Adult annual,Email,Yes,V1D,1.203
+M00870,H00870,2023-08-06,F03,North Valley,65+,Youth annual,Walk-in,Yes,V1A,0.57
+M00871,H00871,2023-09-21,F04,West Valley,35-49,Adult annual,Community event,No,V1A,0.903
+M00872,H00872,2023-07-18,F04,West Valley,18-34,Monthly flexible,Community event,Yes,V1E,1.501
+M00873,H00873,2023-07-20,F02,East Shore,18-34,Youth annual,Email,No,V1C,0.477
+M00874,H00292,2024-02-05,F02,East Shore,35-49,Monthly flexible,Email,Yes,V1A,0.565
+M00875,H00875,2025-08-03,F01,Central,18-34,Adult annual,Referral,Yes,V1E,0.825
+M00876,H00876,2023-08-06,F03,North Valley,35-49,Monthly flexible,Paid social,No,V1B,0.926
+M00877,H00877,2024-01-22,F01,Central,35-49,Senior annual,Referral,Yes,V1A,1.17
+M00878,H00878,2024-05-16,F04,West Valley,35-49,Family annual,Paid social,Yes,V1D,1.477
+M00879,H00293,2023-07-14,F02,East Shore,35-49,Monthly flexible,Paid social,No,V1D,0.907
+M00880,H00880,2024-10-13,F04,West Valley,50-64,Adult annual,Walk-in,No,V1B,0.727
+M00881,H00881,2024-01-26,F03,North Valley,35-49,Adult annual,Email,Yes,V1A,1.212
+M00882,H00882,2022-11-07,F02,East Shore,35-49,Monthly flexible,Walk-in,No,V1C,0.477
+M00883,H00883,2024-03-28,F01,Central,35-49,Senior annual,Referral,Yes,V1D,1.322
+M00884,H00884,2024-03-03,F02,East Shore,50-64,Family annual,Community event,Yes,V1C,1.178
+M00885,H00885,2023-05-13,F01,Central,18-34,Adult annual,Referral,Yes,V1A,0.819
+M00886,H00886,2024-07-07,F04,West Valley,18-34,Youth annual,Organic web,Yes,V1C,0.548
+M00887,H00296,2023-09-19,F02,East Shore,50-64,Adult annual,Organic web,Yes,V1B,0.886
+M00888,H00296,2025-10-31,F02,East Shore,18-34,Youth annual,Walk-in,Yes,V1C,0.645
+M00889,H00445,2022-02-09,F03,North Valley,35-49,Youth annual,Organic web,Yes,V1D,1.381
+M00890,H00890,2022-06-22,F02,East Shore,18-34,Family annual,Paid social,Yes,V1D,1.262
+M00891,H00891,2024-02-09,F01,Central,50-64,Senior annual,Walk-in,No,V1E,0.642
+M00892,H00446,2024-02-04,F01,Central,35-49,Family annual,Referral,No,V1A,1.399
+M00893,H00447,2025-07-11,F02,East Shore,35-49,Adult annual,Paid social,Yes,V1B,0.975
+M00894,H00894,2023-02-16,F01,Central,65+,Family annual,Referral,Yes,V1D,1.5
+M00895,H00895,2025-09-27,F04,West Valley,35-49,Family annual,Walk-in,No,V1D,0.79
+M00896,H00896,2025-07-17,F04,West Valley,Under 18,Family annual,Organic web,Yes,V1C,0.485
+M00897,H00897,2024-08-31,F03,North Valley,65+,Senior annual,Organic web,Yes,V1D,0.69
+M00898,H00898,2023-09-04,F02,East Shore,35-49,Adult annual,Paid social,Yes,V1C,1.243
+M00899,H00899,2023-07-20,F03,North Valley,18-34,Adult annual,Email,No,V1D,1.182
+M00900,H00900,2022-09-19,F01,Central,35-49,Senior annual,Referral,Yes,V1D,1.595
+M00901,H00901,2023-06-28,F02,East Shore,35-49,Monthly flexible,Referral,Yes,V1A,0.577
+M00902,H00902,2025-03-07,F03,North Valley,Under 18,Family annual,Community event,Yes,V1A,1.326
+M00903,H00903,2024-08-29,F02,East Shore,35-49,Family annual,Community event,No,V1A,1.593
+M00904,H00904,2024-05-03,F01,Central,50-64,Monthly flexible,Organic web,No,V1C,0.85
+M00905,H00453,2024-01-08,F01,Central,50-64,Youth annual,Referral,Yes,V1C,0.962
+M00906,H00906,2023-04-07,F03,North Valley,65+,Family annual,Referral,Yes,V1C,1.165
+M00907,H00907,2022-07-31,F01,Central,50-64,Adult annual,Paid social,Yes,V1A,1.465
+M00908,H00908,2024-02-04,F03,North Valley,18-34,Adult annual,Community event,Yes,V1B,0.692
+M00909,H00909,2023-05-03,F04,West Valley,Under 18,Monthly flexible,Email,No,V1B,1.306
+M00910,H00910,2023-11-10,F02,East Shore,35-49,Monthly flexible,Referral,Yes,V1A,0.472
+M00911,H00911,2024-03-02,F01,Central,35-49,Adult annual,Email,No,V1C,0.924
+M00912,H00912,2022-03-05,F04,West Valley,18-34,Adult annual,Walk-in,Yes,V1C,0.972
+M00913,H00305,2024-05-10,F01,Central,50-64,Senior annual,Paid social,Yes,V1E,1.543
+M00914,H00457,2024-06-10,F01,Central,18-34,Adult annual,Paid social,Yes,V1E,0.457
+M00915,H00458,2023-01-14,F04,West Valley,18-34,Adult annual,Referral,Yes,V1D,1.613
+M00916,H00916,2024-10-13,F02,East Shore,35-49,Monthly flexible,Referral,Yes,V1A,1.191
+M00917,H00917,2024-07-28,F02,East Shore,50-64,Monthly flexible,Referral,Yes,V1B,1.128
+M00918,H00459,2025-05-21,F01,Central,50-64,Senior annual,Referral,No,V1E,0.562
+M00919,H00919,2025-08-08,F01,Central,18-34,Monthly flexible,Email,Yes,V1C,0.978
+M00920,H00920,2023-08-18,F04,West Valley,18-34,Senior annual,Organic web,No,V1E,1.153
+M00921,H00921,2022-07-12,F02,East Shore,Under 18,Monthly flexible,Walk-in,No,V1C,0.619
+M00922,H00922,2022-05-10,F02,East Shore,18-34,Adult annual,Organic web,Yes,V1A,0.492
+M00923,H00923,2024-11-19,F03,North Valley,65+,Family annual,Email,Yes,V1E,0.613
+M00924,H00924,2024-07-30,F02,East Shore,18-34,Adult annual,Community event,No,V1B,1.141
+M00925,H00309,2023-06-27,F02,East Shore,35-49,Senior annual,Organic web,Yes,V1D,1.005
+M00926,H00926,2022-05-09,F03,North Valley,18-34,Youth annual,Community event,No,V1C,1.003
+M00927,H00464,2023-10-15,F01,Central,35-49,Monthly flexible,Referral,No,V1C,1.008
+M00928,H00928,2023-09-04,F04,West Valley,50-64,Monthly flexible,Walk-in,Yes,V1C,1.067
+M00929,H00310,2022-01-19,F02,East Shore,18-34,Family annual,Email,No,V1C,1.634
+M00930,H00930,2025-02-28,F04,West Valley,18-34,Adult annual,Walk-in,No,V1E,1.526
+M00931,H00931,2022-09-26,F04,West Valley,35-49,Youth annual,Referral,Yes,V1A,1.454
+M00932,H00932,2024-05-06,F01,Central,50-64,Senior annual,Community event,Yes,V1D,0.527
+M00933,H00311,2024-09-26,F04,West Valley,35-49,Monthly flexible,Walk-in,Yes,V1D,1.129
+M00934,H00934,2023-08-18,F03,North Valley,18-34,Adult annual,Organic web,No,V1E,0.692
+M00935,H00935,2024-01-23,F04,West Valley,18-34,Senior annual,Paid social,Yes,V1A,0.494
+M00936,H00936,2022-02-23,F01,Central,35-49,Family annual,Walk-in,Yes,V1D,0.978
+M00937,H00937,2023-02-06,F01,Central,35-49,Family annual,Referral,Yes,V1E,1.679
+M00938,H00938,2023-04-24,F03,North Valley,35-49,Senior annual,Walk-in,Yes,V1C,0.574
+M00939,H00939,2024-03-09,F01,Central,65+,Monthly flexible,Referral,No,V1D,0.733
+M00940,H00314,2022-02-22,F02,East Shore,35-49,Adult annual,Community event,Yes,V1A,1.685
+M00941,H00941,2022-09-29,F04,West Valley,18-34,Family annual,Walk-in,No,V1E,1.585
+M00942,H00942,2022-08-08,F04,West Valley,Under 18,Monthly flexible,Referral,Yes,V1B,0.6
+M00943,H00943,2025-07-30,F04,West Valley,35-49,Senior annual,Referral,Yes,V1C,1.507
+M00944,H00472,2024-08-13,F01,Central,35-49,Senior annual,Paid social,Yes,V1D,0.658
+M00945,H00473,2023-01-11,F04,West Valley,50-64,Adult annual,Walk-in,No,V1C,1.226
+M00946,H00946,2022-02-21,F02,East Shore,35-49,Youth annual,Organic web,Yes,V1B,1.07
+M00947,H00947,2025-11-11,F02,East Shore,18-34,Youth annual,Walk-in,Yes,V1A,1.544
+M00948,H00948,2024-05-08,F04,West Valley,50-64,Family annual,Walk-in,No,V1C,1.051
+M00949,H00949,2025-11-08,F01,Central,35-49,Monthly flexible,Walk-in,Yes,V1B,1.456
+M00950,H00950,2022-09-12,F04,West Valley,65+,Adult annual,Walk-in,Yes,V1C,1.583
+M00951,H00476,2024-08-18,F04,West Valley,18-34,Senior annual,Referral,No,V1C,1.231
+M00952,H00952,2023-05-23,F01,Central,35-49,Adult annual,Email,Yes,V1E,0.858
+M00953,H00953,2023-11-07,F03,North Valley,35-49,Adult annual,Paid social,Yes,V1C,1.146
+M00954,H00318,2023-03-27,F04,West Valley,50-64,Family annual,Referral,No,V1C,1.317
+M00955,H00955,2024-09-11,F01,Central,35-49,Adult annual,Paid social,Yes,V1C,0.852
+M00956,H00956,2024-01-28,F03,North Valley,18-34,Senior annual,Referral,Yes,V1D,0.673
+M00957,H00319,2025-09-17,F04,West Valley,18-34,Adult annual,Organic web,No,V1A,0.519
+M00958,H00958,2024-08-18,F04,West Valley,18-34,Family annual,Community event,Yes,V1A,0.778
+M00959,H00959,2023-08-01,F01,Central,65+,Monthly flexible,Organic web,Yes,V1A,0.684
+M00960,H00960,2023-02-13,F03,North Valley,18-34,Monthly flexible,Community event,Yes,V1A,1.181
+M00961,H00961,2023-09-09,F01,Central,18-34,Youth annual,Paid social,No,V1E,1.398
+M00962,H00962,2025-06-14,F02,East Shore,50-64,Adult annual,Paid social,Yes,V1B,1.527
+M00963,H00321,2023-03-26,F02,East Shore,Under 18,Adult annual,Email,Yes,V1B,1.295
+M00964,H00322,2022-03-22,F01,Central,Under 18,Family annual,Organic web,No,V1A,0.523
+M00965,H00322,2022-02-09,F04,West Valley,35-49,Adult annual,Email,Yes,V1C,1.234
+M00966,H00966,2023-11-02,F01,Central,35-49,Family annual,Email,Yes,V1B,0.733
+M00967,H00484,2023-05-07,F01,Central,35-49,Monthly flexible,Walk-in,No,V1A,0.996
+M00968,H00323,2025-11-01,F04,West Valley,18-34,Monthly flexible,Paid social,Yes,V1C,1.487
+M00969,H00969,2023-01-31,F03,North Valley,Under 18,Adult annual,Referral,No,V1B,1.456
+M00970,H00970,2022-07-30,F03,North Valley,50-64,Family annual,Email,Yes,V1A,1.128
+M00971,H00971,2023-07-30,F02,East Shore,35-49,Senior annual,Community event,No,V1E,1.441
+M00972,H00324,2024-10-01,F02,East Shore,50-64,Adult annual,Walk-in,No,V1E,0.568
+M00973,H00973,2022-03-31,F02,East Shore,18-34,Adult annual,Walk-in,Yes,V1C,0.896
+M00974,H00974,2024-04-15,F01,Central,65+,Adult annual,Email,No,V1E,1.034
+M00975,H00975,2025-07-07,F03,North Valley,18-34,Adult annual,Email,Yes,V1C,0.567
+M00976,H00488,2024-02-26,F02,East Shore,35-49,Youth annual,Community event,No,V1C,0.672
+M00977,H00326,2022-03-01,F02,East Shore,18-34,Adult annual,Paid social,No,V1D,0.708
+M00978,H00489,2024-05-03,F02,East Shore,18-34,Adult annual,Referral,Yes,V1D,1.668
+M00979,H00979,2023-09-04,F04,West Valley,50-64,Family annual,Referral,Yes,V1B,1.255
+M00980,H00327,2022-04-14,F01,Central,18-34,Monthly flexible,Organic web,Yes,V1B,1.452
+M00981,H00981,2023-08-30,F02,East Shore,35-49,Family annual,Referral,Yes,V1E,1.024
+M00982,H00491,2022-11-01,F01,Central,Under 18,Adult annual,Walk-in,Yes,V1C,1.115
+M00983,H00328,2024-10-20,F01,Central,50-64,Adult annual,Organic web,No,V1D,1.582
+M00984,H00984,2024-07-31,F04,West Valley,35-49,Adult annual,Organic web,Yes,V1E,0.5
+M00985,H00329,2022-01-10,F03,North Valley,65+,Monthly flexible,Organic web,Yes,V1C,0.802
+M00986,H00329,2022-05-23,F01,Central,Under 18,Youth annual,Organic web,Yes,V1C,1.528
+M00987,H00987,2023-03-07,F01,Central,18-34,Adult annual,Paid social,No,V1C,1.416
+M00988,H00988,2025-04-28,F04,West Valley,35-49,Senior annual,Community event,Yes,V1C,0.916
+M00989,H00330,2022-07-27,F02,East Shore,18-34,Adult annual,Walk-in,Yes,V1E,1.114
+M00990,H00495,2024-10-23,F01,Central,18-34,Adult annual,Community event,Yes,V1B,0.614
+M00991,H00331,2022-11-01,F01,Central,65+,Monthly flexible,Referral,Yes,V1C,0.771
+M00992,H00496,2022-08-01,F01,Central,35-49,Monthly flexible,Email,Yes,V1A,1.24
+M00993,H00993,2023-07-08,F01,Central,50-64,Monthly flexible,Referral,Yes,V1A,1.163
+M00994,H00497,2024-04-23,F01,Central,65+,Youth annual,Referral,No,V1D,0.682
+M00995,H00995,2024-05-09,F03,North Valley,65+,Senior annual,Organic web,Yes,V1D,1.349
+M00996,H00996,2024-03-21,F02,East Shore,Under 18,Family annual,Referral,Yes,V1D,1.055
+M00997,H00997,2024-08-22,F04,West Valley,50-64,Monthly flexible,Referral,Yes,V1A,0.481
+M00998,H00499,2022-07-07,F04,West Valley,18-34,Monthly flexible,Referral,Yes,V1D,1.642
+M00999,H00999,2023-06-25,F04,West Valley,18-34,Adult annual,Organic web,Yes,V1B,0.865
+M01000,H01000,2024-01-25,F01,Central,18-34,Adult annual,Referral,Yes,V1E,1.482
+M01001,H00501,2022-07-18,F02,East Shore,35-49,Youth annual,Referral,Yes,V1B,0.464
+M01002,H01002,2024-03-18,F02,East Shore,18-34,Adult annual,Community event,Yes,V1B,1.403
+M01003,H00502,2023-11-16,F01,Central,65+,Senior annual,Paid social,No,V1C,1.32
+M01004,H00335,2022-01-15,F02,East Shore,18-34,Monthly flexible,Paid social,Yes,V1D,1.037
+M01005,H01005,2024-07-10,F02,East Shore,18-34,Monthly flexible,Paid social,No,V1E,0.826
+M01006,H01006,2025-08-15,F03,North Valley,35-49,Adult annual,Walk-in,No,V1E,1.635
+M01007,H00336,2025-05-02,F04,West Valley,65+,Youth annual,Referral,Yes,V1C,1.476
+M01008,H01008,2023-01-21,F04,West Valley,65+,Family annual,Organic web,No,V1C,1.656
+M01009,H01009,2023-08-20,F01,Central,35-49,Family annual,Organic web,Yes,V1A,1.601
+M01010,H00337,2024-07-15,F02,East Shore,18-34,Senior annual,Organic web,Yes,V1D,1.38
+M01011,H01011,2024-10-24,F02,East Shore,50-64,Adult annual,Organic web,Yes,V1D,0.683
+M01012,H00338,2025-06-26,F04,West Valley,Under 18,Senior annual,Walk-in,No,V1E,0.819
+M01013,H00507,2025-10-12,F04,West Valley,50-64,Monthly flexible,Walk-in,Yes,V1C,0.986
+M01014,H01014,2024-01-15,F03,North Valley,50-64,Senior annual,Walk-in,Yes,V1E,1.275
+M01015,H01015,2023-06-08,F02,East Shore,50-64,Family annual,Community event,No,V1E,1.543
+M01016,H01016,2022-02-05,F01,Central,35-49,Youth annual,Referral,Yes,V1C,1.63
+M01017,H00509,2024-11-09,F02,East Shore,35-49,Family annual,Walk-in,Yes,V1E,1.653
+M01018,H01018,2025-05-23,F02,East Shore,18-34,Adult annual,Referral,No,V1A,1.221
+M01019,H00510,2022-03-18,F02,East Shore,50-64,Adult annual,Referral,Yes,V1C,0.996
+M01020,H00340,2025-03-11,F03,North Valley,50-64,Family annual,Walk-in,Yes,V1D,1.389
+M01021,H00511,2024-09-12,F01,Central,65+,Adult annual,Walk-in,Yes,V1A,1.582
+M01022,H00511,2024-08-22,F04,West Valley,35-49,Adult annual,Community event,Yes,V1D,1.589
+M01023,H01023,2023-09-25,F01,Central,35-49,Monthly flexible,Organic web,No,V1A,1.699
+M01024,H01024,2022-11-10,F03,North Valley,35-49,Youth annual,Referral,Yes,V1A,0.909
+M01025,H00342,2024-02-03,F01,Central,50-64,Family annual,Email,Yes,V1E,0.624
+M01026,H01026,2022-10-07,F02,East Shore,18-34,Adult annual,Paid social,Yes,V1B,0.713
+M01027,H00514,2024-01-24,F02,East Shore,18-34,Adult annual,Referral,Yes,V1E,1.482
+M01028,H01028,2023-09-24,F01,Central,50-64,Adult annual,Walk-in,Yes,V1C,0.487
+M01029,H00515,2025-01-30,F04,West Valley,35-49,Family annual,Paid social,Yes,V1D,1.518
+M01030,H00515,2022-03-01,F04,West Valley,50-64,Monthly flexible,Community event,No,V1A,0.992
+M01031,H01031,2024-06-12,F02,East Shore,18-34,Adult annual,Organic web,Yes,V1B,1.493
+M01032,H00344,2022-07-10,F01,Central,50-64,Adult annual,Walk-in,Yes,V1C,0.911
+M01033,H00345,2023-02-18,F02,East Shore,18-34,Adult annual,Community event,Yes,V1A,0.564
+M01034,H01034,2025-06-20,F01,Central,18-34,Family annual,Community event,Yes,V1A,1.221
+M01035,H01035,2023-04-30,F03,North Valley,18-34,Senior annual,Community event,Yes,V1A,1.579
+M01036,H01036,2025-09-24,F04,West Valley,18-34,Family annual,Walk-in,No,V1A,1.572
+M01037,H00346,2025-11-07,F04,West Valley,35-49,Monthly flexible,Email,Yes,V1D,0.88
+M01038,H00346,2022-04-22,F01,Central,35-49,Adult annual,Referral,Yes,V1C,0.789
+M01039,H01039,2024-07-21,F01,Central,18-34,Adult annual,Walk-in,Yes,V1D,1.379
+M01040,H01040,2025-08-09,F01,Central,50-64,Family annual,Community event,Yes,V1B,1.243
+M01041,H00347,2022-07-20,F01,Central,35-49,Monthly flexible,Walk-in,Yes,V1B,0.633
+M01042,H01042,2023-09-20,F01,Central,65+,Monthly flexible,Community event,Yes,V1E,1.133
+M01043,H00522,2024-08-09,F01,Central,35-49,Family annual,Walk-in,Yes,V1C,1.216
+M01044,H01044,2024-10-28,F01,Central,65+,Adult annual,Referral,Yes,V1D,1.129
+M01045,H01045,2024-09-09,F01,Central,35-49,Family annual,Organic web,Yes,V1C,1.066
+M01046,H01046,2023-03-06,F02,East Shore,18-34,Family annual,Paid social,Yes,V1B,1.421
+M01047,H01047,2024-09-23,F01,Central,Under 18,Family annual,Walk-in,Yes,V1A,1.634
+M01048,H01048,2023-08-20,F02,East Shore,18-34,Monthly flexible,Email,Yes,V1B,1.65
+M01049,H00525,2022-10-03,F04,West Valley,50-64,Family annual,Paid social,Yes,V1A,0.908
+M01050,H01050,2023-01-05,F04,West Valley,50-64,Family annual,Walk-in,No,V1A,0.496
+M01051,H00351,2023-11-22,F03,North Valley,65+,Monthly flexible,Community event,Yes,V1C,1.474
+M01052,H00526,2023-06-24,F02,East Shore,Under 18,Youth annual,Referral,Yes,V1A,1.072
+M01053,H01053,2022-06-28,F03,North Valley,65+,Family annual,Referral,Yes,V1A,0.806
+M01054,H01054,2025-10-03,F01,Central,65+,Monthly flexible,Walk-in,Yes,V1B,0.749
+M01055,H01055,2024-04-20,F04,West Valley,65+,Monthly flexible,Community event,Yes,V1A,0.622
+M01056,H00528,2023-05-10,F03,North Valley,65+,Monthly flexible,Paid social,Yes,V1B,1.409
+M01057,H00529,2024-02-14,F03,North Valley,18-34,Family annual,Referral,Yes,V1B,1.194
+M01058,H00353,2024-06-14,F01,Central,Under 18,Senior annual,Referral,Yes,V1B,0.685
+M01059,H01059,2022-01-15,F03,North Valley,18-34,Monthly flexible,Paid social,Yes,V1C,1.403
+M01060,H01060,2023-07-12,F03,North Valley,35-49,Adult annual,Walk-in,No,V1D,1.211
+M01061,H01061,2025-09-24,F02,East Shore,18-34,Monthly flexible,Referral,No,V1B,0.792
+M01062,H00531,2024-03-11,F01,Central,65+,Adult annual,Referral,Yes,V1A,1.479
+M01063,H01063,2022-05-02,F04,West Valley,Under 18,Senior annual,Organic web,Yes,V1D,1.467
+M01064,H01064,2025-06-10,F03,North Valley,35-49,Monthly flexible,Paid social,Yes,V1A,1.404
+M01065,H00355,2023-04-25,F02,East Shore,65+,Monthly flexible,Organic web,Yes,V1D,1.447
+M01066,H01066,2023-04-22,F01,Central,18-34,Family annual,Referral,No,V1A,0.497
+M01067,H00534,2024-08-14,F03,North Valley,35-49,Senior annual,Referral,Yes,V1D,1.541
+M01068,H01068,2024-06-06,F02,East Shore,50-64,Monthly flexible,Referral,Yes,V1E,0.668
+M01069,H00357,2022-10-17,F03,North Valley,18-34,Senior annual,Referral,Yes,V1B,1.208
+M01070,H00535,2025-04-30,F01,Central,18-34,Monthly flexible,Referral,Yes,V1D,1.073
+M01071,H01071,2023-10-16,F03,North Valley,35-49,Adult annual,Community event,Yes,V1E,1.482
+M01072,H00358,2023-09-13,F04,West Valley,18-34,Senior annual,Paid social,No,V1E,0.848
+M01073,H00537,2025-08-02,F04,West Valley,18-34,Senior annual,Email,No,V1B,0.79
+M01074,H01074,2023-01-10,F01,Central,65+,Family annual,Organic web,Yes,V1B,1.471
+M01075,H00359,2023-07-11,F04,West Valley,Under 18,Adult annual,Paid social,Yes,V1C,0.994
+M01076,H01076,2025-04-21,F04,West Valley,50-64,Adult annual,Community event,No,V1A,1.442
+M01077,H01077,2025-04-21,F02,East Shore,50-64,Monthly flexible,Organic web,Yes,V1D,1.007
+M01078,H00360,2022-05-12,F04,West Valley,65+,Adult annual,Organic web,Yes,V1B,1.584
+M01079,H00360,2025-08-24,F02,East Shore,50-64,Senior annual,Referral,Yes,V1C,0.559
+M01080,H01080,2024-10-30,F01,Central,65+,Senior annual,Referral,Yes,V1C,1.699
+M01081,H01081,2022-09-03,F01,Central,35-49,Adult annual,Referral,Yes,V1E,1.572
+M01082,H01082,2024-08-16,F01,Central,18-34,Adult annual,Referral,Yes,V1C,0.82
+M01083,H01083,2022-04-30,F03,North Valley,65+,Senior annual,Community event,Yes,V1D,0.976
+M01084,H00542,2023-02-26,F03,North Valley,18-34,Family annual,Organic web,No,V1E,0.793
+M01085,H00543,2023-09-26,F02,East Shore,50-64,Monthly flexible,Walk-in,No,V1B,0.53
+M01086,H01086,2025-04-20,F04,West Valley,65+,Adult annual,Referral,Yes,V1E,1.663
+M01087,H00363,2022-09-22,F01,Central,35-49,Senior annual,Organic web,No,V1E,1.33
+M01088,H00544,2022-06-22,F01,Central,35-49,Youth annual,Email,No,V1B,1.514
+M01089,H01089,2023-10-02,F01,Central,50-64,Adult annual,Organic web,Yes,V1D,0.685
+M01090,H01090,2022-08-15,F01,Central,50-64,Family annual,Organic web,Yes,V1B,1.562
+M01091,H00364,2024-08-23,F03,North Valley,50-64,Monthly flexible,Organic web,Yes,V1E,0.624
+M01092,H00364,2023-05-29,F04,West Valley,35-49,Adult annual,Organic web,No,V1C,1.662
+M01093,H01093,2023-11-10,F01,Central,65+,Senior annual,Community event,Yes,V1C,0.669
+M01094,H00547,2025-04-17,F03,North Valley,65+,Adult annual,Walk-in,No,V1E,1.051
+M01095,H00548,2024-06-07,F01,Central,65+,Adult annual,Referral,No,V1C,0.874
+M01096,H00548,2022-08-02,F02,East Shore,65+,Adult annual,Organic web,Yes,V1D,1.649
+M01097,H01097,2025-03-31,F01,Central,35-49,Adult annual,Organic web,Yes,V1A,1.278
+M01098,H01098,2023-01-25,F01,Central,50-64,Adult annual,Paid social,Yes,V1C,1.051
+M01099,H01099,2024-11-21,F01,Central,18-34,Family annual,Walk-in,Yes,V1B,1.632
+M01100,H01100,2023-02-11,F01,Central,18-34,Adult annual,Paid social,No,V1C,1.45
+M01101,H01101,2023-02-08,F03,North Valley,50-64,Monthly flexible,Community event,No,V1C,1.292
+M01102,H00368,2022-02-07,F03,North Valley,Under 18,Senior annual,Email,No,V1B,0.952
+M01103,H01103,2022-08-27,F02,East Shore,35-49,Monthly flexible,Walk-in,Yes,V1C,1.37
+M01104,H01104,2024-04-07,F02,East Shore,35-49,Youth annual,Paid social,No,V1C,0.666
+M01105,H01105,2022-10-09,F02,East Shore,18-34,Adult annual,Walk-in,Yes,V1C,1.546
+M01106,H01106,2024-07-25,F01,Central,Under 18,Monthly flexible,Referral,Yes,V1C,0.642
+M01107,H00554,2024-09-14,F04,West Valley,Under 18,Adult annual,Community event,Yes,V1B,1.295
+M01108,H01108,2025-08-27,F01,Central,18-34,Senior annual,Paid social,No,V1A,0.585
+M01109,H00370,2024-02-05,F04,West Valley,65+,Family annual,Organic web,No,V1B,0.865
+M01110,H01110,2024-04-11,F04,West Valley,50-64,Monthly flexible,Referral,Yes,V1D,0.872
+M01111,H00371,2023-08-13,F01,Central,50-64,Youth annual,Referral,Yes,V1A,1.253
+M01112,H00371,2022-05-30,F02,East Shore,50-64,Senior annual,Community event,Yes,V1D,0.754
+M01113,H01113,2024-06-15,F04,West Valley,35-49,Adult annual,Walk-in,No,V1B,1.239
+M01114,H00557,2024-10-04,F04,West Valley,18-34,Adult annual,Walk-in,Yes,V1B,1.095
+M01115,H01115,2025-07-04,F02,East Shore,50-64,Family annual,Organic web,Yes,V1C,0.844
+M01116,H00558,2024-10-26,F04,West Valley,18-34,Family annual,Referral,No,V1A,0.688
+M01117,H00559,2024-11-14,F04,West Valley,18-34,Youth annual,Referral,No,V1A,1.291
+M01118,H01118,2022-11-21,F03,North Valley,65+,Family annual,Email,Yes,V1A,1.339
+M01119,H01119,2025-08-03,F01,Central,35-49,Monthly flexible,Referral,Yes,V1E,1.479
+M01120,H01120,2024-11-15,F01,Central,35-49,Family annual,Community event,No,V1D,1.428
+M01121,H00374,2025-03-04,F04,West Valley,18-34,Monthly flexible,Referral,Yes,V1C,0.999
+M01122,H01122,2025-10-04,F02,East Shore,18-34,Monthly flexible,Referral,Yes,V1E,1.542
+M01123,H00375,2022-10-06,F01,Central,50-64,Adult annual,Email,Yes,V1E,0.826
+M01124,H00562,2024-03-15,F04,West Valley,65+,Adult annual,Community event,Yes,V1E,1.073
+M01125,H00563,2025-06-28,F02,East Shore,35-49,Adult annual,Community event,Yes,V1B,0.934
+M01126,H00376,2022-10-04,F02,East Shore,65+,Senior annual,Referral,Yes,V1B,1.256
+M01127,H00376,2025-05-08,F03,North Valley,65+,Family annual,Walk-in,No,V1E,1.555
+M01128,H01128,2025-06-11,F01,Central,18-34,Senior annual,Referral,No,V1C,1.49
+M01129,H01129,2022-05-28,F01,Central,35-49,Adult annual,Referral,Yes,V1B,0.669
+M01130,H01130,2024-02-21,F02,East Shore,35-49,Adult annual,Community event,Yes,V1C,1.697
+M01131,H01131,2023-02-04,F01,Central,Under 18,Monthly flexible,Email,Yes,V1B,1.097
+M01132,H01132,2023-09-26,F04,West Valley,50-64,Adult annual,Walk-in,Yes,V1C,1.176
+M01133,H01133,2024-05-13,F02,East Shore,18-34,Monthly flexible,Email,No,V1D,1.044
+M01134,H01134,2024-02-20,F01,Central,35-49,Adult annual,Paid social,Yes,V1C,0.862
+M01135,H00379,2024-07-09,F01,Central,18-34,Adult annual,Paid social,No,V1E,1.65
+M01136,H00379,2023-08-30,F02,East Shore,Under 18,Senior annual,Email,No,V1D,0.709
+M01137,H01137,2025-04-01,F02,East Shore,35-49,Family annual,Community event,Yes,V1B,0.492
+M01138,H00380,2024-10-26,F03,North Valley,50-64,Family annual,Walk-in,Yes,V1D,1.597
+M01139,H00570,2023-03-13,F03,North Valley,35-49,Monthly flexible,Referral,No,V1C,0.462
+M01140,H01140,2022-06-04,F01,Central,Under 18,Adult annual,Organic web,Yes,V1A,1.18
+M01141,H01141,2023-08-24,F01,Central,35-49,Family annual,Referral,Yes,V1A,1.577
+M01142,H01142,2023-03-25,F03,North Valley,35-49,Adult annual,Walk-in,Yes,V1C,0.967
+M01143,H01143,2022-06-30,F03,North Valley,18-34,Youth annual,Community event,Yes,V1B,0.485
+M01144,H01144,2024-07-03,F04,West Valley,50-64,Senior annual,Paid social,Yes,V1E,1.174
+M01145,H00573,2022-03-03,F03,North Valley,50-64,Adult annual,Referral,Yes,V1A,1.222
+M01146,H01146,2022-02-19,F04,West Valley,50-64,Senior annual,Walk-in,Yes,V1C,1.689
+M01147,H01147,2022-03-15,F01,Central,50-64,Senior annual,Paid social,Yes,V1C,1.297
+M01148,H00574,2025-01-06,F02,East Shore,18-34,Family annual,Paid social,Yes,V1B,1.587
+M01149,H01149,2023-08-09,F01,Central,35-49,Adult annual,Organic web,No,V1E,1.537
+M01150,H00384,2025-07-17,F03,North Valley,18-34,Adult annual,Referral,Yes,V1E,0.465
+M01151,H00576,2022-07-26,F01,Central,35-49,Monthly flexible,Paid social,No,V1D,1.116
+M01152,H00576,2023-04-02,F01,Central,65+,Family annual,Organic web,Yes,V1E,1.133
+M01153,H01153,2025-03-15,F04,West Valley,18-34,Adult annual,Organic web,Yes,V1A,0.696
+M01154,H00577,2024-05-27,F04,West Valley,18-34,Adult annual,Walk-in,No,V1B,1.356
+M01155,H00578,2024-07-14,F01,Central,35-49,Youth annual,Walk-in,No,V1B,0.719
+M01156,H01156,2024-09-19,F01,Central,18-34,Monthly flexible,Walk-in,Yes,V1A,1.194
+M01157,H00579,2024-09-29,F04,West Valley,18-34,Adult annual,Community event,Yes,V1B,1.575
+M01158,H00579,2025-05-16,F02,East Shore,35-49,Adult annual,Community event,Yes,V1E,1.363
+M01159,H00387,2022-01-28,F01,Central,18-34,Adult annual,Organic web,Yes,V1D,1.06
+M01160,H00387,2024-09-13,F03,North Valley,35-49,Senior annual,Organic web,No,V1C,0.974
+M01161,H00387,2024-03-31,F03,North Valley,35-49,Family annual,Paid social,No,V1E,0.99
+M01162,H00388,2025-04-07,F02,East Shore,65+,Adult annual,Organic web,No,V1C,0.641
+M01163,H00582,2023-08-27,F01,Central,35-49,Monthly flexible,Email,Yes,V1B,0.703
+M01164,H01164,2023-05-29,F01,Central,50-64,Senior annual,Walk-in,Yes,V1A,1.451
+M01165,H01165,2023-08-22,F01,Central,35-49,Senior annual,Walk-in,Yes,V1E,1.136
+M01166,H01166,2025-10-13,F02,East Shore,50-64,Adult annual,Organic web,No,V1A,1.031
+M01167,H00389,2023-06-07,F01,Central,18-34,Family annual,Organic web,Yes,V1C,1.094
+M01168,H01168,2022-10-28,F02,East Shore,50-64,Family annual,Referral,No,V1E,1.402
+M01169,H00390,2023-04-09,F04,West Valley,18-34,Adult annual,Community event,No,V1B,1.657
+M01170,H01170,2025-11-16,F01,Central,Under 18,Adult annual,Organic web,Yes,V1C,0.883
+M01171,H00586,2023-03-28,F04,West Valley,50-64,Adult annual,Referral,No,V1A,0.737
+M01172,H01172,2025-09-01,F02,East Shore,18-34,Monthly flexible,Email,Yes,V1C,0.485
+M01173,H00391,2025-03-27,F01,Central,65+,Family annual,Walk-in,Yes,V1B,0.835
+M01174,H01174,2024-09-24,F01,Central,18-34,Adult annual,Community event,Yes,V1B,1.644
+M01175,H00588,2025-02-14,F01,Central,35-49,Adult annual,Organic web,Yes,V1A,1.408
+M01176,H00588,2025-07-15,F01,Central,35-49,Adult annual,Walk-in,Yes,V1B,1.424
+M01177,H01177,2022-09-19,F02,East Shore,35-49,Monthly flexible,Referral,Yes,V1C,1.266
+M01178,H01178,2024-05-02,F04,West Valley,50-64,Adult annual,Referral,Yes,V1A,0.74
+M01179,H01179,2022-02-15,F02,East Shore,35-49,Adult annual,Organic web,Yes,V1C,0.708
+M01180,H00394,2024-02-25,F03,North Valley,35-49,Monthly flexible,Email,Yes,V1E,1.355
+M01181,H01181,2023-05-05,F03,North Valley,35-49,Adult annual,Community event,Yes,V1D,1.592
+M01182,H00591,2022-01-29,F04,West Valley,35-49,Family annual,Walk-in,Yes,V1E,1.428
+M01183,H01183,2025-01-13,F04,West Valley,35-49,Family annual,Email,Yes,V1C,0.694
+M01184,H01184,2023-09-28,F04,West Valley,18-34,Adult annual,Paid social,Yes,V1D,1.224
+M01185,H00395,2025-10-12,F04,West Valley,50-64,Senior annual,Walk-in,Yes,V1D,1.148
+M01186,H01186,2022-06-03,F03,North Valley,35-49,Family annual,Referral,Yes,V1B,0.609
+M01187,H01187,2023-01-06,F02,East Shore,35-49,Family annual,Email,Yes,V1B,0.715
+M01188,H01188,2023-11-20,F01,Central,35-49,Family annual,Walk-in,No,V1A,1.262
+M01189,H00595,2022-11-16,F04,West Valley,18-34,Adult annual,Walk-in,Yes,V1A,1.523
+M01190,H01190,2024-08-27,F02,East Shore,18-34,Senior annual,Community event,Yes,V1B,1.323
+M01191,H00596,2023-04-18,F02,East Shore,35-49,Monthly flexible,Referral,No,V1C,0.88
+M01192,H01192,2025-03-13,F02,East Shore,Under 18,Senior annual,Walk-in,No,V1E,1.046
+M01193,H00597,2023-06-10,F02,East Shore,35-49,Monthly flexible,Organic web,Yes,V1B,0.857
+M01194,H01194,2024-01-14,F01,Central,Under 18,Monthly flexible,Referral,Yes,V1A,1.3
+M01195,H00399,2024-05-01,F02,East Shore,65+,Monthly flexible,Walk-in,Yes,V1B,0.831
+M01196,H00598,2024-01-14,F02,East Shore,18-34,Family annual,Community event,Yes,V1D,0.536
+M01197,H01197,2023-10-31,F01,Central,50-64,Adult annual,Paid social,Yes,V1D,1.594
+M01198,H01198,2025-04-01,F02,East Shore,35-49,Monthly flexible,Organic web,Yes,V1D,1.186
+M01199,H01199,2024-09-29,F03,North Valley,50-64,Family annual,Organic web,Yes,V1E,1.468
+M01200,H01200,2023-06-14,F01,Central,Under 18,Family annual,Paid social,No,V1C,1.594
+M01201,H01201,2023-03-26,F04,West Valley,65+,Family annual,Organic web,Yes,V1C,0.637
+M01202,H01202,2023-10-24,F01,Central,18-34,Adult annual,Email,No,V1D,1.513
+M01203,H00602,2023-08-05,F02,East Shore,50-64,Adult annual,Organic web,Yes,V1A,0.734
+M01204,H01204,2025-10-03,F03,North Valley,Under 18,Adult annual,Referral,Yes,V1E,1.588
+M01205,H01205,2023-07-24,F02,East Shore,65+,Senior annual,Referral,Yes,V1C,0.615
+M01206,H00603,2024-08-30,F02,East Shore,50-64,Senior annual,Organic web,No,V1D,1.429
+M01207,H00604,2022-11-10,F03,North Valley,Under 18,Adult annual,Community event,Yes,V1C,1.694
+M01208,H01208,2024-03-20,F01,Central,18-34,Monthly flexible,Organic web,No,V1B,1.063
+M01209,H01209,2023-07-10,F04,West Valley,35-49,Youth annual,Referral,Yes,V1B,1.646
+M01210,H00404,2022-11-19,F01,Central,18-34,Family annual,Email,Yes,V1B,0.482
+M01211,H00404,2022-10-31,F04,West Valley,35-49,Senior annual,Community event,Yes,V1E,1.358
+M01212,H00404,2023-05-08,F04,West Valley,18-34,Monthly flexible,Paid social,No,V1C,0.883
+M01213,H01213,2025-10-23,F02,East Shore,35-49,Monthly flexible,Walk-in,Yes,V1C,0.608
+M01214,H00607,2024-08-20,F03,North Valley,Under 18,Youth annual,Paid social,Yes,V1B,1.328
+M01215,H01215,2023-03-30,F01,Central,18-34,Adult annual,Referral,Yes,V1B,1.634
+M01216,H01216,2024-10-08,F01,Central,18-34,Adult annual,Email,Yes,V1C,0.696
+M01217,H00609,2023-06-04,F01,Central,Under 18,Family annual,Referral,Yes,V1D,0.495
+M01218,H01218,2024-03-23,F01,Central,35-49,Adult annual,Email,Yes,V1C,1.295
+M01219,H00610,2024-02-27,F03,North Valley,50-64,Adult annual,Walk-in,Yes,V1C,1.593
+M01220,H01220,2025-04-19,F01,Central,65+,Family annual,Organic web,No,V1C,0.821
+M01221,H00611,2023-01-14,F01,Central,65+,Family annual,Paid social,Yes,V1C,1.336
+M01222,H01222,2022-06-26,F04,West Valley,50-64,Adult annual,Referral,Yes,V1A,0.766
+M01223,H01223,2023-06-20,F02,East Shore,18-34,Monthly flexible,Referral,Yes,V1B,0.473
+M01224,H00612,2024-11-19,F01,Central,18-34,Monthly flexible,Referral,No,V1B,0.474
+M01225,H00409,2023-09-11,F04,West Valley,35-49,Senior annual,Referral,No,V1B,0.807
+M01226,H01226,2025-05-25,F02,East Shore,Under 18,Adult annual,Email,No,V1B,0.779
+M01227,H00614,2022-03-29,F01,Central,65+,Family annual,Walk-in,Yes,V1C,0.861
+M01228,H01228,2023-11-18,F03,North Valley,65+,Family annual,Email,Yes,V1A,0.58
+M01229,H01229,2025-06-05,F01,Central,35-49,Family annual,Referral,Yes,V1B,1.375
+M01230,H00615,2022-08-08,F04,West Valley,35-49,Family annual,Paid social,Yes,V1B,0.593
+M01231,H01231,2024-07-09,F04,West Valley,35-49,Adult annual,Walk-in,Yes,V1C,1.438
+M01232,H01232,2023-03-10,F02,East Shore,18-34,Senior annual,Referral,Yes,V1A,0.591
+M01233,H01233,2023-07-26,F01,Central,50-64,Adult annual,Email,No,V1D,0.797
+M01234,H01234,2025-01-10,F02,East Shore,35-49,Family annual,Community event,Yes,V1B,1.428
+M01235,H01235,2023-10-20,F02,East Shore,65+,Senior annual,Paid social,Yes,V1C,1.675
+M01236,H01236,2024-02-29,F04,West Valley,18-34,Family annual,Referral,Yes,V1B,1.062
+M01237,H01237,2024-05-29,F03,North Valley,65+,Senior annual,Organic web,Yes,V1E,0.824
+M01238,H00619,2025-02-21,F03,North Valley,50-64,Youth annual,Paid social,No,V1D,0.679
+M01239,H00413,2024-06-01,F01,Central,35-49,Family annual,Organic web,Yes,V1A,0.736
+M01240,H01240,2023-03-26,F03,North Valley,65+,Monthly flexible,Paid social,Yes,V1A,1.304
+M01241,H00621,2022-04-05,F01,Central,18-34,Senior annual,Community event,Yes,V1B,0.893
+M01242,H01242,2024-06-24,F01,Central,Under 18,Monthly flexible,Walk-in,Yes,V1B,0.562
+M01243,H01243,2025-01-16,F03,North Valley,50-64,Adult annual,Referral,No,V1A,0.749
+M01244,H00622,2022-03-24,F02,East Shore,Under 18,Adult annual,Referral,No,V1D,0.938
+M01245,H00415,2023-08-29,F02,East Shore,35-49,Monthly flexible,Walk-in,Yes,V1E,1.296
+M01246,H00623,2025-10-11,F02,East Shore,35-49,Family annual,Paid social,Yes,V1A,0.765
+M01247,H00624,2024-04-10,F01,Central,Under 18,Adult annual,Walk-in,Yes,V1C,0.691
+M01248,H00416,2022-02-21,F03,North Valley,Under 18,Family annual,Organic web,Yes,V1A,1.076
+M01249,H01249,2024-11-15,F01,Central,Under 18,Youth annual,Paid social,Yes,V1A,0.842
+M01250,H01250,2025-03-11,F02,East Shore,18-34,Family annual,Community event,Yes,V1E,0.745
+M01251,H01251,2023-02-05,F04,West Valley,35-49,Adult annual,Email,No,V1D,1.411
+M01252,H00418,2024-07-29,F02,East Shore,50-64,Monthly flexible,Organic web,Yes,V1A,1.568
+M01253,H01253,2024-03-02,F02,East Shore,18-34,Monthly flexible,Walk-in,No,V1C,0.511
+M01254,H00418,2023-02-22,F03,North Valley,Under 18,Family annual,Community event,Yes,V1B,1.423
+M01255,H01255,2025-02-04,F04,West Valley,50-64,Adult annual,Organic web,No,V1B,1.417
+M01256,H00628,2023-01-10,F01,Central,18-34,Adult annual,Referral,Yes,V1C,0.507
+M01257,H00419,2023-08-14,F03,North Valley,50-64,Family annual,Referral,Yes,V1C,1.064
+M01258,H00420,2025-10-13,F03,North Valley,18-34,Adult annual,Walk-in,Yes,V1D,0.673
+M01259,H01259,2023-02-15,F04,West Valley,50-64,Adult annual,Paid social,Yes,V1B,1.234
+M01260,H00630,2022-09-19,F04,West Valley,65+,Family annual,Email,No,V1D,0.467
+M01261,H01261,2023-02-23,F02,East Shore,65+,Family annual,Organic web,Yes,V1E,0.821
+M01262,H01262,2023-09-18,F02,East Shore,18-34,Monthly flexible,Referral,No,V1A,0.525
+M01263,H01263,2022-04-30,F03,North Valley,50-64,Adult annual,Organic web,Yes,V1C,0.927
+M01264,H00632,2022-10-10,F01,Central,18-34,Youth annual,Referral,Yes,V1C,1.302
+M01265,H01265,2023-08-17,F01,Central,50-64,Family annual,Paid social,Yes,V1C,1.612
+M01266,H01266,2025-04-04,F01,Central,35-49,Adult annual,Walk-in,No,V1A,1.117
+M01267,H01267,2022-05-24,F01,Central,35-49,Family annual,Organic web,Yes,V1A,0.481
+M01268,H00634,2024-05-17,F01,Central,50-64,Senior annual,Referral,Yes,V1D,1.113
+M01269,H00635,2023-03-06,F03,North Valley,18-34,Adult annual,Referral,Yes,V1D,0.568
+M01270,H00635,2024-07-16,F04,West Valley,18-34,Monthly flexible,Organic web,No,V1B,0.926
+M01271,H00636,2022-11-04,F01,Central,65+,Adult annual,Community event,Yes,V1D,0.845
+M01272,H01272,2024-03-13,F02,East Shore,65+,Senior annual,Walk-in,Yes,V1E,1.637
+M01273,H01273,2024-07-22,F03,North Valley,18-34,Adult annual,Organic web,Yes,V1E,0.748
+M01274,H01274,2022-01-10,F01,Central,Under 18,Family annual,Organic web,Yes,V1B,0.969
+M01275,H01275,2024-04-17,F02,East Shore,50-64,Family annual,Organic web,No,V1B,1.551
+M01276,H01276,2025-08-14,F04,West Valley,35-49,Youth annual,Organic web,No,V1C,0.575
+M01277,H01277,2024-09-15,F01,Central,18-34,Adult annual,Paid social,Yes,V1C,1.165
+M01278,H00639,2024-05-11,F03,North Valley,35-49,Adult annual,Organic web,Yes,V1C,1.177
+M01279,H01279,2023-03-12,F01,Central,35-49,Youth annual,Organic web,No,V1A,1.003
+M01280,H01280,2023-08-22,F03,North Valley,18-34,Adult annual,Referral,Yes,V1C,0.504
+M01281,H00641,2025-01-14,F02,East Shore,18-34,Family annual,Referral,Yes,V1C,1.306
+M01282,H01282,2025-02-01,F02,East Shore,65+,Adult annual,Walk-in,Yes,V1B,1.53
+M01283,H00642,2024-10-10,F02,East Shore,65+,Adult annual,Walk-in,Yes,V1A,1.12
+M01284,H01284,2023-10-13,F01,Central,50-64,Youth annual,Paid social,No,V1A,0.719
+M01285,H01285,2022-01-29,F04,West Valley,18-34,Adult annual,Organic web,Yes,V1C,0.476
+M01286,H01286,2024-01-11,F02,East Shore,18-34,Adult annual,Community event,No,V1C,1.685
+M01287,H01287,2023-06-30,F04,West Valley,Under 18,Senior annual,Paid social,No,V1B,1.423
+M01288,H01288,2023-02-12,F02,East Shore,18-34,Adult annual,Walk-in,Yes,V1C,1.285
+M01289,H00430,2024-11-13,F01,Central,35-49,Adult annual,Email,Yes,V1B,1.042
+M01290,H01290,2023-08-21,F02,East Shore,18-34,Family annual,Paid social,No,V1A,0.664
+M01291,H01291,2022-08-15,F02,East Shore,18-34,Monthly flexible,Referral,No,V1E,1.041
+M01292,H01292,2023-07-05,F03,North Valley,50-64,Family annual,Community event,Yes,V1D,1.068
+M01293,H01293,2022-02-06,F04,West Valley,18-34,Senior annual,Walk-in,No,V1C,1.074
+M01294,H00432,2023-05-06,F03,North Valley,50-64,Adult annual,Walk-in,No,V1A,1.533
+M01295,H01295,2025-09-05,F02,East Shore,50-64,Adult annual,Email,Yes,V1E,1.499
+M01296,H00648,2024-10-19,F04,West Valley,18-34,Senior annual,Referral,Yes,V1D,0.986
+M01297,H00433,2022-03-25,F04,West Valley,18-34,Family annual,Community event,Yes,V1B,0.952
+M01298,H01298,2025-01-17,F02,East Shore,65+,Monthly flexible,Community event,Yes,V1D,1.139
+M01299,H01299,2022-04-04,F02,East Shore,35-49,Adult annual,Organic web,No,V1A,1.304
+M01300,H01300,2024-04-29,F04,West Valley,35-49,Adult annual,Referral,Yes,V1B,0.65
+M01301,H01301,2025-08-01,F01,Central,18-34,Monthly flexible,Email,No,V1B,1.461
+M01302,H00434,2024-09-08,F01,Central,35-49,Family annual,Community event,Yes,V1A,1.674
+M01303,H01303,2022-04-18,F01,Central,18-34,Senior annual,Community event,Yes,V1B,0.719
+M01304,H01304,2024-07-10,F03,North Valley,18-34,Family annual,Paid social,No,V1E,0.678
+M01305,H00653,2023-06-16,F03,North Valley,35-49,Youth annual,Referral,Yes,V1A,1.014
+M01306,H01306,2024-01-17,F02,East Shore,65+,Adult annual,Organic web,Yes,V1C,1.342
+M01307,H01307,2022-06-27,F02,East Shore,35-49,Monthly flexible,Organic web,Yes,V1C,0.704
+M01308,H00654,2024-07-10,F01,Central,35-49,Family annual,Referral,Yes,V1C,1.501
+M01309,H00655,2023-02-12,F04,West Valley,65+,Youth annual,Referral,No,V1E,1.249
+M01310,H01310,2022-07-01,F04,West Valley,65+,Monthly flexible,Walk-in,Yes,V1B,0.911
+M01311,H01311,2022-01-26,F01,Central,18-34,Adult annual,Referral,Yes,V1D,0.656
+M01312,H01312,2025-06-07,F04,West Valley,50-64,Adult annual,Paid social,No,V1A,0.541
+M01313,H00438,2023-07-25,F02,East Shore,65+,Monthly flexible,Organic web,Yes,V1C,1.136
+M01314,H01314,2022-06-16,F01,Central,35-49,Adult annual,Referral,Yes,V1C,1.649
+M01315,H00658,2022-10-10,F01,Central,50-64,Adult annual,Community event,Yes,V1A,0.979
+M01316,H00439,2023-01-23,F01,Central,50-64,Adult annual,Organic web,Yes,V1B,1.024
+M01317,H00439,2024-04-24,F01,Central,35-49,Adult annual,Organic web,No,V1A,0.932
+M01318,H01318,2023-06-28,F04,West Valley,50-64,Senior annual,Referral,Yes,V1D,0.714
+M01319,H00660,2022-11-24,F04,West Valley,35-49,Family annual,Referral,No,V1D,0.688
+M01320,H01320,2024-09-29,F01,Central,35-49,Adult annual,Community event,Yes,V1A,1.254
+M01321,H00441,2023-10-29,F03,North Valley,18-34,Family annual,Walk-in,Yes,V1D,0.526
+M01322,H01322,2025-04-01,F01,Central,18-34,Adult annual,Organic web,Yes,V1C,1.602
+M01323,H01323,2022-07-19,F01,Central,18-34,Adult annual,Community event,Yes,V1E,1.358
+M01324,H01324,2024-11-08,F02,East Shore,18-34,Family annual,Organic web,Yes,V1C,1.275
+M01325,H00663,2022-07-14,F03,North Valley,50-64,Monthly flexible,Organic web,Yes,V1C,0.562
+M01326,H00663,2022-02-28,F01,Central,65+,Family annual,Organic web,No,V1C,0.95
+M01327,H01327,2022-10-06,F01,Central,18-34,Adult annual,Organic web,Yes,V1B,0.716
+M01328,H01328,2025-07-26,F04,West Valley,35-49,Family annual,Organic web,No,V1A,0.878
+M01329,H00443,2023-01-30,F01,Central,35-49,Family annual,Referral,No,V1A,1.621
+M01330,H00444,2024-08-06,F04,West Valley,50-64,Youth annual,Walk-in,No,V1A,0.903
+M01331,H01331,2023-02-12,F04,West Valley,50-64,Adult annual,Walk-in,No,V1A,1.292
+M01332,H01332,2023-05-13,F04,West Valley,18-34,Adult annual,Paid social,Yes,V1D,0.63
+M01333,H00667,2022-02-07,F02,East Shore,50-64,Youth annual,Organic web,Yes,V1C,1.567
+M01334,H01334,2024-09-16,F01,Central,50-64,Monthly flexible,Walk-in,No,V1D,1.484
+M01335,H00668,2025-04-13,F01,Central,35-49,Adult annual,Email,Yes,V1B,0.635
+M01336,H00446,2023-03-30,F04,West Valley,18-34,Adult annual,Organic web,Yes,V1E,1.444
+M01337,H01337,2022-05-24,F01,Central,50-64,Monthly flexible,Walk-in,Yes,V1C,0.589
+M01338,H00669,2022-02-13,F01,Central,18-34,Youth annual,Walk-in,Yes,V1E,1.19
+M01339,H01339,2022-08-21,F02,East Shore,65+,Youth annual,Organic web,No,V1D,0.741
+M01340,H01340,2024-03-09,F01,Central,50-64,Adult annual,Organic web,No,V1C,1.68
+M01341,H01341,2022-01-05,F01,Central,50-64,Family annual,Email,Yes,V1D,0.56
+M01342,H01342,2025-10-15,F02,East Shore,18-34,Youth annual,Referral,Yes,V1C,1.377
+M01343,H00448,2025-08-15,F04,West Valley,50-64,Adult annual,Walk-in,No,V1B,0.82
+M01344,H01344,2024-08-31,F04,West Valley,Under 18,Adult annual,Referral,Yes,V1C,0.639
+M01345,H01345,2022-03-25,F01,Central,18-34,Family annual,Referral,Yes,V1A,1.534
+M01346,H00449,2024-05-08,F01,Central,18-34,Family annual,Organic web,Yes,V1B,1.116
+M01347,H01347,2024-01-08,F02,East Shore,65+,Monthly flexible,Paid social,No,V1E,0.815
+M01348,H00450,2023-04-09,F01,Central,50-64,Adult annual,Walk-in,Yes,V1C,1.082
+M01349,H01349,2023-03-03,F02,East Shore,50-64,Adult annual,Organic web,No,V1C,0.725
+M01350,H01350,2023-10-15,F04,West Valley,18-34,Adult annual,Referral,Yes,V1B,1.615
+M01351,H00676,2023-04-06,F03,North Valley,50-64,Family annual,Referral,Yes,V1E,1.258
+M01352,H01352,2022-04-04,F02,East Shore,18-34,Adult annual,Walk-in,No,V1B,1.071
+M01353,H00451,2025-10-17,F01,Central,18-34,Adult annual,Community event,Yes,V1A,0.828
+M01354,H00677,2023-11-11,F03,North Valley,35-49,Monthly flexible,Paid social,Yes,V1D,1.274
+M01355,H01355,2024-01-10,F02,East Shore,18-34,Monthly flexible,Paid social,Yes,V1E,1.639
+M01356,H01356,2023-02-04,F01,Central,50-64,Adult annual,Organic web,Yes,V1C,1.466
+M01357,H00453,2022-09-29,F02,East Shore,50-64,Monthly flexible,Community event,Yes,V1C,0.94
+M01358,H01358,2025-06-23,F02,East Shore,18-34,Monthly flexible,Referral,Yes,V1B,1.019
+M01359,H00453,2022-10-21,F01,Central,35-49,Monthly flexible,Walk-in,Yes,V1E,0.747
+M01360,H01360,2024-03-22,F03,North Valley,50-64,Adult annual,Walk-in,No,V1B,1.496
+M01361,H01361,2023-03-26,F04,West Valley,65+,Monthly flexible,Referral,Yes,V1A,1.052
+M01362,H00454,2025-10-16,F01,Central,35-49,Adult annual,Paid social,Yes,V1D,0.469
+M01363,H01363,2022-02-19,F01,Central,18-34,Adult annual,Walk-in,No,V1C,0.509
+M01364,H01364,2023-05-26,F04,West Valley,35-49,Adult annual,Email,No,V1B,1.492
+M01365,H01365,2024-02-05,F02,East Shore,18-34,Family annual,Organic web,Yes,V1A,1.271
+M01366,H01366,2023-08-21,F01,Central,35-49,Family annual,Email,Yes,V1C,0.761
+M01367,H00684,2023-05-25,F01,Central,Under 18,Adult annual,Referral,Yes,V1C,1.095
+M01368,H01368,2023-03-14,F04,West Valley,50-64,Monthly flexible,Organic web,Yes,V1D,1.071
+M01369,H01369,2022-09-03,F02,East Shore,18-34,Youth annual,Email,Yes,V1D,1.142
+M01370,H00457,2022-11-03,F01,Central,65+,Family annual,Walk-in,Yes,V1D,0.871
+M01371,H01371,2024-10-29,F02,East Shore,18-34,Adult annual,Community event,Yes,V1E,1.178
+M01372,H00686,2024-02-15,F03,North Valley,35-49,Adult annual,Community event,Yes,V1D,1.253
+M01373,H01373,2022-05-18,F02,East Shore,18-34,Family annual,Referral,No,V1C,1.221
+M01374,H01374,2024-03-19,F04,West Valley,50-64,Youth annual,Paid social,No,V1D,1.22
+M01375,H01375,2023-01-16,F04,West Valley,35-49,Adult annual,Paid social,No,V1D,0.789
+M01376,H01376,2022-08-24,F03,North Valley,50-64,Family annual,Organic web,Yes,V1D,0.648
+M01377,H01377,2022-01-12,F02,East Shore,50-64,Senior annual,Organic web,Yes,V1D,0.742
+M01378,H00460,2024-11-02,F03,North Valley,50-64,Monthly flexible,Paid social,Yes,V1B,0.719
+M01379,H01379,2024-10-30,F02,East Shore,35-49,Family annual,Referral,No,V1A,0.523
+M01380,H01380,2024-03-09,F03,North Valley,35-49,Adult annual,Walk-in,Yes,V1B,1.22
+M01381,H01381,2024-08-03,F02,East Shore,50-64,Family annual,Walk-in,No,V1B,1.049
+M01382,H00691,2025-04-06,F01,Central,18-34,Monthly flexible,Walk-in,No,V1A,0.982
+M01383,H00461,2023-09-26,F03,North Valley,65+,Family annual,Organic web,Yes,V1A,0.825
+M01384,H01384,2024-03-09,F04,West Valley,50-64,Adult annual,Referral,Yes,V1D,1.272
+M01385,H01385,2022-11-15,F03,North Valley,65+,Family annual,Community event,Yes,V1C,0.879
+M01386,H01386,2022-04-19,F03,North Valley,65+,Adult annual,Referral,Yes,V1D,0.612
+M01387,H01387,2022-01-29,F01,Central,35-49,Adult annual,Walk-in,No,V1E,1.275
+M01388,H01388,2025-06-17,F04,West Valley,50-64,Family annual,Paid social,Yes,V1D,1.385
+M01389,H01389,2022-05-08,F01,Central,Under 18,Adult annual,Walk-in,Yes,V1B,1.075
+M01390,H01390,2024-05-28,F04,West Valley,35-49,Senior annual,Walk-in,Yes,V1B,0.55
+M01391,H01391,2024-06-18,F02,East Shore,18-34,Family annual,Referral,Yes,V1C,1.524
+M01392,H00464,2024-02-23,F03,North Valley,18-34,Family annual,Paid social,No,V1B,1.007
+M01393,H00697,2024-10-03,F02,East Shore,Under 18,Senior annual,Organic web,Yes,V1A,1.462
+M01394,H01394,2024-01-30,F01,Central,50-64,Adult annual,Organic web,Yes,V1B,0.988
+M01395,H00698,2024-09-19,F02,East Shore,50-64,Adult annual,Referral,No,V1A,1.107
+M01396,H01396,2025-01-28,F04,West Valley,50-64,Family annual,Community event,Yes,V1C,1.44
+M01397,H00466,2025-04-17,F02,East Shore,35-49,Monthly flexible,Paid social,Yes,V1B,0.703
+M01398,H00699,2022-10-19,F04,West Valley,50-64,Adult annual,Community event,Yes,V1C,0.476
+M01399,H00467,2022-08-31,F01,Central,65+,Monthly flexible,Organic web,Yes,V1E,1.015
+M01400,H01400,2023-05-06,F04,West Valley,65+,Senior annual,Paid social,Yes,V1B,1.47

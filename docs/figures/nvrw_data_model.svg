@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">NVRW analytical data model</title>
+  <desc id="desc">Members connect to membership periods, visits, registrations, transactions, and campaign responses. Programs connect to registrations, campaigns to responses, and facilities to operational tables. Population projections connect by service area and facility.</desc>
+  <defs>
+    <style>
+      .box{fill:#f6f8fb;stroke:#17365d;stroke-width:3;rx:14}.fact{fill:#dce6f1}.context{fill:#fff4cc}.title{font:700 25px Arial;fill:#17365d}.label{font:700 20px Arial;fill:#17365d}.small{font:16px Arial;fill:#334155}.line{stroke:#56789d;stroke-width:3;fill:none}.arrow{fill:#56789d}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" class="arrow"/></marker>
+  </defs>
+  <text x="600" y="45" text-anchor="middle" class="title">NVRW analytical data model</text>
+  <rect x="465" y="90" width="270" height="90" class="box"/>
+  <text x="600" y="125" text-anchor="middle" class="label">Members</text>
+  <text x="600" y="153" text-anchor="middle" class="small">One row per synthetic member</text>
+  <rect x="70" y="245" width="245" height="90" class="box fact"/>
+  <text x="193" y="280" text-anchor="middle" class="label">Membership periods</text>
+  <text x="193" y="308" text-anchor="middle" class="small">Revenue and renewal</text>
+  <rect x="355" y="245" width="210" height="90" class="box fact"/>
+  <text x="460" y="280" text-anchor="middle" class="label">Visits</text>
+  <text x="460" y="308" text-anchor="middle" class="small">Facility-use events</text>
+  <rect x="605" y="245" width="235" height="90" class="box fact"/>
+  <text x="723" y="280" text-anchor="middle" class="label">Registrations</text>
+  <text x="723" y="308" text-anchor="middle" class="small">Program participation</text>
+  <rect x="880" y="245" width="245" height="90" class="box fact"/>
+  <text x="1003" y="280" text-anchor="middle" class="label">Transactions</text>
+  <text x="1003" y="308" text-anchor="middle" class="small">Revenue, cost, margin</text>
+  <rect x="80" y="475" width="235" height="90" class="box"/>
+  <text x="198" y="510" text-anchor="middle" class="label">Campaigns</text>
+  <text x="198" y="538" text-anchor="middle" class="small">Channel and spending</text>
+  <rect x="375" y="475" width="250" height="90" class="box fact"/>
+  <text x="500" y="510" text-anchor="middle" class="label">Campaign responses</text>
+  <text x="500" y="538" text-anchor="middle" class="small">Contact and conversion</text>
+  <rect x="685" y="475" width="190" height="90" class="box"/>
+  <text x="780" y="510" text-anchor="middle" class="label">Programs</text>
+  <text x="780" y="538" text-anchor="middle" class="small">Capacity and fee</text>
+  <rect x="925" y="475" width="205" height="90" class="box context"/>
+  <text x="1028" y="510" text-anchor="middle" class="label">Facilities</text>
+  <text x="1028" y="538" text-anchor="middle" class="small">Location context</text>
+  <rect x="450" y="620" width="300" height="70" class="box context"/>
+  <text x="600" y="650" text-anchor="middle" class="label">Population projections</text>
+  <text x="600" y="676" text-anchor="middle" class="small">Area, age group, and year</text>
+  <path d="M535 180 L220 245" class="line" marker-end="url(#arrow)"/>
+  <path d="M580 180 L475 245" class="line" marker-end="url(#arrow)"/>
+  <path d="M635 180 L700 245" class="line" marker-end="url(#arrow)"/>
+  <path d="M685 180 L970 245" class="line" marker-end="url(#arrow)"/>
+  <path d="M555 180 L500 475" class="line" marker-end="url(#arrow)"/>
+  <path d="M315 520 L375 520" class="line" marker-end="url(#arrow)"/>
+  <path d="M780 475 L735 335" class="line" marker-end="url(#arrow)"/>
+  <path d="M1028 475 L1008 335" class="line" marker-end="url(#arrow)"/>
+  <path d="M1028 475 L500 335" class="line" marker-end="url(#arrow)"/>
+  <path d="M925 520 L750 650" class="line" marker-end="url(#arrow)"/>
+</svg>

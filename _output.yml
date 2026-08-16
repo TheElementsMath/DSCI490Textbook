@@ -1,0 +1,15 @@
+bookdown::gitbook:
+  css: style.css
+  split_by: chapter
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">Data Science in Practice</a></li>
+    search:
+      engine: fuse
+      options:
+        isCaseSensitive: false
+        threshold: 0.3
+    sharing: null
+    download: null

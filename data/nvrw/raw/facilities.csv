@@ -1,0 +1,5 @@
+facility_id,facility_name,service_area,opened_year,floor_area_sq_m,pool_available
+F01,Downtown Centre,Central,2008,5100,Yes
+F02,Lakeside Centre,East Shore,2015,4200,Yes
+F03,North Ridge Centre,North Valley,1999,3300,No
+F04,Westbrook Centre,West Valley,2021,3900,No

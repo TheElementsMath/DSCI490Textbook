@@ -1,0 +1,346 @@
+# Forecasting, Projections, and Customer Value
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- distinguish forecasts, projections, scenarios, and targets;
+- compare moving averages, regression trends, exponential smoothing, ETS, and ARIMA;
+- validate forecasting methods using time-ordered data;
+- construct population-utilization and scenario projections;
+- calculate and interpret revenue-based and margin-based CLV; and
+- incorporate retention, churn, acquisition cost, discounting, and uncertainty into customer-value analysis.
+
+## Key terms
+
+::: {.definition}
+**Forecast:** An estimate of a future value based primarily on patterns learned from observed data.
+
+**Projection:** A conditional estimate of a future quantity under stated assumptions.
+
+**Scenario:** A coherent combination of assumptions used to examine one possible outcome.
+
+**Forecast horizon:** The number of future periods covered by a forecast.
+
+**Seasonality:** A recurring pattern associated with a regular calendar or operational cycle.
+
+**Utilization rate:** The number of events or services used relative to a defined population and period.
+
+**Retention rate:** The proportion of eligible customers who remain active from one defined period to the next.
+
+**Churn rate:** The proportion of eligible customers who end or fail to continue the relationship during a defined period.
+
+**Customer acquisition cost (CAC):** The attributable cost of acquiring a new customer under a stated allocation rule.
+
+**Customer lifetime value (CLV):** The estimated economic value produced by a customer over the relationship, under a stated revenue, margin, retention, cost, and discounting model.
+
+**Discount rate:** The rate used to convert future amounts into present value.
+
+**Sensitivity analysis:** An examination of how results change when important assumptions or inputs change.
+:::
+
+## Forecast, projection, scenario, or target?
+
+A **forecast** learns from historical patterns. A **projection** calculates what would occur if stated assumptions hold. A **scenario** combines assumptions to examine a plausible future. A **target** is a desired outcome.
+
+The forecasting framework in this chapter follows the general time-series principles developed by Hyndman and Athanasopoulos [@hyndman2021].
+
+These terms should not be used interchangeably. A projected 10 percent increase under an assumed marketing effect is not evidence that the intervention will cause 10 percent growth. A target of 1,000 new members is not a forecast merely because it appears on a future timeline.
+
+## Preparing time-series data
+
+Before fitting a forecasting method, determine:
+
+- what one observation represents;
+- whether periods are equally spaced;
+- whether the series is a count, rate, average, or total;
+- whether partial periods are present;
+- whether definitions changed;
+- whether missing periods mean zero or unrecorded data;
+- whether unusual events should be modelled, adjusted, or retained; and
+- how far into the future the forecast must extend.
+
+Visualize the series before modelling. Look for trend, seasonality, level changes, changing variation, outliers, and structural breaks. A method that performed well under one operating system may not remain valid after a major policy, facility, or data-collection change.
+
+## Moving averages
+
+A moving average smooths short-term variation by averaging the most recent observations. For a window of size $k$,
+
+\[
+\widehat{y}_{t+1}=\frac{1}{k}\sum_{i=0}^{k-1}y_{t-i}.
+\]
+
+Moving averages are easy to explain and useful as baselines. A short window responds quickly but can be noisy. A long window is stable but reacts slowly to change. A simple moving average does not represent trend or seasonality unless those features are addressed separately.
+
+## Regression forecasting
+
+Regression can model trend, seasonal indicators, interventions, and relevant external variables. A basic trend model is
+
+\[
+y_t=\beta_0+\beta_1t+\varepsilon_t.
+\]
+
+Add seasonal indicators or transformations when justified. Regression forecasts require future values of all explanatory variables. If those future values are unknown, they must themselves be forecast or supplied as scenarios.
+
+Residual autocorrelation indicates that time structure remains unexplained. Extrapolating a linear trend far beyond the observed period can produce implausible results.
+
+## Exponential smoothing and ETS
+
+Exponential smoothing methods update forecasts by giving greater weight to recent observations. Simple exponential smoothing is appropriate for a series with a relatively stable level and no clear trend or seasonality.
+
+Holt's method adds a changing trend. Holt-Winters methods add seasonality. ETS provides a general framework in which error, trend, and seasonal components can be additive or multiplicative. Additive seasonality has a roughly constant size, while multiplicative seasonality changes in proportion to the series level.
+
+The method should be selected through time-aware validation and diagnostic review, not solely by accepting software defaults.
+
+## ARIMA
+
+ARIMA models use autoregressive terms, differencing, and moving-average error terms to represent serial dependence. Seasonal ARIMA extends the structure to regular seasonal cycles.
+
+ARIMA can be effective when historical dependence contains useful predictive information. The analyst should examine stationarity, differencing, residual autocorrelation, parameter stability, and forecast plausibility. A well-fitted ARIMA model does not automatically explain the operational cause of change.
+
+## Time-ordered validation
+
+Forecasting methods should be evaluated as they would be used. A random train-test split destroys the time order. Instead, fit on earlier periods and evaluate on later periods.
+
+Rolling-origin evaluation repeats this process across several cutoffs:
+
+1. fit using data available at the first cutoff;
+2. forecast the chosen horizon;
+3. record error when actual values become available;
+4. move the cutoff forward; and
+5. repeat.
+
+Compare MAE, RMSE, scaled error, interval coverage, and performance at the required horizon. A method that is strong one month ahead may be poor twelve months ahead.
+
+::: {.example}
+**Recurring case: monthly visits**
+
+NVRW compares a seasonal naive baseline, a three-month moving average, seasonal regression, ETS, and seasonal ARIMA for monthly facility visits. Evaluation uses rolling cutoffs with a twelve-month horizon.
+
+ETS has the lowest average MAE, but its errors are concentrated at Lakeside after a facility expansion. The team reports separate location models and notes that the post-expansion period provides limited evidence for long-range forecasting.
+:::
+
+## Population-utilization projections
+
+Suppose an organization observed $E_{g,t}$ events for group $g$ in period $t$, and the corresponding population was $P_{g,t}$. The utilization rate per 1,000 people is
+
+\[
+R_{g,t}=\frac{E_{g,t}}{P_{g,t}}\times1000.
+\]
+
+If the projected future population is $P_{g,f}$, a constant-rate projection is
+
+\[
+\widehat{E}_{g,f}=R_g\times\frac{P_{g,f}}{1000}.
+\]
+
+The rate may use the latest complete year, a selected comparable year, an average of recent years, a recent minimum or maximum for scenarios, or a modelled rate. The choice should reflect data quality, stability, horizon, and decision purpose.
+
+::: {.example}
+**Recurring case: projected aquatics demand**
+
+NVRW records 3,600 annual aquatics visits among 24,000 residents in one age group.
+
+\[
+R=\frac{3600}{24000}\times1000=150\text{ visits per 1,000 residents}.
+\]
+
+If the projected population is 27,200, the constant-rate projection is
+
+\[
+\widehat{E}=150\times\frac{27200}{1000}=4,080\text{ visits}.
+\]
+
+The result is conditional on the rate remaining constant. It does not account for pricing, capacity, program changes, competition, weather, or the facility expansion.
+:::
+
+Client and population data must share compatible age, location, or other grouping variables. Details available only in the organizational data can be allocated after the population projection only when a defensible rule exists.
+
+Unknown locations should not be silently deleted. They may be reported separately, assigned a broader valid denominator, or carried forward as a stable share. Each treatment changes interpretation.
+
+## Scenario and sensitivity analysis
+
+A useful projection often includes several plausible assumptions:
+
+- low utilization and moderate population growth;
+- current utilization and central population growth;
+- higher utilization and stronger growth; and
+- an operational scenario representing a proposed change.
+
+Scenarios are not confidence intervals. A confidence or prediction interval is produced by a statistical uncertainty model. A scenario is a selected combination of assumptions.
+
+A result labelled "with recommendation" is not a forecast unless the intervention effect has been estimated from defensible evidence. When the effect is assumed, show the assumption and label the result as a scenario.
+
+## Customer lifetime value
+
+CLV translates customer behaviour into a long-term economic measure. It can support acquisition spending, retention priorities, segment strategy, service design, and evaluation of customer relationships. The formula must match the decision and available data.
+
+CLV is not one universal formula. Different models answer different questions and require different assumptions [@gupta2006].
+
+### Introductory revenue CLV
+
+A simple revenue-based model is
+
+\[
+\text{Revenue CLV}
+=(\text{average purchase value})
+\times(\text{purchases per period})
+\times(\text{customer lifespan}).
+\]
+
+This version is useful for understanding the role of value, frequency, and lifespan. It should not be called profit because it ignores cost, margin, acquisition, retention variation, and the time value of money.
+
+### Margin-based CLV
+
+An improved model uses contribution margin:
+
+\[
+\text{Margin CLV}
+=(\text{average revenue per period})
+\times(\text{contribution margin rate})
+\times(\text{expected active periods})
+-\text{CAC}.
+\]
+
+Define which costs are included in contribution margin. Gross margin, contribution margin, and operating profit are not interchangeable.
+
+### Retention and churn
+
+For a closed cohort over one period,
+
+\[
+\text{Retention rate}
+=\frac{\text{eligible customers retained}}{\text{eligible customers at the start}}.
+\]
+
+When every eligible customer is either retained or lost,
+
+\[
+\text{Churn rate}=1-\text{Retention rate}.
+\]
+
+New customers should not be included in the retention numerator. Net customer growth is a different measure:
+
+\[
+\text{Net growth rate}
+=\frac{\text{new customers}-\text{customers lost}}
+{\text{customers at the start}}.
+\]
+
+The approximation (1/\text{churn rate}) is sometimes used for expected lifespan under a constant independent churn process. It is not a universal identity. Churn often changes with tenure, segment, contract type, and period.
+
+Do not convert annual churn to quarterly churn by simply dividing by four when compounding matters. Under a constant quarterly retention assumption,
+
+\[
+r_{quarter}=r_{annual}^{1/4},
+\qquad
+c_{quarter}=1-r_{annual}^{1/4}.
+\]
+
+### Discounted CLV
+
+Future contribution is worth less than contribution received today. A flexible finite-horizon model is
+
+\[
+CLV=-CAC+\sum_{t=1}^{T}
+\frac{M_tS_t}{(1+d)^t},
+\]
+
+where $M_t$ is expected contribution margin if active in period $t$, $S_t$ is the probability of remaining active at the start of that period, $d$ is the discount rate per period, and $T$ is the horizon.
+
+::: {.example}
+**Recurring case: discounted membership CLV**
+
+NVRW estimates annual contribution margin of \$144 for a new membership, annual retention of 75 percent, a four-year horizon, an annual discount rate of 8 percent, and CAC of \$75. The customer is active in year 1, so survival probabilities are $1$, $0.75$, $0.75^2$, and $0.75^3$.
+
+\[
+CLV=-75+
+\frac{144}{1.08}+
+\frac{144(0.75)}{1.08^2}+
+\frac{144(0.75^2)}{1.08^3}+
+\frac{144(0.75^3)}{1.08^4}.
+\]
+
+The estimated CLV is approximately \$260. The result is conditional on the margin, retention, discount, horizon, and CAC assumptions. It should be compared with alternative assumptions rather than presented as an exact customer value.
+:::
+
+### Cohorts and segments
+
+Average CLV can hide meaningful differences. Compare cohorts defined by acquisition period, channel, membership type, or another characteristic known at the relevant decision time. Ensure every cohort has enough follow-up. Recent cohorts should not appear to have lower lifetime value merely because less time has passed.
+
+Segment-level CLV should not encourage the organization to neglect low-value groups when it has public-service, access, or fairness obligations. Economic value is one decision measure, not a complete statement of social or organizational value.
+
+### CLV in Excel
+
+An auditable spreadsheet should separate inputs, yearly calculations, and outputs. A row for year $t$ can contain:
+
+- survival probability;
+- expected revenue;
+- contribution margin;
+- discount factor;
+- present value; and
+- cumulative CLV after CAC.
+
+For a yearly contribution in cell `C8`, survival probability in `D8`, discount rate in `$B$3`, and year in `A8`, present value can be calculated as:
+
+```text
+=C8*D8/(1+$B$3)^A8
+```
+
+Use typed numeric cells for rates and currency. Do not hide assumptions inside long formulas.
+
+## Common mistakes
+
+- mixing partial and complete time periods;
+- selecting a model using random time splits;
+- extrapolating far beyond the historical range without qualification;
+- presenting scenarios as statistical intervals;
+- assuming recommendation effects and then calling them forecasts;
+- calculating utilization with incompatible denominators;
+- treating revenue CLV as profit;
+- including new customers in retention rates;
+- applying one churn rate to all tenures without checking; and
+- comparing CLV across cohorts with unequal observation windows.
+
+::: {.quality}
+**Quality standard:** Every forecast, projection, and CLV result should expose its time horizon, population, inputs, assumptions, validation, uncertainty, and intended decision use.
+:::
+
+## Forecast and value checklist
+
+- [ ] The outcome, frequency, and horizon are clear.
+- [ ] Historical periods are complete and comparable.
+- [ ] A relevant baseline is included.
+- [ ] Validation preserves time order.
+- [ ] Forecasts, projections, scenarios, and targets are labelled correctly.
+- [ ] Utilization rates use compatible events and populations.
+- [ ] CLV distinguishes revenue, margin, CAC, retention, and discounting.
+- [ ] Recent cohorts have adequate observation windows.
+- [ ] Sensitivity to major assumptions is shown.
+- [ ] Recommendations do not create their own forecast evidence.
+
+## Exercise
+
+An NVRW campaign costs \$18,000 and acquires 300 members. Expected annual revenue is \$360 per member, contribution margin is 40 percent, expected active lifespan is three years, and discounting is ignored. Calculate CAC and the simple margin-based CLV.
+
+<details class="answer-dropdown">
+<summary>Answer</summary>
+<p>CAC is \$18,000 divided by 300, or \$60 per acquired member. Annual contribution margin is \$360 times 0.40, or \$144. The three-year contribution is \$432, so simple margin-based CLV after CAC is \$432 minus \$60, or \$372. The estimate still assumes every acquired member remains active for three years and should be refined using retention and discounting when those inputs are available.</p>
+</details>
+
+## Additional exercises
+
+1. Use `data/nvrw/derived/monthly_visits.csv` to compare a seasonal naive forecast, a moving average, seasonal regression, and one ETS or ARIMA model. Validate each method using rolling twelve-month forecast origins.
+2. Reproduce `data/nvrw/derived/utilization_projection.csv`, then create low and high scenarios by varying both population and utilization. Do not describe the scenarios as confidence intervals.
+3. Recalculate CLV for each membership type when retention is five percentage points lower and higher than the central estimate. Identify which assumption has the largest practical effect.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>Forecast validation must preserve time order. The CLV sensitivity analysis should change one assumption at a time before combining assumptions into scenarios, and it should retain the same period units for margin, retention, and discounting.</p>
+</details>
+
+## Questions for discussion
+
+1. When should an organization prefer a projection to a statistical forecast?
+2. How should forecast performance be communicated when different methods perform similarly?
+3. When can maximizing CLV conflict with other organizational responsibilities?

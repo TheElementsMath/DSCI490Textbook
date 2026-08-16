@@ -1,0 +1,5 @@
+facility_id,facility_name,eligible_members,retained_members,retention_rate
+F01,Downtown Centre,396,291,0.7348
+F02,Lakeside Centre,269,215,0.7993
+F03,North Ridge Centre,213,148,0.6948
+F04,Westbrook Centre,273,207,0.7582

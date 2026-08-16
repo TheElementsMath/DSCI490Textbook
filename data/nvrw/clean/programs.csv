@@ -1,0 +1,97 @@
+program_id,facility_id,program_year,program_name,program_category,start_date,end_date,capacity,listed_fee
+P20230101,F01,2023,Older adult Series 1,Older adult,2023-09-05,2023-11-20,24,75
+P20230102,F01,2023,Youth Series 2,Youth,2023-02-05,2023-04-20,40,45
+P20230103,F01,2023,Recreation league Series 3,Recreation league,2023-04-05,2023-06-20,30,75
+P20230104,F01,2023,Recreation league Series 4,Recreation league,2023-07-05,2023-09-20,30,75
+P20230105,F01,2023,Aquatics Series 5,Aquatics,2023-01-05,2023-03-20,24,90
+P20230106,F01,2023,Aquatics Series 6,Aquatics,2023-09-05,2023-11-20,16,45
+P20230107,F01,2023,Recreation league Series 7,Recreation league,2023-04-05,2023-06-20,30,90
+P20230108,F01,2023,Recreation league Series 8,Recreation league,2023-07-05,2023-09-20,16,120
+P20230201,F02,2023,Aquatics Series 1,Aquatics,2023-05-05,2023-07-20,16,90
+P20230202,F02,2023,Older adult Series 2,Older adult,2023-05-05,2023-07-20,40,90
+P20230203,F02,2023,Fitness Series 3,Fitness,2023-10-05,2023-12-20,20,90
+P20230204,F02,2023,Youth Series 4,Youth,2023-05-05,2023-07-20,24,120
+P20230205,F02,2023,Aquatics Series 5,Aquatics,2023-09-05,2023-11-20,24,90
+P20230206,F02,2023,Arts and wellness Series 6,Arts and wellness,2023-02-05,2023-04-20,30,120
+P20230207,F02,2023,Arts and wellness Series 7,Arts and wellness,2023-04-05,2023-06-20,16,90
+P20230208,F02,2023,Fitness Series 8,Fitness,2023-02-05,2023-04-20,30,60
+P20230301,F03,2023,Aquatics Series 1,Aquatics,2023-09-05,2023-11-20,40,90
+P20230302,F03,2023,Youth Series 2,Youth,2023-10-05,2023-12-20,24,90
+P20230303,F03,2023,Youth Series 3,Youth,2023-07-05,2023-09-20,40,75
+P20230304,F03,2023,Fitness Series 4,Fitness,2023-05-05,2023-07-20,40,120
+P20230305,F03,2023,Aquatics Series 5,Aquatics,2023-07-05,2023-09-20,30,90
+P20230306,F03,2023,Recreation league Series 6,Recreation league,2023-01-05,2023-03-20,20,60
+P20230307,F03,2023,Older adult Series 7,Older adult,2023-04-05,2023-06-20,40,75
+P20230308,F03,2023,Youth Series 8,Youth,2023-11-05,2023-12-20,20,75
+P20230401,F04,2023,Youth Series 1,Youth,2023-01-05,2023-03-20,20,75
+P20230402,F04,2023,Aquatics Series 2,Aquatics,2023-04-05,2023-06-20,30,60
+P20230403,F04,2023,Fitness Series 3,Fitness,2023-07-05,2023-09-20,20,45
+P20230404,F04,2023,Youth Series 4,Youth,2023-09-05,2023-11-20,16,90
+P20230405,F04,2023,Fitness Series 5,Fitness,2023-10-05,2023-12-20,24,120
+P20230406,F04,2023,Arts and wellness Series 6,Arts and wellness,2023-07-05,2023-09-20,16,45
+P20230407,F04,2023,Older adult Series 7,Older adult,2023-11-05,2023-12-20,24,90
+P20230408,F04,2023,Recreation league Series 8,Recreation league,2023-01-05,2023-03-20,30,45
+P20240101,F01,2024,Youth Series 1,Youth,2024-07-05,2024-09-20,30,60
+P20240102,F01,2024,Fitness Series 2,Fitness,2024-01-05,2024-03-20,30,75
+P20240103,F01,2024,Recreation league Series 3,Recreation league,2024-07-05,2024-09-20,40,90
+P20240104,F01,2024,Fitness Series 4,Fitness,2024-02-05,2024-04-20,20,75
+P20240105,F01,2024,Older adult Series 5,Older adult,2024-09-05,2024-11-20,30,90
+P20240106,F01,2024,Arts and wellness Series 6,Arts and wellness,2024-10-05,2024-12-20,40,60
+P20240107,F01,2024,Aquatics Series 7,Aquatics,2024-09-05,2024-11-20,16,60
+P20240108,F01,2024,Aquatics Series 8,Aquatics,2024-05-05,2024-07-20,20,75
+P20240201,F02,2024,Recreation league Series 1,Recreation league,2024-05-05,2024-07-20,20,90
+P20240202,F02,2024,Arts and wellness Series 2,Arts and wellness,2024-02-05,2024-04-20,30,60
+P20240203,F02,2024,Arts and wellness Series 3,Arts and wellness,2024-11-05,2024-12-20,30,75
+P20240204,F02,2024,Recreation league Series 4,Recreation league,2024-10-05,2024-12-20,40,90
+P20240205,F02,2024,Older adult Series 5,Older adult,2024-02-05,2024-04-20,30,90
+P20240206,F02,2024,Youth Series 6,Youth,2024-01-05,2024-03-20,40,75
+P20240207,F02,2024,Aquatics Series 7,Aquatics,2024-10-05,2024-12-20,40,75
+P20240208,F02,2024,Recreation league Series 8,Recreation league,2024-09-05,2024-11-20,40,90
+P20240301,F03,2024,Older adult Series 1,Older adult,2024-09-05,2024-11-20,16,75
+P20240302,F03,2024,Youth Series 2,Youth,2024-04-05,2024-06-20,20,75
+P20240303,F03,2024,Recreation league Series 3,Recreation league,2024-11-05,2024-12-20,30,45
+P20240304,F03,2024,Older adult Series 4,Older adult,2024-11-05,2024-12-20,40,60
+P20240305,F03,2024,Aquatics Series 5,Aquatics,2024-10-05,2024-12-20,20,120
+P20240306,F03,2024,Arts and wellness Series 6,Arts and wellness,2024-05-05,2024-07-20,16,75
+P20240307,F03,2024,Older adult Series 7,Older adult,2024-09-05,2024-11-20,20,45
+P20240308,F03,2024,Fitness Series 8,Fitness,2024-02-05,2024-04-20,40,120
+P20240401,F04,2024,Recreation league Series 1,Recreation league,2024-10-05,2024-12-20,20,120
+P20240402,F04,2024,Aquatics Series 2,Aquatics,2024-07-05,2024-09-20,16,120
+P20240403,F04,2024,Aquatics Series 3,Aquatics,2024-09-05,2024-11-20,16,60
+P20240404,F04,2024,Arts and wellness Series 4,Arts and wellness,2024-04-05,2024-06-20,40,45
+P20240405,F04,2024,Recreation league Series 5,Recreation league,2024-09-05,2024-11-20,30,75
+P20240406,F04,2024,Fitness Series 6,Fitness,2024-02-05,2024-04-20,40,90
+P20240407,F04,2024,Arts and wellness Series 7,Arts and wellness,2024-01-05,2024-03-20,16,75
+P20240408,F04,2024,Fitness Series 8,Fitness,2024-05-05,2024-07-20,24,45
+P20250101,F01,2025,Recreation league Series 1,Recreation league,2025-09-05,2025-11-20,40,45
+P20250102,F01,2025,Aquatics Series 2,Aquatics,2025-01-05,2025-03-20,16,75
+P20250103,F01,2025,Aquatics Series 3,Aquatics,2025-02-05,2025-04-20,30,120
+P20250104,F01,2025,Recreation league Series 4,Recreation league,2025-02-05,2025-04-20,24,75
+P20250105,F01,2025,Fitness Series 5,Fitness,2025-05-05,2025-07-20,20,60
+P20250106,F01,2025,Arts and wellness Series 6,Arts and wellness,2025-01-05,2025-03-20,20,75
+P20250107,F01,2025,Recreation league Series 7,Recreation league,2025-02-05,2025-04-20,40,45
+P20250108,F01,2025,Youth Series 8,Youth,2025-05-05,2025-07-20,40,45
+P20250201,F02,2025,Youth Series 1,Youth,2025-04-05,2025-06-20,20,120
+P20250202,F02,2025,Youth Series 2,Youth,2025-01-05,2025-03-20,30,90
+P20250203,F02,2025,Older adult Series 3,Older adult,2025-09-05,2025-11-20,30,90
+P20250204,F02,2025,Youth Series 4,Youth,2025-05-05,2025-07-20,20,120
+P20250205,F02,2025,Arts and wellness Series 5,Arts and wellness,2025-09-05,2025-11-20,30,120
+P20250206,F02,2025,Youth Series 6,Youth,2025-02-05,2025-04-20,24,120
+P20250207,F02,2025,Recreation league Series 7,Recreation league,2025-09-05,2025-11-20,40,120
+P20250208,F02,2025,Older adult Series 8,Older adult,2025-05-05,2025-07-20,40,75
+P20250301,F03,2025,Fitness Series 1,Fitness,2025-07-05,2025-09-20,16,45
+P20250302,F03,2025,Youth Series 2,Youth,2025-10-05,2025-12-20,40,45
+P20250303,F03,2025,Fitness Series 3,Fitness,2025-09-05,2025-11-20,30,120
+P20250304,F03,2025,Recreation league Series 4,Recreation league,2025-02-05,2025-04-20,40,120
+P20250305,F03,2025,Recreation league Series 5,Recreation league,2025-05-05,2025-07-20,20,45
+P20250306,F03,2025,Older adult Series 6,Older adult,2025-05-05,2025-07-20,16,90
+P20250307,F03,2025,Fitness Series 7,Fitness,2025-04-05,2025-06-20,24,60
+P20250308,F03,2025,Arts and wellness Series 8,Arts and wellness,2025-10-05,2025-12-20,30,45
+P20250401,F04,2025,Youth Series 1,Youth,2025-10-05,2025-12-20,20,75
+P20250402,F04,2025,Aquatics Series 2,Aquatics,2025-09-05,2025-11-20,20,75
+P20250403,F04,2025,Fitness Series 3,Fitness,2025-07-05,2025-09-20,30,45
+P20250404,F04,2025,Recreation league Series 4,Recreation league,2025-01-05,2025-03-20,24,75
+P20250405,F04,2025,Youth Series 5,Youth,2025-01-05,2025-03-20,20,60
+P20250406,F04,2025,Aquatics Series 6,Aquatics,2025-04-05,2025-06-20,24,90
+P20250407,F04,2025,Arts and wellness Series 7,Arts and wellness,2025-09-05,2025-11-20,30,90
+P20250408,F04,2025,Recreation league Series 8,Recreation league,2025-09-05,2025-11-20,30,60

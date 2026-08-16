@@ -1,0 +1,234 @@
+# Analysis and Machine Learning
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- select an analytical method that matches the question and unit of analysis;
+- distinguish description, explanation, prediction, classification, and segmentation;
+- construct a defensible training and evaluation workflow;
+- explain the uses and limitations of regression, logistic regression, decision trees, random forests, and clustering; and
+- connect model performance to the consequence of a decision.
+
+## Key terms
+
+::: {.definition}
+**Analytical plan:** A documented explanation of the question, data, variables, method, validation, outputs, assumptions, and decision criteria for an analysis.
+
+**Target variable:** The outcome a supervised model is intended to predict or explain.
+
+**Feature:** A variable used as an input to a model.
+
+**Training data:** Observations used to estimate model parameters or learn patterns.
+
+**Validation:** Evaluation using observations not used to fit the model, or another defensible procedure that estimates performance beyond the training data.
+
+**Baseline:** A simple reference method against which a more complex model is compared.
+
+**Data leakage:** The use of information during model development that would not legitimately be available when a prediction is made.
+
+**Classification threshold:** The probability cutoff used to convert a predicted probability into a class decision.
+
+**Hyperparameter:** A model setting selected outside the ordinary parameter-estimation process, often through resampling or validation.
+
+**Clustering:** An unsupervised method that groups observations according to a defined measure of similarity.
+:::
+
+## Begin with the purpose
+
+Method selection begins with the decision, not the algorithm. Before modelling, state:
+
+- the outcome or quantity of interest;
+- the unit of analysis;
+- the population and time period;
+- whether the goal is description, explanation, prediction, classification, or segmentation;
+- when the result would be used;
+- what information would be available at that time;
+- how performance will be evaluated; and
+- what limitation would make the result unsuitable for use.
+
+A model can perform well on a metric while failing the practical purpose. A retention classifier that identifies likely non-renewals only after the membership has expired is too late to support an intervention. A program-demand model may have acceptable average error but fail badly for the locations where staffing decisions are most costly.
+
+## A defensible modelling workflow
+
+1. Define the question, target, unit, and prediction time.
+2. Create an eligible analytical population.
+3. Separate training and final evaluation data.
+4. Develop preprocessing using training data only.
+5. Establish a simple baseline.
+6. Fit and tune candidate models using appropriate resampling.
+7. Compare metrics linked to the decision.
+8. Evaluate the selected model on untouched data.
+9. Inspect errors and subgroup performance.
+10. Document interpretation, limitations, monitoring, and implementation.
+
+For time-dependent data, random splitting may allow future information to influence the past. For repeated observations from the same member, site, or event, group-based splitting may be required to prevent the same entity from appearing in both training and evaluation sets.
+
+## Linear regression
+
+Linear regression models a numeric response as a function of one or more explanatory variables. A simple model has the form
+
+\[
+Y=\beta_0+\beta_1X+\varepsilon.
+\]
+
+Multiple regression includes several features and may include transformations or interactions. The coefficients describe expected changes under the model, holding other included variables constant. They do not automatically establish causal effects.
+
+Important checks include linearity where assumed, residual patterns, influential observations, changing variance, collinearity, and performance on appropriate evaluation data. A low p-value does not establish useful predictive accuracy, and a high coefficient of determination does not guarantee that the model will generalize.
+
+::: {.example}
+**Recurring case: predicting program attendance**
+
+NVRW models the number of attendees for a scheduled program using capacity, registration count, wait-list count, program category, location, day, start time, season, and lead time before the program begins.
+
+The model is useful only if features are available at the planning date. Final registration count cannot be used for a forecast made four weeks earlier. The team therefore creates features measured at a common four-week cutoff and compares the model with a baseline that uses the historical average for the same program category and season.
+:::
+
+## Logistic regression
+
+Logistic regression estimates the probability of a binary outcome. Rather than modelling the outcome directly, it models the log-odds:
+
+\[
+\log\left(\frac{p}{1-p}\right)=\beta_0+\beta_1X_1+\cdots+\beta_kX_k.
+\]
+
+Predicted probabilities must be separated from final class decisions. A threshold of 0.50 is not automatically appropriate. The best threshold depends on the cost of false positives, the cost of false negatives, available intervention capacity, and the distribution of predicted risk.
+
+For retention analysis, useful metrics may include area under the ROC curve, precision, recall, specificity, calibration, lift in a targeted group, and expected intervention value. Accuracy alone can be misleading when most members renew.
+
+::: {.example}
+**Recurring case: twelve-month retention**
+
+NVRW defines the target as whether a new member remains active twelve months after joining. Recent members without a complete observation window are excluded from model development rather than labelled as non-retained.
+
+The model uses information available during the first sixty days, such as membership type, location, acquisition channel, visit frequency, program registration, and service contacts. It does not use later renewal transactions, because that would leak the outcome into the features.
+:::
+
+## Decision trees
+
+A decision tree repeatedly divides observations into groups using feature-based rules. Trees are attractive because a sequence of splits can be explained in plain language. They can represent nonlinear relationships and interactions without requiring the analyst to specify each one in advance.
+
+An unrestricted tree can fit noise. Control complexity through depth, minimum node size, or cost-complexity pruning, and select settings through validation. A single tree may also be unstable: a modest change in the training data can produce different splits.
+
+Interpretability does not make every tree explanation causal. A split indicates how the fitted model separates observations, not why the outcome occurs.
+
+## Random forests
+
+A random forest fits many decision trees using resampled observations and randomly selected features, then combines their predictions. The method often improves predictive stability and accuracy relative to one tree, especially when relationships are nonlinear or involve interactions.
+
+The cost is reduced simplicity. Feature-importance measures can help describe the model, but they should be interpreted carefully. Importance may be affected by correlated features, variable scale, and the chosen measure. Partial-dependence or accumulated-effect displays describe model behaviour, not causal intervention effects.
+
+Compare the random forest with a baseline and simpler model. If performance improves only slightly, the simpler model may be easier to explain, maintain, and monitor.
+
+## Clustering and segmentation
+
+Clustering is unsupervised. It does not predict a known target. It groups observations according to features and a similarity rule selected by the analyst.
+
+A defensible clustering analysis requires:
+
+- a clear reason for segmentation;
+- an appropriate unit, such as one row per member rather than one row per transaction;
+- selected features that represent meaningful behaviour or value;
+- scaling when variables use different units;
+- comparison of several cluster solutions;
+- assessment of stability and separation;
+- useful descriptions based on observed features; and
+- a practical action that differs across segments.
+
+K-means seeks groups that minimize within-cluster squared distance from cluster centres. It works best for roughly compact clusters in appropriately scaled numeric features. Hierarchical clustering can reveal nested structure. Other methods may be preferable for irregular shapes, mixed variable types, or noise.
+
+::: {.example}
+**Recurring case: NVRW member segments**
+
+NVRW constructs one row per member with first-year visit frequency, program diversity, average contribution margin, digital-service use, location diversity, and twelve-month retention eligibility. After scaling the numeric features, the team compares several k-means solutions and examines stability across resamples.
+
+One useful solution identifies frequent multi-service members, program-focused households, occasional drop-in users, and recent low-engagement members. The labels describe observed behaviour. The team does not infer income, motivation, or preferences that are absent from the data.
+:::
+
+## Evaluation must match the decision
+
+### Regression metrics
+
+- **MAE** describes the average absolute error in the outcome's units.
+- **RMSE** gives greater weight to large errors.
+- **MAPE** expresses error as a percentage but behaves poorly near zero.
+- **R-squared** describes explained variation under a given dataset and does not directly measure practical error.
+
+### Classification metrics
+
+- **Recall** measures the proportion of actual positive cases identified.
+- **Precision** measures the proportion of positive predictions that are correct.
+- **Specificity** measures the proportion of negative cases correctly rejected.
+- **Calibration** assesses whether predicted probabilities agree with observed frequencies.
+- **Lift** compares the concentration of outcomes in a targeted group with the overall rate.
+
+Metric choice should reflect action. If NVRW can contact only 500 members, precision and expected value among the 500 highest-risk eligible members may matter more than overall accuracy.
+
+## R demonstration structure
+
+The exact package can vary, but the workflow should preserve the separation between training, tuning, and final evaluation.
+
+```{r}
+library(tidymodels)
+
+set.seed(490)
+split <- initial_split(member_model_data, strata = retained_12m)
+train_data <- training(split)
+test_data  <- testing(split)
+
+retention_recipe <- recipe(retained_12m ~ ., data = train_data) |>
+  step_unknown(all_nominal_predictors()) |>
+  step_dummy(all_nominal_predictors()) |>
+  step_normalize(all_numeric_predictors())
+```
+
+Preprocessing steps must be estimated from training data. The final test set should remain untouched until method and tuning decisions are complete.
+
+## Error analysis and responsible use
+
+After evaluating overall performance, inspect where errors occur. Compare performance across time periods, locations, service types, and groups that matter to the decision. A model that performs poorly for a small facility may be unsuitable for facility-level staffing even if system-wide performance is strong.
+
+Ask whether the model could create unfair treatment, whether a feature acts as a proxy for sensitive information, and whether affected people have a reasonable way to correct inaccurate data or decisions. Prediction does not remove the need for human judgment and governance.
+
+::: {.common-error}
+**Common mistake:** Selecting the model with the best single validation score without considering uncertainty, subgroup performance, interpretability, implementation cost, and the consequence of error.
+:::
+
+## Model quality checklist
+
+- [ ] The target, unit, population, and prediction time are defined.
+- [ ] Features would be available when the model is used.
+- [ ] Splitting prevents time, entity, and preprocessing leakage.
+- [ ] A relevant baseline is included.
+- [ ] Tuning uses training or validation data only.
+- [ ] Metrics reflect the decision and class balance.
+- [ ] Final performance is measured on untouched data.
+- [ ] Errors and subgroup performance are examined.
+- [ ] Interpretation avoids unsupported causal language.
+- [ ] Monitoring and retraining needs are documented.
+
+## Exercise
+
+NVRW's retention dataset contains 85 percent renewals. A model that predicts renewal for every member has 85 percent accuracy. Has the model succeeded?
+
+<details class="answer-dropdown">
+<summary>Suggested answer</summary>
+<p>No. The model merely reproduces the majority-class rate and identifies no non-renewals. It should be treated as a baseline. Evaluation should include metrics such as recall and precision for the actionable class, calibration, lift in the group NVRW could contact, and expected value under intervention capacity and cost.</p>
+</details>
+
+## Additional exercises
+
+1. Use `data/nvrw/derived/member_model.csv` to define the target, prediction time, eligible population, features, and excluded information for a first-period retention model.
+2. Construct a baseline and compare logistic regression with one tree-based method. Use a split that prevents the same member from appearing in both training and test data.
+3. Assume NVRW can contact only 150 members. Evaluate precision, recall, calibration, and expected contribution margin among the 150 highest-risk eligible members. Explain which metric best fits the decision.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>The target should exclude censored cases. Features must be available by the stated prediction time. Model selection should not use the final test set, and the final recommendation should distinguish predictive association from a proven intervention effect.</p>
+</details>
+
+## Questions for discussion
+
+1. When is a simpler model preferable even if a complex model performs slightly better?
+2. What makes a customer segment operationally useful?
+3. How should a team respond when no model improves meaningfully on the baseline?

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Applied project evidence chain</title>
+  <desc id="desc">A sequence from organizational concern to questions, evidence, findings, recommendations, implementation, and evaluation, with a feedback loop from evaluation to questions.</desc>
+  <defs>
+    <style>.title{font:700 27px Arial;fill:#17365d}.box{fill:#dce6f1;stroke:#17365d;stroke-width:3;rx:16}.action{fill:#fff4cc}.label{font:700 18px Arial;fill:#17365d}.line{stroke:#56789d;stroke-width:4;fill:none}.arrow{fill:#56789d}.loop{font:16px Arial;fill:#475569}</style>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" class="arrow"/></marker>
+  </defs>
+  <text x="600" y="48" text-anchor="middle" class="title">From organizational concern to evaluated action</text>
+  <rect x="30" y="150" width="145" height="95" class="box"/><text x="103" y="188" text-anchor="middle" class="label">Concern</text><text x="103" y="216" text-anchor="middle" class="loop">Why investigate?</text>
+  <rect x="200" y="150" width="145" height="95" class="box"/><text x="273" y="188" text-anchor="middle" class="label">Questions</text><text x="273" y="216" text-anchor="middle" class="loop">What is needed?</text>
+  <rect x="370" y="150" width="145" height="95" class="box"/><text x="443" y="188" text-anchor="middle" class="label">Evidence</text><text x="443" y="216" text-anchor="middle" class="loop">What supports it?</text>
+  <rect x="540" y="150" width="145" height="95" class="box"/><text x="613" y="188" text-anchor="middle" class="label">Findings</text><text x="613" y="216" text-anchor="middle" class="loop">What was learned?</text>
+  <rect x="710" y="150" width="145" height="95" class="box action"/><text x="783" y="188" text-anchor="middle" class="label">Recommendation</text><text x="783" y="216" text-anchor="middle" class="loop">What is justified?</text>
+  <rect x="880" y="150" width="145" height="95" class="box action"/><text x="953" y="188" text-anchor="middle" class="label">Implementation</text><text x="953" y="216" text-anchor="middle" class="loop">Who does what?</text>
+  <rect x="1050" y="150" width="125" height="95" class="box action"/><text x="1113" y="188" text-anchor="middle" class="label">Evaluation</text><text x="1113" y="216" text-anchor="middle" class="loop">Did it work?</text>
+  <path d="M175 198 L200 198 M345 198 L370 198 M515 198 L540 198 M685 198 L710 198 M855 198 L880 198 M1025 198 L1050 198" class="line" marker-end="url(#arrow2)"/>
+  <path d="M1113 245 C1113 400, 273 400, 273 245" class="line" marker-end="url(#arrow2)"/>
+  <text x="690" y="430" text-anchor="middle" class="loop">Evaluation creates new evidence, questions, and revisions</text>
+</svg>

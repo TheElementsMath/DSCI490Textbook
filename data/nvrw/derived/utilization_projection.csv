@@ -1,0 +1,25 @@
+facility_id,facility_name,year,population,visits_per_1000_2025,projected_visits_constant_rate
+F01,Downtown Centre,2025,36885,236.55,8725
+F01,Downtown Centre,2026,37547,236.55,8882
+F01,Downtown Centre,2027,38222,236.55,9041
+F01,Downtown Centre,2028,38908,236.55,9204
+F01,Downtown Centre,2029,39607,236.55,9369
+F01,Downtown Centre,2030,40323,236.55,9538
+F02,Lakeside Centre,2025,29743,220.76,6566
+F02,Lakeside Centre,2026,30279,220.76,6684
+F02,Lakeside Centre,2027,30827,220.76,6805
+F02,Lakeside Centre,2028,31384,220.76,6928
+F02,Lakeside Centre,2029,31953,220.76,7054
+F02,Lakeside Centre,2030,32532,220.76,7182
+F03,North Ridge Centre,2025,22911,171.01,3918
+F03,North Ridge Centre,2026,23332,171.01,3990
+F03,North Ridge Centre,2027,23757,171.01,4063
+F03,North Ridge Centre,2028,24192,171.01,4137
+F03,North Ridge Centre,2029,24634,171.01,4213
+F03,North Ridge Centre,2030,25087,171.01,4290
+F04,Westbrook Centre,2025,27148,204.73,5558
+F04,Westbrook Centre,2026,27794,204.73,5690
+F04,Westbrook Centre,2027,28456,204.73,5826
+F04,Westbrook Centre,2028,29137,204.73,5965
+F04,Westbrook Centre,2029,29832,204.73,6107
+F04,Westbrook Centre,2030,30547,204.73,6254

@@ -1,0 +1,116 @@
+# Glossary
+
+The glossary provides a quick reference to concepts used throughout the book. Detailed definitions and applications appear in the chapter where each term is introduced.
+
+::: {.definition}
+**Accountability:** The obligation to complete agreed work, communicate progress and problems, and accept review.
+
+**Analytical plan:** A documented explanation of the question, data, methods, validation, outputs, assumptions, and decision criteria.
+
+**Analytical question:** A question that identifies what will be described, compared, explained, predicted, or projected using data.
+
+**Audience:** The people for whom a communication is designed and who will interpret or use it.
+
+**Baseline:** A simple reference method or condition used for comparison.
+
+**Benchmark:** A reference value or standard used to evaluate performance or position.
+
+**Call to action:** A clear statement of the response or next step an audience is asked to consider.
+
+**Churn rate:** The proportion of eligible customers lost during a defined period.
+
+**Citation:** A formal acknowledgement identifying the source of data, ideas, methods, or other material.
+
+**Client:** The person or organization that commissions, sponsors, receives, or uses project work.
+
+**Clustering:** An unsupervised method that groups observations according to a defined measure of similarity.
+
+**Codebook:** A structured description of variables and coded values.
+
+**Comparability:** The degree to which values from different sources can be meaningfully compared.
+
+**Confidentiality:** The obligation to prevent unauthorized disclosure of information.
+
+**Customer acquisition cost:** The attributable cost of acquiring a new customer under a stated allocation rule.
+
+**Customer lifetime value:** The estimated economic value produced by a customer over the relationship under a stated model.
+
+**Data dictionary:** A structured reference documenting the meaning, format, values, source, quality, and use of data elements.
+
+**Data leakage:** Use of information during model development that would not legitimately be available when a prediction is made.
+
+**Data lineage:** The traceable path from a source through transformations to an output.
+
+**Data stewardship:** Responsible management of data throughout its lifecycle.
+
+**Data-use agreement:** A formal agreement defining permitted data, users, purposes, safeguards, disclosure, and retention.
+
+**Deliverable:** A defined product that must satisfy stated content and quality expectations.
+
+**Dependency:** A relationship in which one task or input must be completed before another can proceed.
+
+**Derived variable:** A variable created from source fields using a documented rule.
+
+**Discount rate:** The rate used to convert future amounts into present value.
+
+**Executive summary:** A concise, self-contained account of the problem, evidence, conclusions, recommendations, and material limitations.
+
+**Exploratory data analysis:** A structured investigation of data quality, distributions, relationships, limitations, and analytical possibilities.
+
+**Forecast:** An estimate of a future value based primarily on patterns learned from observed data.
+
+**Handoff:** The organized transfer of files, documentation, context, and usage guidance.
+
+**Implementation question:** A question about how an action will be carried out, monitored, and adjusted.
+
+**Interim review:** A structured examination of progress, evidence, risk, and remaining work before final delivery.
+
+**Iteration:** A deliberate return to an earlier stage so that work can be revised using new evidence.
+
+**Metadata:** Information describing a dataset's content, structure, collection, quality, ownership, and use.
+
+**Milestone:** A meaningful checkpoint indicating that a stage is complete or ready for review.
+
+**Missingness:** The amount, pattern, and process through which expected values are absent.
+
+**Practical significance:** The degree to which a result is consequential enough to matter for a decision.
+
+**Primary data:** Data collected directly for the purpose currently being investigated.
+
+**Privacy:** Rights and expectations associated with information about individuals.
+
+**Projection:** A conditional estimate of a future quantity under stated assumptions.
+
+**Provenance:** The documented origin, context, ownership, version, and transformation history of data.
+
+**Recommendation:** A proposed action responding to an established problem or opportunity and supported by evidence.
+
+**Reproducibility:** The ability to recreate results from documented data, code, settings, transformations, and decisions.
+
+**Retention rate:** The proportion of eligible customers who remain active from one defined period to the next.
+
+**Risk register:** A maintained record of possible events that could harm the project and the planned response.
+
+**Scenario:** A coherent combination of assumptions used to examine one possible outcome.
+
+**Scope:** The agreed boundary of the questions, data, methods, periods, and outputs included in a project.
+
+**Sensitivity analysis:** An examination of how results change when important assumptions or inputs change.
+
+**SMART objective:** An implementation objective that is specific, measurable, achievable, relevant, and time-bound.
+
+**Storyboard:** A preliminary sequence of messages and evidence used to design a coherent communication.
+
+**Team charter:** A documented operating agreement governing how a project team will work together.
+
+**Thematic cohesion:** Alignment of questions, evidence, language, conclusions, and recommendations around a central purpose.
+
+**Unit of analysis:** The entity represented by one observation in an analysis.
+
+**Utilization rate:** The number of events or services used relative to a defined population and period.
+
+**Validation:** Evaluation that estimates how a method performs beyond the data used to fit or select it.
+
+**Visual encoding:** The use of visual properties such as position, length, colour, or shape to represent data.
+:::
+

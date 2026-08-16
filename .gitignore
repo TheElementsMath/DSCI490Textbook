@@ -1,0 +1,7 @@
+_book/
+_bookdown_files/
+*.utf8.md
+*.knit.md
+.Rhistory
+.Rproj.user/
+*.inspect.ndjson

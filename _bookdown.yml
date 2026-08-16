@@ -1,0 +1,26 @@
+book_filename: "data-science-in-practice"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
+rmd_files:
+  - "index.Rmd"
+  - "01-capstone.Rmd"
+  - "01b-questioning.Rmd"
+  - "02-planning.Rmd"
+  - "03-teamwork.Rmd"
+  - "03b-interim-reviews.Rmd"
+  - "04-data-responsibility.Rmd"
+  - "05-data-dictionaries.Rmd"
+  - "06-eda.Rmd"
+  - "07-secondary-data.Rmd"
+  - "08-analysis-projections.Rmd"
+  - "08b-forecasting-clv.Rmd"
+  - "09-storytelling.Rmd"
+  - "10-visualization.Rmd"
+  - "11-reports-presentations.Rmd"
+  - "12-refreshers.Rmd"
+  - "98-glossary.Rmd"
+  - "99-appendices.Rmd"
+  - "99b-nvrw-synthesis.Rmd"
+output_dir: "docs"

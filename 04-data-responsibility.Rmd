@@ -1,0 +1,160 @@
+# Data Responsibility and Confidentiality
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- distinguish privacy, confidentiality, security, and data stewardship;
+- identify responsibilities associated with organizational and client data;
+- distinguish permission to access data from permission to share or reuse it;
+- recognize disclosure risks created by outputs, software, and third-party services; and
+- apply minimum-necessary and lifecycle principles to project data.
+
+## Key terms
+
+::: {.definition}
+**Confidentiality:** The obligation to prevent information from being disclosed to people, systems, or purposes that have not been authorized.
+
+**Privacy:** The rights and expectations associated with how information about individuals is collected, used, linked, shared, retained, and disclosed.
+
+**Data stewardship:** The responsible management of data throughout its lifecycle so that it remains secure, understandable, reliable, appropriately used, and properly retained or disposed of.
+
+**Minimum necessary access:** The principle that people and systems should receive only the data and permissions required for an approved purpose.
+
+**De-identification:** The removal, masking, or transformation of direct and indirect identifiers to reduce the likelihood that a person or organization can be recognized.
+
+**Third-party service:** An external platform, application, model, storage provider, or vendor that receives, processes, stores, or transmits project information.
+
+**Data-use agreement:** A formal agreement that defines permitted data, users, purposes, safeguards, disclosures, retention periods, and other conditions of access.
+:::
+
+## Data access creates obligations
+
+Receiving access to data does not transfer ownership or create unrestricted permission. Data remain subject to the conditions established by the data owner, applicable agreements, organizational policy, ethical expectations, and relevant law. A person may be authorized to analyze a file without being authorized to email it, place it on a personal device, upload it to a cloud service, publish a chart, reuse it for another project, or retain it after the work ends.
+
+Responsibility extends beyond the original dataset. Derived and communication products may contain the same sensitive information in a different form. These products include:
+
+- extracts and cleaned files;
+- temporary exports and backups;
+- screenshots;
+- tables and charts;
+- small-cell summaries;
+- model inputs and outputs;
+- reports and presentations;
+- prompts sent to an external system; and
+- notes that connect coded values to real people or organizations.
+
+A project should therefore treat data protection as a workflow, not as a single decision made when the file is first received.
+
+## Privacy, confidentiality, security, and ethics
+
+These concepts overlap but are not interchangeable.
+
+**Privacy** concerns appropriate treatment of information about people. **Confidentiality** concerns the duty to prevent unauthorized disclosure. **Security** concerns the controls used to protect information, such as permissions, encryption, approved storage, and secure transfer. **Ethics** asks whether the use is fair, responsible, and consistent with the interests of affected people, even when the use is technically permitted.
+
+For example, a dataset may be stored securely but used for a purpose that participants did not reasonably expect. Alternatively, an analysis may have a legitimate purpose but be disclosed through a chart that reveals a small or distinctive group. Responsible practice requires attention to all four areas.
+
+## Minimum necessary use
+
+Collect, access, retain, and disclose only what is needed for the approved analytical purpose. This principle can be applied through several questions:
+
+- Does the project need direct identifiers?
+- Does the team need exact dates, or would month or quarter be sufficient?
+- Does every team member need access to the complete file?
+- Can a less detailed geography answer the question?
+- Does a presentation need the exact small count, or would aggregation communicate the finding safely?
+- Does an external tool need real data, or can synthetic values reproduce the technical problem?
+
+Minimum necessary use reduces harm if a mistake occurs. It also forces the team to clarify which variables genuinely contribute to the project.
+
+## De-identification is not anonymity
+
+Removing names is often necessary, but it may not be sufficient. A combination of age, postal area, event date, occupation, diagnosis, transaction history, or another uncommon attribute can make a record recognizable. External information may also allow apparently anonymous records to be linked back to individuals or organizations.
+
+The level of risk depends on the data, the population, the audience, and the release environment. A detailed internal table in an approved secure location may be acceptable while the same table would be inappropriate in a public presentation.
+
+::: {.example}
+**Worked example: indirect disclosure**
+
+A report compares service use across small regions. One region contains only two cases in a rare category. The report does not include names, but local staff may know who the two people are.
+
+Possible responses include aggregating regions, combining categories, suppressing the small value, reporting a rate only when the denominator is sufficient, or moving the detail to a restricted internal output. The correct response depends on the applicable rules and the analytical need.
+:::
+
+## Generative AI and external tools
+
+Organizational, contractual, and client policies determine whether an external tool may be used. The availability of a tool does not establish permission.
+
+Do not place confidential or restricted information into a generative AI system, proofreading service, translation service, code assistant, visualization platform, or other third-party service unless that specific use has been approved. Removing obvious names may not be enough, and a prompt can disclose sensitive context even when no file is attached.
+
+Before using an external service, determine:
+
+1. what information would leave the approved environment;
+2. whether the intended use is permitted;
+3. where the information is processed and stored;
+4. who may access or reuse it;
+5. whether the service retains prompts, files, or outputs;
+6. whether the result could expose confidential information; and
+7. whether an approved alternative can accomplish the task.
+
+Synthetic data are often useful for testing code, requesting generic technical help, or demonstrating a method without exposing real records. Synthetic data should not be presented as evidence about the client or population.
+
+## Responsible analytical use
+
+Data responsibility also concerns interpretation. An analysis can cause harm without revealing individual records. Poorly chosen groups can reinforce stereotypes. A model can systematically perform worse for an important population. A recommendation can disadvantage people who were underrepresented in the source data. A confident conclusion can hide uncertainty that matters to the decision.
+
+Responsible review should therefore ask:
+
+- Who is represented in the data, and who is missing?
+- Which groups could be affected by errors?
+- Does model performance differ across meaningful groups?
+- Could a proxy variable reproduce sensitive distinctions?
+- Are causal claims being made from associational evidence?
+- Could the recommendation create an unfair burden or exclusion?
+
+## The data lifecycle
+
+Data stewardship continues from receipt through final disposition.
+
+1. **Receive:** Confirm the source, version, permitted purpose, and transfer method.
+2. **Store:** Use approved locations and appropriate access controls.
+3. **Use:** Restrict analysis to approved people, variables, and purposes.
+4. **Share:** Review every output for confidentiality and disclosure risk.
+5. **Retain:** Keep files only for the approved period.
+6. **Dispose:** Follow the required deletion, archival, or return process and document completion where necessary.
+
+Copies often multiply during a project. Downloads, email attachments, local exports, presentation images, and backup folders must all be considered when the project ends.
+
+::: {.common-error}
+**Common mistake:** A free, popular, or institutionally accessible service is not automatically approved for confidential data. Permission depends on the specific data, purpose, agreement, and service configuration.
+:::
+
+## Data responsibility checklist
+
+- [ ] The project team has read all applicable agreements and policies.
+- [ ] The permitted purpose and users are clear.
+- [ ] Only necessary variables and levels of detail are accessed.
+- [ ] Data are stored and transferred only through approved methods.
+- [ ] Access is limited to authorized people.
+- [ ] Derived files, prompts, outputs, and backups receive appropriate protection.
+- [ ] Small groups and indirect identifiers have been reviewed.
+- [ ] External services receive no restricted information without explicit approval.
+- [ ] Public and shared outputs have been checked for disclosure and interpretation risk.
+- [ ] Final retention, return, archival, or deletion requirements are known.
+
+## Applied exercises
+
+1. Classify every NVRW file by access level, approved use, retention period, and permitted storage location, even though the supplied case is synthetic.
+2. Prepare a pre-use checklist for an external generative AI service. Include confidentiality, authorization, data minimization, output verification, citation, and retention.
+3. Examine whether a small program-by-location table could create indirect disclosure in a real client dataset. Propose a reporting treatment that protects confidentiality without inventing data.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>A responsible treatment might aggregate categories, suppress a small cell, report a range, or restrict the output to an authorized audience. The choice should follow the data agreement and should be disclosed rather than hidden.</p>
+</details>
+
+## Questions for discussion
+
+1. Why is removing names not always sufficient to de-identify a dataset?
+2. How could a visualization reveal confidential information even when it contains no individual rows?
+3. When could synthetic data be useful, and what claims could not be made from them?

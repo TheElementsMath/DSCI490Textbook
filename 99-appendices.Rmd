@@ -1,0 +1,218 @@
+# Project Templates and Checklists
+
+The templates in this appendix are designed to be copied and adapted. A completed template should contain project-specific evidence rather than generic statements.
+
+## Project brief template
+
+- **Organizational concern:**
+- **Decision to be supported:**
+- **Primary audience:**
+- **Stakeholders:**
+- **In-scope questions:**
+- **Out-of-scope questions:**
+- **Available data:**
+- **Required secondary evidence:**
+- **Deliverables:**
+- **Success criteria:**
+- **Constraints and permissions:**
+- **Major risks:**
+- **Approval or review owner:**
+
+## Question map template
+
+| Level | Question | Evidence needed | Status | Owner | Consequence if unanswered |
+|---|---|---|---|---|---|
+| Organizational concern |  |  |  |  |  |
+| Management question |  |  |  |  |  |
+| Research question |  |  |  |  |  |
+| Analytical question |  |  |  |  |  |
+| Projection question |  |  |  |  |  |
+| Implementation question |  |  |  |  |  |
+
+## Timeline and milestone template
+
+| Work package | Output | Owner | Reviewer | Dependency | Effort | Start | Internal review | Definition of done |
+|---|---|---|---|---|---:|---|---|---|
+| Project framing |  |  |  |  |  |  |  |  |
+| Data dictionary |  |  |  |  |  |  |  |  |
+| EDA |  |  |  |  |  |  |  |  |
+| Secondary research |  |  |  |  |  |  |  |  |
+| Modelling |  |  |  |  |  |  |  |  |
+| Forecasting or projections |  |  |  |  |  |  |  |  |
+| Recommendations |  |  |  |  |  |  |  |  |
+| Final communication |  |  |  |  |  |  |  |  |
+
+## Risk register template
+
+| ID | Risk | Cause | Consequence | Likelihood | Impact | Warning sign | Mitigation | Contingency | Owner | Status |
+|---|---|---|---|---|---|---|---|---|---|---|
+| R-01 |  |  |  |  |  |  |  |  |  |  |
+
+## Team charter template
+
+### Purpose and goals
+
+- Project purpose:
+- Measurable goals:
+- Shared quality standards:
+
+### Roles and review
+
+| Role | Primary responsibilities | Current owner | Reviewer or backup |
+|---|---|---|---|
+| Project coordination |  |  |  |
+| Data and reproducibility |  |  |  |
+| Research |  |  |  |
+| Modelling and projections |  |  |  |
+| Report and presentation |  |  |  |
+| Recommendations and evaluation |  |  |  |
+
+### Operating agreements
+
+- Communication channel and response expectation:
+- Meeting schedule and attendance procedure:
+- Decision rules and final authority:
+- File location, naming, and version practices:
+- Review and acceptance procedure:
+- Conflict and missed-commitment process:
+- Escalation route:
+- Procedure for amending the charter:
+- Agreement date and member acknowledgement:
+
+## Meeting record template
+
+- **Date and purpose:**
+- **Participants:**
+- **Decisions and rationale:**
+- **Work accepted:**
+- **Actions, owners, and dates:**
+- **Open questions:**
+- **Risks or blockers:**
+- **Changes to scope, assumptions, roles, or schedule:**
+- **Next review point:**
+
+## Data dictionary review checklist
+
+- [ ] Dataset version, date received, dimensions, source, and unit are recorded.
+- [ ] Every table has a grain and key.
+- [ ] Every source and derived variable has one dictionary row.
+- [ ] Definitions explain business meaning rather than repeat names.
+- [ ] Types, formats, units, allowed values, and examples are clear.
+- [ ] Missing-value codes and counts are documented, including zero missingness.
+- [ ] Constraints, relationships, derivations, and ownership are recorded.
+- [ ] Privacy or sensitivity classifications are visible.
+- [ ] The dictionary matches the final analytical data.
+
+## EDA report outline
+
+1. purpose, questions, and scope;
+2. source data, versions, and units of analysis;
+3. data-quality findings and decisions;
+4. cleaning, transformation, and feature engineering;
+5. selected univariate findings;
+6. purposeful bivariate findings;
+7. relevant multivariate findings;
+8. limitations and unresolved issues;
+9. conclusions and project implications; and
+10. dictionary, references, code, and reproducibility information.
+
+## Secondary-source log template
+
+| Information need | Producer | Source | Version or period | Population and definition | Variables and units | Limitations | Transformation | Citation and licence | Decision |
+|---|---|---|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |  |  |  |
+
+## Analytical plan template
+
+- **Question and decision use:**
+- **Target or outcome:**
+- **Unit and eligible population:**
+- **Prediction or analysis time:**
+- **Candidate features and availability:**
+- **Baseline:**
+- **Candidate methods:**
+- **Split or resampling design:**
+- **Primary and secondary metrics:**
+- **Subgroup and error analysis:**
+- **Assumptions and limitations:**
+- **Implementation and monitoring considerations:**
+
+## Projection assumption template
+
+| Assumption | Base value | Low scenario | High scenario | Evidence or rationale | Consequence if wrong |
+|---|---:|---:|---:|---|---|
+| Historical period |  |  |  |  |  |
+| Utilization or growth rate |  |  |  |  |  |
+| Population or exposure |  |  |  |  |  |
+| Category mapping |  |  |  |  |  |
+| Intervention effect |  |  |  |  |  |
+
+## CLV assumption template
+
+| Input | Definition | Base | Low | High | Source | Notes |
+|---|---|---:|---:|---:|---|---|
+| Revenue per active period |  |  |  |  |  |  |
+| Contribution margin rate |  |  |  |  |  |  |
+| Retention by period |  |  |  |  |  |  |
+| Customer acquisition cost |  |  |  |  |  |  |
+| Discount rate |  |  |  |  |  |  |
+| Horizon |  |  |  |  |  |  |
+
+## Recommendation-evidence matrix
+
+| Problem or opportunity | Organizational evidence | Secondary context | Recommendation | Feasibility and risk | Evaluation metrics |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
+
+## SMART implementation template
+
+- **Approved recommendation:**
+- **Specific action:**
+- **Owner:**
+- **Target population or process:**
+- **Resources and approvals:**
+- **Start and end dates:**
+- **Process measure:**
+- **Leading indicator:**
+- **Outcome measure:**
+- **Guardrail measure:**
+- **Comparison or evaluation design:**
+- **Decision rule for continuing, revising, or stopping:**
+
+## Interim review checklist
+
+- [ ] The current problem, audience, and scope are clear.
+- [ ] Completed, preliminary, and planned work are distinguished.
+- [ ] Progress is supported by observable evidence.
+- [ ] Data issues, open questions, and risks are visible.
+- [ ] Model and projection plans include validation.
+- [ ] Project trajectory is supported by the schedule.
+- [ ] Feedback and decision requests are specific.
+- [ ] Next actions have owners and dates.
+
+## Final report revision audit
+
+- [ ] The executive summary leads with findings and actions.
+- [ ] Every major section advances the same decision problem.
+- [ ] Main EDA findings are integrated into the report body.
+- [ ] Segment descriptions separate observations from assumptions.
+- [ ] Forecasts, projections, scenarios, and targets are labelled correctly.
+- [ ] Recommendation effects are not presented as measured outcomes without evidence.
+- [ ] Secondary comparisons use compatible definitions and denominators.
+- [ ] Machine-learning results include a baseline, validation, and useful metrics.
+- [ ] Figures remain legible at final size.
+- [ ] Repetition and nonessential detail have been removed.
+
+## Final deliverable checklist
+
+- [ ] Reported values reconcile with the analysis.
+- [ ] The report and presentation share the same conclusions.
+- [ ] Recommendations are supported, feasible, and measurable.
+- [ ] Limitations and assumptions are visible.
+- [ ] Figures and tables are labelled, sourced, and accessible.
+- [ ] Appendices provide necessary technical support.
+- [ ] The executive summary stands alone.
+- [ ] Presentation timing, transitions, participation, and questions have been rehearsed.
+- [ ] Confidentiality requirements are satisfied.
+- [ ] Handoff files are documented, clearly named, and usable.
+

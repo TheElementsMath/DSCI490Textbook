@@ -1,0 +1,226 @@
+# Data Dictionaries and Codebooks
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- explain why a data dictionary is an analytical control rather than clerical paperwork;
+- document dataset-level and variable-level metadata;
+- distinguish source, standardized, and derived variables;
+- document valid values, missingness, units, relationships, and sensitivity; and
+- use a dictionary to detect ambiguity and inconsistency before they affect results.
+
+## Key terms
+
+::: {.definition}
+**Data dictionary:** A structured reference that documents the meaning, format, valid values, source, quality, and use of data elements in a dataset.
+
+**Codebook:** A structured description of variables and coded values, often emphasizing how categories or responses are represented. In practice, the terms codebook and data dictionary frequently overlap.
+
+**Data element:** A single defined item of information, usually represented by a field or variable.
+
+**Allowed value:** A value or category that is valid for a data element under its definition and business rules.
+
+**Missing-value code:** A stored value, symbol, or blank that represents unavailable, unknown, inapplicable, suppressed, or otherwise unrecorded information.
+
+**Derived variable:** A variable created from one or more source fields using a documented rule or calculation.
+
+**Unit of analysis:** The entity represented by one observation in an analysis, such as a person, transaction, visit, product, location, or month.
+
+**Provenance:** The documented origin and history of data, including its source, collection context, version, and transformations.
+:::
+
+## A dictionary controls meaning
+
+A column name is not a definition. A variable called `status`, `revenue`, `active`, or `date` may have an obvious technical format while still having an uncertain business meaning. Does `revenue` include tax, refunds, or discounts? Does `active` refer to a current contract, a recent visit, or any transaction during the year? Is `date` the date of purchase, entry, service, posting, or extraction?
+
+A data dictionary creates a shared and reviewable interpretation. It allows analysts, subject experts, and decision makers to identify disagreement before different definitions appear in code, charts, models, and recommendations.
+
+The dictionary is therefore a quality-control tool. It connects business meaning to technical implementation. When an analyst changes a category, derives a rate, or resolves missing values, the dictionary records the decision and makes it available to the rest of the project.
+
+## Begin with the unit of analysis
+
+Before documenting individual variables, determine what one row represents. This is the unit of analysis or grain of the table. A table may contain one row per member, membership period, facility visit, program registration, transaction, location-day, or location-month.
+
+Confusing these units creates serious errors. A member with twenty visits appears twenty times in a visit table. Counting rows would measure visits, not members. Joining a one-row-per-member table to the visit table duplicates member characteristics across visits, which may be appropriate for visit-level analysis but not for estimating the number of members.
+
+The dictionary should state the unit clearly and explain the keys that identify one observation.
+
+::: {.example}
+**Recurring case: NVRW data structure**
+
+North Valley Recreation and Wellness provides four files:
+
+- `members`: one row per member;
+- `memberships`: one row per membership period;
+- `visits`: one row per recorded facility entry; and
+- `transactions`: one row per purchase line.
+
+The four tables cannot be summarized or joined in the same way. The dictionary records each table's grain, primary identifier, time coverage, and relationship to the other files before the team begins analysis.
+:::
+
+## Dataset-level metadata
+
+Information that applies to the complete file should be recorded once rather than repeated in every variable row. This commonly includes:
+
+- dataset name and version;
+- date received or extracted;
+- source system and responsible owner;
+- purpose for which the data were originally collected;
+- number of rows and columns at the time of review;
+- unit of analysis;
+- primary and foreign keys;
+- time and geographic coverage;
+- expected update frequency;
+- confidentiality or access classification; and
+- lifecycle status, such as draft, current, superseded, or archived.
+
+Dimensions and missing counts change when the dataset changes. These values are meaningful only when they are attached to a date or version.
+
+## Variable-level fields
+
+Use one row per variable in a formatted table that can be filtered and reviewed.
+
+| Field | Purpose |
+|---|---|
+| Data element name | Client-friendly name |
+| Dataset variable name | Exact name used in code or software |
+| Definition | Detailed business meaning |
+| Data type | Character, integer, decimal, date, logical, and so on |
+| Format | Date pattern, precision, or code pattern |
+| Allowed values or range | Valid categories or numeric limits |
+| Default value | Value supplied when no other value is entered |
+| Requirement status | Required, conditionally required, or optional |
+| Constraints and rules | Uniqueness, business rules, keys, and restrictions |
+| Source | Original field, secondary source, or derived field |
+| Relationships | Links to identifiers, tables, or related variables |
+| Example values | Safe examples that clarify interpretation |
+| Missing-value representation | Blank, `NA`, `Unknown`, special code, and so on |
+| Missing count or rate | Extent of missingness for the stated version |
+| Unit | Dollars, minutes, percentage, count, and so on |
+| Derivation | Reproducible rule for an engineered variable |
+| Sensitivity | Privacy classification or handling restriction |
+| Owner or steward | Person or role responsible for meaning or quality |
+| Status and notes | Changes, ambiguities, corrections, or caveats |
+
+Not every variable will have a default, constraint, or relationship. Record `None` or `Not applicable` when the absence matters. Zero missing values should also be documented rather than left blank.
+
+## Source, standardized, and derived variables
+
+Preserve the original source field. Create new variables for corrections, standardization, and analysis. This makes the transformation visible and allows the analyst to compare the result with the original.
+
+For example, NVRW's source field `home_site` contains `Central`, `CENTRAL`, `Ctr`, and `01`. The team creates `home_centre_std` using a documented mapping. A separate field, `centre_region`, groups centres for a regional comparison. The dictionary identifies the first field as source data, the second as standardized, and the third as derived.
+
+Derived variables need enough detail to reproduce them. "Member tenure" is incomplete. A useful entry identifies the dates used, unit, treatment of partial periods, and reference date.
+
+::: {.example}
+**Sample dictionary entries**
+
+| Variable | Definition | Type and format | Allowed values | Missing rule | Source or derivation |
+|---|---|---|---|---|---|
+| `member_id` | Anonymous identifier for one member | Character, 10 positions | Unique nonblank code | Missing not permitted | Membership system |
+| `visit_time` | Recorded facility check-in time | Date-time, local time | Valid time within extract period | Blank means entry was not recorded | Access system |
+| `contribution_margin` | Revenue less directly attributable service or product cost | Decimal, dollars | May be negative after refund | Missing when direct cost unavailable | `net_revenue - direct_cost` |
+| `retained_12m` | Whether a member has an active membership 12 months after the initial start | Logical | `TRUE`, `FALSE` | Missing when 12-month observation window is incomplete | Derived from membership periods |
+
+The entries reveal that `retained_12m` cannot be calculated for recent members. Treating those cases as non-retained would bias the analysis.
+:::
+
+## Missing values carry information
+
+`NA`, blank, zero, `Unknown`, `Not asked`, and `Not applicable` may describe different processes. Combining them without investigation can hide a system problem or change the population being analyzed.
+
+For each variable, determine:
+
+- how missing information is stored;
+- whether different missing states have different meanings;
+- whether missingness is expected under a business rule;
+- whether the pattern changes by time, source, location, or group; and
+- whether the missing value prevents a valid calculation.
+
+If no values are missing, record a count of zero for the current version. This confirms that the field was checked.
+
+## Building the dictionary
+
+A practical workflow is:
+
+1. inventory every file and determine its grain;
+2. import exact field names and technical types;
+3. inspect observed values, ranges, formats, and missingness;
+4. meet with data owners or subject experts to clarify business meaning;
+5. document rules, units, relationships, and sensitivity;
+6. add standardized and derived variables as they are created;
+7. reconcile the dictionary with the actual analytical dataset; and
+8. review the final dictionary as a client-facing deliverable.
+
+Excel is often well suited to the dictionary because tables can be filtered, reviewed, and annotated. Use a formatted table, freeze headings, apply consistent validation lists where helpful, and avoid merged cells that interfere with sorting. The content, however, must remain consistent with the variables used in R, Power BI, Excel, or another analytical environment.
+
+## Using the dictionary during analysis
+
+The dictionary should be consulted whenever the team:
+
+- chooses a denominator;
+- filters a population;
+- joins tables;
+- groups categories;
+- changes a unit or format;
+- creates a feature;
+- handles missing values or outliers;
+- labels a table or visualization; or
+- interprets a model result.
+
+A finding that depends on an uncertain definition should remain provisional until the definition is resolved or the limitation is accepted.
+
+::: {.quality}
+**Quality standard:** Another analyst should be able to reproduce the same variable interpretation, inclusion rules, and derivations without asking the original author.
+:::
+
+## Common mistakes
+
+- copying the column name into the definition;
+- documenting technical type without business meaning;
+- omitting the unit of analysis;
+- listing observed values as though they were necessarily valid;
+- failing to document special missing codes;
+- recording missing counts without a dataset version;
+- overwriting source fields;
+- omitting derived variables; and
+- allowing report labels to drift away from dictionary definitions.
+
+## Dictionary review checklist
+
+- [ ] Every table has a documented unit of analysis and key.
+- [ ] Dataset version, dimensions, source, and coverage are recorded.
+- [ ] Every source and derived variable has one row.
+- [ ] Definitions explain business meaning.
+- [ ] Types, formats, units, values, and missing codes are clear.
+- [ ] Relationships and join keys are documented.
+- [ ] Derived variables have reproducible rules.
+- [ ] Sensitivity and ownership are visible.
+- [ ] The dictionary matches the data used in final outputs.
+
+## Exercise
+
+An analyst defines `active_member` as "active member" and codes recent members without a full twelve-month observation period as `FALSE`. Identify two problems and rewrite the entry.
+
+<details class="answer-dropdown">
+<summary>Suggested answer</summary>
+<p>The definition repeats the name without specifying the rule, and members who cannot yet be observed for twelve months are incorrectly treated as known non-retained cases. A stronger variable might be <code>retained_12m</code>: "Member has an active membership on the date twelve months after the initial membership start." Allowed values are <code>TRUE</code>, <code>FALSE</code>, and missing when twelve months of follow-up are unavailable. The derivation should identify the membership dates and extract date used.</p>
+</details>
+
+## Additional exercises
+
+1. Open `data/nvrw/data_dictionary.csv`. Select five variables from at least three datasets and evaluate whether each definition identifies the unit, timing, allowed values, and interpretation clearly enough for a new analyst.
+2. Compare `data/nvrw/raw/members.csv` with `data/nvrw/clean/members.csv`. Document the standardization rule for `membership_type`, `service_area`, and `postal_fsa` without describing the cleaned result as the original source value.
+3. Design dictionary entries for two derived variables: annual visits per active member and program fill rate. Include the formula, denominator, exclusions, time window, and source fields.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>A complete derived-variable entry should make independent reproduction possible. Program fill rate, for example, must specify whether cancelled registrations count, whether capacity is measured at registration close or program start, and how programs with missing or zero capacity are handled.</p>
+</details>
+
+## Questions for discussion
+
+1. When should a data owner, rather than an analyst, approve a definition?
+2. Can a dictionary be complete when some meanings remain unknown?
+3. Which dictionary fields are most important for a public open dataset?

@@ -1,0 +1,187 @@
+# Team Charters and Collaboration
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- develop a team charter that governs observable project behaviour;
+- distinguish roles, responsibilities, ownership, and decision authority;
+- establish useful meeting, communication, review, and handoff procedures;
+- maintain accountability without creating isolated task silos; and
+- respond constructively to disagreement, missed commitments, and changing circumstances.
+
+## Key terms
+
+::: {.definition}
+**Team charter:** A documented operating agreement that explains how a project team will pursue its goals, divide responsibility, coordinate work, make decisions, review quality, manage conflict, respond to missed commitments, and revise its working procedures.
+
+**Role:** A continuing function or area of responsibility assigned to a person, such as project coordination, data management, research, modelling, or editing.
+
+**Accountability:** The obligation to complete agreed work, communicate progress and problems, and accept review of the result.
+
+**Consensus:** A decision process in which team members seek an option that everyone can support or accept, even if it is not every person's first choice.
+
+**Escalation:** The deliberate referral of an unresolved issue to a person or process with greater authority or responsibility.
+
+**Peer review:** A structured check of work by another team member for correctness, clarity, consistency, and fitness for purpose.
+
+**Handoff:** The transfer of work, context, files, decisions, and responsibility from one person or stage to another.
+
+**Decision log:** A chronological record of important decisions, including the issue, chosen option, rationale, date, owner, and consequences.
+:::
+
+## What a team charter is
+
+A team charter is the project's internal governance document. It establishes how the team intends to operate before pressure, disagreement, or missed deadlines make those questions urgent. It is more specific than a statement of values and broader than a task list.
+
+A useful charter connects principles to behaviour. "We value respect" is a positive statement, but it does not explain what respectful work looks like. The charter might instead state that members circulate material before requesting review, respond to project messages within an agreed period, critique the work rather than the person, record decisions after meetings, and raise schedule problems before a deadline is missed.
+
+The charter should also describe what happens when normal procedures fail. Teams need a method for resolving a tied decision, addressing repeated non-performance, replacing an unavailable reviewer, and changing a role when the original division of work no longer fits the project.
+
+::: {.note}
+**Charter principle:** A team charter should reduce avoidable ambiguity. If the team faces a foreseeable coordination problem, the charter should explain how it will be handled.
+:::
+
+## The components of a strong charter
+
+A complete charter normally addresses six areas.
+
+### Purpose and goals
+
+The charter should state the project's purpose and the team's measurable, time-bound goals. "Finish the analysis early" is difficult to evaluate. "Complete an internally reviewed analysis draft five working days before stakeholder review" identifies an output, a quality condition, and a deadline.
+
+### Roles and responsibilities
+
+Roles identify continuing areas of ownership. Responsibilities identify specific duties within those roles. Task assignments identify the current work. These are related but not identical.
+
+For example, the data lead may own the reproducible workflow, be responsible for maintaining the cleaned dataset, and currently be assigned to verify date fields. Another person should still review the work, and all team members should understand the variables that support the final conclusions.
+
+### Communication and meetings
+
+The charter should identify primary communication channels, expected response times, meeting frequency, attendance expectations, procedures for notifying the team of an absence, and the minimum information needed in meeting records.
+
+### Decisions and review
+
+The team should decide when consensus is required, when a role owner can decide, how ties will be resolved, and when a decision must be escalated. It should also identify who reviews important outputs and what evidence is required before work is accepted.
+
+### Files and handoffs
+
+The charter should explain where files are stored, how versions are named, who controls shared folders, how code and outputs are connected, and what information must accompany a handoff. A file without context is not a complete handoff.
+
+### Conflict and revision
+
+The charter should establish a respectful process for addressing disagreement, missed commitments, and recurring quality problems. It should also state how the charter itself can be revised. The agreement is dated, accepted by all members, and updated when operating conditions change.
+
+## Roles without silos
+
+Roles provide primary ownership, not exclusive control. Useful roles may include:
+
+- project manager or coordinator;
+- data and reproducibility lead;
+- research lead;
+- modelling or projection lead;
+- report editor;
+- presentation designer;
+- recommendation lead; and
+- quality-assurance reviewer.
+
+In a small team, one person may hold several roles. In a larger team, a role may be shared. In both cases, important work should have an owner and a reviewer.
+
+Silos occur when team members understand only their assigned piece. This creates serious integration risks. A modelling lead may use a category definition that differs from the EDA. A presentation designer may simplify a result in a way that changes its meaning. A recommendation lead may propose an action that assumes a model can establish causation. Regular cross-review reduces these risks.
+
+## Decision rights
+
+Not every decision requires the entire team. Requiring consensus for minor choices wastes time, while allowing one person to make a major scope or interpretation decision can create conflict.
+
+A charter can distinguish among:
+
+- **role-owner decisions**, such as routine file organization within an agreed system;
+- **reviewed decisions**, such as excluding a data field after technical review;
+- **team decisions**, such as changing the central analytical question; and
+- **escalated decisions**, such as unresolved confidentiality or stakeholder requirements.
+
+The decision log preserves why a choice was made. This is especially important when a later result depends on an earlier definition, exclusion, or assumption.
+
+## Meetings that produce evidence
+
+A useful meeting produces a record of project movement. At minimum, record:
+
+1. decisions made and their rationale;
+2. actions, owners, and due dates;
+3. work accepted or returned for revision;
+4. unresolved questions;
+5. risks, issues, or blockers; and
+6. changes to scope, assumptions, responsibilities, or schedule.
+
+Meetings should focus on decisions, integration, and obstacles. Routine status information can often be shared before the meeting. A concise agenda and decision record are more valuable than lengthy minutes that do not identify what changed.
+
+::: {.example}
+**Worked example: converting a vague agreement into a charter rule**
+
+Vague statement: "Everyone will review the report."
+
+Operational charter rule: "The report editor will assign each major section to a reviewer at least three working days before internal approval. Reviewers will check numerical consistency, interpretation, citations, and alignment with the central message. The section owner will record how each material comment was resolved."
+
+The revised rule identifies timing, ownership, review criteria, and evidence of completion.
+:::
+
+## Conflict and missed commitments
+
+Disagreement is normal in analytical work. Team members may reasonably disagree about definitions, methods, interpretations, or priorities. The goal is not to prevent disagreement but to resolve it using evidence and agreed procedures.
+
+A practical response sequence is:
+
+1. describe the issue using observable facts;
+2. distinguish the work problem from assumptions about a person's motives;
+3. hear each person's understanding of the cause;
+4. restate the shared project goal and relevant charter rule;
+5. compare possible solutions and their consequences;
+6. agree on a specific action, owner, and follow-up date; and
+7. escalate when the team cannot resolve the issue or project integrity is at risk.
+
+Escalation should not be used to avoid ordinary discussion. It is appropriate when the team lacks authority, confidentiality may be affected, a repeated problem threatens delivery, or an unresolved disagreement could materially change the result.
+
+::: {.quality}
+**Quality standard:** A collaboration process should protect respectful communication while still addressing recurring non-performance, unreliable work, and threats to project quality.
+:::
+
+## Charter quality checklist
+
+- [ ] The charter states the project's purpose and measurable goals.
+- [ ] Expectations are observable and specific.
+- [ ] Roles distinguish ownership from review.
+- [ ] Meeting, communication, and attendance procedures are realistic.
+- [ ] Decision rules match the importance of the decision.
+- [ ] Final authority and escalation routes are clear.
+- [ ] File naming, version control, and handoff practices are stated.
+- [ ] Conflict and missed-commitment procedures are usable.
+- [ ] The charter is dated, and all members have recorded their agreement.
+- [ ] A procedure exists for reviewing and amending the charter.
+
+## Exercise
+
+Rewrite each vague expectation as observable team behaviour:
+
+1. Everyone will communicate well.
+2. Everyone will contribute equally.
+3. The team will make decisions together.
+4. Work will be completed on time.
+
+For each revision, identify how the team would know whether the expectation had been met.
+
+## Additional exercises
+
+1. Draft a team charter for the NVRW project using the template appendix. Define decision rights, file ownership, review expectations, meeting records, missed commitments, and escalation.
+2. Create a responsibility and review map for the data dictionary, EDA, modelling, projections, report, and presentation.
+3. Write a handoff checklist for transferring a cleaned dataset and analysis script from the data lead to the modelling lead.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>A strong charter does more than assign topics. It defines how work is reviewed, how decisions are recorded, where authoritative files are stored, and what happens when work is late, incomplete, or inconsistent with the agreed standard.</p>
+</details>
+
+## Questions for discussion
+
+1. Which decisions should require consensus, and which should have a designated owner?
+2. How can specialization improve quality without creating analytical silos?
+3. When is escalation a responsible project-management action?

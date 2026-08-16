@@ -1,0 +1,185 @@
+# From Organizational Concern to Analytical Question
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- use questioning to uncover the decision behind an initial request;
+- distinguish management, research, analytical, and implementation questions;
+- convert broad concerns into answerable analytical questions;
+- identify assumptions and evidence gaps before analysis begins; and
+- maintain a question map as the project develops.
+
+## Key terms
+
+::: {.definition}
+**Organizational concern:** A broad issue, uncertainty, opportunity, or perceived problem that motivates investigation.
+
+**Management question:** A question about what an organization should understand, decide, prioritize, or do.
+
+**Research question:** A question answered by gathering and evaluating existing knowledge, external evidence, or new contextual information.
+
+**Analytical question:** A question that identifies what will be described, compared, explained, predicted, classified, segmented, or projected using data.
+
+**Implementation question:** A question about how a proposed action would be carried out, monitored, and adjusted.
+
+**Assumption:** A condition treated as true for the purpose of analysis even though it may not be directly established by the available evidence.
+
+**Question map:** A structured record connecting the organizational concern to management, research, analytical, and implementation questions.
+
+**Scope boundary:** A clear statement of what the project will and will not investigate.
+:::
+
+## Why questioning is analytical work
+
+The first request is rarely the final question. A client may ask for a dashboard, a forecast, a customer profile, or a machine-learning model before explaining what decision the output is expected to support. Accepting the requested format without examining the underlying need can produce technically correct work that has little practical value.
+
+Questioning is not an attempt to challenge the client's authority or delay the project. It is a method for clarifying purpose, language, evidence, constraints, and intended use. Good questions reduce wasted analysis and make later choices easier to defend.
+
+Consider the request, "Build a model that tells us which programs are successful." Before a model can be selected, the team must ask what success means. Possibilities include registration volume, capacity utilization, attendance, participant retention, contribution margin, accessibility, community reach, or progress toward a public-service objective. Each definition would produce a different target and potentially a different recommendation.
+
+## Four kinds of project questions
+
+### Management questions
+
+Management questions describe the decision or action problem. Examples include:
+
+- Which services should receive additional capacity?
+- Where should limited promotional resources be directed?
+- Which customer groups require a different retention strategy?
+- What operational risk deserves immediate attention?
+
+These questions often cannot be answered directly by a single model. They provide the purpose to which several analyses may contribute.
+
+### Research questions
+
+Research questions seek external context or subject knowledge. Examples include:
+
+- How do comparable organizations define facility utilization?
+- Which population projections are available for the service area?
+- What evidence exists about barriers to recreation participation?
+- Which retention measures are standard in membership organizations?
+
+Research questions help the team interpret internal data and avoid inventing definitions that conflict with established practice.
+
+### Analytical questions
+
+Analytical questions specify what can be learned from data. Strong analytical questions identify the unit, measure, comparison, time period, and intended use where possible.
+
+Weak: "Why are members leaving?"
+
+Stronger: "Which observed membership, usage, location, and service characteristics are associated with non-renewal within twelve months?"
+
+The stronger question does not claim that the data can establish every cause of departure. It identifies a measurable outcome, time period, and set of candidate relationships.
+
+### Implementation questions
+
+Implementation questions become important when the analysis supports action:
+
+- Who would own the proposed retention pilot?
+- Which member group would be included?
+- What resources and approvals would be required?
+- Which leading and outcome measures would be tracked?
+- When would the organization decide whether to continue, revise, or stop the action?
+
+Separating implementation from analysis prevents the team from treating a recommendation as complete merely because it sounds reasonable.
+
+## A questioning sequence
+
+A useful conversation can move through seven stages:
+
+1. **Purpose:** What decision or understanding is needed?
+2. **Audience:** Who will use the result, and what authority do they have?
+3. **Meaning:** How are important words defined in this organization?
+4. **Evidence:** What data and contextual knowledge are available?
+5. **Constraints:** What limits time, scope, privacy, resources, or implementation?
+6. **Standards:** What would count as a useful and credible result?
+7. **Action:** What could change if the evidence supports a conclusion?
+
+These questions should be asked with genuine curiosity. The goal is to learn how the organization sees the problem while also identifying where evidence may be incomplete.
+
+::: {.example}
+**Recurring case: North Valley's growth concern**
+
+NVRW leaders report that several facilities feel busier and ask for a forecast of future demand.
+
+The project team asks:
+
+- Does "demand" mean visits, unique users, registrations, wait-list requests, or occupied facility hours?
+- Are leaders concerned about total system capacity or particular locations and time periods?
+- Are recent increases caused by population growth, changes in utilization, new programs, or incomplete historical records?
+- Which future decisions depend on the projection?
+- What level of forecast error would materially change those decisions?
+
+The conversation reveals that the central management question concerns whether evening program space should be expanded at two locations. This leads to analytical questions about registrations, capacity, wait lists, attendance, location, program category, season, and population growth.
+:::
+
+## Question maps
+
+A question map makes the logic of the investigation visible.
+
+| Level | NVRW example |
+|---|---|
+| Organizational concern | Evening programs appear crowded at some locations |
+| Management question | Should NVRW expand evening program capacity, and where? |
+| Research questions | How is utilization normally measured? How will local populations change? |
+| Analytical questions | Which centres, programs, and periods have persistent high utilization or unmet demand? |
+| Projection question | What registrations would occur under population and utilization scenarios? |
+| Implementation questions | What pilot, staffing, space, budget, and evaluation plan would be required? |
+
+The map should be revised when evidence changes the team's understanding. A question can be removed when it is no longer relevant or marked unanswered when the available data are insufficient.
+
+## Questions that uncover assumptions
+
+Assumptions often hide inside ordinary words. Ask:
+
+- What does "customer" mean when one person may make several transactions?
+- Does "active" mean currently registered, recently attending, or paying for a membership?
+- Does "growth" refer to counts, rates, revenue, margin, or market share?
+- Does "effective" mean statistically associated, operationally feasible, or causally demonstrated?
+- Does "local" follow municipal boundaries, postal areas, or travel patterns?
+
+Recording answers in the data dictionary, analytical plan, or decision log prevents definitions from changing silently later.
+
+## Common mistakes
+
+- asking only what output the client wants;
+- using "why" when the available data can establish only association;
+- combining several outcomes into one vague question;
+- treating the requested method as fixed before assessing the data;
+- failing to identify who will use the result;
+- ignoring questions that the available evidence cannot answer; and
+- continuing to answer an original question after the project's purpose has changed.
+
+::: {.quality}
+**Quality standard:** Every major analysis should connect to a documented question, and every major question should connect to a decision, understanding, or implementation need.
+:::
+
+## Exercise
+
+Rewrite the concern "Our membership is not growing fast enough" as one management question, two research questions, three analytical questions, and one implementation question.
+
+<details class="answer-dropdown">
+<summary>One possible answer</summary>
+<p><strong>Management:</strong> Which evidence-based actions could improve sustainable membership growth?</p>
+<p><strong>Research:</strong> How do comparable organizations measure active membership? What external population or participation trends affect the service area?</p>
+<p><strong>Analytical:</strong> How have new memberships, renewals, cancellations, and net growth changed by month? Which member groups have the lowest twelve-month retention? Which locations and acquisition channels produce members with the highest contribution margin and retention?</p>
+<p><strong>Implementation:</strong> What pilot could be tested with a priority group, and which measures would determine whether it should continue?</p>
+</details>
+
+## Additional exercises
+
+1. Build a question map for NVRW's concern about uneven demand. Include one management question, two research questions, three analytical questions, and two implementation questions.
+2. For each analytical question, identify the unit of analysis, comparison, time period, required data, and intended decision use.
+3. Rewrite the question "Why is North Ridge failing?" to remove the unsupported premise and make the question answerable with the available data.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>A neutral revision might ask how retention, visit frequency, membership mix, and program access at North Ridge compare with other facilities, and which observable factors are associated with the difference. This wording does not assume failure or causation.</p>
+</details>
+
+## Questions for discussion
+
+1. When can repeated questioning become unproductive?
+2. How should an analyst respond when a client insists on a method that does not fit the question?
+3. Which questions require a subject expert rather than additional data analysis?

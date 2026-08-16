@@ -1,0 +1,252 @@
+# Reports, Recommendations, and Presentations
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- organize a decision-focused technical report;
+- write a self-contained executive summary;
+- connect problems, evidence, conclusions, recommendations, and evaluation measures;
+- distinguish a recommendation from a SMART implementation objective;
+- design and deliver a presentation for a nontechnical audience; and
+- conduct final quality assurance and professional handoff.
+
+## Key terms
+
+::: {.definition}
+**Executive summary:** A concise, self-contained account of the problem, scope, important findings, conclusions, recommendations, and material limitations for a decision-making audience.
+
+**Technical appendix:** Supporting material that documents methods, calculations, detailed results, code, or definitions without interrupting the main argument.
+
+**Recommendation:** A proposed action that responds to an established problem or opportunity and is supported by relevant evidence.
+
+**SMART objective:** An implementation objective that is specific, measurable, achievable, relevant, and time-bound.
+
+**Evaluation metric:** A defined measure used to assess implementation, performance, or outcome.
+
+**Limitation:** A condition that restricts interpretation, accuracy, generalizability, or practical use.
+
+**Slide headline:** A concise statement at the top of a slide that communicates its main message rather than merely naming its topic.
+
+**Handoff:** The organized transfer of final files, documentation, context, responsibilities, and usage guidance to the intended recipient.
+
+**Quality assurance:** Planned activities used to prevent, detect, and correct errors or inconsistencies before delivery.
+:::
+
+## Reports are arguments supported by evidence
+
+A professional report is not a container for everything the team produced. It is an organized argument that helps a defined audience understand a problem, evaluate evidence, and decide what to do.
+
+The structure should follow the problem rather than the order of analysis. Data cleaning matters, but the report should not begin with several pages of cleaning detail before the reader understands why the project exists. A complex model may deserve technical documentation without becoming the centre of the client narrative.
+
+## Full report structure
+
+A substantial applied report will commonly include:
+
+1. title page;
+2. table of contents;
+3. executive summary;
+4. organizational context and problem;
+5. objectives and analytical questions;
+6. data and methods overview;
+7. integrated findings;
+8. forecasts or projections where relevant;
+9. conclusions and recommendations;
+10. implementation and evaluation considerations;
+11. limitations;
+12. references; and
+13. appendices.
+
+Technical methodology, detailed diagnostics, supporting tables, code, and the data dictionary usually belong in appendices unless the audience needs them to understand the main conclusion.
+
+The report should integrate profiling, modelling, projection, secondary evidence, and recommendations when relevant. These should not appear as isolated demonstrations.
+
+## Short decision reports
+
+A shorter report may contain purpose, executive summary, key findings, recommended actions, limitations, sources, and technical notes. Short does not mean unsupported. It means that evidence has been selected and organized efficiently.
+
+The correct length depends on the audience, complexity, risk, and need for review. Page count is not a quality measure. A 90-page report can be underdeveloped if it repeats analysis without reaching a clear conclusion.
+
+## Executive summaries
+
+The executive summary should stand on its own. A reader should understand:
+
+- why the project was undertaken;
+- what data and scope were used;
+- what the most important evidence established;
+- what the evidence means;
+- what actions are recommended; and
+- which limitations materially affect the decision.
+
+Write the summary after the analysis and report are stable. Lead with findings and implications rather than a list of methods.
+
+::: {.example}
+**Activity-focused opening**
+
+"The team performed EDA, clustering, logistic regression, forecasting, and secondary research."
+
+**Decision-focused opening**
+
+"NVRW's capacity pressure is concentrated in evening programs at Central and Lakeside. Population growth will intensify the pressure, but targeted scheduling and retention pilots should be evaluated before system-wide expansion."
+
+The second version tells the reader what was learned and why it matters.
+:::
+
+## The recommendation chain
+
+Every major recommendation should be traceable through five links:
+
+1. **Problem or opportunity:** What has been established?
+2. **Evidence:** Which organizational analysis supports it?
+3. **Context:** Which external evidence, constraints, or stakeholder knowledge affects interpretation?
+4. **Recommendation:** What action should be considered?
+5. **Evaluation:** How will implementation and outcomes be assessed?
+
+A recommendation is weak when it is generic, infeasible, based mainly on outside information, or attached to an analysis that does not support it.
+
+| Problem | Evidence | Recommendation | Evaluation |
+|---|---|---|---|
+| High evening wait lists at two centres | Capacity, registration, and attendance analysis | Pilot added sessions and revised room allocation | Wait-list conversion, attendance, cost per added participant |
+| Low early engagement predicts non-renewal | Validated retention model and first-60-day usage | Test an early-engagement contact program | Contact rate, visit change, renewal lift, contribution after cost |
+
+## Recommendations and SMART objectives
+
+A recommendation states what action is justified. A SMART objective specifies how an approved action will be implemented. The recommendation should first be assessed for relevance, evidence, feasibility, expected value, risk, and alignment with organizational responsibilities.
+
+Recommendation: "Pilot an early-engagement program for eligible new members with low first-month use."
+
+SMART objective: "During the September to November intake period, the membership team will contact 80 percent of eligible new members who record fewer than two visits in their first 30 days and will compare 90-day engagement and twelve-month renewal with a defined comparison group."
+
+The objective is specific, measurable, achievable only if capacity and permissions exist, relevant to the retention problem, and time-bound. SMART structure does not make an unsupported recommendation valid.
+
+## Selecting evaluation metrics
+
+Use a balanced set of measures:
+
+- **process metrics:** Was the action delivered as intended?
+- **leading indicators:** Did early behaviour move in the expected direction?
+- **outcome metrics:** Did the important result change?
+- **guardrail metrics:** Did cost, access, service quality, or another protected outcome worsen?
+
+For the NVRW retention pilot, process metrics could include contact completion, the leading indicator could be visits within 90 days, the outcome could be twelve-month renewal, and guardrails could include complaint rate and staff time per retained member.
+
+Avoid selecting only measures that are guaranteed to improve when the activity occurs. Sending messages is not evidence that retention improved.
+
+## Presentation design
+
+A presentation is not the report placed on slides. It should:
+
+- organize slides around conclusions;
+- use one main idea per slide;
+- replace paragraphs with concise evidence and readable visuals;
+- explain technical ideas in plain language;
+- connect recommendations to evidence;
+- keep technical backup material available; and
+- be rehearsed for timing, transitions, and questions.
+
+A slide headline should state the message. "Forecast" is a topic. "Population growth will add approximately 480 annual visits under constant utilization" is an explanatory headline.
+
+## Explaining technical methods
+
+Prepare a plain-language explanation for every model, metric, and projection assumption. A useful explanation covers:
+
+1. what the method is trying to estimate;
+2. which information it uses;
+3. how performance was checked;
+4. what the result means; and
+5. what the method cannot establish.
+
+For example: "The retention model estimates the probability that an eligible new member will remain active for twelve months using information available in the first sixty days. We tested it on members not used to fit the model and compared it with a majority baseline. It identifies a group for a pilot, but it does not establish why members leave or prove that contact will improve retention."
+
+## Delivery and questions
+
+Professional delivery includes clear voices, purposeful pacing, readable slides, coordinated transitions, balanced participation, and direct answers. Team members should understand the complete argument rather than only their assigned section.
+
+For questions:
+
+- listen fully;
+- clarify the question if necessary;
+- answer with the strongest relevant evidence;
+- distinguish known, estimated, assumed, and unknown information;
+- avoid inventing an answer; and
+- state how an unanswered question could be investigated.
+
+## From complete to convincing
+
+A report can contain every expected section and still remain a mid-stage professional draft.
+
+| Draft symptom | Revision question |
+|---|---|
+| The summary lists activities | What should the reader know, decide, or do? |
+| Many analyses receive equal emphasis | Which findings change the conclusion? |
+| A long EDA sits only in an appendix | Which verified findings belong in the main argument? |
+| Charts are numerous or unreadable | What comparison must each figure make at final size? |
+| A persona includes inferred traits | Which traits were observed? |
+| A recommendation is followed by assumed growth | Is this a forecast or a labelled scenario? |
+| External and client percentages are compared | Are definitions and denominators compatible? |
+| A model is named but not evaluated | What baseline, validation, and metric support it? |
+| The report becomes very long | What can be condensed or removed? |
+
+Revision should proceed from argument to evidence to presentation. Polishing language cannot repair an unsupported conclusion.
+
+## Quality assurance
+
+Before delivery, reconcile:
+
+- values across code, tables, report, slides, and appendices;
+- category names and definitions;
+- time periods, filters, and denominators;
+- forecast and scenario labels;
+- recommendation claims and supporting evidence;
+- figure sources and citations;
+- confidentiality and disclosure review; and
+- file names, links, permissions, and final versions.
+
+One person should perform a final cross-document review rather than assuming that separate section reviews guarantee consistency.
+
+## Professional handoff
+
+The handoff should include the final report and presentation, data dictionary, source log, assumptions, reproducible code or auditable calculation files, usage instructions, known limitations, software requirements, and an inventory of files. Clarify which data can be retained and which must be returned or deleted.
+
+::: {.common-error}
+**Common mistake:** Improving the narrative in the presentation without updating the report leaves the deliverables with different conclusions, values, or definitions.
+:::
+
+## Final communication checklist
+
+- [ ] The executive summary stands alone.
+- [ ] The main report follows the decision rather than analysis chronology.
+- [ ] Recommendations have complete evidence chains.
+- [ ] SMART objectives are used for implementation, not as a substitute for evidence.
+- [ ] Metrics include process, outcome, and guardrail measures where appropriate.
+- [ ] Slides use explanatory headlines and readable visuals.
+- [ ] Technical explanations are accurate and plain-language.
+- [ ] Values and definitions agree across all deliverables.
+- [ ] Questions, transitions, and timing have been rehearsed.
+- [ ] The handoff contains reproducible and documented files.
+
+## Exercise
+
+Revise this recommendation: "NVRW should use social media to attract more young customers and increase revenue by 15 percent."
+
+<details class="answer-dropdown">
+<summary>One possible revision</summary>
+<p>"NVRW should test a targeted digital campaign for the eligible audience and service category identified by the acquisition and retention analysis. The pilot should use a defined budget and comparison period, with registrations, acquisition cost, twelve-month retention, and contribution margin as evaluation measures." The revision removes the unsupported demographic stereotype and unproven 15 percent effect. A SMART implementation objective can be added after the target group, budget, owner, timing, and evaluation design are confirmed.</p>
+</details>
+
+## Additional exercises
+
+1. Build a recommendation-evidence matrix for the three recommendations in the NVRW synthesis appendix. Add one counterargument, one implementation risk, and one evaluation measure for each recommendation.
+2. Draft an executive summary no longer than 250 words. It must state the decision, three findings, three actions, and the most important limitation without relying on technical terminology.
+3. Create the eight-slide presentation described in the synthesis appendix. Every slide title must be a supported message rather than a topic label.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>An excellent executive summary can be understood without reading the report, but every statement remains traceable to the report. Recommendations should not introduce new evidence, and the limitations should change how the audience interprets or uses the findings.</p>
+</details>
+
+## Questions for discussion
+
+1. When should a technically important limitation appear in the executive summary?
+2. Can a recommendation be useful when its expected financial effect cannot be estimated?
+3. What information belongs in a handoff but not in the report?

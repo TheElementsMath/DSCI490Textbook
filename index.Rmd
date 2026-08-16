@@ -1,0 +1,70 @@
+---
+title: "Data Science in Practice"
+subtitle: "A Guide for Capstone, Consulting, and Client-Based Work"
+author: "Okanagan College Data Science Department"
+date: "Draft 1, Fall 2026"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [references.bib]
+link-citations: true
+description: "A practical guide to planning, conducting, and communicating applied data science projects."
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE, warning = FALSE, message = FALSE)
+```
+
+# Welcome {-}
+
+Applied data science is the practice of using data to improve understanding, support decisions, and recommend action in a real setting. The work may take place in a business, public agency, nonprofit organization, consulting engagement, research partnership, or educational project. In every setting, useful analysis requires more than technical accuracy. It requires a clear problem, trustworthy data, appropriate methods, responsible judgment, and communication that helps an audience act.
+
+Real projects rarely arrive as clean datasets paired with perfectly stated questions. The initial request may be broad. Important variables may be undocumented. Data from different sources may use incompatible definitions. The available evidence may support only part of the desired conclusion. A successful analyst must recognize these conditions, investigate them carefully, and explain how they affect the result.
+
+This book follows the complete path of an applied data science project. It begins with problem framing and project planning, then develops practices for collaboration, data stewardship, exploratory analysis, secondary research, modelling, forecasting, financial analysis, visualization, storytelling, recommendations, and professional delivery. The central theme is that every analytical choice should contribute to a defensible decision.
+
+## How to use this book {-}
+
+The chapters are organized by project responsibility rather than by a fixed schedule. A project team will often move back and forth among them as its understanding develops.
+
+1. Define the problem, audience, decision, and scope.
+2. Plan the work, responsibilities, milestones, and risks.
+3. Document, protect, and understand the data.
+4. Conduct a reproducible exploratory analysis.
+5. Add secondary evidence where it improves context or measurement.
+6. Select, justify, and evaluate analytical methods.
+7. Develop forecasts, projections, insights, and recommendations.
+8. Communicate the work through professional reports, presentations, and handoff materials.
+
+The chapters can also be used independently. A reader preparing a data dictionary can begin with that chapter, while a team revising a presentation can move directly to storytelling, visualization, or professional delivery. Cross-references connect topics that depend on one another.
+
+## Learning goals {-}
+
+After working through the book, readers should be able to:
+
+- translate a broad organizational concern into useful analytical questions;
+- define project scope, deliverables, success criteria, responsibilities, and risks;
+- document and protect data throughout its lifecycle;
+- conduct and interpret a comprehensive exploratory data analysis;
+- combine primary data with credible and compatible secondary evidence;
+- select, justify, validate, and explain analytical and machine-learning methods;
+- construct defensible forecasts and projections and communicate their uncertainty;
+- develop recommendations that follow logically from evidence;
+- design realistic implementation and evaluation plans; and
+- communicate technical work to both specialist and nontechnical audiences.
+
+## A decision-focused perspective {-}
+
+An analysis is not complete when the code runs or the model produces output. It is complete when the evidence has been checked, the limitations are understood, the result answers a meaningful question, and the audience can see what the result implies. Throughout the book, technical work is therefore connected to four recurring questions:
+
+1. What decision or understanding is needed?
+2. What evidence can support it?
+3. How strong is that evidence?
+4. What action, if any, is justified?
+
+## Recurring case: North Valley Recreation and Wellness {-}
+
+Several chapters follow a fictional organization called **North Valley Recreation and Wellness**, abbreviated NVRW. NVRW operates four recreation and wellness centres and offers memberships, drop-in activities, registered programs, facility rentals, and community events. Its leadership wants to understand uneven demand across locations, improve member retention, plan future capacity, and use limited marketing and program resources more effectively.
+
+The case is entirely synthetic. Its records, people, locations, values, and results are invented for instruction. Because the same organization appears throughout the book, readers can see how project framing, documentation, EDA, secondary research, modelling, forecasting, CLV, recommendations, and communication depend on one another. Shorter examples from other industries provide contrast where a different setting is more appropriate.
+
+Copyright © 2026 TheElementsMath. All rights reserved.

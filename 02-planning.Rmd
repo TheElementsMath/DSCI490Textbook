@@ -1,0 +1,220 @@
+# Planning the Project
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- convert deliverables into a workable project schedule;
+- estimate effort using tasks, dependencies, review cycles, and contingency;
+- distinguish active work time from calendar time;
+- identify project risks and appropriate response strategies; and
+- use milestones and definitions of done to detect schedule problems early.
+
+## Key terms
+
+::: {.definition}
+**Milestone:** A meaningful checkpoint that indicates a stage of the project has been completed or is ready for review.
+
+**Dependency:** A relationship in which one task, decision, or resource must be completed or available before another task can proceed.
+
+**Critical task:** A task whose delay would directly delay a major milestone or final deliverable unless the plan is changed.
+
+**Buffer:** Time or capacity reserved to absorb uncertainty, rework, delays, or unexpected problems.
+
+**Risk register:** A maintained record of possible events that could harm the project, including their likelihood, impact, warning signs, owner, and planned response.
+
+**Deliverable:** A defined product that must satisfy stated content, quality, and format expectations.
+
+**Review cycle:** A planned sequence of drafting, checking, feedback, revision, and approval.
+
+**Definition of done:** A specific set of conditions that must be satisfied before a task or deliverable can be considered complete.
+:::
+
+## Why project plans fail
+
+Weak plans often list topics rather than work. An entry such as "forecasting" does not identify what will be produced, which data are required, who is responsible, how the result will be checked, or when the work must be stable enough to support the report. The label creates the appearance of planning without making the project easier to manage.
+
+A useful plan converts broad work into observable outputs. Instead of "do forecasting," a team might plan to:
+
+1. confirm the response variable and forecast horizon;
+2. identify complete historical periods;
+3. create a baseline forecast;
+4. fit and compare candidate methods;
+5. validate using a time-ordered holdout period;
+6. document assumptions and limitations; and
+7. prepare a reviewed figure and interpretation for the report.
+
+This level of detail makes dependencies visible and allows progress to be evaluated before the final deadline.
+
+## Plan backward from the decision
+
+Begin with the final use of the work. Ask what the audience must understand or decide, then identify the evidence required to support that decision. From there, identify the analyses, data preparation, research, and review work needed to create that evidence.
+
+For example, a recommendation about future service capacity may require:
+
+- a clear definition of capacity and demand;
+- historical service volumes;
+- a compatible population denominator;
+- a defensible utilization rate;
+- one or more population projections;
+- alternative scenarios;
+- operational context; and
+- a review of whether the recommendation is feasible.
+
+Working backward prevents the final report from becoming a collection of whatever analyses happened to be completed. It also reveals missing inputs early enough to adjust the question or seek additional evidence.
+
+## Decomposing the work
+
+A project task should usually be small enough to assign, estimate, review, and complete within a few hours or a short working session. Tasks that remain too large should be divided again.
+
+Each task should answer five questions:
+
+1. **Output:** What observable product will exist when the task is complete?
+2. **Owner:** Who is primarily responsible for completing it?
+3. **Dependency:** What must be available first?
+4. **Reviewer:** Who will check the work?
+5. **Definition of done:** What conditions must be satisfied before the team accepts it?
+
+Ownership does not mean that one person works without input. It means the team knows who is responsible for moving the task forward and reporting when it is ready for review.
+
+## Estimating effort and calendar time
+
+The first attempt is only one part of the work. A more complete estimate is:
+
+\[
+\text{Planned effort}
+=\text{production}
++\text{verification}
++\text{revision}
++\text{integration}
++\text{contingency}.
+\]
+
+Here, **production** is the time required to create the first complete version. **Verification** includes checking data, formulas, code, outputs, and interpretation. **Revision** includes changes after review. **Integration** includes reconciling the work with other analyses and deliverables. **Contingency** is a reasonable allowance for uncertainty.
+
+Planned effort should be expressed in person-hours. Calendar time is different because a four-hour task may take several days to complete if it depends on a response, approval, file transfer, software installation, or teammate review.
+
+::: {.example}
+**Worked example: estimating an EDA section**
+
+Suppose a team estimates the following:
+
+- initial summaries and figures: 6 hours;
+- data-quality verification: 3 hours;
+- peer review and corrections: 3 hours;
+- integration with the dictionary and report: 2 hours;
+- contingency for unexpected data issues: 2 hours.
+
+The planned effort is
+
+\[
+6+3+3+2+2=16\text{ person-hours}.
+\]
+
+If two people can work independently on parts of the analysis, the calendar time may be shorter than 16 hours. If both people need access to a definition from the client before proceeding, the calendar time may be longer. The schedule should record both effort and waiting dependencies.
+:::
+
+## A deliverable-based timeline
+
+| Work package | Depends on | Evidence of completion | Typical review |
+|---|---|---|---|
+| Project framing | Organizational context | Agreed problem statement and scope | Project sponsor or decision owner |
+| Data dictionary | Data access and source context | Reviewed variable definitions | Data lead and subject expert |
+| EDA | Dictionary and initial cleaning | Reproducible findings and issue log | Full analytical team |
+| Secondary research | Defined information needs | Source log and integrated evidence | Research lead and analyst |
+| Main analysis | EDA and analytical plan | Validated results and limitations | Technical reviewer |
+| Projections | Assumptions and baseline data | Auditable model and scenarios | Team and decision owner |
+| Recommendations | Stable findings | Evidence-linked actions and measures | Team and stakeholder review |
+| Final communication | Reviewed conclusions | Report, presentation, and handoff | Full team |
+
+The table is a starting structure rather than a universal sequence. Some research can begin while the dictionary is being created. Data quality and modelling may require several loops. The important point is that every major deliverable has a visible basis and a planned review.
+
+## Milestones and review gates
+
+A milestone marks meaningful progress, while a review gate determines whether the project is ready to proceed. "EDA drafted" is a milestone. "EDA quality issues resolved or explicitly accepted" is a review gate.
+
+Useful review gates include:
+
+- the problem is answerable with available evidence;
+- variable definitions and units are sufficiently understood;
+- major data-quality issues have decisions and owners;
+- the analytical method has an appropriate validation plan;
+- projections have documented assumptions and denominators;
+- recommendations can be traced to findings; and
+- report and presentation values reconcile with the analysis.
+
+Proceeding through a failed gate without a documented decision usually creates more work later.
+
+## Risk management
+
+A risk is an uncertain event that could affect scope, quality, schedule, confidentiality, or usefulness. A problem that has already occurred is an issue, not a risk. Both should be tracked, but they require different language.
+
+A risk register should include:
+
+- a concise description of the risk;
+- its possible cause and consequence;
+- an assessment of likelihood and impact;
+- warning signs or trigger conditions;
+- a prevention or mitigation action;
+- a contingency response if it occurs; and
+- an owner responsible for monitoring it.
+
+Common risk categories include data access, data quality, scope growth, weak model performance, missing context, team availability, incompatible software, confidentiality constraints, and insufficient time for integration.
+
+::: {.example}
+**Risk example**
+
+Risk: Geographic categories in the client data may not match the available population projections.
+
+Mitigation: Compare identifiers and boundary definitions during the first week of data review.
+
+Contingency: Aggregate both sources to the smallest geography that can be matched defensibly and explain the loss of detail.
+
+Trigger: More than 5 percent of client records remain unmatched after standardized identifiers are applied.
+:::
+
+## Common planning mistakes
+
+- estimating only first-pass production time;
+- using the final deadline as the first integration date;
+- assigning tasks without reviewers;
+- failing to distinguish effort from waiting time;
+- recording risks without owners or responses;
+- leaving large tasks such as "finish report" undecomposed; and
+- treating the schedule as fixed after project assumptions change.
+
+::: {.common-error}
+**Common mistake:** Integration is not a final formatting step. It is analytical work that reconciles definitions, methods, evidence, citations, conclusions, and recommendations across the project.
+:::
+
+## Project planning checklist
+
+- [ ] Every deliverable has a definition of done.
+- [ ] Large work packages have been decomposed into observable tasks.
+- [ ] Every task has an owner and reviewer.
+- [ ] Dependencies and waiting periods are visible.
+- [ ] Internal review dates occur before external deadlines.
+- [ ] Verification, revision, integration, rehearsal, and contingency are included.
+- [ ] Major risks have warning signs, owners, and response plans.
+- [ ] The schedule is updated when assumptions or scope change.
+
+## Exercise
+
+Choose one major deliverable and decompose it into tasks that take no more than four hours each. Identify the output, owner, dependency, reviewer, definition of done, estimated effort, and one realistic risk for every major stage.
+
+## Additional exercises
+
+1. Create a twelve-week NVRW timeline with dependencies, review gates, contingency, and named deliverables. Include integration and revision before the final handoff.
+2. Build a risk register containing at least one data, analytical, collaboration, client, and communication risk.
+3. Estimate the effort required for the EDA report using separate production, verification, revision, integration, and contingency estimates.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>The timeline should not schedule the first integrated report after all analytical sections are complete. At least one early synthesis review is needed so definitions, questions, and evidence can be reconciled while there is still time to revise the analysis.</p>
+</details>
+
+## Questions for discussion
+
+1. When should a timeline be revised rather than protected?
+2. Which project risks are reduced by narrowing scope?
+3. Why can adding more people fail to recover a delayed analytical project?

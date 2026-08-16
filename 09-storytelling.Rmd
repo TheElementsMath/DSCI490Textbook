@@ -1,0 +1,203 @@
+# Data Storytelling and Thematic Cohesion
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- distinguish exploratory analysis from explanatory communication;
+- identify the audience, decision, and central message of a data story;
+- organize context, evidence, meaning, action, and qualification into a coherent narrative;
+- build and revise a storyboard; and
+- edit a communication so that every element supports its purpose.
+
+## Key terms
+
+::: {.definition}
+**Audience:** The people for whom a communication is designed, including their knowledge, needs, authority, and intended use of the information.
+
+**Context:** The organizational, operational, social, and analytical circumstances needed to interpret evidence appropriately.
+
+**Explanatory analysis:** Analysis selected and organized to communicate established findings to an audience rather than to explore every possible pattern.
+
+**Central message:** A concise statement of the most important supported conclusion and why it matters.
+
+**Narrative:** The ordered structure that connects context, evidence, meaning, limitations, and action.
+
+**Storyboard:** A preliminary sequence of messages, visuals, or sections used to design a coherent report or presentation.
+
+**Call to action:** A clear statement of the decision, response, or next step the audience is asked to consider.
+
+**Thematic cohesion:** Consistent alignment of questions, evidence, language, visuals, conclusions, and recommendations around a central purpose.
+:::
+
+## Exploration is not the final story
+
+Exploration is broad, repetitive, and uncertain by design. Analysts examine many variables, test several explanations, revise definitions, and abandon unhelpful directions. Explanatory communication is selective. It presents the evidence the audience needs in an order that makes the conclusion understandable and trustworthy.
+
+The final story should not recreate the chronology of analysis. "First we made a histogram, then we ran a correlation, then we tried a random forest" describes the analyst's activity. It does not explain what the organization learned.
+
+The Statistics Canada data-story framework identifies data, narrative, and visualization as connected components and emphasizes audience, planning, simplicity, and careful editing [@statcanStory2021]. These ideas apply equally to written reports, presentations, dashboards, and short decision briefings.
+
+## Begin with the audience
+
+Before selecting visuals or drafting prose, ask:
+
+- Who will receive the communication?
+- What do they already know about the problem?
+- What technical language can they use comfortably?
+- What decision or action falls within their authority?
+- Which evidence will they consider credible?
+- What misunderstanding is most likely?
+- How much time and attention will they have?
+
+The same analysis may require several forms. A technical reviewer may need validation details and residual diagnostics. An operations manager may need expected error in staffing units. An executive may need the central risk, decision options, and consequences. Simplifying for an audience should reduce unnecessary complexity without changing the meaning.
+
+## Build a central message
+
+A topic is not a message. "Member retention" names a subject. A central message states a supported conclusion and its significance.
+
+Weak: "Facility utilization analysis."
+
+Stronger: "Evening capacity pressure is concentrated at Central and Lakeside, while the other locations retain usable capacity."
+
+Stronger with action context: "NVRW should test targeted evening capacity changes at Central and Lakeside before considering system-wide expansion."
+
+The final version is appropriate only when the evidence supports both the concentration and the proposed test.
+
+A useful central message answers three questions:
+
+1. What did the evidence establish?
+2. Why does the finding matter?
+3. What decision or next step follows?
+
+## A client-focused narrative
+
+Many data stories can be organized using five elements:
+
+1. **Context:** What problem, decision, or opportunity matters?
+2. **Evidence:** What did the analysis establish?
+3. **Meaning:** Why does the evidence matter to this audience?
+4. **Action:** What should the organization consider doing?
+5. **Qualification:** Which assumptions, uncertainty, or limitations affect the action?
+
+Qualification is part of the story, not an apology placed at the end. A limitation should appear near the claim it constrains. If future demand depends heavily on a utilization-rate assumption, that assumption belongs with the projection.
+
+::: {.example}
+**Recurring case: the NVRW story**
+
+NVRW begins with a broad concern about growing demand. The analysis produces many findings, but the final story focuses on four:
+
+1. system-wide growth is real but uneven;
+2. evening pressure is concentrated at two centres and several program categories;
+3. projected population growth will increase demand even if group-specific utilization remains constant; and
+4. facility-wide expansion is premature because schedule changes and targeted pilots may relieve part of the pressure.
+
+The recommendation is to test additional evening sessions and revised room allocation at Central and Lakeside, measure wait-list conversion and attendance, and update the capacity projection after the pilot. The story connects evidence to a controlled action rather than jumping directly from growth to construction.
+:::
+
+## Storyboards
+
+A storyboard is created before polished slides or final prose. Each card or line contains one message and the evidence needed to support it.
+
+| Sequence | Message | Evidence | Purpose |
+|---|---|---|---|
+| 1 | Demand growth is uneven | Visits and registrations by centre and period | Establish the problem |
+| 2 | Pressure is concentrated in evening programs | Capacity, wait-list, and attendance rates | Locate the constraint |
+| 3 | Population growth adds future pressure | Group-specific utilization projection | Show future consequence |
+| 4 | Some capacity can be recovered operationally | Schedule and room-use analysis | Identify feasible response |
+| 5 | A targeted pilot is preferable to broad expansion | Evidence chain and evaluation metrics | Recommend action |
+
+The storyboard allows the team to identify gaps. If a recommendation card has no supporting evidence, the team must add valid analysis, revise the recommendation, or remove it.
+
+## Evidence hierarchy
+
+Not all information deserves equal emphasis. Organize evidence into levels:
+
+- **essential evidence** directly supports the central conclusion;
+- **supporting evidence** explains a definition, method, or secondary point;
+- **technical evidence** allows review and reproduction; and
+- **exploratory material** documents investigation but does not belong in the main story.
+
+Essential evidence belongs in the main communication. Supporting evidence may appear nearby or in a note. Technical evidence often belongs in an appendix. Exploratory material may be retained in working files without being delivered.
+
+## Editing for signal
+
+Effective data storytellers are rigorous editors. For each paragraph, table, and visual, ask:
+
+- What question does this answer?
+- What conclusion should the audience draw?
+- Is the evidence necessary?
+- Does it repeat another element?
+- Does it introduce a definition that conflicts elsewhere?
+- Would removing it weaken the argument?
+
+Editing is not merely shortening. Sometimes a story needs an additional definition, denominator, limitation, or comparison to become clear.
+
+## Personas and segment stories
+
+Personas can make segments memorable, but they can also turn weak assumptions into confident stories. Describe observed behaviour, uncertainty, and the action the segment supports. Do not infer income, motivation, technology comfort, loyalty, family structure, or preferences from age, location, or another demographic field without evidence.
+
+A useful segment description might state: "Members in this group make frequent weekday visits, use several services, and have high twelve-month retention." An unsupported description might add that they are affluent, highly motivated, or prefer particular communication channels when those traits were never measured.
+
+## Ethical storytelling
+
+A coherent story can still be misleading if it hides contrary evidence, exaggerates precision, selects a convenient time frame, or implies causation from association. Trustworthy storytelling:
+
+- preserves denominators and uncertainty;
+- distinguishes facts from interpretations;
+- acknowledges material alternatives;
+- avoids stereotypes;
+- does not conceal weak model performance; and
+- gives limitations prominence proportional to their consequence.
+
+::: {.quality}
+**Quality standard:** If a figure, table, method, or fact does not support a project question, establish a material limitation, or justify a recommendation, it should be moved, revised, or removed.
+:::
+
+## Common mistakes
+
+- presenting results in the order produced;
+- using a topic as the central message;
+- including every graph from the EDA;
+- changing key terms across sections;
+- introducing recommendations not prepared by the findings;
+- hiding uncertainty because it complicates the narrative;
+- building slides before agreeing on the story; and
+- using a memorable persona to disguise unsupported assumptions.
+
+## Story review checklist
+
+- [ ] The audience and intended decision are explicit.
+- [ ] The central message states a supported conclusion.
+- [ ] Each section advances the same purpose.
+- [ ] Evidence is ordered by audience need rather than analysis chronology.
+- [ ] Recommendations follow from established findings.
+- [ ] Material assumptions and limitations appear near affected claims.
+- [ ] Repetition and exploratory clutter have been removed.
+- [ ] Segment descriptions are based on observed evidence.
+
+## Exercise
+
+Convert the topic "NVRW membership cancellations" into a central message using this finding: cancellation is highest among new members with fewer than three visits in their first sixty days, but the data do not record reasons for leaving.
+
+<details class="answer-dropdown">
+<summary>One possible answer</summary>
+<p>"Low early engagement identifies a practical group for a retention pilot, although the available data cannot establish why individual members leave." This message states the observed pattern, its use, and the main limitation without claiming causation.</p>
+</details>
+
+## Additional exercises
+
+1. Create a six-panel storyboard for the NVRW retention question. Each panel should contain a message sentence, the evidence needed, and the implication for the next panel.
+2. Write two versions of the same finding: one for an analyst reviewing model performance and one for an executive deciding whether to authorize a pilot.
+3. Review the NVRW synthesis appendix and identify one table or result that belongs in a technical appendix rather than the main narrative. Defend your choice.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>A strong storyboard begins with the decision context, narrows to the most important evidence, acknowledges the principal limitation, and ends with an action that the evidence can support. It does not simply reproduce the order in which the analysis was performed.</p>
+</details>
+
+## Questions for discussion
+
+1. Can a data story remain coherent when the evidence supports no action?
+2. When should technical detail appear in the main narrative rather than an appendix?
+3. How can a team simplify a method without making the explanation inaccurate?

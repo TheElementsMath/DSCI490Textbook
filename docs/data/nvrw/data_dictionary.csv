@@ -1,0 +1,33 @@
+dataset,variable,type,definition,allowed_values_or_unit,known_quality_issue
+facilities.csv,facility_id,text,Unique facility identifier,Primary key,No
+members.csv,member_id,text,Synthetic unique member identifier,Primary key,No
+members.csv,household_id,text,Synthetic household grouping identifier,Grouping key,No
+members.csv,join_date,date,Date the membership relationship began,YYYY-MM-DD,No
+members.csv,home_facility_id,text,Member's designated home facility,Foreign key to facilities,No
+members.csv,service_area,text,Geographic service area associated with the home facility,"Central, East Shore, North Valley, West Valley",Raw only
+members.csv,age_group,category,Broad age category used for service and population comparisons,Under 18; 18-34; 35-49; 50-64; 65+,No
+members.csv,membership_type,category,Membership product at initial acquisition,Adult annual; Family annual; Youth annual; Senior annual; Monthly flexible,Raw only
+members.csv,acquisition_channel,category,Channel credited with acquiring the member,Organic web; Referral; Community event; Paid social; Email; Walk-in,No
+members.csv,marketing_consent,category,Whether marketing contact is permitted,Yes; No,No
+members.csv,postal_fsa,text,Synthetic first three characters of a postal code,V1A to V1E,Raw only
+members.csv,engagement_score,number,Latent synthetic value used to generate behaviour,0.2 to 1.8; not an operational source field,No
+membership_periods.csv,membership_period_id,text,Unique membership-period identifier,Primary key,No
+membership_periods.csv,period_year,integer,Calendar year represented by the membership period,2022 to 2025,No
+membership_periods.csv,renewed_next_period,category,Whether the member renewed for the following calendar period,Yes; No; Censored,No
+membership_periods.csv,contribution_margin,currency,Net membership revenue less synthetic attributable direct cost,Canadian dollars,No
+visits.csv,visit_id,text,Unique visit-event identifier,Primary key,Raw duplicate issue
+visits.csv,visit_date,date,Date of facility entry,YYYY-MM-DD,No
+visits.csv,service_category,category,Primary service category associated with the visit,Fitness; Aquatics; Gymnasium; Group class; Open recreation,No
+visits.csv,check_in_hour,integer,Hour of day at check-in,24-hour clock,No
+visits.csv,duration_minutes,integer,Recorded visit duration,Minutes,Raw only
+programs.csv,program_id,text,Unique program-offering identifier,Primary key,No
+programs.csv,capacity,integer,Maximum registration capacity,People,No
+registrations.csv,registration_id,text,Unique program-registration identifier,Primary key,No
+registrations.csv,registration_status,category,Final registration outcome,Completed; Cancelled; No-show,No
+transactions.csv,gross_revenue,currency,Revenue recorded for the transaction,Canadian dollars,No
+transactions.csv,direct_cost,currency,Synthetic attributable direct cost,Canadian dollars,No
+transactions.csv,contribution_margin,currency,Gross revenue minus attributable direct cost,Canadian dollars,No
+campaigns.csv,campaign_spend,currency,Synthetic campaign expenditure,Canadian dollars,No
+campaign_responses.csv,converted_membership,category,Whether an attributed membership conversion occurred,Yes; No,No
+population_projections.csv,population,integer,Synthetic population estimate or projection,People,No
+member_model.csv,retained_after_first_period,category,Target indicating first-period renewal,0; 1; Censored,No

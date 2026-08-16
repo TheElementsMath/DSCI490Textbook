@@ -1,0 +1,161 @@
+service_area,facility_id,age_group,year,population,scenario
+Central,F01,Under 18,2023,5400,Observed estimate
+Central,F01,Under 18,2024,5459,Observed estimate
+Central,F01,Under 18,2025,5519,Observed estimate
+Central,F01,Under 18,2026,5580,Central projection
+Central,F01,Under 18,2027,5642,Central projection
+Central,F01,Under 18,2028,5704,Central projection
+Central,F01,Under 18,2029,5766,Central projection
+Central,F01,Under 18,2030,5830,Central projection
+Central,F01,18-34,2023,9200,Observed estimate
+Central,F01,18-34,2024,9366,Observed estimate
+Central,F01,18-34,2025,9534,Observed estimate
+Central,F01,18-34,2026,9706,Central projection
+Central,F01,18-34,2027,9881,Central projection
+Central,F01,18-34,2028,10058,Central projection
+Central,F01,18-34,2029,10239,Central projection
+Central,F01,18-34,2030,10424,Central projection
+Central,F01,35-49,2023,8800,Observed estimate
+Central,F01,35-49,2024,8932,Observed estimate
+Central,F01,35-49,2025,9066,Observed estimate
+Central,F01,35-49,2026,9202,Central projection
+Central,F01,35-49,2027,9340,Central projection
+Central,F01,35-49,2028,9480,Central projection
+Central,F01,35-49,2029,9622,Central projection
+Central,F01,35-49,2030,9767,Central projection
+Central,F01,50-64,2023,7100,Observed estimate
+Central,F01,50-64,2024,7242,Observed estimate
+Central,F01,50-64,2025,7387,Observed estimate
+Central,F01,50-64,2026,7535,Central projection
+Central,F01,50-64,2027,7685,Central projection
+Central,F01,50-64,2028,7839,Central projection
+Central,F01,50-64,2029,7996,Central projection
+Central,F01,50-64,2030,8156,Central projection
+Central,F01,65+,2023,5100,Observed estimate
+Central,F01,65+,2024,5238,Observed estimate
+Central,F01,65+,2025,5379,Observed estimate
+Central,F01,65+,2026,5524,Central projection
+Central,F01,65+,2027,5674,Central projection
+Central,F01,65+,2028,5827,Central projection
+Central,F01,65+,2029,5984,Central projection
+Central,F01,65+,2030,6146,Central projection
+East Shore,F02,Under 18,2023,4200,Observed estimate
+East Shore,F02,Under 18,2024,4246,Observed estimate
+East Shore,F02,Under 18,2025,4293,Observed estimate
+East Shore,F02,Under 18,2026,4340,Central projection
+East Shore,F02,Under 18,2027,4388,Central projection
+East Shore,F02,Under 18,2028,4436,Central projection
+East Shore,F02,Under 18,2029,4485,Central projection
+East Shore,F02,Under 18,2030,4534,Central projection
+East Shore,F02,18-34,2023,6900,Observed estimate
+East Shore,F02,18-34,2024,7024,Observed estimate
+East Shore,F02,18-34,2025,7151,Observed estimate
+East Shore,F02,18-34,2026,7279,Central projection
+East Shore,F02,18-34,2027,7410,Central projection
+East Shore,F02,18-34,2028,7544,Central projection
+East Shore,F02,18-34,2029,7680,Central projection
+East Shore,F02,18-34,2030,7818,Central projection
+East Shore,F02,35-49,2023,7200,Observed estimate
+East Shore,F02,35-49,2024,7308,Observed estimate
+East Shore,F02,35-49,2025,7418,Observed estimate
+East Shore,F02,35-49,2026,7529,Central projection
+East Shore,F02,35-49,2027,7642,Central projection
+East Shore,F02,35-49,2028,7756,Central projection
+East Shore,F02,35-49,2029,7873,Central projection
+East Shore,F02,35-49,2030,7991,Central projection
+East Shore,F02,50-64,2023,6100,Observed estimate
+East Shore,F02,50-64,2024,6222,Observed estimate
+East Shore,F02,50-64,2025,6346,Observed estimate
+East Shore,F02,50-64,2026,6473,Central projection
+East Shore,F02,50-64,2027,6603,Central projection
+East Shore,F02,50-64,2028,6735,Central projection
+East Shore,F02,50-64,2029,6870,Central projection
+East Shore,F02,50-64,2030,7007,Central projection
+East Shore,F02,65+,2023,4300,Observed estimate
+East Shore,F02,65+,2024,4416,Observed estimate
+East Shore,F02,65+,2025,4535,Observed estimate
+East Shore,F02,65+,2026,4658,Central projection
+East Shore,F02,65+,2027,4784,Central projection
+East Shore,F02,65+,2028,4913,Central projection
+East Shore,F02,65+,2029,5045,Central projection
+East Shore,F02,65+,2030,5182,Central projection
+North Valley,F03,Under 18,2023,3500,Observed estimate
+North Valley,F03,Under 18,2024,3538,Observed estimate
+North Valley,F03,Under 18,2025,3577,Observed estimate
+North Valley,F03,Under 18,2026,3617,Central projection
+North Valley,F03,Under 18,2027,3657,Central projection
+North Valley,F03,Under 18,2028,3697,Central projection
+North Valley,F03,Under 18,2029,3737,Central projection
+North Valley,F03,Under 18,2030,3779,Central projection
+North Valley,F03,18-34,2023,4800,Observed estimate
+North Valley,F03,18-34,2024,4886,Observed estimate
+North Valley,F03,18-34,2025,4974,Observed estimate
+North Valley,F03,18-34,2026,5064,Central projection
+North Valley,F03,18-34,2027,5155,Central projection
+North Valley,F03,18-34,2028,5248,Central projection
+North Valley,F03,18-34,2029,5342,Central projection
+North Valley,F03,18-34,2030,5438,Central projection
+North Valley,F03,35-49,2023,5200,Observed estimate
+North Valley,F03,35-49,2024,5278,Observed estimate
+North Valley,F03,35-49,2025,5357,Observed estimate
+North Valley,F03,35-49,2026,5438,Central projection
+North Valley,F03,35-49,2027,5519,Central projection
+North Valley,F03,35-49,2028,5602,Central projection
+North Valley,F03,35-49,2029,5686,Central projection
+North Valley,F03,35-49,2030,5771,Central projection
+North Valley,F03,50-64,2023,4700,Observed estimate
+North Valley,F03,50-64,2024,4794,Observed estimate
+North Valley,F03,50-64,2025,4890,Observed estimate
+North Valley,F03,50-64,2026,4988,Central projection
+North Valley,F03,50-64,2027,5087,Central projection
+North Valley,F03,50-64,2028,5189,Central projection
+North Valley,F03,50-64,2029,5293,Central projection
+North Valley,F03,50-64,2030,5399,Central projection
+North Valley,F03,65+,2023,3900,Observed estimate
+North Valley,F03,65+,2024,4005,Observed estimate
+North Valley,F03,65+,2025,4113,Observed estimate
+North Valley,F03,65+,2026,4225,Central projection
+North Valley,F03,65+,2027,4339,Central projection
+North Valley,F03,65+,2028,4456,Central projection
+North Valley,F03,65+,2029,4576,Central projection
+North Valley,F03,65+,2030,4700,Central projection
+West Valley,F04,Under 18,2023,4100,Observed estimate
+West Valley,F04,Under 18,2024,4170,Observed estimate
+West Valley,F04,Under 18,2025,4241,Observed estimate
+West Valley,F04,Under 18,2026,4313,Central projection
+West Valley,F04,Under 18,2027,4386,Central projection
+West Valley,F04,Under 18,2028,4461,Central projection
+West Valley,F04,Under 18,2029,4536,Central projection
+West Valley,F04,Under 18,2030,4614,Central projection
+West Valley,F04,18-34,2023,6400,Observed estimate
+West Valley,F04,18-34,2024,6554,Observed estimate
+West Valley,F04,18-34,2025,6711,Observed estimate
+West Valley,F04,18-34,2026,6872,Central projection
+West Valley,F04,18-34,2027,7037,Central projection
+West Valley,F04,18-34,2028,7206,Central projection
+West Valley,F04,18-34,2029,7379,Central projection
+West Valley,F04,18-34,2030,7556,Central projection
+West Valley,F04,35-49,2023,6600,Observed estimate
+West Valley,F04,35-49,2024,6739,Observed estimate
+West Valley,F04,35-49,2025,6880,Observed estimate
+West Valley,F04,35-49,2026,7025,Central projection
+West Valley,F04,35-49,2027,7172,Central projection
+West Valley,F04,35-49,2028,7323,Central projection
+West Valley,F04,35-49,2029,7477,Central projection
+West Valley,F04,35-49,2030,7634,Central projection
+West Valley,F04,50-64,2023,5200,Observed estimate
+West Valley,F04,50-64,2024,5335,Observed estimate
+West Valley,F04,50-64,2025,5474,Observed estimate
+West Valley,F04,50-64,2026,5616,Central projection
+West Valley,F04,50-64,2027,5762,Central projection
+West Valley,F04,50-64,2028,5912,Central projection
+West Valley,F04,50-64,2029,6066,Central projection
+West Valley,F04,50-64,2030,6224,Central projection
+West Valley,F04,65+,2023,3600,Observed estimate
+West Valley,F04,65+,2024,3719,Observed estimate
+West Valley,F04,65+,2025,3842,Observed estimate
+West Valley,F04,65+,2026,3968,Central projection
+West Valley,F04,65+,2027,4099,Central projection
+West Valley,F04,65+,2028,4235,Central projection
+West Valley,F04,65+,2029,4374,Central projection
+West Valley,F04,65+,2030,4519,Central projection

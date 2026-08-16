@@ -1,0 +1,187 @@
+# Interim Project Reviews
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- explain the purpose of an interim project review;
+- present verified progress without overstating incomplete work;
+- assess project trajectory using evidence;
+- identify decisions, risks, and unresolved questions requiring attention; and
+- convert feedback into an updated action plan.
+
+## Key terms
+
+::: {.definition}
+**Interim review:** A structured examination of project progress, evidence, risks, and remaining work before final delivery.
+
+**Project trajectory:** The direction of the project relative to its intended scope, quality, and schedule.
+
+**Progress evidence:** An observable product or verified result demonstrating that work has advanced.
+
+**Blocker:** An issue that prevents important work from proceeding until it is resolved.
+
+**Decision request:** A clearly stated choice or approval that the team needs from a stakeholder or project authority.
+
+**Open question:** A material uncertainty that has not yet been answered or resolved.
+
+**Feedback log:** A record of comments received, their significance, the response, owner, and status.
+
+**Recovery plan:** A revised set of priorities, responsibilities, and dates designed to return a project to a feasible path.
+:::
+
+## Why interim reviews matter
+
+An interim review is not a shortened final presentation. Its purpose is to determine whether the project is developing into credible and useful work while there is still time to change direction. A team that waits until final delivery to reveal a weak question, incompatible data source, unsupported method, or unrealistic recommendation has lost the main benefit of review.
+
+Good interim reviews make uncertainty visible. They distinguish completed work from preliminary work, facts from hypotheses, decisions from proposals, and ordinary tasks from risks that require intervention. This transparency allows reviewers to focus on the choices that could materially improve the project.
+
+## What an interim review should establish
+
+An effective review answers five questions.
+
+### What problem is the project addressing?
+
+State the organizational concern, management question, analytical questions, intended audience, and scope. If these have changed, explain why.
+
+### What has been established so far?
+
+Present verified evidence, such as confirmed variable definitions, reproducible data-quality findings, documented secondary sources, stable descriptive patterns, baseline models, or tested projection assumptions. Do not use polished visuals to make uncertain work appear final.
+
+### What remains uncertain?
+
+Identify unresolved definitions, data gaps, model limitations, client questions, and competing interpretations. Explain the consequence of each uncertainty.
+
+### Is the project on track?
+
+Assess scope, quality, dependencies, workload, and remaining calendar time. "We are on track" is a conclusion that requires evidence. A revised timeline, completed milestones, open-risk count, and remaining review cycles provide stronger support.
+
+### What is needed next?
+
+End with specific decisions, feedback requests, action owners, and near-term milestones. Reviewers should know where their input is most valuable.
+
+## Evidence of progress
+
+Activity is not the same as progress. Hours spent, meetings held, and graphs created may indicate effort but do not establish that the project is closer to a defensible result.
+
+Strong progress evidence includes:
+
+- a reviewed problem statement;
+- an accepted scope boundary;
+- a current data dictionary;
+- a reproducible data-cleaning workflow;
+- an issue log with documented decisions;
+- EDA findings connected to analytical questions;
+- evaluated secondary sources;
+- a baseline and validation plan;
+- an auditable projection assumption table; and
+- an updated schedule showing remaining review cycles.
+
+## Structure of an interim presentation
+
+A concise interim presentation can follow this sequence:
+
+1. **Purpose and decision:** What does the project need to support?
+2. **Data and scope:** What evidence is available, and what are its boundaries?
+3. **Verified findings:** What has been established?
+4. **Developing analysis:** What methods are being tested, and why?
+5. **Risks and open questions:** What could change the result or schedule?
+6. **Project trajectory:** What has been completed, and what remains?
+7. **Feedback and decisions needed:** What should reviewers address now?
+8. **Next milestones:** Who will do what, and by when?
+
+The presentation should have thematic cohesion even though the work is unfinished. A central message such as "Growth is concentrated in two locations, but incomplete capacity records must be resolved before expansion can be recommended" is more informative than a sequence of unrelated updates.
+
+::: {.example}
+**Recurring case: NVRW interim review**
+
+The NVRW team has completed its data dictionary and initial EDA. It has verified that total visits increased, but most growth occurred at Lakeside and Central during weekday evenings. It has also found that program-capacity records are missing for one historical year.
+
+The team presents three conclusions:
+
+1. The location and time pattern is sufficiently stable to justify deeper analysis.
+2. A population-utilization projection is feasible because client and population data share compatible geographic and age categories.
+3. Capacity expansion cannot yet be recommended because historical wait-list and capacity data require verification.
+
+The team asks for a decision about whether to limit the capacity analysis to the two years with reliable records or seek a corrected historical extract. This is a useful interim review because it connects findings, uncertainty, trajectory, and a decision request.
+:::
+
+## Assessing trajectory
+
+Project trajectory should be assessed across several dimensions.
+
+| Dimension | Evidence that the trajectory is healthy | Warning sign |
+|---|---|---|
+| Scope | Questions fit the available time and evidence | New analyses are added without removing work |
+| Data | Definitions and material issues have owners | Basic meanings remain unresolved |
+| Analysis | Methods follow from questions and include validation | Tools are chosen mainly for novelty |
+| Integration | Findings contribute to one argument | Team members produce isolated sections |
+| Schedule | Review and revision time remains | First integration occurs near delivery |
+| Communication | Preliminary conclusions are qualified | Uncertain work is presented as established |
+
+When trajectory is weak, the appropriate response may be to narrow scope, replace a method, seek a decision, redistribute work, or revise a deadline where authority permits. Working faster is not always a sufficient recovery plan.
+
+## Receiving and using feedback
+
+Feedback should be recorded and interpreted, not merely collected. For every material comment, record:
+
+- the comment or concern;
+- the source and date;
+- why it matters;
+- the proposed response;
+- the owner;
+- the due date; and
+- whether the comment was accepted, adapted, deferred, or declined with rationale.
+
+Conflicting feedback may require clarification or escalation. A team should not quietly select the easiest comment while ignoring the one that most affects project validity.
+
+## Common mistakes
+
+- presenting a chronology of tasks rather than evidence of progress;
+- hiding unresolved problems to appear further ahead;
+- showing every exploratory graph;
+- presenting recommendations before the problem is established;
+- claiming the project is on track without schedule evidence;
+- asking reviewers for general thoughts instead of specific decisions; and
+- failing to update the plan after feedback.
+
+::: {.quality}
+**Quality standard:** An interim review should make it easier to improve the final project by revealing verified progress, material uncertainty, trajectory, and the decisions needed next.
+:::
+
+## Interim review checklist
+
+- [ ] The current problem, audience, and scope are clear.
+- [ ] Completed, preliminary, and planned work are distinguished.
+- [ ] Findings are supported by reproducible evidence.
+- [ ] Material risks and open questions are visible.
+- [ ] The schedule includes remaining review and revision cycles.
+- [ ] Feedback requests are specific.
+- [ ] Next actions have owners and dates.
+- [ ] The presentation has a central message and readable visuals.
+
+## Exercise
+
+Given a project with an incomplete data dictionary, several polished graphs, no validation plan, and two weeks remaining, write a five-point recovery plan.
+
+<details class="answer-dropdown">
+<summary>Suggested priorities</summary>
+<ol><li>Freeze new analysis until essential variable definitions and units are confirmed.</li><li>Identify which existing graphs directly support the central question and remove the rest from the main narrative.</li><li>Select a feasible baseline and validation approach before fitting additional models.</li><li>Narrow scope so that one complete analysis can receive technical and communication review.</li><li>Assign owners and internal deadlines that preserve time for integration and revision.</li></ol>
+</details>
+
+## Additional exercises
+
+1. Prepare a five-slide interim review for NVRW after the data-quality assessment but before model development. State what is known, what remains uncertain, and what decisions are needed.
+2. Develop three trajectory indicators that would reveal whether the project is likely to finish with integrated evidence rather than disconnected analyses.
+3. Convert five pieces of review feedback into a response log containing the issue, decision, owner, deadline, and affected deliverable.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>An interim review should demonstrate progress with evidence, not activity counts alone. Useful trajectory indicators include completion of reviewed analytical questions, validated joins and denominators, and an early recommendation-evidence map.</p>
+</details>
+
+## Questions for discussion
+
+1. How can a team be transparent about uncertainty without losing reviewer confidence?
+2. When is narrowing scope evidence of good judgment rather than failure?
+3. Which project decisions should not wait until an interim review?

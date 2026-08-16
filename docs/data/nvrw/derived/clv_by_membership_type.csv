@@ -1,0 +1,6 @@
+membership_type,eligible_periods,retention_rate,average_annual_margin,assumed_cac,discount_rate,horizon_years,estimated_clv
+Adult annual,663,0.7632,231.22,72,0.08,4,475.85
+Family annual,439,0.8269,322.08,84,0.08,4,751.2
+Youth annual,157,0.7516,89.16,48,0.08,4,159.81
+Senior annual,225,0.7467,134.78,55,0.08,4,256.97
+Monthly flexible,383,0.6815,190.83,63,0.08,4,339.92

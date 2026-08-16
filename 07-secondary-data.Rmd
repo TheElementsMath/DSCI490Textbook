@@ -1,0 +1,215 @@
+# Researching Secondary Data
+
+## Learning outcomes
+
+After completing this chapter, you should be able to:
+
+- identify secondary evidence that improves a project;
+- translate an information need into a structured search;
+- evaluate authority, relevance, comparability, and reuse conditions;
+- document sources and transformations through a source log; and
+- combine external and organizational data without hiding differences in definition.
+
+## Key terms
+
+::: {.definition}
+**Primary data:** Data collected directly for the project or purpose currently being investigated.
+
+**Secondary data:** Data previously collected by another person or organization for a different or broader purpose and reused in the current analysis.
+
+**Provenance:** The documented origin, collection context, ownership, version, and transformation history of data.
+
+**Comparability:** The degree to which values from different sources can be meaningfully compared because their populations, definitions, periods, units, and methods align.
+
+**Benchmark:** A reference value or standard used to evaluate performance, position, or change.
+
+**Metadata:** Information that describes a dataset's content, structure, definitions, collection methods, quality, ownership, and use.
+
+**Citation:** A formal acknowledgement that identifies the source of data, ideas, methods, or other material.
+
+**Data lineage:** The traceable path from an original source through transformations, joins, calculations, and outputs.
+:::
+
+## Why secondary evidence matters
+
+Organizational data describe activity within one system. They may show which services were used, which products were purchased, or which customers were retained, but they do not automatically explain the surrounding population, economy, industry, policy environment, or comparable practice.
+
+Secondary evidence can provide:
+
+- population denominators and projections;
+- industry or sector benchmarks;
+- economic and demographic context;
+- geographic boundaries;
+- established definitions and measurement standards;
+- evidence about similar interventions; and
+- information about populations not represented in internal data.
+
+More sources do not automatically strengthen an analysis. Each source should answer a defined information need and be sufficiently comparable for the intended use.
+
+## Begin with an information need
+
+Searching without a clear need often produces a collection of interesting facts that never contributes to the project. State the need in one sentence before searching.
+
+Weak need: "Find recreation statistics."
+
+Stronger need: "Find annual population estimates and projections by age group for the four service areas used in NVRW's visit data so that group-specific utilization rates can be calculated through 2035."
+
+The stronger statement identifies the measure, geography, categories, purpose, and period.
+
+## A structured search process
+
+1. Define the information need.
+2. Identify the ideal population, geography, time period, measure, unit, and level of detail.
+3. Search authoritative producers and primary publications first.
+4. Read metadata, methods, and definitions before downloading.
+5. Record the source, access date, version, licence, and relevant fields.
+6. Assess comparability with the organizational data.
+7. Document transformations, aggregations, and joins.
+8. Reassess whether the source answers the original need.
+
+Library guides, data catalogues, government portals, scholarly databases, and professional associations can be useful starting points. When a guide points to an original dataset or report, evaluate and cite the original source whenever possible.
+
+## Evaluating a source
+
+### Authority and purpose
+
+Identify who produced the data, why they collected it, how it is maintained, and whether revisions are documented. A commercial summary may be useful for orientation while an official statistical table is more appropriate for a denominator.
+
+### Coverage and selection
+
+Determine who or what is included and excluded. A survey of current members cannot represent former members who left before the survey. Online reviews cannot be treated as a random sample of all users.
+
+### Definition and method
+
+Two sources can use the same label while measuring different concepts. "Participation" could mean at least one activity per year, a registered program, a facility visit, or weekly exercise. Read the definition, questionnaire, calculation rule, and unit.
+
+### Timeliness and revision
+
+Check whether the period aligns with the project and whether values are preliminary, revised, or final. A recent publication may still contain older reference-period data.
+
+### Granularity
+
+The source must be detailed enough for the question but not so detailed that estimates are unreliable or cannot be matched. Geographic, age, product, and time categories should be compared before analysis.
+
+### Permission and citation
+
+Confirm whether data, tables, figures, or code can be reused. Record the licence, attribution, and citation requirements. Public accessibility does not mean unrestricted reuse.
+
+## The source log
+
+A source log supports both research quality and reproducibility.
+
+| Field | Example |
+|---|---|
+| Information need | Population projection by age and service area |
+| Source organization | Statistical agency |
+| Dataset or publication | Population projections table |
+| URL or identifier | Stable table or catalogue link |
+| Access date | Date retrieved |
+| Reference period | Historical base and projection years |
+| Population and geography | Residents by specified service area |
+| Variables and units | Persons, age group, projection scenario |
+| Limitations | Boundary and scenario assumptions |
+| Transformations | Age regrouping and geographic aggregation |
+| Citation and licence | Required attribution and reuse conditions |
+| Decision | Accepted, rejected, or used with qualification |
+
+Rejected sources should remain in the log with a reason. This prevents the team from repeating the same search and demonstrates that source selection was deliberate.
+
+## Combining sources
+
+Never join sources using labels alone without checking definitions. Geographic names, age bands, fiscal years, service categories, and identifiers may differ. Preserve original fields and document every mapping.
+
+Before a join, ask:
+
+- Do the two sources describe the same population?
+- Are time periods aligned?
+- Are counts measured at the same frequency?
+- Are categories mutually compatible?
+- Are geographic boundaries from the same version?
+- Are identifiers unique at the intended grain?
+- What proportion of records fail to match?
+
+After the join, verify row counts, duplicate keys, unmatched records, totals, and whether the join changed the unit of analysis.
+
+::: {.example}
+**Recurring case: selecting NVRW population data**
+
+NVRW wants population denominators for its four service areas. One source provides current municipal populations, while another provides projections for larger planning regions. Neither aligns perfectly with the organization's postal-area service boundaries.
+
+The team documents three options: use municipalities and accept incomplete alignment, aggregate NVRW activity to planning regions, or construct a postal-area crosswalk using a compatible census geography. It selects the planning-region approach for long-term projections because the boundaries and projected populations are available consistently. The loss of local detail is reported as a limitation.
+:::
+
+## Census and geographic data
+
+CensusMapper provides an interactive way to identify Canadian census datasets, regions, and variables [@censusmapper]. The `cancensus` package can retrieve census data and spatial geometries for reproducible R work after an API key is configured [@cancensus2026]. Similar principles apply to census and geographic sources in other countries.
+
+When using census data:
+
+- select a census year and geography that match the question;
+- read variable definitions and universes;
+- distinguish counts, percentages, rates, estimates, and projections;
+- join with stable geographic identifiers where possible;
+- check boundary changes across years;
+- inspect unmatched and duplicated identifiers; and
+- preserve required attribution.
+
+Population counts and projections are not interchangeable. Counts describe an observed or estimated period. Projections estimate future populations under stated demographic assumptions.
+
+## Secondary evidence as context, not substitution
+
+External research can establish that a problem is plausible or important, but it should not replace evidence about the organization when a recommendation is directed at that organization. An industry report showing that retention matters does not establish that NVRW has a retention problem. The internal data must demonstrate the local pattern.
+
+Secondary evidence is strongest when it improves definition, provides a valid comparison, supplies a denominator, tests plausibility, or explains why a finding deserves attention.
+
+::: {.quality}
+**Quality standard:** A reader should be able to trace every secondary value from the final output to its source, version, definition, transformation, and role in the argument.
+:::
+
+## Common mistakes
+
+- beginning with a general web search rather than an information need;
+- citing a search result or summary instead of the original source;
+- comparing percentages with different denominators;
+- using a national benchmark as though it represented a local target;
+- ignoring boundary or category changes;
+- joining on labels without checking unmatched records;
+- presenting projected populations as observed counts; and
+- including external facts that do not affect the project.
+
+## Source review checklist
+
+- [ ] The information need is stated.
+- [ ] The producer and collection purpose are known.
+- [ ] Population, coverage, period, unit, and method are documented.
+- [ ] Comparability with organizational data has been assessed.
+- [ ] Metadata and limitations have been read.
+- [ ] Transformations and joins are reproducible.
+- [ ] Reuse and citation requirements are satisfied.
+- [ ] The source contributes to a question or decision.
+
+## Exercise
+
+One source reports that 62 percent of residents participated in recreation during the past year. NVRW reports that 18 percent of residents held a membership at year-end. Can the values be used to estimate NVRW's market share?
+
+<details class="answer-dropdown">
+<summary>Suggested answer</summary>
+<p>Not without additional evidence. The numerator definitions differ: annual participation may include any recreation activity, while year-end membership includes a narrower status at one organization. The populations, geographic boundaries, age eligibility, reference periods, and data-collection methods must also be compared. The external percentage may provide context, but it is not automatically a compatible market denominator.</p>
+</details>
+
+## Additional exercises
+
+1. Build a source log for three real sources that could contextualize NVRW demand: a population source, a municipal planning source, and a recreation-participation source. Record the geography, population, period, method, and intended use.
+2. Create a crosswalk between the fictional NVRW service areas and a hypothetical census geography. Identify what evidence would be required before aggregating or splitting population values.
+3. Critique this statement: "The West Valley population is projected to grow, so Westbrook visits will grow by the same percentage." Rewrite it as a defensible conditional projection statement.
+
+<details class="answer-dropdown">
+<summary>Check your work</summary>
+<p>The revised statement should expose the utilization assumption. Population growth produces the same percentage increase in projected visits only when the relevant utilization rate, boundaries, definitions, and service conditions are held constant.</p>
+</details>
+
+## Questions for discussion
+
+1. When is a less detailed authoritative source preferable to a detailed uncertain source?
+2. How should conflicting estimates from credible sources be handled?
+3. When does a benchmark become an inappropriate target?

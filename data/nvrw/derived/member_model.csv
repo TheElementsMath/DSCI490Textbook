@@ -1,0 +1,1401 @@
+member_id,join_year,home_facility_id,age_group,membership_type,acquisition_channel,visits_first_90_days,visits_first_membership_year,program_registrations_first_year,active_years_observed,contribution_margin_observed,retained_after_first_period
+M00001,2023,F03,35-49,Adult annual,Referral,5,11,1,3,712.8,1
+M00002,2024,F02,18-34,Senior annual,Email,5,16,0,2,253.8,1
+M00003,2024,F02,50-64,Adult annual,Organic web,9,31,1,1,215.6,0
+M00004,2025,F01,35-49,Family annual,Walk-in,16,41,4,1,327.6,Censored
+M00005,2024,F02,50-64,Monthly flexible,Email,5,14,2,2,373.1,1
+M00006,2023,F01,50-64,Adult annual,Referral,11,12,2,1,237.6,0
+M00007,2022,F01,35-49,Family annual,Organic web,3,19,1,1,327.6,0
+M00008,2022,F01,Under 18,Adult annual,Community event,18,50,1,1,215.6,0
+M00009,2024,F01,50-64,Adult annual,Referral,10,23,3,2,442.2,1
+M00010,2024,F03,35-49,Monthly flexible,Referral,3,5,4,1,196.8,0
+M00011,2022,F02,35-49,Adult annual,Email,4,12,0,4,928.4,1
+M00012,2024,F02,18-34,Adult annual,Community event,2,2,1,2,475.2,1
+M00013,2023,F01,50-64,Senior annual,Organic web,4,17,0,3,421.2,1
+M00014,2024,F02,18-34,Adult annual,Email,8,16,4,2,453.2,1
+M00015,2023,F01,18-34,Monthly flexible,Paid social,7,17,0,1,196.8,0
+M00016,2022,F02,50-64,Adult annual,Email,11,25,0,4,950.4,1
+M00017,2024,F02,35-49,Adult annual,Organic web,3,3,1,2,464.2,1
+M00018,2024,F03,50-64,Adult annual,Organic web,5,9,5,1,237.6,0
+M00019,2023,F04,18-34,Youth annual,Organic web,9,18,0,3,279,1
+M00020,2023,F01,35-49,Monthly flexible,Organic web,2,11,1,2,393.6,1
+M00021,2023,F03,18-34,Family annual,Paid social,8,25,1,2,625.95,1
+M00022,2023,F01,35-49,Monthly flexible,Paid social,3,4,1,3,590.4,1
+M00023,2022,F04,50-64,Senior annual,Referral,5,6,4,3,421.2,1
+M00024,2025,F01,18-34,Adult annual,Walk-in,3,3,1,1,226.6,Censored
+M00025,2025,F04,18-34,Family annual,Organic web,11,34,2,1,327.6,Censored
+M00026,2025,F02,65+,Monthly flexible,Organic web,5,7,2,1,186.55,Censored
+M00027,2025,F04,35-49,Monthly flexible,Walk-in,6,10,1,1,186.55,Censored
+M00028,2024,F01,35-49,Family annual,Referral,5,10,1,1,327.6,0
+M00029,2023,F01,18-34,Youth annual,Community event,7,9,0,1,69.75,0
+M00030,2022,F01,35-49,Family annual,Referral,7,13,2,4,1310.4,1
+M00031,2023,F01,18-34,Family annual,Walk-in,5,13,1,2,655.2,1
+M00032,2022,F01,50-64,Youth annual,Referral,7,30,0,4,356.5,1
+M00033,2025,F02,35-49,Adult annual,Organic web,11,31,2,1,226.6,Censored
+M00034,2023,F01,50-64,Senior annual,Paid social,4,4,1,3,403.2,1
+M00035,2023,F01,50-64,Family annual,Organic web,2,12,2,1,308.1,0
+M00036,2025,F04,50-64,Family annual,Referral,9,32,1,1,327.6,Censored
+M00037,2024,F03,18-34,Family annual,Paid social,10,37,4,2,655.2,1
+M00038,2025,F03,18-34,Adult annual,Paid social,4,17,1,1,237.6,Censored
+M00039,2023,F04,Under 18,Senior annual,Organic web,11,26,3,2,262.8,1
+M00040,2025,F01,35-49,Adult annual,Walk-in,5,5,3,1,215.6,Censored
+M00041,2024,F03,50-64,Senior annual,Referral,7,7,0,2,271.8,1
+M00042,2024,F04,35-49,Family annual,Email,7,31,3,2,655.2,1
+M00043,2024,F01,65+,Adult annual,Organic web,11,27,0,1,226.6,0
+M00044,2024,F01,50-64,Monthly flexible,Community event,4,4,5,2,393.6,1
+M00045,2023,F04,50-64,Senior annual,Organic web,8,23,1,1,113.4,0
+M00046,2025,F01,18-34,Family annual,Referral,19,19,6,1,327.6,Censored
+M00047,2023,F01,50-64,Adult annual,Paid social,9,35,2,2,475.2,1
+M00048,2024,F04,35-49,Family annual,Organic web,19,55,4,2,655.2,1
+M00049,2023,F03,18-34,Family annual,Paid social,16,16,1,1,327.6,0
+M00050,2024,F04,18-34,Monthly flexible,Organic web,1,9,2,1,196.8,0
+M00051,2023,F04,35-49,Monthly flexible,Organic web,3,9,1,3,559.65,1
+M00052,2023,F01,18-34,Adult annual,Walk-in,15,37,5,3,712.8,1
+M00053,2024,F02,18-34,Family annual,Walk-in,8,8,6,2,655.2,1
+M00054,2023,F01,35-49,Monthly flexible,Organic web,4,16,4,1,196.8,0
+M00055,2023,F02,35-49,Family annual,Community event,7,7,0,3,953.55,1
+M00056,2023,F01,18-34,Adult annual,Walk-in,3,10,2,1,237.6,0
+M00057,2022,F02,50-64,Adult annual,Community event,15,16,2,2,475.2,1
+M00058,2023,F04,50-64,Adult annual,Walk-in,1,1,1,3,712.8,1
+M00059,2023,F01,50-64,Youth annual,Paid social,12,14,1,3,263.5,1
+M00060,2022,F01,35-49,Youth annual,Walk-in,5,6,1,2,186,1
+M00061,2023,F03,18-34,Senior annual,Referral,9,20,3,1,131.4,0
+M00062,2025,F04,65+,Adult annual,Organic web,4,12,3,1,215.6,Censored
+M00063,2024,F03,18-34,Monthly flexible,Paid social,2,2,0,1,176.3,0
+M00064,2023,F03,65+,Senior annual,Paid social,9,19,4,3,403.2,1
+M00065,2024,F04,Under 18,Family annual,Organic web,5,14,3,2,635.7,1
+M00066,2024,F02,50-64,Monthly flexible,Organic web,10,15,3,2,373.1,1
+M00067,2025,F04,35-49,Adult annual,Organic web,7,10,2,1,237.6,Censored
+M00068,2022,F01,35-49,Monthly flexible,Organic web,5,22,0,1,196.8,0
+M00069,2025,F02,50-64,Senior annual,Referral,8,31,6,1,113.4,Censored
+M00070,2024,F04,50-64,Senior annual,Organic web,5,10,1,1,140.4,0
+M00071,2024,F01,35-49,Senior annual,Organic web,10,40,1,2,262.8,1
+M00072,2024,F03,50-64,Family annual,Email,3,10,3,2,655.2,1
+M00073,2024,F03,18-34,Family annual,Community event,13,30,2,2,625.95,1
+M00074,2024,F04,35-49,Adult annual,Community event,1,1,0,2,442.2,1
+M00075,2025,F02,50-64,Youth annual,Organic web,10,14,2,1,93,Censored
+M00076,2025,F01,50-64,Monthly flexible,Walk-in,2,5,2,1,176.3,Censored
+M00077,2024,F01,Under 18,Adult annual,Community event,10,10,1,2,475.2,1
+M00078,2025,F01,18-34,Adult annual,Organic web,2,11,3,1,204.6,Censored
+M00079,2023,F02,Under 18,Family annual,Community event,17,36,0,3,982.8,1
+M00080,2025,F04,35-49,Adult annual,Community event,7,8,1,1,237.6,Censored
+M00081,2024,F02,18-34,Monthly flexible,Organic web,7,19,2,2,393.6,1
+M00082,2022,F01,35-49,Youth annual,Organic web,4,10,0,3,279,1
+M00083,2022,F02,50-64,Adult annual,Email,12,35,3,2,453.2,1
+M00084,2024,F04,18-34,Adult annual,Walk-in,12,28,4,2,453.2,1
+M00085,2025,F02,35-49,Family annual,Organic web,12,26,5,1,327.6,Censored
+M00086,2022,F01,18-34,Monthly flexible,Paid social,1,4,2,2,362.85,1
+M00087,2022,F02,18-34,Monthly flexible,Email,3,5,0,2,383.35,1
+M00088,2023,F01,65+,Family annual,Email,9,18,2,1,317.85,0
+M00089,2022,F01,35-49,Senior annual,Paid social,3,3,1,4,516.6,1
+M00090,2023,F02,50-64,Adult annual,Walk-in,6,15,1,3,712.8,1
+M00091,2024,F01,35-49,Family annual,Community event,7,10,3,2,655.2,1
+M00092,2024,F04,35-49,Adult annual,Paid social,5,5,4,2,464.2,1
+M00093,2024,F04,Under 18,Family annual,Walk-in,7,32,1,2,645.45,1
+M00094,2022,F01,50-64,Monthly flexible,Paid social,1,4,2,2,383.35,1
+M00095,2023,F02,18-34,Adult annual,Email,4,8,8,3,701.8,1
+M00096,2023,F01,35-49,Adult annual,Walk-in,9,38,1,3,690.8,1
+M00097,2024,F02,Under 18,Adult annual,Walk-in,12,36,2,2,431.2,1
+M00098,2024,F01,50-64,Senior annual,Organic web,6,8,2,2,280.8,1
+M00099,2022,F02,50-64,Family annual,Referral,17,48,3,4,1290.9,1
+M00100,2024,F03,35-49,Monthly flexible,Referral,3,8,1,1,196.8,0
+M00101,2023,F01,18-34,Family annual,Walk-in,10,13,4,3,963.3,1
+M00102,2024,F02,65+,Family annual,Walk-in,9,19,1,1,327.6,0
+M00103,2024,F01,35-49,Monthly flexible,Organic web,2,4,3,1,196.8,0
+M00104,2023,F01,35-49,Adult annual,Referral,15,37,3,3,690.8,1
+M00105,2022,F04,35-49,Adult annual,Walk-in,3,14,2,3,690.8,1
+M00106,2023,F04,35-49,Youth annual,Community event,7,10,2,3,271.25,1
+M00107,2022,F03,Under 18,Senior annual,Community event,3,6,1,4,552.6,1
+M00108,2022,F02,35-49,Adult annual,Referral,4,7,3,3,690.8,1
+M00109,2022,F01,18-34,Adult annual,Referral,7,23,3,4,928.4,1
+M00110,2022,F04,50-64,Youth annual,Walk-in,12,32,3,4,372,1
+M00111,2024,F02,35-49,Adult annual,Paid social,12,38,4,2,475.2,1
+M00112,2024,F04,18-34,Youth annual,Referral,4,11,5,2,186,1
+M00113,2022,F03,18-34,Family annual,Paid social,8,8,4,4,1310.4,1
+M00114,2023,F04,65+,Senior annual,Referral,5,26,1,3,421.2,1
+M00115,2025,F02,35-49,Adult annual,Paid social,8,12,2,1,226.6,Censored
+M00116,2024,F01,35-49,Family annual,Referral,15,29,4,2,625.95,1
+M00117,2023,F04,50-64,Adult annual,Community event,12,29,0,2,475.2,1
+M00118,2023,F01,50-64,Adult annual,Organic web,15,41,1,1,237.6,0
+M00119,2024,F03,Under 18,Senior annual,Paid social,3,7,1,2,271.8,1
+M00120,2023,F01,50-64,Adult annual,Paid social,15,52,2,3,690.8,1
+M00121,2025,F01,50-64,Youth annual,Paid social,6,6,1,1,93,Censored
+M00122,2025,F02,65+,Senior annual,Walk-in,6,13,1,1,140.4,Censored
+M00123,2022,F04,35-49,Monthly flexible,Referral,7,7,5,4,776.95,1
+M00124,2024,F01,Under 18,Senior annual,Organic web,4,4,1,2,271.8,1
+M00125,2022,F04,50-64,Family annual,Walk-in,10,17,2,3,982.8,1
+M00126,2025,F01,18-34,Senior annual,Organic web,11,24,5,1,140.4,Censored
+M00127,2023,F02,35-49,Senior annual,Referral,5,15,2,3,403.2,1
+M00128,2022,F01,50-64,Adult annual,Referral,10,10,3,4,928.4,1
+M00129,2023,F01,50-64,Youth annual,Referral,10,15,2,3,255.75,1
+M00130,2023,F01,18-34,Monthly flexible,Organic web,6,12,4,3,549.4,1
+M00131,2022,F02,35-49,Adult annual,Paid social,6,8,2,4,939.4,1
+M00132,2022,F02,50-64,Family annual,Community event,14,27,4,4,1290.9,1
+M00133,2023,F04,35-49,Senior annual,Walk-in,3,16,1,3,412.2,1
+M00134,2024,F02,35-49,Monthly flexible,Walk-in,3,4,2,2,383.35,1
+M00135,2023,F01,Under 18,Family annual,Paid social,10,10,1,1,327.6,0
+M00136,2024,F01,35-49,Monthly flexible,Referral,3,16,5,1,196.8,0
+M00137,2023,F02,50-64,Adult annual,Walk-in,11,29,1,2,420.2,1
+M00138,2022,F01,65+,Youth annual,Walk-in,8,9,2,1,93,0
+M00139,2023,F04,Under 18,Monthly flexible,Email,0,0,0,1,196.8,0
+M00140,2024,F02,35-49,Family annual,Paid social,14,47,1,2,635.7,1
+M00141,2023,F04,Under 18,Family annual,Community event,8,10,5,3,943.8,1
+M00142,2022,F01,50-64,Monthly flexible,Email,5,14,0,2,383.35,1
+M00143,2022,F02,18-34,Family annual,Walk-in,9,9,2,1,327.6,0
+M00144,2024,F01,35-49,Adult annual,Paid social,7,7,1,1,237.6,0
+M00145,2022,F02,Under 18,Family annual,Email,20,28,2,1,327.6,0
+M00146,2024,F01,18-34,Senior annual,Referral,8,14,3,2,280.8,1
+M00147,2024,F01,35-49,Family annual,Referral,4,20,2,2,635.7,1
+M00148,2022,F04,35-49,Family annual,Walk-in,5,8,0,4,1261.65,1
+M00149,2024,F04,18-34,Adult annual,Email,6,15,2,2,420.2,1
+M00150,2023,F01,35-49,Adult annual,Organic web,3,11,1,3,712.8,1
+M00151,2024,F01,65+,Youth annual,Organic web,9,10,3,1,93,0
+M00152,2024,F02,65+,Youth annual,Email,15,60,2,2,186,1
+M00153,2025,F01,50-64,Monthly flexible,Organic web,5,11,1,1,196.8,Censored
+M00154,2022,F04,18-34,Adult annual,Referral,4,5,1,1,237.6,0
+M00155,2024,F02,35-49,Senior annual,Paid social,6,30,2,2,280.8,1
+M00156,2022,F03,18-34,Monthly flexible,Email,5,5,4,4,735.95,1
+M00157,2024,F01,18-34,Senior annual,Referral,8,21,1,2,262.8,1
+M00158,2022,F03,50-64,Family annual,Organic web,2,7,0,1,327.6,0
+M00159,2025,F01,35-49,Youth annual,Referral,15,17,0,1,93,Censored
+M00160,2024,F04,65+,Monthly flexible,Organic web,4,10,1,2,393.6,1
+M00161,2024,F01,18-34,Monthly flexible,Walk-in,0,8,4,2,393.6,1
+M00162,2022,F01,35-49,Adult annual,Walk-in,12,41,2,4,895.4,1
+M00163,2023,F03,35-49,Adult annual,Walk-in,4,4,1,3,690.8,1
+M00164,2022,F03,35-49,Family annual,Organic web,7,19,0,1,327.6,0
+M00165,2024,F04,35-49,Adult annual,Email,4,4,2,2,453.2,1
+M00166,2022,F03,35-49,Monthly flexible,Referral,2,8,4,1,196.8,0
+M00167,2024,F04,18-34,Family annual,Organic web,5,8,3,2,645.45,1
+M00168,2023,F01,50-64,Adult annual,Paid social,8,14,6,2,475.2,1
+M00169,2023,F03,50-64,Monthly flexible,Community event,10,16,2,3,549.4,1
+M00170,2025,F02,50-64,Adult annual,Referral,3,3,6,1,215.6,Censored
+M00171,2023,F04,35-49,Youth annual,Paid social,4,10,1,2,186,1
+M00172,2023,F01,50-64,Family annual,Organic web,4,4,1,1,327.6,0
+M00173,2023,F01,50-64,Adult annual,Walk-in,2,9,1,1,215.6,0
+M00174,2024,F01,18-34,Monthly flexible,Walk-in,7,7,2,2,362.85,1
+M00175,2023,F03,65+,Adult annual,Walk-in,2,5,0,3,679.8,1
+M00176,2024,F01,Under 18,Family annual,Walk-in,11,37,3,2,655.2,1
+M00177,2023,F04,18-34,Family annual,Referral,12,18,0,1,327.6,0
+M00178,2025,F02,35-49,Adult annual,Organic web,9,42,2,1,237.6,Censored
+M00179,2023,F03,65+,Youth annual,Email,11,13,1,3,271.25,1
+M00180,2024,F02,35-49,Monthly flexible,Walk-in,12,24,0,1,166.05,0
+M00181,2023,F01,50-64,Family annual,Community event,12,12,1,3,982.8,1
+M00182,2024,F02,35-49,Adult annual,Community event,15,25,4,1,237.6,0
+M00183,2024,F01,65+,Family annual,Paid social,13,27,1,2,655.2,1
+M00184,2024,F04,35-49,Adult annual,Walk-in,2,2,0,2,453.2,1
+M00185,2022,F01,18-34,Youth annual,Walk-in,6,6,1,1,93,0
+M00186,2025,F01,18-34,Adult annual,Referral,9,33,1,1,226.6,Censored
+M00187,2025,F01,Under 18,Senior annual,Community event,5,17,5,1,140.4,Censored
+M00188,2022,F03,65+,Senior annual,Paid social,8,14,0,1,140.4,0
+M00189,2022,F03,65+,Family annual,Walk-in,5,11,1,3,982.8,1
+M00190,2022,F02,50-64,Senior annual,Community event,6,6,1,2,262.8,1
+M00191,2024,F04,65+,Family annual,Walk-in,4,18,1,2,645.45,1
+M00192,2023,F04,18-34,Senior annual,Referral,6,19,1,3,376.2,1
+M00193,2024,F01,18-34,Senior annual,Email,12,17,1,1,140.4,0
+M00194,2022,F01,50-64,Adult annual,Walk-in,4,14,5,4,895.4,1
+M00195,2023,F04,65+,Family annual,Organic web,13,19,1,3,982.8,1
+M00196,2024,F04,65+,Adult annual,Walk-in,10,23,2,2,442.2,1
+M00197,2022,F01,50-64,Senior annual,Community event,9,23,4,2,280.8,1
+M00198,2024,F04,Under 18,Family annual,Organic web,9,10,2,1,298.35,0
+M00199,2023,F04,65+,Monthly flexible,Referral,9,9,0,2,393.6,1
+M00200,2025,F01,50-64,Monthly flexible,Email,2,2,2,1,166.05,Censored
+M00201,2023,F02,35-49,Adult annual,Organic web,4,4,2,1,237.6,0
+M00202,2022,F01,35-49,Monthly flexible,Organic web,1,3,3,1,166.05,0
+M00203,2023,F01,18-34,Family annual,Paid social,14,39,4,3,963.3,1
+M00204,2022,F02,Under 18,Adult annual,Walk-in,8,8,1,2,453.2,1
+M00205,2022,F02,65+,Family annual,Organic web,8,9,3,4,1281.15,1
+M00206,2023,F02,50-64,Monthly flexible,Paid social,4,15,1,2,362.85,1
+M00207,2022,F02,35-49,Family annual,Organic web,17,17,3,3,973.05,1
+M00208,2024,F01,50-64,Adult annual,Paid social,13,31,4,2,475.2,1
+M00209,2024,F02,65+,Youth annual,Organic web,10,11,0,2,147.25,1
+M00210,2023,F01,35-49,Monthly flexible,Walk-in,9,13,2,2,393.6,1
+M00211,2025,F03,18-34,Family annual,Walk-in,11,33,3,1,327.6,Censored
+M00212,2024,F02,65+,Youth annual,Paid social,14,14,2,2,170.5,1
+M00213,2023,F02,35-49,Monthly flexible,Organic web,5,8,1,3,590.4,1
+M00214,2024,F01,18-34,Family annual,Paid social,4,13,1,2,655.2,1
+M00215,2024,F04,35-49,Adult annual,Organic web,12,12,2,2,453.2,1
+M00216,2022,F02,50-64,Senior annual,Organic web,6,8,0,1,140.4,0
+M00217,2025,F04,50-64,Adult annual,Walk-in,1,1,0,1,237.6,Censored
+M00218,2023,F03,Under 18,Monthly flexible,Referral,6,6,3,1,196.8,0
+M00219,2022,F02,18-34,Adult annual,Walk-in,18,41,1,4,950.4,1
+M00220,2022,F03,50-64,Youth annual,Referral,8,8,0,3,279,1
+M00221,2023,F01,35-49,Monthly flexible,Community event,4,4,0,3,590.4,1
+M00222,2022,F01,35-49,Adult annual,Walk-in,11,23,2,4,906.4,1
+M00223,2023,F02,50-64,Adult annual,Walk-in,14,14,1,1,204.6,0
+M00224,2022,F01,50-64,Family annual,Community event,9,20,3,4,1271.4,1
+M00225,2022,F04,50-64,Senior annual,Community event,3,14,1,1,140.4,0
+M00226,2025,F03,18-34,Adult annual,Organic web,11,30,1,1,237.6,Censored
+M00227,2025,F01,Under 18,Senior annual,Community event,7,7,5,1,113.4,Censored
+M00228,2022,F04,18-34,Family annual,Paid social,5,14,1,2,655.2,1
+M00229,2024,F01,Under 18,Adult annual,Organic web,12,24,1,2,464.2,1
+M00230,2022,F04,65+,Monthly flexible,Organic web,3,8,2,4,766.7,1
+M00231,2024,F01,35-49,Adult annual,Organic web,1,13,0,2,431.2,1
+M00232,2023,F02,65+,Adult annual,Walk-in,10,17,4,1,237.6,0
+M00233,2025,F04,Under 18,Senior annual,Referral,11,13,4,1,131.4,Censored
+M00234,2023,F04,Under 18,Family annual,Walk-in,9,18,3,3,953.55,1
+M00235,2022,F03,50-64,Adult annual,Community event,4,5,1,4,950.4,1
+M00236,2022,F04,50-64,Monthly flexible,Referral,1,4,2,2,373.1,1
+M00237,2023,F01,35-49,Family annual,Organic web,14,20,2,3,963.3,1
+M00238,2024,F01,18-34,Family annual,Organic web,10,15,0,2,655.2,1
+M00239,2024,F02,35-49,Family annual,Organic web,25,32,0,2,625.95,1
+M00240,2023,F01,50-64,Monthly flexible,Referral,7,13,2,1,196.8,0
+M00241,2024,F03,18-34,Monthly flexible,Referral,7,7,2,1,186.55,0
+M00242,2024,F04,65+,Adult annual,Walk-in,7,19,4,1,215.6,0
+M00243,2025,F01,18-34,Senior annual,Organic web,13,37,1,1,140.4,Censored
+M00244,2022,F02,18-34,Adult annual,Paid social,16,23,5,4,950.4,1
+M00245,2023,F04,35-49,Youth annual,Organic web,3,7,1,1,93,0
+M00246,2022,F01,65+,Family annual,Paid social,6,6,3,4,1261.65,1
+M00247,2025,F03,18-34,Senior annual,Walk-in,5,5,1,1,140.4,Censored
+M00248,2024,F04,18-34,Family annual,Organic web,8,12,1,2,635.7,1
+M00249,2025,F04,Under 18,Senior annual,Email,9,20,1,1,140.4,Censored
+M00250,2024,F02,35-49,Youth annual,Paid social,7,7,1,2,178.25,1
+M00251,2024,F01,Under 18,Youth annual,Organic web,6,20,3,1,93,0
+M00252,2024,F01,18-34,Adult annual,Organic web,5,16,0,2,475.2,1
+M00253,2024,F01,50-64,Adult annual,Walk-in,11,25,3,1,226.6,0
+M00254,2023,F02,18-34,Youth annual,Organic web,15,46,2,3,255.75,1
+M00255,2022,F03,50-64,Adult annual,Referral,9,21,3,3,712.8,1
+M00256,2023,F01,Under 18,Family annual,Community event,15,24,3,3,973.05,1
+M00257,2022,F04,18-34,Adult annual,Paid social,4,15,0,1,237.6,0
+M00258,2025,F01,65+,Monthly flexible,Community event,3,4,0,1,196.8,Censored
+M00259,2023,F02,65+,Adult annual,Organic web,7,19,2,3,701.8,1
+M00260,2024,F01,35-49,Monthly flexible,Community event,6,11,0,2,373.1,1
+M00261,2024,F02,18-34,Adult annual,Walk-in,16,31,1,2,475.2,1
+M00262,2024,F04,Under 18,Family annual,Paid social,9,11,1,1,327.6,0
+M00263,2023,F04,35-49,Adult annual,Referral,0,5,1,1,237.6,0
+M00264,2024,F04,50-64,Monthly flexible,Walk-in,6,8,2,2,393.6,1
+M00265,2023,F01,18-34,Monthly flexible,Referral,3,6,1,1,196.8,0
+M00266,2023,F02,50-64,Adult annual,Organic web,9,22,1,2,475.2,1
+M00267,2025,F01,50-64,Adult annual,Organic web,6,11,4,1,215.6,Censored
+M00268,2025,F03,Under 18,Family annual,Organic web,10,10,6,1,327.6,Censored
+M00269,2023,F02,18-34,Family annual,Paid social,3,17,1,3,973.05,1
+M00270,2024,F02,35-49,Adult annual,Referral,19,26,3,2,475.2,1
+M00271,2025,F03,65+,Adult annual,Paid social,2,4,1,1,215.6,Censored
+M00272,2023,F02,50-64,Monthly flexible,Organic web,4,16,3,3,559.65,1
+M00273,2023,F04,18-34,Family annual,Paid social,5,8,1,3,973.05,1
+M00274,2023,F01,18-34,Adult annual,Walk-in,10,10,1,3,712.8,1
+M00275,2022,F01,18-34,Family annual,Referral,6,13,1,4,1290.9,1
+M00276,2022,F01,35-49,Family annual,Referral,16,16,0,4,1300.65,1
+M00277,2022,F01,35-49,Senior annual,Email,6,6,2,3,403.2,1
+M00278,2022,F01,35-49,Monthly flexible,Walk-in,10,16,2,1,196.8,0
+M00279,2023,F04,50-64,Family annual,Organic web,13,38,2,3,973.05,1
+M00280,2024,F03,50-64,Family annual,Walk-in,4,21,1,2,625.95,1
+M00281,2023,F02,35-49,Adult annual,Community event,6,6,3,3,712.8,1
+M00282,2023,F02,50-64,Monthly flexible,Paid social,2,3,1,3,528.9,1
+M00283,2025,F03,35-49,Adult annual,Referral,3,6,2,1,237.6,Censored
+M00284,2023,F02,35-49,Senior annual,Email,12,19,3,2,244.8,1
+M00285,2022,F03,Under 18,Adult annual,Paid social,11,13,5,4,950.4,1
+M00286,2025,F02,18-34,Adult annual,Community event,6,6,2,1,237.6,Censored
+M00287,2024,F04,18-34,Adult annual,Referral,9,22,2,1,237.6,0
+M00288,2023,F01,35-49,Adult annual,Community event,10,19,1,1,237.6,0
+M00289,2022,F02,65+,Monthly flexible,Walk-in,7,14,1,4,766.7,1
+M00290,2022,F03,18-34,Senior annual,Walk-in,3,7,3,4,561.6,1
+M00291,2022,F03,18-34,Adult annual,Referral,2,2,3,1,226.6,0
+M00292,2023,F03,18-34,Youth annual,Walk-in,6,6,2,3,263.5,1
+M00293,2025,F02,35-49,Senior annual,Email,18,18,3,1,140.4,Censored
+M00294,2024,F04,35-49,Family annual,Paid social,8,15,0,2,645.45,1
+M00295,2023,F03,18-34,Monthly flexible,Organic web,7,23,3,2,362.85,1
+M00296,2023,F03,18-34,Youth annual,Email,3,4,0,3,255.75,1
+M00297,2023,F03,50-64,Senior annual,Referral,10,20,0,1,131.4,0
+M00298,2025,F01,35-49,Adult annual,Referral,9,9,2,1,237.6,Censored
+M00299,2024,F03,18-34,Adult annual,Email,3,13,3,1,215.6,0
+M00300,2022,F01,50-64,Adult annual,Referral,16,42,2,4,939.4,1
+M00301,2024,F01,35-49,Adult annual,Email,9,15,2,2,475.2,1
+M00302,2023,F04,50-64,Adult annual,Community event,13,27,3,3,701.8,1
+M00303,2025,F01,50-64,Senior annual,Referral,10,20,3,1,140.4,Censored
+M00304,2025,F03,18-34,Family annual,Walk-in,3,3,4,1,327.6,Censored
+M00305,2024,F01,65+,Youth annual,Referral,18,51,0,1,93,0
+M00306,2024,F02,35-49,Youth annual,Organic web,6,6,4,2,170.5,1
+M00307,2023,F04,18-34,Family annual,Walk-in,9,14,2,3,982.8,1
+M00308,2023,F03,50-64,Adult annual,Organic web,7,15,0,1,204.6,0
+M00309,2025,F03,35-49,Family annual,Community event,15,25,0,1,317.85,Censored
+M00310,2023,F02,65+,Monthly flexible,Referral,10,18,1,2,373.1,1
+M00311,2024,F02,65+,Adult annual,Referral,11,36,4,2,453.2,1
+M00312,2022,F03,65+,Family annual,Organic web,5,19,2,4,1271.4,1
+M00313,2022,F04,Under 18,Monthly flexible,Walk-in,7,7,1,4,787.2,1
+M00314,2023,F03,18-34,Monthly flexible,Paid social,5,8,2,2,383.35,1
+M00315,2022,F01,65+,Adult annual,Referral,9,37,2,4,895.4,1
+M00316,2023,F03,65+,Family annual,Organic web,5,5,2,2,655.2,1
+M00317,2024,F04,65+,Youth annual,Paid social,11,26,3,2,170.5,1
+M00318,2022,F02,50-64,Adult annual,Paid social,17,27,8,4,950.4,1
+M00319,2022,F03,50-64,Adult annual,Community event,10,31,3,4,928.4,1
+M00320,2025,F04,18-34,Family annual,Organic web,6,13,2,1,317.85,Censored
+M00321,2023,F03,65+,Adult annual,Referral,9,9,6,3,679.8,1
+M00322,2023,F03,35-49,Monthly flexible,Referral,5,8,2,2,373.1,1
+M00323,2022,F04,35-49,Monthly flexible,Referral,4,14,0,2,362.85,1
+M00324,2022,F02,35-49,Monthly flexible,Community event,4,13,2,4,776.95,1
+M00325,2024,F01,50-64,Senior annual,Paid social,5,13,2,2,253.8,1
+M00326,2023,F01,65+,Monthly flexible,Walk-in,4,7,2,1,176.3,0
+M00327,2024,F01,50-64,Adult annual,Walk-in,15,41,1,2,420.2,1
+M00328,2023,F03,18-34,Family annual,Walk-in,3,7,0,2,635.7,1
+M00329,2024,F03,18-34,Youth annual,Referral,6,6,1,1,93,0
+M00330,2022,F01,18-34,Monthly flexible,Organic web,4,6,6,4,766.7,1
+M00331,2022,F03,65+,Family annual,Referral,6,17,4,4,1300.65,1
+M00332,2025,F01,18-34,Senior annual,Organic web,9,12,1,1,113.4,Censored
+M00333,2023,F03,18-34,Family annual,Organic web,11,19,1,3,973.05,1
+M00334,2023,F02,50-64,Adult annual,Walk-in,10,10,1,3,679.8,1
+M00335,2023,F02,65+,Family annual,Referral,9,38,2,3,963.3,1
+M00336,2024,F01,Under 18,Monthly flexible,Organic web,10,21,3,1,196.8,0
+M00337,2025,F01,50-64,Adult annual,Referral,8,12,2,1,215.6,Censored
+M00338,2023,F04,18-34,Adult annual,Referral,9,21,0,3,701.8,1
+M00339,2023,F01,35-49,Senior annual,Community event,6,6,2,1,140.4,0
+M00340,2022,F03,35-49,Adult annual,Walk-in,4,5,1,4,939.4,1
+M00341,2023,F01,35-49,Adult annual,Organic web,10,11,2,1,237.6,0
+M00342,2022,F03,65+,Youth annual,Walk-in,7,18,3,4,372,1
+M00343,2024,F02,18-34,Family annual,Organic web,9,9,6,2,645.45,1
+M00344,2025,F01,35-49,Family annual,Email,6,16,2,1,308.1,Censored
+M00345,2022,F01,50-64,Monthly flexible,Referral,6,9,1,2,362.85,1
+M00346,2024,F01,18-34,Family annual,Referral,6,21,3,2,655.2,1
+M00347,2022,F01,18-34,Monthly flexible,Organic web,3,5,0,1,166.05,0
+M00348,2023,F02,18-34,Family annual,Email,13,13,5,3,982.8,1
+M00349,2025,F01,18-34,Senior annual,Organic web,8,16,4,1,131.4,Censored
+M00350,2024,F02,50-64,Senior annual,Walk-in,11,21,0,1,140.4,0
+M00351,2024,F03,50-64,Family annual,Walk-in,7,25,2,2,645.45,1
+M00352,2024,F04,65+,Senior annual,Community event,8,21,2,1,140.4,0
+M00353,2023,F04,65+,Senior annual,Walk-in,13,23,1,3,412.2,1
+M00354,2025,F01,65+,Adult annual,Paid social,4,9,1,1,237.6,Censored
+M00355,2024,F01,50-64,Family annual,Referral,18,19,2,2,655.2,1
+M00356,2025,F04,35-49,Adult annual,Paid social,4,11,0,1,237.6,Censored
+M00357,2022,F04,35-49,Monthly flexible,Referral,2,2,2,2,383.35,1
+M00358,2022,F01,Under 18,Senior annual,Organic web,15,29,3,4,516.6,1
+M00359,2022,F04,18-34,Adult annual,Organic web,3,6,0,1,226.6,0
+M00360,2024,F01,35-49,Senior annual,Community event,5,22,3,2,253.8,1
+M00361,2024,F01,50-64,Adult annual,Referral,10,25,2,2,475.2,1
+M00362,2023,F01,50-64,Adult annual,Referral,3,3,0,3,701.8,1
+M00363,2023,F03,50-64,Senior annual,Community event,8,19,6,3,421.2,1
+M00364,2023,F02,65+,Senior annual,Referral,11,21,0,3,421.2,1
+M00365,2023,F02,65+,Family annual,Paid social,7,23,4,3,943.8,1
+M00366,2025,F01,18-34,Senior annual,Referral,2,2,2,1,140.4,Censored
+M00367,2023,F02,18-34,Adult annual,Paid social,13,13,5,3,690.8,1
+M00368,2023,F01,35-49,Monthly flexible,Referral,1,1,2,1,196.8,0
+M00369,2024,F01,18-34,Adult annual,Walk-in,7,16,0,2,475.2,1
+M00370,2022,F04,18-34,Monthly flexible,Organic web,5,15,2,2,342.35,1
+M00371,2022,F01,18-34,Monthly flexible,Paid social,1,5,1,4,756.45,1
+M00372,2025,F04,Under 18,Youth annual,Walk-in,4,9,2,1,93,Censored
+M00373,2022,F04,65+,Family annual,Referral,17,37,4,4,1271.4,1
+M00374,2023,F03,35-49,Youth annual,Paid social,7,20,3,3,279,1
+M00375,2023,F01,18-34,Family annual,Organic web,10,40,1,3,953.55,1
+M00376,2024,F03,35-49,Adult annual,Referral,12,27,4,2,464.2,1
+M00377,2024,F01,18-34,Monthly flexible,Walk-in,6,8,0,2,393.6,1
+M00378,2022,F01,35-49,Adult annual,Community event,10,20,2,2,475.2,1
+M00379,2024,F04,18-34,Monthly flexible,Organic web,6,9,1,2,393.6,1
+M00380,2022,F01,18-34,Senior annual,Referral,10,19,2,1,131.4,0
+M00381,2024,F02,Under 18,Monthly flexible,Paid social,3,3,0,2,383.35,1
+M00382,2025,F01,50-64,Monthly flexible,Referral,4,6,2,1,196.8,Censored
+M00383,2023,F02,35-49,Monthly flexible,Walk-in,4,4,2,2,383.35,1
+M00384,2024,F02,18-34,Family annual,Community event,8,42,5,2,655.2,1
+M00385,2023,F04,18-34,Family annual,Email,2,2,1,3,953.55,1
+M00386,2025,F01,18-34,Adult annual,Email,15,32,2,1,237.6,Censored
+M00387,2024,F04,50-64,Youth annual,Organic web,4,13,1,1,93,0
+M00388,2023,F01,18-34,Youth annual,Organic web,6,6,1,3,279,1
+M00389,2022,F01,65+,Monthly flexible,Organic web,5,9,1,4,766.7,1
+M00390,2024,F04,65+,Youth annual,Walk-in,15,15,3,2,170.5,1
+M00391,2025,F01,35-49,Senior annual,Organic web,4,4,1,1,140.4,Censored
+M00392,2023,F04,35-49,Monthly flexible,Community event,7,12,0,3,569.9,1
+M00393,2023,F01,18-34,Adult annual,Organic web,4,5,1,1,237.6,0
+M00394,2024,F04,18-34,Monthly flexible,Walk-in,0,3,3,1,196.8,0
+M00395,2023,F03,18-34,Adult annual,Paid social,9,9,3,1,237.6,0
+M00396,2025,F01,50-64,Monthly flexible,Organic web,3,10,3,1,196.8,Censored
+M00397,2024,F03,50-64,Adult annual,Email,7,9,2,2,442.2,1
+M00398,2025,F01,Under 18,Youth annual,Organic web,13,27,3,1,93,Censored
+M00399,2023,F01,65+,Family annual,Walk-in,7,12,0,2,645.45,1
+M00400,2023,F04,18-34,Adult annual,Walk-in,12,31,0,3,701.8,1
+M00401,2022,F01,65+,Adult annual,Organic web,8,17,4,4,906.4,1
+M00402,2023,F03,18-34,Senior annual,Walk-in,5,26,0,1,140.4,0
+M00403,2024,F01,50-64,Monthly flexible,Paid social,3,3,1,2,393.6,1
+M00404,2025,F01,18-34,Adult annual,Walk-in,7,20,2,1,237.6,Censored
+M00405,2024,F03,65+,Monthly flexible,Paid social,4,16,3,2,393.6,1
+M00406,2025,F04,35-49,Family annual,Referral,11,11,2,1,327.6,Censored
+M00407,2025,F04,50-64,Adult annual,Organic web,8,13,1,1,237.6,Censored
+M00408,2022,F02,50-64,Monthly flexible,Community event,6,12,0,4,766.7,1
+M00409,2024,F04,35-49,Monthly flexible,Organic web,2,15,1,2,393.6,1
+M00410,2023,F02,18-34,Adult annual,Email,7,13,0,2,475.2,1
+M00411,2023,F04,18-34,Family annual,Organic web,3,3,0,1,327.6,0
+M00412,2023,F01,35-49,Senior annual,Paid social,15,20,2,1,113.4,0
+M00413,2023,F04,Under 18,Monthly flexible,Community event,6,9,3,3,569.9,1
+M00414,2022,F04,50-64,Family annual,Referral,3,3,1,1,327.6,0
+M00415,2025,F01,50-64,Family annual,Referral,15,46,6,1,327.6,Censored
+M00416,2022,F03,50-64,Monthly flexible,Referral,5,5,3,1,196.8,0
+M00417,2025,F02,50-64,Youth annual,Referral,3,3,2,1,93,Censored
+M00418,2022,F01,35-49,Family annual,Email,11,22,2,3,982.8,1
+M00419,2024,F02,18-34,Family annual,Organic web,3,8,0,2,645.45,1
+M00420,2023,F04,50-64,Monthly flexible,Paid social,3,3,1,3,580.15,1
+M00421,2023,F03,Under 18,Family annual,Walk-in,13,51,2,3,982.8,1
+M00422,2023,F02,Under 18,Family annual,Walk-in,15,33,1,3,963.3,1
+M00423,2023,F04,50-64,Adult annual,Referral,12,21,4,3,712.8,1
+M00424,2024,F03,50-64,Monthly flexible,Organic web,1,1,3,2,393.6,1
+M00425,2025,F04,18-34,Youth annual,Organic web,6,25,0,1,69.75,Censored
+M00426,2025,F04,35-49,Senior annual,Email,4,4,5,1,140.4,Censored
+M00427,2023,F01,35-49,Family annual,Email,10,29,0,3,982.8,1
+M00428,2023,F04,50-64,Adult annual,Organic web,13,14,2,1,204.6,0
+M00429,2022,F01,35-49,Family annual,Referral,23,29,3,4,1281.15,1
+M00430,2022,F03,65+,Family annual,Community event,2,12,0,2,655.2,1
+M00431,2025,F02,35-49,Adult annual,Paid social,13,32,2,1,204.6,Censored
+M00432,2022,F03,65+,Adult annual,Walk-in,8,21,0,4,939.4,1
+M00433,2023,F04,35-49,Youth annual,Organic web,7,9,1,3,263.5,1
+M00434,2024,F01,65+,Senior annual,Organic web,6,8,2,1,131.4,0
+M00435,2024,F03,Under 18,Family annual,Paid social,7,16,4,2,635.7,1
+M00436,2023,F04,50-64,Adult annual,Organic web,2,3,1,3,679.8,1
+M00437,2022,F03,65+,Adult annual,Organic web,12,14,2,4,917.4,1
+M00438,2023,F02,35-49,Monthly flexible,Community event,1,4,1,3,528.9,1
+M00439,2023,F01,50-64,Monthly flexible,Organic web,0,0,0,3,559.65,1
+M00440,2023,F03,65+,Monthly flexible,Walk-in,4,8,4,1,176.3,0
+M00441,2023,F02,18-34,Youth annual,Paid social,9,13,1,3,279,1
+M00442,2024,F02,18-34,Senior annual,Paid social,7,17,3,2,262.8,1
+M00443,2022,F01,50-64,Adult annual,Organic web,9,15,2,4,928.4,1
+M00444,2024,F03,65+,Adult annual,Organic web,8,18,4,2,475.2,1
+M00445,2025,F02,65+,Family annual,Paid social,14,35,2,1,317.85,Censored
+M00446,2022,F02,50-64,Monthly flexible,Walk-in,9,16,1,2,393.6,1
+M00447,2024,F02,35-49,Adult annual,Walk-in,7,29,3,2,475.2,1
+M00448,2025,F01,18-34,Family annual,Walk-in,9,9,1,1,327.6,Censored
+M00449,2023,F04,35-49,Adult annual,Organic web,7,11,3,3,668.8,1
+M00450,2024,F04,50-64,Senior annual,Organic web,10,24,4,2,253.8,1
+M00451,2023,F04,65+,Family annual,Paid social,6,19,3,2,655.2,1
+M00452,2023,F04,35-49,Senior annual,Email,3,14,0,2,262.8,1
+M00453,2022,F02,35-49,Youth annual,Organic web,5,16,1,1,69.75,0
+M00454,2023,F04,35-49,Monthly flexible,Organic web,7,7,0,1,196.8,0
+M00455,2022,F03,65+,Adult annual,Email,7,21,3,4,950.4,1
+M00456,2023,F04,35-49,Adult annual,Paid social,9,23,2,3,712.8,1
+M00457,2022,F04,35-49,Monthly flexible,Walk-in,3,7,0,1,196.8,0
+M00458,2024,F01,65+,Senior annual,Walk-in,13,35,5,2,271.8,1
+M00459,2023,F04,18-34,Monthly flexible,Email,6,17,4,3,580.15,1
+M00460,2023,F03,18-34,Monthly flexible,Organic web,8,16,4,3,590.4,1
+M00461,2025,F01,Under 18,Adult annual,Community event,15,15,5,1,237.6,Censored
+M00462,2023,F01,35-49,Adult annual,Referral,14,34,2,2,464.2,1
+M00463,2022,F01,50-64,Adult annual,Organic web,12,22,3,4,939.4,1
+M00464,2023,F01,35-49,Senior annual,Paid social,6,14,2,3,421.2,1
+M00465,2025,F01,35-49,Senior annual,Paid social,6,19,2,1,122.4,Censored
+M00466,2025,F03,35-49,Adult annual,Email,7,21,1,1,237.6,Censored
+M00467,2024,F01,18-34,Family annual,Referral,5,5,3,2,635.7,1
+M00468,2025,F02,35-49,Youth annual,Community event,5,7,2,1,85.25,Censored
+M00469,2024,F01,18-34,Senior annual,Organic web,10,37,3,2,280.8,1
+M00470,2023,F01,65+,Adult annual,Paid social,14,37,1,1,237.6,0
+M00471,2022,F02,18-34,Family annual,Referral,7,18,1,4,1310.4,1
+M00472,2025,F01,Under 18,Family annual,Referral,7,22,1,1,327.6,Censored
+M00473,2023,F01,50-64,Senior annual,Walk-in,8,8,4,3,394.2,1
+M00474,2024,F04,35-49,Adult annual,Referral,3,9,2,2,475.2,1
+M00475,2022,F01,18-34,Monthly flexible,Organic web,7,15,1,3,549.4,1
+M00476,2024,F02,50-64,Adult annual,Community event,5,14,1,2,464.2,1
+M00477,2023,F02,50-64,Monthly flexible,Organic web,5,10,3,3,559.65,1
+M00478,2024,F02,35-49,Monthly flexible,Organic web,4,11,0,2,393.6,1
+M00479,2022,F01,50-64,Adult annual,Community event,6,33,3,2,475.2,1
+M00480,2022,F01,18-34,Adult annual,Community event,7,27,3,4,928.4,1
+M00481,2022,F02,65+,Youth annual,Paid social,5,5,3,4,348.75,1
+M00482,2024,F01,50-64,Adult annual,Paid social,5,13,2,2,442.2,1
+M00483,2025,F02,18-34,Family annual,Referral,14,32,2,1,317.85,Censored
+M00484,2024,F02,65+,Adult annual,Organic web,12,19,2,2,475.2,1
+M00485,2024,F04,65+,Youth annual,Paid social,6,15,2,1,93,0
+M00486,2024,F04,35-49,Family annual,Walk-in,12,26,1,2,655.2,1
+M00487,2024,F01,50-64,Senior annual,Walk-in,5,9,2,2,280.8,1
+M00488,2022,F02,35-49,Adult annual,Walk-in,3,7,2,1,226.6,0
+M00489,2025,F01,50-64,Adult annual,Paid social,6,6,1,1,237.6,Censored
+M00490,2024,F04,18-34,Family annual,Organic web,13,21,0,2,655.2,1
+M00491,2024,F02,35-49,Adult annual,Walk-in,4,14,3,2,475.2,1
+M00492,2024,F04,18-34,Family annual,Paid social,4,10,3,1,308.1,0
+M00493,2025,F03,65+,Adult annual,Organic web,17,29,5,1,237.6,Censored
+M00494,2024,F02,35-49,Family annual,Walk-in,9,29,1,2,655.2,1
+M00495,2022,F04,65+,Family annual,Community event,6,23,1,4,1290.9,1
+M00496,2025,F04,65+,Monthly flexible,Walk-in,2,4,1,1,196.8,Censored
+M00497,2023,F04,65+,Monthly flexible,Community event,1,3,3,2,393.6,1
+M00498,2024,F04,18-34,Family annual,Organic web,14,21,4,2,655.2,1
+M00499,2024,F02,18-34,Adult annual,Community event,1,5,3,1,237.6,0
+M00500,2023,F03,18-34,Monthly flexible,Community event,1,11,1,3,549.4,1
+M00501,2023,F03,35-49,Family annual,Organic web,11,15,3,3,973.05,1
+M00502,2024,F01,65+,Adult annual,Email,1,1,1,1,237.6,0
+M00503,2025,F01,50-64,Family annual,Community event,6,13,1,1,317.85,Censored
+M00504,2023,F02,18-34,Adult annual,Organic web,16,40,1,3,668.8,1
+M00505,2022,F04,50-64,Senior annual,Paid social,5,23,3,4,525.6,1
+M00506,2023,F03,35-49,Adult annual,Walk-in,7,10,1,3,690.8,1
+M00507,2024,F02,Under 18,Monthly flexible,Paid social,2,8,3,2,373.1,1
+M00508,2024,F01,50-64,Adult annual,Walk-in,5,5,2,2,475.2,1
+M00509,2023,F01,18-34,Family annual,Paid social,3,3,0,3,982.8,1
+M00510,2025,F01,35-49,Monthly flexible,Referral,2,2,0,1,196.8,Censored
+M00511,2024,F02,50-64,Adult annual,Walk-in,2,2,2,2,475.2,1
+M00512,2023,F04,65+,Adult annual,Organic web,7,7,3,3,657.8,1
+M00513,2023,F03,35-49,Adult annual,Organic web,5,8,0,3,657.8,1
+M00514,2022,F02,50-64,Adult annual,Paid social,4,10,2,1,237.6,0
+M00515,2024,F01,18-34,Adult annual,Referral,10,16,4,1,237.6,0
+M00516,2024,F04,50-64,Adult annual,Paid social,13,19,5,2,475.2,1
+M00517,2023,F01,50-64,Monthly flexible,Paid social,3,3,2,2,383.35,1
+M00518,2024,F03,18-34,Monthly flexible,Walk-in,8,10,2,2,393.6,1
+M00519,2023,F01,65+,Adult annual,Organic web,4,4,7,3,701.8,1
+M00520,2024,F03,50-64,Youth annual,Email,13,13,4,2,186,1
+M00521,2025,F01,18-34,Adult annual,Paid social,11,22,3,1,237.6,Censored
+M00522,2022,F02,50-64,Adult annual,Walk-in,14,30,0,3,712.8,1
+M00523,2024,F02,50-64,Monthly flexible,Community event,8,8,1,2,373.1,1
+M00524,2024,F01,35-49,Adult annual,Walk-in,8,9,0,2,442.2,1
+M00525,2023,F01,18-34,Monthly flexible,Walk-in,0,1,1,1,186.55,0
+M00526,2024,F04,35-49,Senior annual,Referral,4,9,5,1,140.4,0
+M00527,2023,F04,35-49,Monthly flexible,Walk-in,11,27,2,3,580.15,1
+M00528,2023,F02,Under 18,Adult annual,Referral,1,5,2,3,657.8,1
+M00529,2025,F02,35-49,Senior annual,Referral,13,18,3,1,140.4,Censored
+M00530,2022,F01,Under 18,Family annual,Organic web,11,31,2,1,327.6,0
+M00531,2024,F04,35-49,Monthly flexible,Organic web,2,9,1,2,393.6,1
+M00532,2023,F02,65+,Family annual,Paid social,18,32,4,3,973.05,1
+M00533,2022,F02,50-64,Family annual,Referral,13,23,2,4,1310.4,1
+M00534,2023,F04,18-34,Adult annual,Organic web,8,19,2,1,237.6,0
+M00535,2024,F01,50-64,Adult annual,Organic web,10,20,1,2,475.2,1
+M00536,2023,F04,18-34,Monthly flexible,Referral,4,10,4,3,590.4,1
+M00537,2023,F04,18-34,Senior annual,Organic web,2,2,5,3,421.2,1
+M00538,2025,F04,35-49,Youth annual,Walk-in,5,20,0,1,85.25,Censored
+M00539,2025,F01,65+,Family annual,Community event,14,31,1,1,327.6,Censored
+M00540,2025,F03,18-34,Monthly flexible,Paid social,5,9,1,1,166.05,Censored
+M00541,2025,F01,35-49,Family annual,Paid social,13,18,4,1,327.6,Censored
+M00542,2024,F01,18-34,Monthly flexible,Paid social,7,17,2,2,393.6,1
+M00543,2022,F02,18-34,Monthly flexible,Paid social,4,9,2,4,766.7,1
+M00544,2025,F04,50-64,Family annual,Community event,9,22,1,1,327.6,Censored
+M00545,2025,F01,35-49,Senior annual,Community event,8,8,0,1,140.4,Censored
+M00546,2025,F04,65+,Adult annual,Walk-in,6,6,2,1,237.6,Censored
+M00547,2022,F01,50-64,Family annual,Email,14,35,5,1,327.6,0
+M00548,2023,F02,18-34,Adult annual,Walk-in,12,41,3,2,475.2,1
+M00549,2022,F03,50-64,Senior annual,Referral,2,4,2,1,140.4,0
+M00550,2024,F02,Under 18,Adult annual,Referral,12,41,1,2,464.2,1
+M00551,2025,F04,50-64,Family annual,Paid social,15,15,1,1,327.6,Censored
+M00552,2023,F04,50-64,Monthly flexible,Walk-in,1,5,3,3,590.4,1
+M00553,2024,F02,18-34,Adult annual,Organic web,9,9,1,2,464.2,1
+M00554,2024,F01,50-64,Adult annual,Email,12,22,3,1,226.6,0
+M00555,2023,F03,65+,Adult annual,Community event,10,17,2,3,679.8,1
+M00556,2024,F04,Under 18,Monthly flexible,Referral,5,9,3,1,186.55,0
+M00557,2024,F04,50-64,Senior annual,Organic web,6,20,3,2,271.8,1
+M00558,2025,F01,35-49,Adult annual,Walk-in,4,7,2,1,237.6,Censored
+M00559,2022,F02,35-49,Senior annual,Paid social,9,11,1,3,403.2,1
+M00560,2023,F04,18-34,Family annual,Walk-in,14,28,2,3,982.8,1
+M00561,2023,F01,50-64,Youth annual,Referral,14,18,3,3,255.75,1
+M00562,2024,F01,35-49,Adult annual,Paid social,6,20,1,2,475.2,1
+M00563,2023,F04,50-64,Monthly flexible,Paid social,2,4,0,1,196.8,0
+M00564,2024,F01,35-49,Family annual,Organic web,12,23,4,2,655.2,1
+M00565,2023,F01,18-34,Adult annual,Walk-in,13,25,0,1,237.6,0
+M00566,2022,F01,Under 18,Adult annual,Walk-in,10,10,2,4,939.4,1
+M00567,2025,F01,18-34,Senior annual,Email,4,5,2,1,140.4,Censored
+M00568,2023,F01,65+,Family annual,Referral,5,5,1,3,963.3,1
+M00569,2022,F03,Under 18,Monthly flexible,Community event,8,11,1,2,393.6,1
+M00570,2024,F01,35-49,Adult annual,Paid social,6,7,1,1,226.6,0
+M00571,2022,F04,18-34,Monthly flexible,Organic web,3,3,2,4,787.2,1
+M00572,2023,F03,50-64,Family annual,Organic web,0,0,1,1,327.6,0
+M00573,2023,F04,65+,Family annual,Organic web,10,13,7,1,317.85,0
+M00574,2022,F02,35-49,Adult annual,Organic web,7,7,2,2,442.2,1
+M00575,2025,F01,50-64,Adult annual,Community event,5,17,1,1,226.6,Censored
+M00576,2022,F01,65+,Monthly flexible,Community event,10,24,1,1,196.8,0
+M00577,2025,F02,65+,Senior annual,Referral,3,7,1,1,140.4,Censored
+M00578,2024,F04,18-34,Adult annual,Walk-in,6,9,0,2,464.2,1
+M00579,2024,F01,Under 18,Family annual,Paid social,23,32,3,2,655.2,1
+M00580,2024,F03,18-34,Adult annual,Community event,3,7,3,2,475.2,1
+M00581,2023,F03,35-49,Senior annual,Referral,4,6,1,1,122.4,0
+M00582,2023,F04,50-64,Adult annual,Email,7,10,4,3,679.8,1
+M00583,2024,F04,50-64,Senior annual,Referral,7,26,5,2,271.8,1
+M00584,2024,F03,50-64,Monthly flexible,Organic web,2,2,4,1,196.8,0
+M00585,2024,F02,65+,Senior annual,Walk-in,6,23,0,2,280.8,1
+M00586,2024,F02,65+,Adult annual,Organic web,8,15,4,1,237.6,0
+M00587,2023,F01,35-49,Monthly flexible,Walk-in,1,1,1,1,196.8,0
+M00588,2025,F01,18-34,Youth annual,Referral,8,17,6,1,93,Censored
+M00589,2023,F04,50-64,Family annual,Organic web,12,36,1,1,308.1,0
+M00590,2025,F03,18-34,Adult annual,Paid social,13,37,3,1,204.6,Censored
+M00591,2023,F03,50-64,Adult annual,Paid social,10,14,3,2,453.2,1
+M00592,2024,F03,50-64,Adult annual,Referral,9,9,1,2,475.2,1
+M00593,2023,F01,65+,Youth annual,Community event,8,22,0,2,186,1
+M00594,2024,F03,35-49,Monthly flexible,Referral,4,8,3,1,186.55,0
+M00595,2024,F01,50-64,Monthly flexible,Referral,4,5,2,2,362.85,1
+M00596,2024,F03,65+,Family annual,Walk-in,12,29,3,2,655.2,1
+M00597,2025,F03,50-64,Monthly flexible,Organic web,6,14,3,1,196.8,Censored
+M00598,2024,F01,50-64,Adult annual,Paid social,6,13,2,2,475.2,1
+M00599,2022,F01,65+,Senior annual,Organic web,7,15,2,2,262.8,1
+M00600,2025,F03,35-49,Monthly flexible,Organic web,5,7,5,1,196.8,Censored
+M00601,2023,F03,18-34,Youth annual,Email,6,11,1,2,186,1
+M00602,2023,F03,35-49,Monthly flexible,Referral,4,16,6,3,590.4,1
+M00603,2022,F01,50-64,Senior annual,Walk-in,9,28,1,3,412.2,1
+M00604,2023,F02,65+,Adult annual,Referral,13,13,3,3,712.8,1
+M00605,2024,F04,18-34,Family annual,Referral,6,23,0,2,655.2,1
+M00606,2022,F02,35-49,Adult annual,Walk-in,14,14,1,4,939.4,1
+M00607,2023,F04,50-64,Adult annual,Referral,13,31,2,3,679.8,1
+M00608,2022,F03,50-64,Monthly flexible,Community event,1,7,1,4,776.95,1
+M00609,2022,F03,50-64,Adult annual,Referral,5,5,2,3,690.8,1
+M00610,2023,F03,50-64,Adult annual,Paid social,12,12,2,2,475.2,1
+M00611,2024,F02,35-49,Adult annual,Paid social,16,43,4,2,475.2,1
+M00612,2025,F02,50-64,Youth annual,Paid social,6,6,0,1,93,Censored
+M00613,2024,F03,18-34,Monthly flexible,Paid social,4,10,2,1,176.3,0
+M00614,2022,F02,65+,Adult annual,Organic web,7,18,1,4,939.4,1
+M00615,2023,F03,35-49,Monthly flexible,Referral,5,7,2,1,196.8,0
+M00616,2023,F02,35-49,Senior annual,Walk-in,16,20,4,3,394.2,1
+M00617,2024,F01,50-64,Adult annual,Organic web,6,20,4,2,464.2,1
+M00618,2022,F03,35-49,Adult annual,Paid social,10,21,1,4,939.4,1
+M00619,2022,F01,18-34,Adult annual,Email,7,7,5,1,204.6,0
+M00620,2023,F02,50-64,Adult annual,Paid social,11,16,4,3,712.8,1
+M00621,2023,F03,35-49,Senior annual,Referral,4,4,4,3,394.2,1
+M00622,2024,F04,Under 18,Family annual,Organic web,12,12,3,2,635.7,1
+M00623,2025,F01,50-64,Monthly flexible,Referral,5,5,1,1,196.8,Censored
+M00624,2023,F01,35-49,Monthly flexible,Referral,2,2,3,1,166.05,0
+M00625,2022,F03,18-34,Monthly flexible,Organic web,2,6,2,2,373.1,1
+M00626,2023,F04,Under 18,Adult annual,Community event,7,25,1,1,237.6,0
+M00627,2022,F04,35-49,Youth annual,Referral,14,23,4,4,341,1
+M00628,2024,F02,35-49,Adult annual,Paid social,6,6,1,2,475.2,1
+M00629,2023,F04,50-64,Family annual,Walk-in,16,16,5,3,953.55,1
+M00630,2023,F01,35-49,Family annual,Paid social,9,12,1,3,953.55,1
+M00631,2024,F01,35-49,Adult annual,Walk-in,10,11,2,2,475.2,1
+M00632,2025,F01,18-34,Senior annual,Community event,10,32,3,1,140.4,Censored
+M00633,2022,F01,65+,Adult annual,Organic web,4,11,1,1,237.6,0
+M00634,2024,F04,18-34,Adult annual,Walk-in,10,23,7,1,237.6,0
+M00635,2024,F04,18-34,Family annual,Walk-in,6,17,3,1,298.35,0
+M00636,2024,F01,65+,Family annual,Community event,14,22,4,2,645.45,1
+M00637,2024,F04,50-64,Adult annual,Walk-in,13,30,3,2,464.2,1
+M00638,2023,F04,18-34,Family annual,Organic web,7,10,2,3,963.3,1
+M00639,2025,F01,35-49,Adult annual,Walk-in,6,6,3,1,237.6,Censored
+M00640,2023,F01,65+,Family annual,Community event,17,45,5,3,963.3,1
+M00641,2023,F02,18-34,Senior annual,Paid social,10,12,3,3,394.2,1
+M00642,2025,F02,35-49,Youth annual,Organic web,6,15,1,1,85.25,Censored
+M00643,2024,F01,35-49,Youth annual,Community event,5,5,2,2,170.5,1
+M00644,2025,F04,18-34,Family annual,Referral,21,47,2,1,327.6,Censored
+M00645,2025,F01,18-34,Monthly flexible,Organic web,6,19,3,1,196.8,Censored
+M00646,2023,F03,35-49,Monthly flexible,Referral,5,9,1,1,196.8,0
+M00647,2024,F02,18-34,Adult annual,Paid social,5,5,1,1,215.6,0
+M00648,2022,F01,35-49,Monthly flexible,Walk-in,5,9,6,1,176.3,0
+M00649,2025,F01,50-64,Family annual,Organic web,12,12,2,1,298.35,Censored
+M00650,2024,F04,18-34,Youth annual,Walk-in,7,7,0,2,147.25,1
+M00651,2024,F04,50-64,Adult annual,Organic web,7,12,0,2,475.2,1
+M00652,2023,F01,65+,Family annual,Email,10,28,5,3,963.3,1
+M00653,2024,F04,35-49,Monthly flexible,Community event,6,7,2,2,383.35,1
+M00654,2024,F02,18-34,Adult annual,Organic web,2,6,2,1,226.6,0
+M00655,2025,F04,Under 18,Senior annual,Community event,6,16,1,1,131.4,Censored
+M00656,2024,F01,65+,Adult annual,Paid social,15,15,1,2,453.2,1
+M00657,2024,F03,18-34,Adult annual,Organic web,1,1,1,2,475.2,1
+M00658,2024,F02,35-49,Monthly flexible,Community event,9,15,2,2,393.6,1
+M00659,2025,F03,18-34,Monthly flexible,Walk-in,3,8,1,1,196.8,Censored
+M00660,2024,F02,65+,Senior annual,Walk-in,5,5,0,2,253.8,1
+M00661,2024,F04,35-49,Youth annual,Walk-in,9,22,3,2,170.5,1
+M00662,2022,F03,18-34,Senior annual,Referral,5,8,1,2,253.8,1
+M00663,2024,F01,Under 18,Adult annual,Community event,7,33,4,2,475.2,1
+M00664,2025,F04,18-34,Adult annual,Referral,8,12,2,1,226.6,Censored
+M00665,2024,F02,35-49,Adult annual,Paid social,9,9,2,2,475.2,1
+M00666,2025,F01,35-49,Adult annual,Organic web,6,13,2,1,215.6,Censored
+M00667,2022,F02,35-49,Adult annual,Organic web,12,12,2,4,917.4,1
+M00668,2024,F01,35-49,Family annual,Organic web,14,35,1,2,635.7,1
+M00669,2022,F02,65+,Family annual,Organic web,8,20,2,1,308.1,0
+M00670,2025,F04,50-64,Adult annual,Walk-in,4,19,2,1,237.6,Censored
+M00671,2024,F03,18-34,Family annual,Community event,14,52,3,2,635.7,1
+M00672,2023,F02,50-64,Senior annual,Community event,12,24,6,3,403.2,1
+M00673,2024,F01,18-34,Adult annual,Walk-in,11,23,1,2,453.2,1
+M00674,2023,F02,18-34,Youth annual,Organic web,12,27,1,3,271.25,1
+M00675,2023,F01,35-49,Family annual,Organic web,15,36,6,3,953.55,1
+M00676,2022,F01,Under 18,Adult annual,Community event,5,21,2,1,226.6,0
+M00677,2022,F01,35-49,Adult annual,Walk-in,12,31,3,3,701.8,1
+M00678,2023,F01,35-49,Senior annual,Community event,8,8,4,3,403.2,1
+M00679,2023,F04,35-49,Adult annual,Organic web,5,16,1,1,237.6,0
+M00680,2024,F01,18-34,Adult annual,Email,2,7,0,1,237.6,0
+M00681,2025,F02,18-34,Senior annual,Referral,14,20,2,1,140.4,Censored
+M00682,2025,F04,18-34,Monthly flexible,Community event,3,5,0,1,196.8,Censored
+M00683,2023,F03,18-34,Adult annual,Paid social,4,4,4,1,226.6,0
+M00684,2022,F01,Under 18,Senior annual,Organic web,10,10,4,2,262.8,1
+M00685,2024,F02,50-64,Family annual,Organic web,12,25,1,1,327.6,0
+M00686,2023,F01,50-64,Family annual,Paid social,9,32,1,2,635.7,1
+M00687,2022,F04,50-64,Adult annual,Referral,5,16,2,4,939.4,1
+M00688,2023,F02,50-64,Monthly flexible,Walk-in,1,5,2,2,393.6,1
+M00689,2023,F02,65+,Monthly flexible,Referral,7,15,2,3,559.65,1
+M00690,2022,F02,35-49,Monthly flexible,Organic web,3,4,0,1,186.55,0
+M00691,2022,F03,50-64,Adult annual,Community event,5,6,3,1,237.6,0
+M00692,2024,F03,18-34,Monthly flexible,Organic web,4,7,2,1,196.8,0
+M00693,2022,F01,18-34,Family annual,Organic web,6,19,1,4,1300.65,1
+M00694,2023,F03,18-34,Monthly flexible,Referral,3,8,3,3,569.9,1
+M00695,2022,F01,18-34,Senior annual,Referral,7,7,0,4,552.6,1
+M00696,2024,F02,50-64,Senior annual,Referral,8,9,0,2,271.8,1
+M00697,2022,F03,18-34,Family annual,Walk-in,10,19,2,1,327.6,0
+M00698,2023,F04,18-34,Adult annual,Referral,6,6,2,3,679.8,1
+M00699,2025,F02,18-34,Youth annual,Walk-in,9,9,0,1,69.75,Censored
+M00700,2024,F04,35-49,Adult annual,Walk-in,10,15,2,2,475.2,1
+M00701,2025,F04,50-64,Senior annual,Paid social,1,1,2,1,131.4,Censored
+M00702,2023,F01,65+,Adult annual,Organic web,2,9,5,3,712.8,1
+M00703,2022,F02,18-34,Adult annual,Community event,10,32,4,3,679.8,1
+M00704,2024,F02,18-34,Family annual,Email,5,7,7,2,645.45,1
+M00705,2024,F03,35-49,Family annual,Organic web,9,23,1,1,327.6,0
+M00706,2023,F03,50-64,Monthly flexible,Referral,1,1,3,1,186.55,0
+M00707,2023,F01,35-49,Youth annual,Walk-in,8,15,2,3,271.25,1
+M00708,2022,F01,50-64,Adult annual,Referral,5,20,1,1,226.6,0
+M00709,2025,F02,65+,Youth annual,Referral,14,40,1,1,93,Censored
+M00710,2024,F01,18-34,Senior annual,Walk-in,13,17,3,2,271.8,1
+M00711,2022,F03,18-34,Adult annual,Paid social,2,2,3,2,475.2,1
+M00712,2025,F01,65+,Family annual,Walk-in,8,15,2,1,327.6,Censored
+M00713,2025,F02,18-34,Adult annual,Organic web,14,45,3,1,215.6,Censored
+M00714,2024,F04,Under 18,Adult annual,Organic web,7,15,4,2,442.2,1
+M00715,2025,F04,50-64,Adult annual,Paid social,10,21,1,1,237.6,Censored
+M00716,2023,F03,35-49,Monthly flexible,Community event,0,2,0,3,559.65,1
+M00717,2023,F04,18-34,Monthly flexible,Organic web,3,5,1,1,196.8,0
+M00718,2023,F02,18-34,Family annual,Walk-in,10,21,0,3,943.8,1
+M00719,2022,F01,50-64,Adult annual,Referral,10,41,3,4,950.4,1
+M00720,2023,F03,35-49,Adult annual,Walk-in,8,10,2,3,712.8,1
+M00721,2025,F02,Under 18,Family annual,Referral,11,17,3,1,308.1,Censored
+M00722,2024,F04,50-64,Adult annual,Organic web,5,13,0,1,237.6,0
+M00723,2022,F04,Under 18,Senior annual,Organic web,2,16,0,4,543.6,1
+M00724,2022,F02,35-49,Adult annual,Organic web,6,19,2,2,442.2,1
+M00725,2025,F04,50-64,Family annual,Organic web,11,28,3,1,327.6,Censored
+M00726,2023,F01,50-64,Adult annual,Paid social,14,37,0,3,679.8,1
+M00727,2022,F03,35-49,Monthly flexible,Referral,6,16,1,2,393.6,1
+M00728,2024,F01,50-64,Monthly flexible,Referral,7,7,4,2,393.6,1
+M00729,2023,F04,35-49,Monthly flexible,Organic web,0,2,4,3,590.4,1
+M00730,2024,F03,Under 18,Adult annual,Organic web,5,7,1,1,237.6,0
+M00731,2025,F01,35-49,Family annual,Referral,5,11,1,1,327.6,Censored
+M00732,2023,F02,50-64,Senior annual,Organic web,12,25,1,3,421.2,1
+M00733,2024,F04,Under 18,Family annual,Referral,12,27,3,2,625.95,1
+M00734,2024,F01,Under 18,Adult annual,Email,13,31,3,2,442.2,1
+M00735,2022,F01,18-34,Family annual,Email,9,17,1,4,1281.15,1
+M00736,2023,F04,35-49,Adult annual,Walk-in,13,26,3,3,690.8,1
+M00737,2024,F04,65+,Adult annual,Community event,11,11,1,2,442.2,1
+M00738,2024,F02,35-49,Senior annual,Organic web,9,10,2,2,280.8,1
+M00739,2025,F04,50-64,Adult annual,Organic web,7,11,0,1,237.6,Censored
+M00740,2023,F03,35-49,Family annual,Referral,7,7,3,3,982.8,1
+M00741,2025,F02,18-34,Adult annual,Walk-in,11,11,1,1,215.6,Censored
+M00742,2023,F02,65+,Family annual,Email,11,42,0,3,982.8,1
+M00743,2024,F03,35-49,Youth annual,Walk-in,17,22,3,2,186,1
+M00744,2023,F04,35-49,Adult annual,Walk-in,7,18,4,2,475.2,1
+M00745,2023,F02,18-34,Monthly flexible,Email,3,19,2,3,569.9,1
+M00746,2024,F01,35-49,Adult annual,Organic web,7,17,0,2,442.2,1
+M00747,2024,F03,18-34,Senior annual,Organic web,19,25,2,2,253.8,1
+M00748,2022,F01,50-64,Adult annual,Paid social,9,14,3,3,712.8,1
+M00749,2023,F02,35-49,Senior annual,Email,15,15,3,3,421.2,1
+M00750,2024,F02,50-64,Monthly flexible,Paid social,6,7,1,1,186.55,0
+M00751,2024,F04,18-34,Monthly flexible,Community event,8,15,1,2,393.6,1
+M00752,2025,F02,65+,Family annual,Community event,12,35,3,1,327.6,Censored
+M00753,2022,F03,50-64,Adult annual,Walk-in,3,4,1,4,939.4,1
+M00754,2025,F02,50-64,Senior annual,Organic web,13,17,4,1,140.4,Censored
+M00755,2022,F01,18-34,Family annual,Walk-in,14,42,6,4,1290.9,1
+M00756,2022,F01,50-64,Youth annual,Organic web,18,29,6,4,356.5,1
+M00757,2023,F03,18-34,Monthly flexible,Community event,3,5,2,1,196.8,0
+M00758,2022,F02,18-34,Adult annual,Referral,9,25,3,4,917.4,1
+M00759,2023,F03,Under 18,Adult annual,Referral,8,12,4,1,237.6,0
+M00760,2024,F03,18-34,Adult annual,Email,7,20,3,2,464.2,1
+M00761,2023,F01,18-34,Adult annual,Email,3,16,1,3,679.8,1
+M00762,2023,F01,18-34,Youth annual,Community event,6,6,2,3,279,1
+M00763,2025,F01,35-49,Family annual,Walk-in,18,46,3,1,327.6,Censored
+M00764,2024,F04,35-49,Monthly flexible,Organic web,6,6,4,2,383.35,1
+M00765,2023,F01,50-64,Family annual,Organic web,11,13,3,2,655.2,1
+M00766,2022,F01,50-64,Youth annual,Paid social,6,10,3,4,372,1
+M00767,2024,F02,50-64,Monthly flexible,Paid social,2,3,0,2,393.6,1
+M00768,2022,F04,18-34,Adult annual,Organic web,9,31,5,4,895.4,1
+M00769,2024,F04,65+,Adult annual,Paid social,8,23,0,2,431.2,1
+M00770,2023,F01,35-49,Senior annual,Paid social,0,9,1,1,140.4,0
+M00771,2025,F01,50-64,Family annual,Email,2,15,0,1,308.1,Censored
+M00772,2022,F04,50-64,Family annual,Community event,7,21,1,2,655.2,1
+M00773,2022,F01,35-49,Adult annual,Paid social,10,25,3,2,442.2,1
+M00774,2025,F02,Under 18,Family annual,Organic web,13,28,4,1,317.85,Censored
+M00775,2023,F03,18-34,Monthly flexible,Walk-in,7,7,1,3,590.4,1
+M00776,2024,F01,50-64,Family annual,Email,13,50,1,2,655.2,1
+M00777,2024,F01,18-34,Family annual,Paid social,19,28,1,2,645.45,1
+M00778,2025,F04,50-64,Monthly flexible,Community event,8,9,3,1,196.8,Censored
+M00779,2023,F01,35-49,Monthly flexible,Organic web,2,5,1,3,549.4,1
+M00780,2025,F01,50-64,Family annual,Organic web,22,50,5,1,327.6,Censored
+M00781,2022,F04,35-49,Adult annual,Paid social,9,25,0,4,950.4,1
+M00782,2023,F01,35-49,Family annual,Walk-in,13,26,1,3,973.05,1
+M00783,2022,F02,50-64,Adult annual,Walk-in,4,14,1,2,453.2,1
+M00784,2023,F04,35-49,Family annual,Walk-in,17,17,2,3,973.05,1
+M00785,2025,F01,35-49,Adult annual,Email,11,13,1,1,237.6,Censored
+M00786,2024,F03,65+,Adult annual,Organic web,5,5,1,1,237.6,0
+M00787,2023,F03,18-34,Family annual,Community event,6,6,2,3,953.55,1
+M00788,2023,F03,18-34,Monthly flexible,Community event,5,5,4,1,186.55,0
+M00789,2023,F04,35-49,Adult annual,Email,3,17,1,2,475.2,1
+M00790,2023,F01,Under 18,Monthly flexible,Walk-in,3,12,3,2,383.35,1
+M00791,2023,F01,50-64,Adult annual,Email,10,10,3,1,226.6,0
+M00792,2025,F03,50-64,Adult annual,Referral,10,27,5,1,237.6,Censored
+M00793,2022,F02,50-64,Monthly flexible,Email,4,7,3,4,787.2,1
+M00794,2024,F03,50-64,Monthly flexible,Referral,0,5,3,2,332.1,1
+M00795,2024,F02,35-49,Monthly flexible,Paid social,8,8,4,2,383.35,1
+M00796,2023,F04,50-64,Family annual,Community event,12,12,3,2,635.7,1
+M00797,2025,F01,50-64,Adult annual,Email,8,8,2,1,237.6,Censored
+M00798,2023,F04,35-49,Adult annual,Organic web,3,6,2,3,690.8,1
+M00799,2023,F04,18-34,Monthly flexible,Organic web,5,15,5,2,393.6,1
+M00800,2024,F01,65+,Adult annual,Referral,10,23,4,2,464.2,1
+M00801,2023,F04,50-64,Family annual,Walk-in,20,29,2,2,645.45,1
+M00802,2023,F04,18-34,Senior annual,Referral,3,5,3,2,262.8,1
+M00803,2025,F02,50-64,Monthly flexible,Organic web,2,2,2,1,196.8,Censored
+M00804,2023,F01,18-34,Youth annual,Organic web,11,48,1,1,93,0
+M00805,2025,F03,18-34,Monthly flexible,Email,2,2,1,1,196.8,Censored
+M00806,2022,F02,Under 18,Monthly flexible,Organic web,2,2,2,4,705.2,1
+M00807,2023,F01,35-49,Family annual,Organic web,7,31,0,3,982.8,1
+M00808,2024,F04,18-34,Family annual,Walk-in,7,10,1,2,655.2,1
+M00809,2025,F04,18-34,Adult annual,Referral,5,10,0,1,204.6,Censored
+M00810,2023,F01,18-34,Monthly flexible,Organic web,3,3,3,1,196.8,0
+M00811,2025,F04,35-49,Family annual,Referral,8,10,1,1,308.1,Censored
+M00812,2025,F02,50-64,Monthly flexible,Paid social,4,13,3,1,196.8,Censored
+M00813,2023,F04,35-49,Adult annual,Walk-in,5,26,5,3,712.8,1
+M00814,2025,F02,35-49,Monthly flexible,Community event,6,12,1,1,166.05,Censored
+M00815,2024,F04,18-34,Adult annual,Walk-in,9,19,2,1,204.6,0
+M00816,2024,F03,65+,Monthly flexible,Walk-in,0,2,2,1,196.8,0
+M00817,2024,F04,18-34,Youth annual,Paid social,11,40,2,2,186,1
+M00818,2024,F04,50-64,Adult annual,Community event,5,5,1,2,475.2,1
+M00819,2022,F04,18-34,Adult annual,Walk-in,5,7,2,4,917.4,1
+M00820,2024,F04,35-49,Adult annual,Walk-in,10,11,0,1,237.6,0
+M00821,2023,F01,50-64,Monthly flexible,Walk-in,8,21,2,2,373.1,1
+M00822,2025,F03,35-49,Youth annual,Email,12,12,1,1,93,Censored
+M00823,2025,F04,50-64,Adult annual,Referral,9,19,5,1,237.6,Censored
+M00824,2022,F03,18-34,Adult annual,Walk-in,7,15,5,4,950.4,1
+M00825,2024,F04,35-49,Adult annual,Organic web,5,5,0,2,475.2,1
+M00826,2023,F03,65+,Monthly flexible,Community event,6,23,3,1,196.8,0
+M00827,2025,F01,65+,Senior annual,Organic web,8,21,2,1,140.4,Censored
+M00828,2023,F04,50-64,Adult annual,Organic web,4,12,1,3,701.8,1
+M00829,2025,F03,35-49,Adult annual,Walk-in,7,11,1,1,237.6,Censored
+M00830,2024,F04,18-34,Family annual,Referral,5,14,0,1,327.6,0
+M00831,2024,F04,35-49,Adult annual,Organic web,5,8,2,1,237.6,0
+M00832,2022,F02,50-64,Monthly flexible,Organic web,12,12,2,3,590.4,1
+M00833,2024,F03,50-64,Youth annual,Referral,20,20,3,1,93,0
+M00834,2024,F02,35-49,Monthly flexible,Organic web,11,27,2,2,393.6,1
+M00835,2023,F01,50-64,Family annual,Paid social,15,48,5,3,934.05,1
+M00836,2024,F02,18-34,Family annual,Referral,9,27,2,2,655.2,1
+M00837,2025,F02,50-64,Adult annual,Walk-in,5,10,0,1,215.6,Censored
+M00838,2024,F01,18-34,Adult annual,Walk-in,14,21,4,2,475.2,1
+M00839,2023,F01,50-64,Adult annual,Paid social,3,3,2,1,226.6,0
+M00840,2023,F02,Under 18,Monthly flexible,Referral,9,10,0,2,362.85,1
+M00841,2022,F02,18-34,Family annual,Email,8,10,3,4,1300.65,1
+M00842,2024,F04,35-49,Senior annual,Walk-in,5,5,4,2,244.8,1
+M00843,2024,F04,50-64,Adult annual,Email,5,8,3,2,475.2,1
+M00844,2022,F03,35-49,Senior annual,Community event,10,22,1,2,244.8,1
+M00845,2024,F02,Under 18,Monthly flexible,Referral,5,22,3,2,393.6,1
+M00846,2022,F01,Under 18,Family annual,Organic web,9,12,5,1,317.85,0
+M00847,2025,F01,35-49,Monthly flexible,Walk-in,4,22,0,1,186.55,Censored
+M00848,2022,F01,50-64,Adult annual,Referral,11,34,6,4,917.4,1
+M00849,2022,F01,35-49,Family annual,Paid social,7,13,1,4,1261.65,1
+M00850,2022,F03,18-34,Senior annual,Paid social,7,24,1,2,280.8,1
+M00851,2025,F01,Under 18,Family annual,Community event,6,9,1,1,327.6,Censored
+M00852,2025,F02,18-34,Family annual,Walk-in,13,15,6,1,327.6,Censored
+M00853,2022,F01,50-64,Monthly flexible,Walk-in,3,12,1,4,756.45,1
+M00854,2022,F01,35-49,Adult annual,Organic web,9,13,1,4,950.4,1
+M00855,2025,F01,65+,Adult annual,Organic web,7,9,2,1,237.6,Censored
+M00856,2022,F01,18-34,Adult annual,Community event,12,29,0,4,939.4,1
+M00857,2025,F03,18-34,Adult annual,Community event,5,8,1,1,237.6,Censored
+M00858,2024,F04,65+,Family annual,Referral,10,15,4,2,655.2,1
+M00859,2023,F04,18-34,Adult annual,Walk-in,22,23,1,3,635.8,1
+M00860,2024,F01,50-64,Senior annual,Referral,12,12,5,2,280.8,1
+M00861,2024,F03,Under 18,Adult annual,Walk-in,4,23,1,1,237.6,0
+M00862,2025,F02,18-34,Family annual,Referral,17,56,3,1,327.6,Censored
+M00863,2024,F01,35-49,Family annual,Referral,17,39,2,2,625.95,1
+M00864,2022,F01,18-34,Family annual,Referral,11,11,3,3,982.8,1
+M00865,2024,F01,18-34,Monthly flexible,Paid social,3,7,0,1,196.8,0
+M00866,2024,F02,50-64,Monthly flexible,Organic web,8,8,1,2,373.1,1
+M00867,2024,F01,35-49,Youth annual,Email,12,38,2,1,93,0
+M00868,2024,F04,18-34,Monthly flexible,Paid social,6,16,4,2,383.35,1
+M00869,2023,F02,18-34,Adult annual,Email,6,24,6,3,701.8,1
+M00870,2023,F03,65+,Youth annual,Walk-in,3,4,1,2,186,1
+M00871,2023,F04,35-49,Adult annual,Community event,7,7,1,3,679.8,1
+M00872,2023,F04,18-34,Monthly flexible,Community event,4,8,3,1,196.8,0
+M00873,2023,F02,18-34,Youth annual,Email,3,5,0,2,162.75,1
+M00874,2024,F02,35-49,Monthly flexible,Email,4,11,1,1,196.8,0
+M00875,2025,F01,18-34,Adult annual,Referral,6,8,2,1,237.6,Censored
+M00876,2023,F03,35-49,Monthly flexible,Paid social,5,6,4,2,393.6,1
+M00877,2024,F01,35-49,Senior annual,Referral,13,32,3,2,280.8,1
+M00878,2024,F04,35-49,Family annual,Paid social,5,19,5,1,327.6,0
+M00879,2023,F02,35-49,Monthly flexible,Paid social,2,2,7,1,176.3,0
+M00880,2024,F04,50-64,Adult annual,Walk-in,6,6,3,2,475.2,1
+M00881,2024,F03,35-49,Adult annual,Email,8,23,3,2,464.2,1
+M00882,2022,F02,35-49,Monthly flexible,Walk-in,0,0,0,1,176.3,0
+M00883,2024,F01,35-49,Senior annual,Referral,9,24,4,1,140.4,0
+M00884,2024,F02,50-64,Family annual,Community event,14,32,2,2,655.2,1
+M00885,2023,F01,18-34,Adult annual,Referral,5,15,0,3,701.8,1
+M00886,2024,F04,18-34,Youth annual,Organic web,2,6,1,2,186,1
+M00887,2023,F02,50-64,Adult annual,Organic web,10,11,2,1,204.6,0
+M00888,2025,F02,18-34,Youth annual,Walk-in,3,3,0,1,93,Censored
+M00889,2022,F03,35-49,Youth annual,Organic web,12,39,4,3,271.25,1
+M00890,2022,F02,18-34,Family annual,Paid social,11,24,1,4,1281.15,1
+M00891,2024,F01,50-64,Senior annual,Walk-in,6,15,1,2,280.8,1
+M00892,2024,F01,35-49,Family annual,Referral,10,32,4,2,655.2,1
+M00893,2025,F02,35-49,Adult annual,Paid social,4,13,4,1,237.6,Censored
+M00894,2023,F01,65+,Family annual,Referral,25,59,2,3,963.3,1
+M00895,2025,F04,35-49,Family annual,Walk-in,9,9,3,1,327.6,Censored
+M00896,2025,F04,Under 18,Family annual,Organic web,5,9,1,1,308.1,Censored
+M00897,2024,F03,65+,Senior annual,Organic web,4,4,2,1,122.4,0
+M00898,2023,F02,35-49,Adult annual,Paid social,9,15,2,1,237.6,0
+M00899,2023,F03,18-34,Adult annual,Email,11,17,2,1,237.6,0
+M00900,2022,F01,35-49,Senior annual,Referral,19,20,3,1,131.4,0
+M00901,2023,F02,35-49,Monthly flexible,Referral,1,4,1,1,166.05,0
+M00902,2025,F03,Under 18,Family annual,Community event,15,40,0,1,308.1,Censored
+M00903,2024,F02,35-49,Family annual,Community event,14,18,2,2,625.95,1
+M00904,2024,F01,50-64,Monthly flexible,Organic web,6,10,1,2,393.6,1
+M00905,2024,F01,50-64,Youth annual,Referral,7,29,1,1,93,0
+M00906,2023,F03,65+,Family annual,Referral,9,23,0,1,327.6,0
+M00907,2022,F01,50-64,Adult annual,Paid social,11,16,2,2,475.2,1
+M00908,2024,F03,18-34,Adult annual,Community event,4,15,2,1,237.6,0
+M00909,2023,F04,Under 18,Monthly flexible,Email,5,14,1,3,569.9,1
+M00910,2023,F02,35-49,Monthly flexible,Referral,3,3,0,3,590.4,1
+M00911,2024,F01,35-49,Adult annual,Email,10,24,1,2,442.2,1
+M00912,2022,F04,18-34,Adult annual,Walk-in,8,23,3,4,950.4,1
+M00913,2024,F01,50-64,Senior annual,Paid social,7,24,4,1,140.4,0
+M00914,2024,F01,18-34,Adult annual,Paid social,2,7,1,1,226.6,0
+M00915,2023,F04,18-34,Adult annual,Referral,11,33,1,1,204.6,0
+M00916,2024,F02,35-49,Monthly flexible,Referral,6,6,1,2,342.35,1
+M00917,2024,F02,50-64,Monthly flexible,Referral,7,10,0,2,393.6,1
+M00918,2025,F01,50-64,Senior annual,Referral,3,10,1,1,140.4,Censored
+M00919,2025,F01,18-34,Monthly flexible,Email,6,8,1,1,196.8,Censored
+M00920,2023,F04,18-34,Senior annual,Organic web,10,12,3,1,140.4,0
+M00921,2022,F02,Under 18,Monthly flexible,Walk-in,0,2,1,1,196.8,0
+M00922,2022,F02,18-34,Adult annual,Organic web,4,9,2,2,442.2,1
+M00923,2024,F03,65+,Family annual,Email,1,1,1,2,655.2,1
+M00924,2024,F02,18-34,Adult annual,Community event,15,19,3,1,237.6,0
+M00925,2023,F02,35-49,Senior annual,Organic web,5,10,1,3,412.2,1
+M00926,2022,F03,18-34,Youth annual,Community event,11,18,1,4,317.75,1
+M00927,2023,F01,35-49,Monthly flexible,Referral,2,2,3,2,393.6,1
+M00928,2023,F04,50-64,Monthly flexible,Walk-in,2,3,0,1,196.8,0
+M00929,2022,F02,18-34,Family annual,Email,13,49,3,4,1281.15,1
+M00930,2025,F04,18-34,Adult annual,Walk-in,14,43,5,1,237.6,Censored
+M00931,2022,F04,35-49,Youth annual,Referral,12,12,5,2,186,1
+M00932,2024,F01,50-64,Senior annual,Community event,2,4,1,2,280.8,1
+M00933,2024,F04,35-49,Monthly flexible,Walk-in,5,5,1,2,393.6,1
+M00934,2023,F03,18-34,Adult annual,Organic web,3,3,1,2,420.2,1
+M00935,2024,F04,18-34,Senior annual,Paid social,5,13,1,2,280.8,1
+M00936,2022,F01,35-49,Family annual,Walk-in,11,29,3,4,1261.65,1
+M00937,2023,F01,35-49,Family annual,Referral,21,54,2,3,953.55,1
+M00938,2023,F03,35-49,Senior annual,Walk-in,5,10,0,3,403.2,1
+M00939,2024,F01,65+,Monthly flexible,Referral,3,9,2,2,393.6,1
+M00940,2022,F02,35-49,Adult annual,Community event,12,33,1,4,906.4,1
+M00941,2022,F04,18-34,Family annual,Walk-in,16,16,5,4,1310.4,1
+M00942,2022,F04,Under 18,Monthly flexible,Referral,1,3,5,1,196.8,0
+M00943,2025,F04,35-49,Senior annual,Referral,7,12,1,1,140.4,Censored
+M00944,2024,F01,35-49,Senior annual,Paid social,3,4,3,2,280.8,1
+M00945,2023,F04,50-64,Adult annual,Walk-in,10,30,3,3,712.8,1
+M00946,2022,F02,35-49,Youth annual,Organic web,12,35,3,1,93,0
+M00947,2025,F02,18-34,Youth annual,Walk-in,12,12,4,1,93,Censored
+M00948,2024,F04,50-64,Family annual,Walk-in,4,15,1,2,655.2,1
+M00949,2025,F01,35-49,Monthly flexible,Walk-in,2,2,2,1,196.8,Censored
+M00950,2022,F04,65+,Adult annual,Walk-in,20,24,3,1,237.6,0
+M00951,2024,F04,18-34,Senior annual,Referral,3,5,4,2,262.8,1
+M00952,2023,F01,35-49,Adult annual,Email,11,25,2,2,475.2,1
+M00953,2023,F03,35-49,Adult annual,Paid social,3,3,1,1,204.6,0
+M00954,2023,F04,50-64,Family annual,Referral,13,26,3,2,655.2,1
+M00955,2024,F01,35-49,Adult annual,Paid social,4,6,1,2,475.2,1
+M00956,2024,F03,18-34,Senior annual,Referral,3,11,0,2,262.8,1
+M00957,2025,F04,18-34,Adult annual,Organic web,5,5,1,1,226.6,Censored
+M00958,2024,F04,18-34,Family annual,Community event,9,14,0,2,606.45,1
+M00959,2023,F01,65+,Monthly flexible,Organic web,3,5,1,1,196.8,0
+M00960,2023,F03,18-34,Monthly flexible,Community event,4,11,1,3,559.65,1
+M00961,2023,F01,18-34,Youth annual,Paid social,16,17,1,3,255.75,1
+M00962,2025,F02,50-64,Adult annual,Paid social,11,21,1,1,215.6,Censored
+M00963,2023,F02,Under 18,Adult annual,Email,5,19,1,2,475.2,1
+M00964,2022,F01,Under 18,Family annual,Organic web,10,22,2,4,1261.65,1
+M00965,2022,F04,35-49,Adult annual,Email,17,36,1,2,475.2,1
+M00966,2023,F01,35-49,Family annual,Email,4,4,6,3,973.05,1
+M00967,2023,F01,35-49,Monthly flexible,Walk-in,1,4,1,1,196.8,0
+M00968,2025,F04,18-34,Monthly flexible,Paid social,7,7,3,1,196.8,Censored
+M00969,2023,F03,Under 18,Adult annual,Referral,10,28,0,3,690.8,1
+M00970,2022,F03,50-64,Family annual,Email,10,18,2,4,1300.65,1
+M00971,2023,F02,35-49,Senior annual,Community event,6,12,3,1,140.4,0
+M00972,2024,F02,50-64,Adult annual,Walk-in,5,5,3,1,237.6,0
+M00973,2022,F02,18-34,Adult annual,Walk-in,11,28,1,1,237.6,0
+M00974,2024,F01,65+,Adult annual,Email,10,21,1,2,475.2,1
+M00975,2025,F03,18-34,Adult annual,Email,3,8,2,1,237.6,Censored
+M00976,2024,F02,35-49,Youth annual,Community event,13,19,0,2,170.5,1
+M00977,2022,F02,18-34,Adult annual,Paid social,10,29,7,3,701.8,1
+M00978,2024,F02,18-34,Adult annual,Referral,12,34,3,2,475.2,1
+M00979,2023,F04,50-64,Family annual,Referral,13,14,1,1,308.1,0
+M00980,2022,F01,18-34,Monthly flexible,Organic web,10,21,1,1,166.05,0
+M00981,2023,F02,35-49,Family annual,Referral,17,19,1,1,317.85,0
+M00982,2022,F01,Under 18,Adult annual,Walk-in,3,3,2,1,204.6,0
+M00983,2024,F01,50-64,Adult annual,Organic web,16,16,2,1,204.6,0
+M00984,2024,F04,35-49,Adult annual,Organic web,11,14,3,2,442.2,1
+M00985,2022,F03,65+,Monthly flexible,Organic web,3,12,1,4,746.2,1
+M00986,2022,F01,Under 18,Youth annual,Organic web,19,40,4,3,263.5,1
+M00987,2023,F01,18-34,Adult annual,Paid social,10,25,2,2,464.2,1
+M00988,2025,F04,35-49,Senior annual,Community event,5,14,2,1,122.4,Censored
+M00989,2022,F02,18-34,Adult annual,Walk-in,8,16,5,4,928.4,1
+M00990,2024,F01,18-34,Adult annual,Community event,5,5,1,2,453.2,1
+M00991,2022,F01,65+,Monthly flexible,Referral,4,4,3,4,787.2,1
+M00992,2022,F01,35-49,Monthly flexible,Email,4,6,0,4,776.95,1
+M00993,2023,F01,50-64,Monthly flexible,Referral,5,7,2,2,393.6,1
+M00994,2024,F01,65+,Youth annual,Referral,6,12,0,2,178.25,1
+M00995,2024,F03,65+,Senior annual,Organic web,6,20,1,2,271.8,1
+M00996,2024,F02,Under 18,Family annual,Referral,18,33,0,2,616.2,1
+M00997,2024,F04,50-64,Monthly flexible,Referral,2,4,0,2,393.6,1
+M00998,2022,F04,18-34,Monthly flexible,Referral,7,14,1,4,746.2,1
+M00999,2023,F04,18-34,Adult annual,Organic web,3,3,0,3,679.8,1
+M01000,2024,F01,18-34,Adult annual,Referral,19,51,3,1,237.6,0
+M01001,2022,F02,35-49,Youth annual,Referral,2,4,2,2,170.5,1
+M01002,2024,F02,18-34,Adult annual,Community event,16,41,1,2,475.2,1
+M01003,2023,F01,65+,Senior annual,Paid social,10,10,3,3,394.2,1
+M01004,2022,F02,18-34,Monthly flexible,Paid social,7,23,1,3,549.4,1
+M01005,2024,F02,18-34,Monthly flexible,Paid social,6,7,1,1,196.8,0
+M01006,2025,F03,35-49,Adult annual,Walk-in,16,18,2,1,204.6,Censored
+M01007,2025,F04,65+,Youth annual,Referral,10,32,2,1,85.25,Censored
+M01008,2023,F04,65+,Family annual,Organic web,14,43,2,3,973.05,1
+M01009,2023,F01,35-49,Family annual,Organic web,25,32,2,3,943.8,1
+M01010,2024,F02,18-34,Senior annual,Organic web,8,15,2,2,280.8,1
+M01011,2024,F02,50-64,Adult annual,Organic web,3,3,0,1,237.6,0
+M01012,2025,F04,Under 18,Senior annual,Walk-in,6,13,2,1,140.4,Censored
+M01013,2025,F04,50-64,Monthly flexible,Walk-in,2,2,2,1,196.8,Censored
+M01014,2024,F03,50-64,Senior annual,Walk-in,4,27,1,2,235.8,1
+M01015,2023,F02,50-64,Family annual,Community event,14,38,1,3,953.55,1
+M01016,2022,F01,35-49,Youth annual,Referral,12,50,1,2,186,1
+M01017,2024,F02,35-49,Family annual,Walk-in,13,13,2,2,655.2,1
+M01018,2025,F02,18-34,Adult annual,Referral,11,21,1,1,237.6,Censored
+M01019,2022,F02,50-64,Adult annual,Referral,7,18,2,4,950.4,1
+M01020,2025,F03,50-64,Family annual,Walk-in,11,35,2,1,327.6,Censored
+M01021,2024,F01,65+,Adult annual,Walk-in,16,16,3,2,475.2,1
+M01022,2024,F04,35-49,Adult annual,Community event,10,16,3,2,453.2,1
+M01023,2023,F01,35-49,Monthly flexible,Organic web,5,5,4,3,539.15,1
+M01024,2022,F03,35-49,Youth annual,Referral,5,5,2,3,279,1
+M01025,2024,F01,50-64,Family annual,Email,4,17,2,2,606.45,1
+M01026,2022,F02,18-34,Adult annual,Paid social,7,7,2,4,939.4,1
+M01027,2024,F02,18-34,Adult annual,Referral,15,44,1,2,453.2,1
+M01028,2023,F01,50-64,Adult annual,Walk-in,5,5,2,1,226.6,0
+M01029,2025,F04,35-49,Family annual,Paid social,17,54,1,1,317.85,Censored
+M01030,2022,F04,50-64,Monthly flexible,Community event,1,9,3,1,196.8,0
+M01031,2024,F02,18-34,Adult annual,Organic web,8,23,3,2,475.2,1
+M01032,2022,F01,50-64,Adult annual,Walk-in,11,18,4,1,237.6,0
+M01033,2023,F02,18-34,Adult annual,Community event,5,15,1,3,701.8,1
+M01034,2025,F01,18-34,Family annual,Community event,9,16,3,1,327.6,Censored
+M01035,2023,F03,18-34,Senior annual,Community event,8,17,5,3,412.2,1
+M01036,2025,F04,18-34,Family annual,Walk-in,19,19,3,1,327.6,Censored
+M01037,2025,F04,35-49,Monthly flexible,Email,1,1,2,1,196.8,Censored
+M01038,2022,F01,35-49,Adult annual,Referral,5,12,4,1,204.6,0
+M01039,2024,F01,18-34,Adult annual,Walk-in,3,10,2,2,442.2,1
+M01040,2025,F01,50-64,Family annual,Community event,16,27,3,1,317.85,Censored
+M01041,2022,F01,35-49,Monthly flexible,Walk-in,2,4,0,1,196.8,0
+M01042,2023,F01,65+,Monthly flexible,Community event,9,9,2,2,393.6,1
+M01043,2024,F01,35-49,Family annual,Walk-in,13,23,3,2,655.2,1
+M01044,2024,F01,65+,Adult annual,Referral,9,9,1,2,475.2,1
+M01045,2024,F01,35-49,Family annual,Organic web,5,8,2,2,655.2,1
+M01046,2023,F02,18-34,Family annual,Paid social,13,46,3,2,655.2,1
+M01047,2024,F01,Under 18,Family annual,Walk-in,15,15,2,2,655.2,1
+M01048,2023,F02,18-34,Monthly flexible,Email,14,17,0,3,580.15,1
+M01049,2022,F04,50-64,Family annual,Paid social,6,6,1,4,1310.4,1
+M01050,2023,F04,50-64,Family annual,Walk-in,6,18,0,3,943.8,1
+M01051,2023,F03,65+,Monthly flexible,Community event,4,4,1,1,196.8,0
+M01052,2023,F02,Under 18,Youth annual,Referral,7,18,2,1,93,0
+M01053,2022,F03,65+,Family annual,Referral,8,14,1,4,1310.4,1
+M01054,2025,F01,65+,Monthly flexible,Walk-in,2,2,4,1,196.8,Censored
+M01055,2024,F04,65+,Monthly flexible,Community event,2,7,2,2,383.35,1
+M01056,2023,F03,65+,Monthly flexible,Paid social,3,15,2,1,186.55,0
+M01057,2024,F03,18-34,Family annual,Referral,12,38,2,2,655.2,1
+M01058,2024,F01,Under 18,Senior annual,Referral,4,11,1,2,271.8,1
+M01059,2022,F03,18-34,Monthly flexible,Paid social,7,25,3,1,186.55,0
+M01060,2023,F03,35-49,Adult annual,Walk-in,6,9,4,3,657.8,1
+M01061,2025,F02,18-34,Monthly flexible,Referral,3,3,0,1,196.8,Censored
+M01062,2024,F01,65+,Adult annual,Referral,9,32,6,2,475.2,1
+M01063,2022,F04,Under 18,Senior annual,Organic web,11,22,3,4,543.6,1
+M01064,2025,F03,35-49,Monthly flexible,Paid social,4,8,1,1,196.8,Censored
+M01065,2023,F02,65+,Monthly flexible,Organic web,7,21,3,3,590.4,1
+M01066,2023,F01,18-34,Family annual,Referral,0,6,0,3,973.05,1
+M01067,2024,F03,35-49,Senior annual,Referral,8,13,2,2,280.8,1
+M01068,2024,F02,50-64,Monthly flexible,Referral,3,6,3,1,196.8,0
+M01069,2022,F03,18-34,Senior annual,Referral,9,9,1,1,140.4,0
+M01070,2025,F01,18-34,Monthly flexible,Referral,3,15,1,1,186.55,Censored
+M01071,2023,F03,35-49,Adult annual,Community event,15,15,0,3,679.8,1
+M01072,2023,F04,18-34,Senior annual,Paid social,8,8,1,3,421.2,1
+M01073,2025,F04,18-34,Senior annual,Email,6,10,2,1,113.4,Censored
+M01074,2023,F01,65+,Family annual,Organic web,19,55,2,3,943.8,1
+M01075,2023,F04,Under 18,Adult annual,Paid social,8,12,1,2,475.2,1
+M01076,2025,F04,50-64,Adult annual,Community event,8,24,3,1,237.6,Censored
+M01077,2025,F02,50-64,Monthly flexible,Organic web,2,10,2,1,196.8,Censored
+M01078,2022,F04,65+,Adult annual,Organic web,13,30,2,4,917.4,1
+M01079,2025,F02,50-64,Senior annual,Referral,5,6,0,1,140.4,Censored
+M01080,2024,F01,65+,Senior annual,Referral,7,7,2,2,271.8,1
+M01081,2022,F01,35-49,Adult annual,Referral,8,11,1,2,464.2,1
+M01082,2024,F01,18-34,Adult annual,Referral,5,5,1,2,453.2,1
+M01083,2022,F03,65+,Senior annual,Community event,6,12,0,1,122.4,0
+M01084,2023,F03,18-34,Family annual,Organic web,5,14,5,3,924.3,1
+M01085,2023,F02,50-64,Monthly flexible,Walk-in,4,4,1,3,569.9,1
+M01086,2025,F04,65+,Adult annual,Referral,9,20,2,1,237.6,Censored
+M01087,2022,F01,35-49,Senior annual,Organic web,13,13,1,1,140.4,0
+M01088,2022,F01,35-49,Youth annual,Email,9,18,3,4,356.5,1
+M01089,2023,F01,50-64,Adult annual,Organic web,7,7,2,1,237.6,0
+M01090,2022,F01,50-64,Family annual,Organic web,12,18,1,4,1251.9,1
+M01091,2024,F03,50-64,Monthly flexible,Organic web,2,4,0,2,362.85,1
+M01092,2023,F04,35-49,Adult annual,Organic web,8,27,4,3,712.8,1
+M01093,2023,F01,65+,Senior annual,Community event,3,3,3,1,140.4,0
+M01094,2025,F03,65+,Adult annual,Walk-in,7,17,0,1,215.6,Censored
+M01095,2024,F01,65+,Adult annual,Referral,6,15,1,2,475.2,1
+M01096,2022,F02,65+,Adult annual,Organic web,16,21,4,2,475.2,1
+M01097,2025,F01,35-49,Adult annual,Organic web,7,31,0,1,237.6,Censored
+M01098,2023,F01,50-64,Adult annual,Paid social,10,32,2,3,712.8,1
+M01099,2024,F01,18-34,Family annual,Walk-in,11,11,1,2,625.95,1
+M01100,2023,F01,18-34,Adult annual,Paid social,19,47,2,3,712.8,1
+M01101,2023,F03,50-64,Monthly flexible,Community event,8,23,3,2,352.6,1
+M01102,2022,F03,Under 18,Senior annual,Email,3,16,4,2,262.8,1
+M01103,2022,F02,35-49,Monthly flexible,Walk-in,9,11,1,4,735.95,1
+M01104,2024,F02,35-49,Youth annual,Paid social,1,12,2,1,85.25,0
+M01105,2022,F02,18-34,Adult annual,Walk-in,12,12,2,1,237.6,0
+M01106,2024,F01,Under 18,Monthly flexible,Referral,3,4,1,2,373.1,1
+M01107,2024,F04,Under 18,Adult annual,Community event,4,4,2,2,442.2,1
+M01108,2025,F01,18-34,Senior annual,Paid social,3,4,1,1,140.4,Censored
+M01109,2024,F04,65+,Family annual,Organic web,13,28,1,2,625.95,1
+M01110,2024,F04,50-64,Monthly flexible,Referral,4,15,3,2,362.85,1
+M01111,2023,F01,50-64,Youth annual,Referral,13,16,4,2,186,1
+M01112,2022,F02,50-64,Senior annual,Community event,5,12,2,2,280.8,1
+M01113,2024,F04,35-49,Adult annual,Walk-in,5,14,0,2,464.2,1
+M01114,2024,F04,18-34,Adult annual,Walk-in,6,6,0,1,226.6,0
+M01115,2025,F02,50-64,Family annual,Organic web,5,12,2,1,327.6,Censored
+M01116,2024,F04,18-34,Family annual,Referral,4,4,0,1,327.6,0
+M01117,2024,F04,18-34,Youth annual,Referral,7,7,5,2,186,1
+M01118,2022,F03,65+,Family annual,Email,5,5,3,1,327.6,0
+M01119,2025,F01,35-49,Monthly flexible,Referral,8,13,6,1,196.8,Censored
+M01120,2024,F01,35-49,Family annual,Community event,10,10,4,2,655.2,1
+M01121,2025,F04,18-34,Monthly flexible,Referral,4,13,1,1,166.05,Censored
+M01122,2025,F02,18-34,Monthly flexible,Referral,6,6,2,1,176.3,Censored
+M01123,2022,F01,50-64,Adult annual,Email,5,5,1,1,204.6,0
+M01124,2024,F04,65+,Adult annual,Community event,9,20,2,1,237.6,0
+M01125,2025,F02,35-49,Adult annual,Community event,2,11,5,1,237.6,Censored
+M01126,2022,F02,65+,Senior annual,Referral,9,9,2,1,122.4,0
+M01127,2025,F03,65+,Family annual,Walk-in,9,29,3,1,327.6,Censored
+M01128,2025,F01,18-34,Senior annual,Referral,6,20,3,1,131.4,Censored
+M01129,2022,F01,35-49,Adult annual,Referral,7,14,5,2,475.2,1
+M01130,2024,F02,35-49,Adult annual,Community event,17,48,3,2,475.2,1
+M01131,2023,F01,Under 18,Monthly flexible,Email,9,19,1,3,590.4,1
+M01132,2023,F04,50-64,Adult annual,Walk-in,9,9,2,1,237.6,0
+M01133,2024,F02,18-34,Monthly flexible,Email,7,15,2,2,373.1,1
+M01134,2024,F01,35-49,Adult annual,Paid social,11,22,1,2,464.2,1
+M01135,2024,F01,18-34,Adult annual,Paid social,10,25,6,1,215.6,0
+M01136,2023,F02,Under 18,Senior annual,Email,5,6,0,1,131.4,0
+M01137,2025,F02,35-49,Family annual,Community event,6,17,1,1,327.6,Censored
+M01138,2024,F03,50-64,Family annual,Walk-in,8,8,2,2,635.7,1
+M01139,2023,F03,35-49,Monthly flexible,Referral,0,5,1,2,362.85,1
+M01140,2022,F01,Under 18,Adult annual,Organic web,12,17,2,4,928.4,1
+M01141,2023,F01,35-49,Family annual,Referral,18,23,3,3,963.3,1
+M01142,2023,F03,35-49,Adult annual,Walk-in,4,18,2,3,701.8,1
+M01143,2022,F03,18-34,Youth annual,Community event,7,10,3,2,178.25,1
+M01144,2024,F04,50-64,Senior annual,Paid social,3,7,3,2,271.8,1
+M01145,2022,F03,50-64,Adult annual,Referral,8,25,0,4,950.4,1
+M01146,2022,F04,50-64,Senior annual,Walk-in,12,35,1,4,498.6,1
+M01147,2022,F01,50-64,Senior annual,Paid social,10,34,2,4,534.6,1
+M01148,2025,F02,18-34,Family annual,Paid social,20,60,2,1,308.1,Censored
+M01149,2023,F01,35-49,Adult annual,Organic web,16,24,6,3,679.8,1
+M01150,2025,F03,18-34,Adult annual,Referral,6,8,1,1,215.6,Censored
+M01151,2022,F01,35-49,Monthly flexible,Paid social,6,8,0,1,176.3,0
+M01152,2023,F01,65+,Family annual,Organic web,11,30,2,2,655.2,1
+M01153,2025,F04,18-34,Adult annual,Organic web,3,9,0,1,215.6,Censored
+M01154,2024,F04,18-34,Adult annual,Walk-in,13,33,3,2,475.2,1
+M01155,2024,F01,35-49,Youth annual,Walk-in,3,5,0,2,178.25,1
+M01156,2024,F01,18-34,Monthly flexible,Walk-in,9,9,1,1,196.8,0
+M01157,2024,F04,18-34,Adult annual,Community event,9,9,5,2,453.2,1
+M01158,2025,F02,35-49,Adult annual,Community event,6,22,4,1,226.6,Censored
+M01159,2022,F01,18-34,Adult annual,Organic web,10,36,1,4,906.4,1
+M01160,2024,F03,35-49,Senior annual,Organic web,7,7,1,2,280.8,1
+M01161,2024,F03,35-49,Family annual,Paid social,13,24,1,2,635.7,1
+M01162,2025,F02,65+,Adult annual,Organic web,7,17,2,1,237.6,Censored
+M01163,2023,F01,35-49,Monthly flexible,Email,5,6,3,1,196.8,0
+M01164,2023,F01,50-64,Senior annual,Walk-in,10,28,2,1,140.4,0
+M01165,2023,F01,35-49,Senior annual,Walk-in,9,12,4,3,403.2,1
+M01166,2025,F02,50-64,Adult annual,Organic web,7,7,3,1,237.6,Censored
+M01167,2023,F01,18-34,Family annual,Organic web,8,17,3,3,963.3,1
+M01168,2022,F02,50-64,Family annual,Referral,16,16,3,2,655.2,1
+M01169,2023,F04,18-34,Adult annual,Community event,6,29,2,3,712.8,1
+M01170,2025,F01,Under 18,Adult annual,Organic web,5,5,2,1,215.6,Censored
+M01171,2023,F04,50-64,Adult annual,Referral,8,21,1,2,475.2,1
+M01172,2025,F02,18-34,Monthly flexible,Email,4,4,1,1,196.8,Censored
+M01173,2025,F01,65+,Family annual,Walk-in,10,25,2,1,308.1,Censored
+M01174,2024,F01,18-34,Adult annual,Community event,12,12,2,2,442.2,1
+M01175,2025,F01,35-49,Adult annual,Organic web,9,24,2,1,215.6,Censored
+M01176,2025,F01,35-49,Adult annual,Walk-in,8,15,3,1,237.6,Censored
+M01177,2022,F02,35-49,Monthly flexible,Referral,7,7,3,3,549.4,1
+M01178,2024,F04,50-64,Adult annual,Referral,3,9,0,2,442.2,1
+M01179,2022,F02,35-49,Adult annual,Organic web,9,19,4,2,464.2,1
+M01180,2024,F03,35-49,Monthly flexible,Email,8,17,3,2,393.6,1
+M01181,2023,F03,35-49,Adult annual,Community event,9,24,4,3,690.8,1
+M01182,2022,F04,35-49,Family annual,Walk-in,18,54,4,2,655.2,1
+M01183,2025,F04,35-49,Family annual,Email,7,24,2,1,327.6,Censored
+M01184,2023,F04,18-34,Adult annual,Paid social,10,10,1,1,237.6,0
+M01185,2025,F04,50-64,Senior annual,Walk-in,7,7,1,1,140.4,Censored
+M01186,2022,F03,35-49,Family annual,Referral,5,11,1,4,1261.65,1
+M01187,2023,F02,35-49,Family annual,Email,6,25,0,3,982.8,1
+M01188,2023,F01,35-49,Family annual,Walk-in,9,9,4,3,973.05,1
+M01189,2022,F04,18-34,Adult annual,Walk-in,4,4,2,4,917.4,1
+M01190,2024,F02,18-34,Senior annual,Community event,14,14,1,2,262.8,1
+M01191,2023,F02,35-49,Monthly flexible,Referral,5,8,0,3,539.15,1
+M01192,2025,F02,Under 18,Senior annual,Walk-in,4,19,2,1,140.4,Censored
+M01193,2023,F02,35-49,Monthly flexible,Organic web,3,6,0,1,196.8,0
+M01194,2024,F01,Under 18,Monthly flexible,Referral,4,18,1,2,393.6,1
+M01195,2024,F02,65+,Monthly flexible,Walk-in,4,13,0,2,362.85,1
+M01196,2024,F02,18-34,Family annual,Community event,3,19,1,2,625.95,1
+M01197,2023,F01,50-64,Adult annual,Paid social,21,21,5,1,237.6,0
+M01198,2025,F02,35-49,Monthly flexible,Organic web,4,16,2,1,196.8,Censored
+M01199,2024,F03,50-64,Family annual,Organic web,12,12,2,2,655.2,1
+M01200,2023,F01,Under 18,Family annual,Paid social,18,34,1,3,982.8,1
+M01201,2023,F04,65+,Family annual,Organic web,4,11,2,3,943.8,1
+M01202,2023,F01,18-34,Adult annual,Email,12,12,1,2,475.2,1
+M01203,2023,F02,50-64,Adult annual,Organic web,5,11,1,3,679.8,1
+M01204,2025,F03,Under 18,Adult annual,Referral,9,9,2,1,237.6,Censored
+M01205,2023,F02,65+,Senior annual,Referral,3,6,5,2,262.8,1
+M01206,2024,F02,50-64,Senior annual,Organic web,10,13,0,1,140.4,0
+M01207,2022,F03,Under 18,Adult annual,Community event,8,8,3,3,679.8,1
+M01208,2024,F01,18-34,Monthly flexible,Organic web,3,10,3,2,393.6,1
+M01209,2023,F04,35-49,Youth annual,Referral,14,32,1,1,93,0
+M01210,2022,F01,18-34,Family annual,Email,3,3,3,1,327.6,0
+M01211,2022,F04,35-49,Senior annual,Community event,4,4,1,1,140.4,0
+M01212,2023,F04,18-34,Monthly flexible,Paid social,2,7,2,2,373.1,1
+M01213,2025,F02,35-49,Monthly flexible,Walk-in,2,2,1,1,196.8,Censored
+M01214,2024,F03,Under 18,Youth annual,Paid social,4,6,2,2,186,1
+M01215,2023,F01,18-34,Adult annual,Referral,15,38,5,3,635.8,1
+M01216,2024,F01,18-34,Adult annual,Email,9,9,1,1,237.6,0
+M01217,2023,F01,Under 18,Family annual,Referral,2,8,1,3,982.8,1
+M01218,2024,F01,35-49,Adult annual,Email,11,24,0,1,237.6,0
+M01219,2024,F03,50-64,Adult annual,Walk-in,13,32,1,2,464.2,1
+M01220,2025,F01,65+,Family annual,Organic web,6,14,2,1,327.6,Censored
+M01221,2023,F01,65+,Family annual,Paid social,17,53,1,3,973.05,1
+M01222,2022,F04,50-64,Adult annual,Referral,5,11,3,3,679.8,1
+M01223,2023,F02,18-34,Monthly flexible,Referral,2,4,1,3,559.65,1
+M01224,2024,F01,18-34,Monthly flexible,Referral,3,3,1,2,393.6,1
+M01225,2023,F04,35-49,Senior annual,Referral,4,5,2,2,253.8,1
+M01226,2025,F02,Under 18,Adult annual,Email,4,9,1,1,237.6,Censored
+M01227,2022,F01,65+,Family annual,Walk-in,9,24,0,2,635.7,1
+M01228,2023,F03,65+,Family annual,Email,0,0,1,1,327.6,0
+M01229,2025,F01,35-49,Family annual,Referral,6,18,4,1,327.6,Censored
+M01230,2022,F04,35-49,Family annual,Paid social,7,7,0,3,973.05,1
+M01231,2024,F04,35-49,Adult annual,Walk-in,11,24,2,2,475.2,1
+M01232,2023,F02,18-34,Senior annual,Referral,5,13,2,3,412.2,1
+M01233,2023,F01,50-64,Adult annual,Email,5,9,2,3,679.8,1
+M01234,2025,F02,35-49,Family annual,Community event,15,59,1,1,327.6,Censored
+M01235,2023,F02,65+,Senior annual,Paid social,16,16,1,3,412.2,1
+M01236,2024,F04,18-34,Family annual,Referral,12,35,5,2,645.45,1
+M01237,2024,F03,65+,Senior annual,Organic web,8,11,2,2,262.8,1
+M01238,2025,F03,50-64,Youth annual,Paid social,6,16,1,1,93,Censored
+M01239,2024,F01,35-49,Family annual,Organic web,6,17,0,2,655.2,1
+M01240,2023,F03,65+,Monthly flexible,Paid social,4,10,1,1,196.8,0
+M01241,2022,F01,18-34,Senior annual,Community event,2,12,3,4,552.6,1
+M01242,2024,F01,Under 18,Monthly flexible,Walk-in,6,9,3,2,393.6,1
+M01243,2025,F03,50-64,Adult annual,Referral,3,20,1,1,237.6,Censored
+M01244,2022,F02,Under 18,Adult annual,Referral,9,21,0,2,475.2,1
+M01245,2023,F02,35-49,Monthly flexible,Walk-in,6,8,3,3,580.15,1
+M01246,2025,F02,35-49,Family annual,Paid social,6,6,2,1,327.6,Censored
+M01247,2024,F01,Under 18,Adult annual,Walk-in,7,14,1,1,215.6,0
+M01248,2022,F03,Under 18,Family annual,Organic web,13,35,1,4,1281.15,1
+M01249,2024,F01,Under 18,Youth annual,Paid social,10,10,1,2,170.5,1
+M01250,2025,F02,18-34,Family annual,Community event,7,22,3,1,327.6,Censored
+M01251,2023,F04,35-49,Adult annual,Email,11,36,3,2,475.2,1
+M01252,2024,F02,50-64,Monthly flexible,Organic web,12,18,3,2,383.35,1
+M01253,2024,F02,18-34,Monthly flexible,Walk-in,0,8,2,2,393.6,1
+M01254,2023,F03,Under 18,Family annual,Community event,12,34,1,1,308.1,0
+M01255,2025,F04,50-64,Adult annual,Organic web,7,30,3,1,237.6,Censored
+M01256,2023,F01,18-34,Adult annual,Referral,2,8,0,1,237.6,0
+M01257,2023,F03,50-64,Family annual,Referral,6,10,3,3,982.8,1
+M01258,2025,F03,18-34,Adult annual,Walk-in,6,6,1,1,237.6,Censored
+M01259,2023,F04,50-64,Adult annual,Paid social,10,34,1,1,226.6,0
+M01260,2022,F04,65+,Family annual,Email,8,8,1,1,317.85,0
+M01261,2023,F02,65+,Family annual,Organic web,11,23,2,1,298.35,0
+M01262,2023,F02,18-34,Monthly flexible,Referral,7,7,0,1,196.8,0
+M01263,2022,F03,50-64,Adult annual,Organic web,10,15,3,4,906.4,1
+M01264,2022,F01,18-34,Youth annual,Referral,13,13,0,4,356.5,1
+M01265,2023,F01,50-64,Family annual,Paid social,19,24,5,3,963.3,1
+M01266,2025,F01,35-49,Adult annual,Walk-in,6,19,1,1,237.6,Censored
+M01267,2022,F01,35-49,Family annual,Organic web,6,15,1,3,973.05,1
+M01268,2024,F01,50-64,Senior annual,Referral,5,11,2,2,280.8,1
+M01269,2023,F03,18-34,Adult annual,Referral,3,9,4,3,712.8,1
+M01270,2024,F04,18-34,Monthly flexible,Organic web,2,7,3,1,196.8,0
+M01271,2022,F01,65+,Adult annual,Community event,2,2,2,2,431.2,1
+M01272,2024,F02,65+,Senior annual,Walk-in,6,23,3,1,140.4,0
+M01273,2024,F03,18-34,Adult annual,Organic web,3,7,0,2,464.2,1
+M01274,2022,F01,Under 18,Family annual,Organic web,9,37,3,1,317.85,0
+M01275,2024,F02,50-64,Family annual,Organic web,21,32,3,2,655.2,1
+M01276,2025,F04,35-49,Youth annual,Organic web,3,9,1,1,93,Censored
+M01277,2024,F01,18-34,Adult annual,Paid social,11,13,0,2,442.2,1
+M01278,2024,F03,35-49,Adult annual,Organic web,9,16,1,2,453.2,1
+M01279,2023,F01,35-49,Youth annual,Organic web,6,23,3,3,263.5,1
+M01280,2023,F03,18-34,Adult annual,Referral,4,4,0,1,237.6,0
+M01281,2025,F02,18-34,Family annual,Referral,24,62,4,1,327.6,Censored
+M01282,2025,F02,65+,Adult annual,Walk-in,13,44,2,1,237.6,Censored
+M01283,2024,F02,65+,Adult annual,Walk-in,13,13,2,2,475.2,1
+M01284,2023,F01,50-64,Youth annual,Paid social,6,6,3,3,279,1
+M01285,2022,F04,18-34,Adult annual,Organic web,4,16,1,2,475.2,1
+M01286,2024,F02,18-34,Adult annual,Community event,13,47,1,2,475.2,1
+M01287,2023,F04,Under 18,Senior annual,Paid social,7,17,2,1,113.4,0
+M01288,2023,F02,18-34,Adult annual,Walk-in,15,33,1,2,475.2,1
+M01289,2024,F01,35-49,Adult annual,Email,3,3,0,2,442.2,1
+M01290,2023,F02,18-34,Family annual,Paid social,12,15,0,3,953.55,1
+M01291,2022,F02,18-34,Monthly flexible,Referral,4,7,2,4,776.95,1
+M01292,2023,F03,50-64,Family annual,Community event,11,24,3,3,953.55,1
+M01293,2022,F04,18-34,Senior annual,Walk-in,7,21,1,4,561.6,1
+M01294,2023,F03,50-64,Adult annual,Walk-in,12,23,0,3,668.8,1
+M01295,2025,F02,50-64,Adult annual,Email,10,13,2,1,226.6,Censored
+M01296,2024,F04,18-34,Senior annual,Referral,7,7,2,2,280.8,1
+M01297,2022,F04,18-34,Family annual,Community event,13,21,2,1,308.1,0
+M01298,2025,F02,65+,Monthly flexible,Community event,5,14,3,1,176.3,Censored
+M01299,2022,F02,35-49,Adult annual,Organic web,9,28,3,4,895.4,1
+M01300,2024,F04,35-49,Adult annual,Referral,6,15,1,1,237.6,0
+M01301,2025,F01,18-34,Monthly flexible,Email,6,11,5,1,186.55,Censored
+M01302,2024,F01,35-49,Family annual,Community event,16,19,1,2,655.2,1
+M01303,2022,F01,18-34,Senior annual,Community event,7,23,1,1,140.4,0
+M01304,2024,F03,18-34,Family annual,Paid social,3,10,2,1,308.1,0
+M01305,2023,F03,35-49,Youth annual,Referral,5,10,2,3,271.25,1
+M01306,2024,F02,65+,Adult annual,Organic web,15,45,3,2,475.2,1
+M01307,2022,F02,35-49,Monthly flexible,Organic web,3,8,1,1,196.8,0
+M01308,2024,F01,35-49,Family annual,Referral,9,23,0,2,645.45,1
+M01309,2023,F04,65+,Youth annual,Referral,13,40,2,3,248,1
+M01310,2022,F04,65+,Monthly flexible,Walk-in,2,7,1,4,787.2,1
+M01311,2022,F01,18-34,Adult annual,Referral,7,22,1,2,453.2,1
+M01312,2025,F04,50-64,Adult annual,Paid social,2,5,2,1,215.6,Censored
+M01313,2023,F02,65+,Monthly flexible,Organic web,4,5,4,3,559.65,1
+M01314,2022,F01,35-49,Adult annual,Referral,14,25,1,4,895.4,1
+M01315,2022,F01,50-64,Adult annual,Community event,6,6,5,3,657.8,1
+M01316,2023,F01,50-64,Adult annual,Organic web,8,26,1,3,712.8,1
+M01317,2024,F01,35-49,Adult annual,Organic web,9,21,2,2,475.2,1
+M01318,2023,F04,50-64,Senior annual,Referral,7,10,2,3,394.2,1
+M01319,2022,F04,35-49,Family annual,Referral,4,4,0,2,606.45,1
+M01320,2024,F01,35-49,Adult annual,Community event,12,12,4,2,475.2,1
+M01321,2023,F03,18-34,Family annual,Walk-in,9,9,1,1,298.35,0
+M01322,2025,F01,18-34,Adult annual,Organic web,14,29,1,1,226.6,Censored
+M01323,2022,F01,18-34,Adult annual,Community event,17,22,1,4,895.4,1
+M01324,2024,F02,18-34,Family annual,Organic web,7,7,3,1,308.1,0
+M01325,2022,F03,50-64,Monthly flexible,Organic web,1,3,0,1,196.8,0
+M01326,2022,F01,65+,Family annual,Organic web,8,26,2,2,635.7,1
+M01327,2022,F01,18-34,Adult annual,Organic web,3,3,1,1,226.6,0
+M01328,2025,F04,35-49,Family annual,Organic web,9,15,1,1,298.35,Censored
+M01329,2023,F01,35-49,Family annual,Referral,25,55,4,3,973.05,1
+M01330,2024,F04,50-64,Youth annual,Walk-in,14,16,1,1,77.5,0
+M01331,2023,F04,50-64,Adult annual,Walk-in,8,33,4,3,690.8,1
+M01332,2023,F04,18-34,Adult annual,Paid social,2,7,3,3,679.8,1
+M01333,2022,F02,50-64,Youth annual,Organic web,20,41,6,1,85.25,0
+M01334,2024,F01,50-64,Monthly flexible,Walk-in,7,9,2,2,373.1,1
+M01335,2025,F01,35-49,Adult annual,Email,3,9,1,1,237.6,Censored
+M01336,2023,F04,18-34,Adult annual,Organic web,7,22,3,2,453.2,1
+M01337,2022,F01,50-64,Monthly flexible,Walk-in,5,8,1,4,787.2,1
+M01338,2022,F01,18-34,Youth annual,Walk-in,10,35,1,1,77.5,0
+M01339,2022,F02,65+,Youth annual,Organic web,12,13,0,4,372,1
+M01340,2024,F01,50-64,Adult annual,Organic web,9,26,1,1,226.6,0
+M01341,2022,F01,50-64,Family annual,Email,8,17,0,4,1281.15,1
+M01342,2025,F02,18-34,Youth annual,Referral,14,14,3,1,93,Censored
+M01343,2025,F04,50-64,Adult annual,Walk-in,3,6,2,1,237.6,Censored
+M01344,2024,F04,Under 18,Adult annual,Referral,10,11,2,2,475.2,1
+M01345,2022,F01,18-34,Family annual,Referral,15,43,1,4,1290.9,1
+M01346,2024,F01,18-34,Family annual,Organic web,7,30,2,2,635.7,1
+M01347,2024,F02,65+,Monthly flexible,Paid social,2,7,2,1,196.8,0
+M01348,2023,F01,50-64,Adult annual,Walk-in,6,23,3,3,712.8,1
+M01349,2023,F02,50-64,Adult annual,Organic web,3,16,3,3,712.8,1
+M01350,2023,F04,18-34,Adult annual,Referral,8,8,0,2,475.2,1
+M01351,2023,F03,50-64,Family annual,Referral,10,26,3,3,982.8,1
+M01352,2022,F02,18-34,Adult annual,Walk-in,10,24,5,4,950.4,1
+M01353,2025,F01,18-34,Adult annual,Community event,7,7,4,1,215.6,Censored
+M01354,2023,F03,35-49,Monthly flexible,Paid social,3,3,0,3,590.4,1
+M01355,2024,F02,18-34,Monthly flexible,Paid social,5,18,4,2,393.6,1
+M01356,2023,F01,50-64,Adult annual,Organic web,16,36,3,3,712.8,1
+M01357,2022,F02,50-64,Monthly flexible,Community event,3,3,1,1,176.3,0
+M01358,2025,F02,18-34,Monthly flexible,Referral,5,10,1,1,196.8,Censored
+M01359,2022,F01,35-49,Monthly flexible,Walk-in,2,2,1,1,176.3,0
+M01360,2024,F03,50-64,Adult annual,Walk-in,13,23,3,2,475.2,1
+M01361,2023,F04,65+,Monthly flexible,Referral,7,17,3,3,590.4,1
+M01362,2025,F01,35-49,Adult annual,Paid social,4,4,1,1,237.6,Censored
+M01363,2022,F01,18-34,Adult annual,Walk-in,3,13,2,4,928.4,1
+M01364,2023,F04,35-49,Adult annual,Email,14,28,1,3,657.8,1
+M01365,2024,F02,18-34,Family annual,Organic web,13,43,2,2,655.2,1
+M01366,2023,F01,35-49,Family annual,Email,3,3,0,3,973.05,1
+M01367,2023,F01,Under 18,Adult annual,Referral,3,12,2,3,679.8,1
+M01368,2023,F04,50-64,Monthly flexible,Organic web,4,15,4,3,569.9,1
+M01369,2022,F02,18-34,Youth annual,Email,6,9,1,1,93,0
+M01370,2022,F01,65+,Family annual,Walk-in,4,4,4,1,327.6,0
+M01371,2024,F02,18-34,Adult annual,Community event,10,10,4,2,453.2,1
+M01372,2024,F03,35-49,Adult annual,Community event,6,24,5,1,215.6,0
+M01373,2022,F02,18-34,Family annual,Referral,9,25,1,4,1300.65,1
+M01374,2024,F04,50-64,Youth annual,Paid social,8,26,3,2,178.25,1
+M01375,2023,F04,35-49,Adult annual,Paid social,5,21,1,3,701.8,1
+M01376,2022,F03,50-64,Family annual,Organic web,4,5,0,1,327.6,0
+M01377,2022,F02,50-64,Senior annual,Organic web,5,19,2,4,552.6,1
+M01378,2024,F03,50-64,Monthly flexible,Paid social,2,2,1,1,196.8,0
+M01379,2024,F02,35-49,Family annual,Referral,5,5,1,2,645.45,1
+M01380,2024,F03,35-49,Adult annual,Walk-in,3,19,3,2,442.2,1
+M01381,2024,F02,50-64,Family annual,Walk-in,6,12,0,2,655.2,1
+M01382,2025,F01,18-34,Monthly flexible,Walk-in,7,19,0,1,196.8,Censored
+M01383,2023,F03,65+,Family annual,Organic web,5,5,2,3,963.3,1
+M01384,2024,F04,50-64,Adult annual,Referral,9,25,7,2,475.2,1
+M01385,2022,F03,65+,Family annual,Community event,4,4,2,4,1242.15,1
+M01386,2022,F03,65+,Adult annual,Referral,2,8,0,4,917.4,1
+M01387,2022,F01,35-49,Adult annual,Walk-in,9,30,6,1,237.6,0
+M01388,2025,F04,50-64,Family annual,Paid social,13,32,0,1,327.6,Censored
+M01389,2022,F01,Under 18,Adult annual,Walk-in,8,19,2,2,464.2,1
+M01390,2024,F04,35-49,Senior annual,Walk-in,3,8,0,1,140.4,0
+M01391,2024,F02,18-34,Family annual,Referral,8,22,3,2,635.7,1
+M01392,2024,F03,18-34,Family annual,Paid social,12,24,2,2,625.95,1
+M01393,2024,F02,Under 18,Senior annual,Organic web,5,5,2,2,226.8,1
+M01394,2024,F01,50-64,Adult annual,Organic web,9,42,1,2,475.2,1
+M01395,2024,F02,50-64,Adult annual,Referral,6,7,2,2,464.2,1
+M01396,2025,F04,50-64,Family annual,Community event,17,36,1,1,327.6,Censored
+M01397,2025,F02,35-49,Monthly flexible,Paid social,7,10,1,1,196.8,Censored
+M01398,2022,F04,50-64,Adult annual,Community event,5,5,1,1,215.6,0
+M01399,2022,F01,65+,Monthly flexible,Organic web,10,10,2,3,559.65,1
+M01400,2023,F04,65+,Senior annual,Paid social,7,22,2,3,367.2,1
