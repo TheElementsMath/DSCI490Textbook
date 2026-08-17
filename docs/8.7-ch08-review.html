@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="8-a-reproducible-exploratory-data-analysis.html" accesskey="u" rel="up">A Reproducible Exploratory Data Analysis</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="9-researching-secondary-data.html" accesskey="n" rel="next">Researching Secondary Data</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="8.6-ch08-a-professional-eda-report.html" accesskey="p" rel="previous">A professional EDA report</a>
+</span>
+</div>
+</nav>
+<h2 data-number="8.7" id="ch08-review"><span
+class="header-section-number">8.7</span> Chapter Review</h2>
+<h3 data-number="8.7.1" id="chapter-summary-7"><span
+class="header-section-number">8.7.1</span> Chapter summary</h3>
+<p>Comprehensive EDA moves from understanding structure and quality to
+examining distributions, relationships, and relevant dimensions. Every
+important finding should be connected to a decision about definitions,
+cleaning, modelling, interpretation, or project scope, and the full
+workflow should be reproducible from source data to report.</p>
+<h3 data-number="8.7.2" id="common-mistakes-7"><span
+class="header-section-number">8.7.2</span> Common mistakes</h3>
+<ul>
+<li>producing many charts without connecting them to analytical
+questions;</li>
+<li>silently deleting missing values or outliers without investigating
+their causes;</li>
+<li>interpreting identifiers, codes, or duplicated records as ordinary
+measurements;</li>
+<li>using transformed data without preserving and documenting the
+original values; and</li>
+<li>reporting interesting patterns without explaining their consequence
+for later analysis.</li>
+</ul>
+<h3 data-number="8.7.3" id="reproducibility-checklist"><span
+class="header-section-number">8.7.3</span> Reproducibility
+checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Raw data remain
+unchanged.</label></li>
+<li><label><input type="checkbox" />Cleaning and feature engineering are
+performed by saved code or auditable steps.</label></li>
+<li><label><input type="checkbox" />The dictionary matches the analyzed
+dataset.</label></li>
+<li><label><input type="checkbox" />Every table and figure can be
+recreated.</label></li>
+<li><label><input type="checkbox" />Filters, exclusions, and observation
+windows are documented.</label></li>
+<li><label><input type="checkbox" />Counts and denominators are
+stated.</label></li>
+<li><label><input type="checkbox" />Missing-data and outlier decisions
+are justified.</label></li>
+<li><label><input type="checkbox" />File versions and software
+dependencies are recorded.</label></li>
+<li><label><input type="checkbox" />Findings are separated from possible
+explanations.</label></li>
+</ul>
+<h3 data-number="8.7.4" id="exercises-7"><span
+class="header-section-number">8.7.4</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> NVRW has 2,400 missing
+acquisition-channel values. Almost all occur before a new registration
+system was introduced. Should the team impute a channel for these
+records?</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Not automatically. The missingness is strongly connected to the
+collection period, so imputation may create unsupported historical
+detail. Document the system change, compare periods with and without
+reliable channel data, and limit channel-based conclusions to comparable
+periods unless a defensible reconstruction source exists. Use
+sensitivity analysis if the older records materially affect a later
+model.
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Use
+<code>data/nvrw/raw/visits.csv</code> to create a data-quality table
+containing total rows, distinct visit identifiers, duplicate
+identifiers, missing durations, and durations above 360 minutes. Explain
+which issues affect visit counts and which affect duration analysis.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Your table should separate duplicate visit identifiers from duration
+problems. Confirmed duplicate identifiers affect visit counts and should
+be resolved before aggregation. Missing or extreme durations affect
+duration summaries but do not automatically invalidate an otherwise
+legitimate visit record. Report both the number of affected rows and the
+decision applied to each issue.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> Compare monthly visit totals by
+facility. Then divide visits by active member-periods and explain why
+the second comparison answers a different question.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+Monthly totals measure workload or overall demand at each facility.
+Visits per active member-period measure intensity of use relative to the
+size of the eligible membership base. A large facility can have the
+highest total visits but a lower visit rate, so the two displays support
+different capacity and engagement decisions.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Investigate program fill rates. Identify
+offerings below 60 percent and at or above 95 percent, then examine
+whether the pattern is stable across year, facility, and program
+category.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Calculate fill rate with a documented capacity denominator and
+registration-status rule. List low- and high-fill offerings, then
+summarize their frequency by year, facility, and category. A pattern
+should be described as stable only if it persists across multiple
+relevant periods and is not driven by a few small-capacity or
+incorrectly coded programs.
+</p>
+</details>
+<h3 data-number="8.7.5" id="questions-for-discussion-7"><span
+class="header-section-number">8.7.5</span> Questions for discussion</h3>
+<ol type="1">
+<li>When should a data-quality finding become a client problem rather
+than remain a technical note?</li>
+<li>How can an EDA be comprehensive without becoming excessively
+long?</li>
+<li>What evidence would justify excluding an outlier from a final
+analysis?</li>
+</ol>
+</body>
+</html>

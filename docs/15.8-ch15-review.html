@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="15-technical-refreshers.html" accesskey="u" rel="up">Technical Refreshers</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="16-glossary.html" accesskey="n" rel="next">Glossary</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="15.7-ch15-reproducible-software-demonstrations.html" accesskey="p" rel="previous">Reproducible software demonstrations</a>
+</span>
+</div>
+</nav>
+<h2 data-number="15.8" id="ch15-review"><span
+class="header-section-number">15.8</span> Chapter Review</h2>
+<h3 data-number="15.8.1" id="chapter-summary-14"><span
+class="header-section-number">15.8.1</span> Chapter summary</h3>
+<p>Technical refreshers are most useful when they solve a specific
+project need. Across statistics, R, Excel, and Power BI, analysts should
+preserve the unit of analysis, distinguish rates from counts, separate
+inputs from calculations, validate relationships and measures, document
+transformations, and choose tools according to the task and handoff
+requirements.</p>
+<h3 data-number="15.8.2" id="common-mistakes-14"><span
+class="header-section-number">15.8.2</span> Common mistakes</h3>
+<ul>
+<li>using a statistical procedure without checking its measurement and
+data assumptions;</li>
+<li>mixing raw data, manual corrections, calculations, and presentation
+in one spreadsheet area;</li>
+<li>creating joins or Power BI relationships without validating grain
+and row counts;</li>
+<li>reporting a calculated value without an independent reasonableness
+check; and</li>
+<li>choosing software by habit when another tool would produce a clearer
+or more reproducible result.</li>
+</ul>
+<h3 data-number="15.8.3" id="technical-review-checklist"><span
+class="header-section-number">15.8.3</span> Technical review
+checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />The statistical concept matches the
+variable and question.</label></li>
+<li><label><input type="checkbox" />Counts, proportions, rates, and
+denominators are distinguished.</label></li>
+<li><label><input type="checkbox" />R work is project-relative and
+reproducible.</label></li>
+<li><label><input type="checkbox" />Excel assumptions are separated from
+formulas.</label></li>
+<li><label><input type="checkbox" />Power BI grain, keys, relationships,
+and measures are validated.</label></li>
+<li><label><input type="checkbox" />Cross-tool outputs have been
+reconciled.</label></li>
+<li><label><input type="checkbox" />Technical choices are connected to
+the project decision.</label></li>
+</ul>
+<h3 data-number="15.8.4" id="exercises-14"><span
+class="header-section-number">15.8.4</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> Choose the best primary tool for each
+task: fitting and validating a random forest, maintaining a
+client-editable scenario model, delivering a monthly interactive
+operations dashboard, and maintaining a data dictionary.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+R is well suited to fitting and validating the random forest. Excel is
+suitable for a client-editable scenario model and can maintain a
+structured data dictionary. Power BI is suitable for the monthly
+interactive dashboard. The final choices also depend on software access,
+data size, security, maintenance capacity, and handoff requirements.
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Reproduce the facility retention table
+in R, Excel, and Power BI. Confirm that all three tools use the same
+eligible denominator and produce the same rounded rates.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+The expected rates are 73.48 percent for Downtown Centre, 79.93 percent
+for Lakeside Centre, 69.48 percent for North Ridge Centre, and 75.82
+percent for Westbrook Centre. All tools should exclude censored periods
+from the eligible denominator and agree before rounding.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> In Excel, rebuild one membership-type
+CLV calculation with visible input cells, one row per year, survival
+probabilities, discounted margins, CAC, and a final total.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+The workbook should separate inputs from calculations. Year zero should
+show CAC, later rows should show survival probability, expected
+contribution margin, discount factor, and present value, and the final
+CLV should sum discounted margins and subtract CAC. Retention and
+discounting must use the same period, and changing an input should
+update every dependent value.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Use the Power BI guide in
+<code>powerbi/NVRW_Power_BI_Guide.md</code> to construct the model.
+Validate total visits, retained memberships, and contribution margin
+against the CSV files before designing the report page.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Validate table row counts, relationship cardinality, filter direction,
+distinct visit identifiers, retention eligibility, and the
+contribution-margin calculation before building visuals. Totals should
+match an independent calculation from the clean CSV files. Investigate
+discrepancies at the row, relationship, filter, and measure level rather
+than forcing one output to match another.
+</p>
+</details>
+<h3 data-number="15.8.5" id="questions-for-discussion-14"><span
+class="header-section-number">15.8.5</span> Questions for
+discussion</h3>
+<ol type="1">
+<li>When does spreadsheet flexibility become a reproducibility
+risk?</li>
+<li>Which calculations should have one authoritative
+implementation?</li>
+<li>How should a project document necessary manual steps?</li>
+</ol>
+</body>
+</html>

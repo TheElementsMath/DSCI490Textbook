@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="6-data-responsibility-and-confidentiality.html" accesskey="u" rel="up">Data Responsibility and Confidentiality</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="7-data-dictionaries-and-codebooks.html" accesskey="n" rel="next">Data Dictionaries and Codebooks</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="6.7-ch06-the-data-lifecycle.html" accesskey="p" rel="previous">The data lifecycle</a>
+</span>
+</div>
+</nav>
+<h2 data-number="6.8" id="ch06-review"><span
+class="header-section-number">6.8</span> Chapter Review</h2>
+<h3 data-number="6.8.1" id="chapter-summary-5"><span
+class="header-section-number">6.8.1</span> Chapter summary</h3>
+<p>Responsible data practice protects people and organizations
+throughout the data lifecycle. Analysts should use only the data and
+tools that are authorized and necessary, recognize that
+de-identification does not eliminate all risk, document access and
+transformation decisions, and follow the controlling policy for
+generative AI and external services.</p>
+<h3 data-number="6.8.2" id="common-mistakes-5"><span
+class="header-section-number">6.8.2</span> Common mistakes</h3>
+<ul>
+<li>assuming that access permission allows every possible use or
+disclosure;</li>
+<li>collecting or retaining fields that are not necessary for the
+analytical purpose;</li>
+<li>treating removed names as proof that re-identification is
+impossible;</li>
+<li>uploading confidential data to an external service without explicit
+authorization; and</li>
+<li>documenting security decisions only after analysis is complete.</li>
+</ul>
+<h3 data-number="6.8.3" id="data-responsibility-checklist"><span
+class="header-section-number">6.8.3</span> Data responsibility
+checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />The project team has read all
+applicable agreements and policies.</label></li>
+<li><label><input type="checkbox" />The permitted purpose and users are
+clear.</label></li>
+<li><label><input type="checkbox" />Only necessary variables and levels
+of detail are accessed.</label></li>
+<li><label><input type="checkbox" />Data are stored and transferred only
+through approved methods.</label></li>
+<li><label><input type="checkbox" />Access is limited to authorized
+people.</label></li>
+<li><label><input type="checkbox" />Derived files, prompts, outputs, and
+backups receive appropriate protection.</label></li>
+<li><label><input type="checkbox" />Small groups and indirect
+identifiers have been reviewed.</label></li>
+<li><label><input type="checkbox" />External services receive no
+restricted information without explicit approval.</label></li>
+<li><label><input type="checkbox" />Public and shared outputs have been
+checked for disclosure and interpretation risk.</label></li>
+<li><label><input type="checkbox" />Final retention, return, archival,
+or deletion requirements are known.</label></li>
+</ul>
+<h3 data-number="6.8.4" id="exercises-5"><span
+class="header-section-number">6.8.4</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> Classify every NVRW file by access
+level, approved use, retention period, and permitted storage location,
+even though the supplied case is synthetic.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+The published synthetic CSV files may be classified for instructional
+use in the approved project repository, while analysis outputs may be
+shared according to the project instructions. A real version of the same
+project would likely place member-level records in a restricted
+category, limit use to the approved purpose and team, store them only in
+authorized locations, and apply the client’s retention and disposal
+schedule.
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Prepare a pre-use checklist for an
+external generative AI service. Include confidentiality, authorization,
+data minimization, output verification, citation, and retention.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+Before use, confirm that course and client policies permit the service;
+determine whether any content is confidential, personal, or restricted;
+submit only the minimum authorized information; remove unnecessary
+identifiers; review service retention and training settings; verify
+every factual, analytical, and code output; document the use and
+required citations; and preserve only approved outputs in authorized
+storage.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> Examine whether a small
+program-by-location table could create indirect disclosure in a real
+client dataset. Propose a reporting treatment that protects
+confidentiality without inventing data.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+A responsible treatment might combine compatible categories, suppress a
+small cell, report a range, remove an unnecessary geographic breakdown,
+or restrict the detailed output to an authorized audience. The selected
+rule should follow the data agreement and be disclosed in a table note.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Draft a data-handling plan for a project
+containing member demographics, transaction histories, and free-text
+comments. Identify access levels, storage locations, approved tools,
+retention periods, and disposal procedures.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+Member-level demographics, transactions, and comments should be
+restricted to named project members and stored only in the approved
+encrypted location. Analysis should use the minimum fields needed, and
+free text should receive additional review for identifying details.
+Approved tools, export restrictions, backup rules, access review dates,
+the client’s retention period, and secure deletion responsibilities
+should all be documented before analysis begins.
+</p>
+</details>
+<p><strong>Exercise 5.</strong> Evaluate three proposed uses of
+generative AI in an applied project: debugging synthetic code,
+summarizing public documentation, and analyzing confidential client
+records. Explain what authorization and safeguards each use would
+require.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Debugging code with fully synthetic inputs may be permitted if the
+governing policy allows it and the output is verified. Summarizing
+public documentation still requires source checking and appropriate
+citation. Uploading confidential client records is not acceptable
+without explicit authorization, an approved service and account
+configuration, a compatible data-use agreement, minimum-necessary
+fields, and all required privacy and security safeguards. Course and
+client policy always controls.
+</p>
+</details>
+<h3 data-number="6.8.5" id="questions-for-discussion-5"><span
+class="header-section-number">6.8.5</span> Questions for discussion</h3>
+<ol type="1">
+<li>Why is removing names not always sufficient to de-identify a
+dataset?</li>
+<li>How could a visualization reveal confidential information even when
+it contains no individual rows?</li>
+<li>When could synthetic data be useful, and what claims could not be
+made from them?</li>
+</ol>
+</body>
+</html>

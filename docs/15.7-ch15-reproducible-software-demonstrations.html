@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Reproducible software demonstrations</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="15-technical-refreshers.html" accesskey="u" rel="up">Technical Refreshers</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="15.8-ch15-review.html" accesskey="n" rel="next">Chapter Review</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="15.6-ch15-selecting-the-best-tool.html" accesskey="p" rel="previous">Selecting the best tool</a>
+</span>
+</div>
+</nav>
+<h2 data-number="15.7"
+id="ch15-reproducible-software-demonstrations"><span
+class="header-section-number">15.7</span> Reproducible software
+demonstrations</h2>
+<p>The NVRW package provides the same analytical ideas in several
+forms:</p>
+<ul>
+<li><a
+href="scripts/nvrw_import_validate.R"><code>nvrw_import_validate.R</code></a>
+imports the raw files and performs explicit quality checks;</li>
+<li><a href="scripts/nvrw_eda.R"><code>nvrw_eda.R</code></a> produces
+monthly visit and retention summaries;</li>
+<li><a href="scripts/nvrw_analysis.R"><code>nvrw_analysis.R</code></a>
+demonstrates retention modelling, utilization projections, and CLV
+outputs;</li>
+<li><a
+href="data/nvrw/NVRW_Analysis_Examples.xlsx"><code>NVRW_Analysis_Examples.xlsx</code></a>
+provides inspectable tables and native Excel charts; and</li>
+<li><a
+href="powerbi/NVRW_Power_BI_Guide.md"><code>NVRW_Power_BI_Guide.md</code></a>
+specifies the data model and DAX measures for a Power BI report.</li>
+</ul>
+<figure>
+<img src="figures/nvrw_excel_summary.png" style="width:100.0%"
+alt="The Excel demonstration separates source tables from summarized decision information and uses native charts that remain editable." />
+<figcaption aria-hidden="true">The Excel demonstration separates source
+tables from summarized decision information and uses native charts that
+remain editable.</figcaption>
+</figure>
+<p>Screenshots communicate the intended appearance and reading order.
+Reproducible files allow readers to inspect formulas, relationships,
+code, and assumptions. Both are needed because appearance alone cannot
+establish analytical correctness.</p>
+</body>
+</html>

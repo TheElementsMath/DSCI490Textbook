@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="11-forecasting-projections-and-customer-value.html" accesskey="u" rel="up">Forecasting, Projections, and Customer Value</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="12-data-storytelling-and-thematic-cohesion.html" accesskey="n" rel="next">Data Storytelling and Thematic Cohesion</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="11.10-ch11-customer-lifetime-value.html" accesskey="p" rel="previous">Customer lifetime value</a>
+</span>
+</div>
+</nav>
+<h2 data-number="11.11" id="ch11-review"><span
+class="header-section-number">11.11</span> Chapter Review</h2>
+<h3 data-number="11.11.1" id="chapter-summary-10"><span
+class="header-section-number">11.11.1</span> Chapter summary</h3>
+<p>Forecasts learn from historical patterns, while projections and
+scenarios are conditional on stated assumptions. Reliable
+future-oriented work preserves time order in validation, uses compatible
+denominators and periods, reports uncertainty, and makes CLV components
+such as margin, retention, churn, acquisition cost, and discounting
+explicit.</p>
+<h3 data-number="11.11.2" id="common-mistakes-10"><span
+class="header-section-number">11.11.2</span> Common mistakes</h3>
+<ul>
+<li>mixing partial and complete time periods;</li>
+<li>selecting a model using random time splits;</li>
+<li>extrapolating far beyond the historical range without
+qualification;</li>
+<li>presenting scenarios as statistical intervals;</li>
+<li>assuming recommendation effects and then calling them
+forecasts;</li>
+<li>calculating utilization with incompatible denominators;</li>
+<li>treating revenue CLV as profit;</li>
+<li>including new customers in retention rates;</li>
+<li>applying one churn rate to all tenures without checking; and</li>
+<li>comparing CLV across cohorts with unequal observation windows.</li>
+</ul>
+<div class="quality">
+<p><strong>Quality standard:</strong> Every forecast, projection, and
+CLV result should expose its time horizon, population, inputs,
+assumptions, validation, uncertainty, and intended decision use.</p>
+</div>
+<h3 data-number="11.11.3" id="forecast-and-value-checklist"><span
+class="header-section-number">11.11.3</span> Forecast and value
+checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />The outcome, frequency, and horizon
+are clear.</label></li>
+<li><label><input type="checkbox" />Historical periods are complete and
+comparable.</label></li>
+<li><label><input type="checkbox" />A relevant baseline is
+included.</label></li>
+<li><label><input type="checkbox" />Validation preserves time
+order.</label></li>
+<li><label><input type="checkbox" />Forecasts, projections, scenarios,
+and targets are labelled correctly.</label></li>
+<li><label><input type="checkbox" />Utilization rates use compatible
+events and populations.</label></li>
+<li><label><input type="checkbox" />CLV distinguishes revenue, margin,
+CAC, retention, and discounting.</label></li>
+<li><label><input type="checkbox" />Recent cohorts have adequate
+observation windows.</label></li>
+<li><label><input type="checkbox" />Sensitivity to major assumptions is
+shown.</label></li>
+<li><label><input type="checkbox" />Recommendations do not create their
+own forecast evidence.</label></li>
+</ul>
+<h3 data-number="11.11.4" id="exercises-10"><span
+class="header-section-number">11.11.4</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> An NVRW campaign costs $18,000 and
+acquires 300 members. Expected annual revenue is $360 per member,
+contribution margin is 40 percent, expected active lifespan is three
+years, and discounting is ignored. Calculate CAC and the simple
+margin-based CLV.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+CAC is $18,000 divided by 300, or $60 per acquired member. Annual
+contribution margin is $360 times 0.40, or $144. Three-year contribution
+is $432, so simple margin-based CLV after CAC is $432 minus $60, or
+$372. The estimate assumes every acquired member remains active for
+three years.
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Use
+<code>data/nvrw/derived/monthly_visits.csv</code> to compare a seasonal
+naive forecast, a moving average, seasonal regression, and one ETS or
+ARIMA model. Validate each method using rolling twelve-month forecast
+origins.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+All methods must use the same complete monthly series, forecast horizon,
+rolling origins, and error metrics. The seasonal naive method is the
+baseline. Select a method using out-of-sample performance across origins
+rather than in-sample fit, and inspect whether errors are concentrated
+in particular facilities, seasons, or unusual periods.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> Reproduce
+<code>data/nvrw/derived/utilization_projection.csv</code>, then create
+low and high scenarios by varying both population and utilization. Do
+not describe the scenarios as confidence intervals.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+The base calculation should equal projected population multiplied by the
+stated utilization rate for the same geography, service, and period. Low
+and high scenarios should expose both altered inputs and preserve the
+same units. Label them conditional scenarios. They are not statistical
+confidence intervals because their bounds come from selected
+assumptions.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Recalculate CLV for each membership type
+when retention is five percentage points lower and higher than the
+central estimate. Identify which assumption has the largest practical
+effect.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Change retention by 0.05 in each direction while holding margin, CAC,
+discount rate, and horizon constant. Keep rates within zero and one and
+use consistent annual periods. Compare the dollar and percentage change
+in CLV by membership type. Retention will usually have a larger dollar
+effect for high-margin products, but the conclusion should be based on
+the recalculated sensitivity table.
+</p>
+</details>
+<h3 data-number="11.11.5" id="questions-for-discussion-10"><span
+class="header-section-number">11.11.5</span> Questions for
+discussion</h3>
+<ol type="1">
+<li>When should an organization prefer a projection to a statistical
+forecast?</li>
+<li>How should forecast performance be communicated when different
+methods perform similarly?</li>
+<li>When can maximizing CLV conflict with other organizational
+responsibilities?</li>
+</ol>
+</body>
+</html>

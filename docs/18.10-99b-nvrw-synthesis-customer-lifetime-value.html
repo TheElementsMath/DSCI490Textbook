@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Customer lifetime value</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="18-appendix-nvrw-complete-project-synthesis.html" accesskey="u" rel="up">Appendix: NVRW Complete Project Synthesis</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="18.11-99b-nvrw-synthesis-story-and-recommendations.html" accesskey="n" rel="next">Story and recommendations</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="18.9-99b-nvrw-synthesis-forecasting-and-utilization-projections.html" accesskey="p" rel="previous">Forecasting and utilization projections</a>
+</span>
+</div>
+</nav>
+<h2 data-number="18.10"
+id="99b-nvrw-synthesis-customer-lifetime-value"><span
+class="header-section-number">18.10</span> Customer lifetime value</h2>
+<p>The CLV analysis uses contribution margin rather than revenue and
+includes retention, acquisition cost, a four-year horizon, and an 8
+percent annual discount rate.</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Membership type</th>
+<th style="text-align: right;">Retention</th>
+<th style="text-align: right;">Average annual margin</th>
+<th style="text-align: right;">Assumed CAC</th>
+<th style="text-align: right;">Estimated four-year CLV</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Family annual</td>
+<td style="text-align: right;">82.7%</td>
+<td style="text-align: right;">$322</td>
+<td style="text-align: right;">$84</td>
+<td style="text-align: right;">$751</td>
+</tr>
+<tr class="even">
+<td>Adult annual</td>
+<td style="text-align: right;">76.3%</td>
+<td style="text-align: right;">$231</td>
+<td style="text-align: right;">$72</td>
+<td style="text-align: right;">$476</td>
+</tr>
+<tr class="odd">
+<td>Monthly flexible</td>
+<td style="text-align: right;">68.2%</td>
+<td style="text-align: right;">$191</td>
+<td style="text-align: right;">$63</td>
+<td style="text-align: right;">$340</td>
+</tr>
+<tr class="even">
+<td>Senior annual</td>
+<td style="text-align: right;">74.7%</td>
+<td style="text-align: right;">$135</td>
+<td style="text-align: right;">$55</td>
+<td style="text-align: right;">$257</td>
+</tr>
+<tr class="odd">
+<td>Youth annual</td>
+<td style="text-align: right;">75.2%</td>
+<td style="text-align: right;">$89</td>
+<td style="text-align: right;">$48</td>
+<td style="text-align: right;">$160</td>
+</tr>
+</tbody>
+</table>
+<p>Family annual memberships have the highest estimated CLV because both
+annual contribution margin and retention are comparatively high. This
+does not mean that other members are unimportant. NVRW may have access,
+community-service, and inclusion goals that are not represented by
+financial CLV.</p>
+<p>Campaign spending totals $49,900 and produces 283 attributed
+conversions, an overall attributed CAC of approximately $176. This value
+is much higher than the simplified membership-type CAC assumptions used
+in the CLV table. The discrepancy should be investigated before
+acquisition decisions are made. Possible explanations include different
+cost-allocation rules, assisted conversions, incomplete attribution, and
+the difference between campaign-specific and blended acquisition
+cost.</p>
+</body>
+</html>

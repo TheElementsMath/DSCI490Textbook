@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Preparing time-series data</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="11-forecasting-projections-and-customer-value.html" accesskey="u" rel="up">Forecasting, Projections, and Customer Value</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="11.3-ch11-moving-averages.html" accesskey="n" rel="next">Moving averages</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="11.1-ch11-forecast-projection-scenario-or-target.html" accesskey="p" rel="previous">Forecast, projection, scenario, or target?</a>
+</span>
+</div>
+</nav>
+<h2 data-number="11.2" id="ch11-preparing-time-series-data"><span
+class="header-section-number">11.2</span> Preparing time-series
+data</h2>
+<p>Before fitting a forecasting method, determine:</p>
+<ul>
+<li>what one observation represents;</li>
+<li>whether periods are equally spaced;</li>
+<li>whether the series is a count, rate, average, or total;</li>
+<li>whether partial periods are present;</li>
+<li>whether definitions changed;</li>
+<li>whether missing periods mean zero or unrecorded data;</li>
+<li>whether unusual events should be modelled, adjusted, or retained;
+and</li>
+<li>how far into the future the forecast must extend.</li>
+</ul>
+<p>Visualize the series before modelling. Look for trend, seasonality,
+level changes, changing variation, outliers, and structural breaks. A
+method that performed well under one operating system may not remain
+valid after a major policy, facility, or data-collection change.</p>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Estimating effort and calendar time</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="3-planning-the-project.html" accesskey="u" rel="up">Planning the Project</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="3.5-ch03-a-deliverable-based-timeline.html" accesskey="n" rel="next">A deliverable-based timeline</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="3.3-ch03-decomposing-the-work.html" accesskey="p" rel="previous">Decomposing the work</a>
+</span>
+</div>
+</nav>
+<h2 data-number="3.4"
+id="ch03-estimating-effort-and-calendar-time"><span
+class="header-section-number">3.4</span> Estimating effort and calendar
+time</h2>
+<p>The first attempt is only one part of the work. A more complete
+estimate is:</p>
+<p>[ = + + + +. ]</p>
+<p>Here, <strong>production</strong> is the time required to create the
+first complete version. <strong>Verification</strong> includes checking
+data, formulas, code, outputs, and interpretation.
+<strong>Revision</strong> includes changes after review.
+<strong>Integration</strong> includes reconciling the work with other
+analyses and deliverables. <strong>Contingency</strong> is a reasonable
+allowance for uncertainty.</p>
+<p>Planned effort should be expressed in person-hours. Calendar time is
+different because a four-hour task may take several days to complete if
+it depends on a response, approval, file transfer, software
+installation, or teammate review.</p>
+<div class="example">
+<p><strong>Worked example: estimating an EDA section</strong></p>
+<p>Suppose a team estimates the following:</p>
+<ul>
+<li>initial summaries and figures: 6 hours;</li>
+<li>data-quality verification: 3 hours;</li>
+<li>peer review and corrections: 3 hours;</li>
+<li>integration with the dictionary and report: 2 hours;</li>
+<li>contingency for unexpected data issues: 2 hours.</li>
+</ul>
+<p>The planned effort is</p>
+<p>[ 6+3+3+2+2=16. ]</p>
+<p>If two people can work independently on parts of the analysis, the
+calendar time may be shorter than 16 hours. If both people need access
+to a definition from the client before proceeding, the calendar time may
+be longer. The schedule should record both effort and waiting
+dependencies.</p>
+</div>
+</body>
+</html>

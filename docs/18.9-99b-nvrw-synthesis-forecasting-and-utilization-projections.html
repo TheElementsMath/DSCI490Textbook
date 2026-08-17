@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Forecasting and utilization projections</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="18-appendix-nvrw-complete-project-synthesis.html" accesskey="u" rel="up">Appendix: NVRW Complete Project Synthesis</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="18.10-99b-nvrw-synthesis-customer-lifetime-value.html" accesskey="n" rel="next">Customer lifetime value</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="18.8-99b-nvrw-synthesis-retention-model.html" accesskey="p" rel="previous">Retention model</a>
+</span>
+</div>
+</nav>
+<h2 data-number="18.9"
+id="99b-nvrw-synthesis-forecasting-and-utilization-projections"><span
+class="header-section-number">18.9</span> Forecasting and utilization
+projections</h2>
+<p>Time-series forecasting and population-utilization projections answer
+different questions. A time-series model estimates future visits from
+historical temporal patterns. A utilization projection estimates visits
+under an assumed future population and utilization rate.</p>
+<p>The constant-rate projection uses 2025 visits per 1,000 residents and
+applies that rate to the projected service-area population. Under this
+assumption, projected visits rise by approximately 9.3 to 9.5 percent at
+Downtown, Lakeside, and North Ridge between 2025 and 2030. Westbrook
+rises by approximately 12.5 percent because its synthetic service-area
+population grows more quickly.</p>
+<p>These are conditional projections. They do not account for facility
+capacity, changes in pricing, new competitors, program redesign, or
+successful retention initiatives. A planning presentation should include
+low, central, and high utilization scenarios rather than one precise
+number.</p>
+</body>
+</html>

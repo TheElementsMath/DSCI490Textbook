@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Selecting the best tool</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="15-technical-refreshers.html" accesskey="u" rel="up">Technical Refreshers</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="15.7-ch15-reproducible-software-demonstrations.html" accesskey="n" rel="next">Reproducible software demonstrations</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="15.5-ch15-power-bi-refresher.html" accesskey="p" rel="previous">Power BI refresher</a>
+</span>
+</div>
+</nav>
+<h2 data-number="15.6" id="ch15-selecting-the-best-tool"><span
+class="header-section-number">15.6</span> Selecting the best tool</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>Often suitable</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Reproducible cleaning and modelling</td>
+<td>R</td>
+<td>Saved code, packages, validation, automation</td>
+</tr>
+<tr class="even">
+<td>Client-editable assumption model</td>
+<td>Excel</td>
+<td>Familiar review and transparent cell calculations</td>
+</tr>
+<tr class="odd">
+<td>Interactive recurring reporting</td>
+<td>Power BI</td>
+<td>Data model, measures, filters, refreshable pages</td>
+</tr>
+<tr class="even">
+<td>Data dictionary and source log</td>
+<td>Excel</td>
+<td>Filterable structured tables and collaborative review</td>
+</tr>
+<tr class="odd">
+<td>Final narrative report</td>
+<td>Bookdown or document system</td>
+<td>Integrated prose, figures, references, and appendices</td>
+</tr>
+</tbody>
+</table>
+<p>The best tool is the one that supports correctness, auditability,
+audience use, and maintenance for the task. Using several tools is
+reasonable when handoffs and definitions are controlled.</p>
+<div class="common-error">
+<p><strong>Common mistake:</strong> Recreating the same calculation
+independently in R, Excel, and Power BI without a reconciliation plan
+can produce three plausible but inconsistent answers.</p>
+</div>
+</body>
+</html>

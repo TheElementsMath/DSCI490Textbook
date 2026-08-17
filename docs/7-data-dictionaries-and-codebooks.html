@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Data Dictionaries and Codebooks</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="index.html" accesskey="u" rel="up">Data Science in Practice</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="7.1-ch07-a-dictionary-controls-meaning.html" accesskey="n" rel="next">A dictionary controls meaning</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="6.8-ch06-review.html" accesskey="p" rel="previous">Chapter Review</a>
+</span>
+</div>
+</nav>
+<h1 data-number="7" id="data-dictionaries-and-codebooks"><span
+class="header-section-number">7</span> Data Dictionaries and
+Codebooks</h1>
+<p>A data dictionary is part of the analytical evidence, not clerical
+documentation added at the end. This chapter shows how dataset-level and
+variable-level metadata establish meaning, expose uncertainty,
+distinguish source from derived variables, and create a shared reference
+for analysis, review, and handoff.</p>
+<div class="chapter-learning">
+<p><strong>Learning outcomes</strong></p>
+<p>After completing this chapter, you should be able to:</p>
+<ul>
+<li>explain why a data dictionary is an analytical control rather than
+clerical paperwork;</li>
+<li>document dataset-level and variable-level metadata;</li>
+<li>distinguish source, standardized, and derived variables;</li>
+<li>document valid values, missingness, units, relationships, and
+sensitivity; and</li>
+<li>use a dictionary to detect ambiguity and inconsistency before they
+affect results.</li>
+</ul>
+</div>
+<div class="key-terms">
+<p><strong>Key terms</strong></p>
+<ul>
+<li><p><strong>Data dictionary:</strong> A structured reference that
+documents the meaning, format, valid values, source, quality, and use of
+data elements in a dataset.</p></li>
+<li><p><strong>Codebook:</strong> A structured description of variables
+and coded values, often emphasizing how categories or responses are
+represented. In practice, the terms codebook and data dictionary
+frequently overlap.</p></li>
+<li><p><strong>Data element:</strong> A single defined item of
+information, usually represented by a field or variable.</p></li>
+<li><p><strong>Allowed value:</strong> A value or category that is valid
+for a data element under its definition and business rules.</p></li>
+<li><p><strong>Missing-value code:</strong> A stored value, symbol, or
+blank that represents unavailable, unknown, inapplicable, suppressed, or
+otherwise unrecorded information.</p></li>
+<li><p><strong>Derived variable:</strong> A variable created from one or
+more source fields using a documented rule or calculation.</p></li>
+<li><p><strong>Unit of analysis:</strong> The entity represented by one
+observation in an analysis, such as a person, transaction, visit,
+product, location, or month.</p></li>
+<li><p><strong>Provenance:</strong> The documented origin and history of
+data, including its source, collection context, version, and
+transformations.</p></li>
+</ul>
+</div>
+</body>
+</html>

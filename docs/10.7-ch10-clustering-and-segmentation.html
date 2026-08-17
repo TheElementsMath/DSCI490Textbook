@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Clustering and segmentation</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="10-analysis-and-machine-learning.html" accesskey="u" rel="up">Analysis and Machine Learning</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="10.8-ch10-evaluation-must-match-the-decision.html" accesskey="n" rel="next">Evaluation must match the decision</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="10.6-ch10-random-forests.html" accesskey="p" rel="previous">Random forests</a>
+</span>
+</div>
+</nav>
+<h2 data-number="10.7" id="ch10-clustering-and-segmentation"><span
+class="header-section-number">10.7</span> Clustering and
+segmentation</h2>
+<p>Clustering is unsupervised. It does not predict a known target. It
+groups observations according to features and a similarity rule selected
+by the analyst.</p>
+<p>A defensible clustering analysis requires:</p>
+<ul>
+<li>a clear reason for segmentation;</li>
+<li>an appropriate unit, such as one row per member rather than one row
+per transaction;</li>
+<li>selected features that represent meaningful behaviour or value;</li>
+<li>scaling when variables use different units;</li>
+<li>comparison of several cluster solutions;</li>
+<li>assessment of stability and separation;</li>
+<li>useful descriptions based on observed features; and</li>
+<li>a practical action that differs across segments.</li>
+</ul>
+<p>K-means seeks groups that minimize within-cluster squared distance
+from cluster centres. It works best for roughly compact clusters in
+appropriately scaled numeric features. Hierarchical clustering can
+reveal nested structure. Other methods may be preferable for irregular
+shapes, mixed variable types, or noise.</p>
+<div class="example">
+<p><strong>Recurring case: NVRW member segments</strong></p>
+<p>NVRW constructs one row per member with first-year visit frequency,
+program diversity, average contribution margin, digital-service use,
+location diversity, and twelve-month retention eligibility. After
+scaling the numeric features, the team compares several k-means
+solutions and examines stability across resamples.</p>
+<p>One useful solution identifies frequent multi-service members,
+program-focused households, occasional drop-in users, and recent
+low-engagement members. The labels describe observed behaviour. The team
+does not infer income, motivation, or preferences that are absent from
+the data.</p>
+</div>
+</body>
+</html>

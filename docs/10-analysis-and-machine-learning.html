@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Analysis and Machine Learning</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="index.html" accesskey="u" rel="up">Data Science in Practice</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="10.1-ch10-begin-with-the-purpose.html" accesskey="n" rel="next">Begin with the purpose</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="9.9-ch09-review.html" accesskey="p" rel="previous">Chapter Review</a>
+</span>
+</div>
+</nav>
+<h1 data-number="10" id="analysis-and-machine-learning"><span
+class="header-section-number">10</span> Analysis and Machine
+Learning</h1>
+<p>A useful model is selected and evaluated for a defined analytical
+purpose. This chapter reviews regression, classification, trees, random
+forests, and clustering while emphasizing validation, baseline
+comparison, error analysis, interpretability, and the limits of what a
+model can claim in a client-facing decision context.</p>
+<div class="chapter-learning">
+<p><strong>Learning outcomes</strong></p>
+<p>After completing this chapter, you should be able to:</p>
+<ul>
+<li>select an analytical method that matches the question and unit of
+analysis;</li>
+<li>distinguish description, explanation, prediction, classification,
+and segmentation;</li>
+<li>construct a defensible training and evaluation workflow;</li>
+<li>explain the uses and limitations of regression, logistic regression,
+decision trees, random forests, and clustering; and</li>
+<li>connect model performance to the consequence of a decision.</li>
+</ul>
+</div>
+<div class="key-terms">
+<p><strong>Key terms</strong></p>
+<ul>
+<li><p><strong>Analytical plan:</strong> A documented explanation of the
+question, data, variables, method, validation, outputs, assumptions, and
+decision criteria for an analysis.</p></li>
+<li><p><strong>Target variable:</strong> The outcome a supervised model
+is intended to predict or explain.</p></li>
+<li><p><strong>Feature:</strong> A variable used as an input to a
+model.</p></li>
+<li><p><strong>Training data:</strong> Observations used to estimate
+model parameters or learn patterns.</p></li>
+<li><p><strong>Validation:</strong> Evaluation using observations not
+used to fit the model, or another defensible procedure that estimates
+performance beyond the training data.</p></li>
+<li><p><strong>Baseline:</strong> A simple reference method against
+which a more complex model is compared.</p></li>
+<li><p><strong>Data leakage:</strong> The use of information during
+model development that would not legitimately be available when a
+prediction is made.</p></li>
+<li><p><strong>Classification threshold:</strong> The probability cutoff
+used to convert a predicted probability into a class decision.</p></li>
+<li><p><strong>Hyperparameter:</strong> A model setting selected outside
+the ordinary parameter-estimation process, often through resampling or
+validation.</p></li>
+<li><p><strong>Clustering:</strong> An unsupervised method that groups
+observations according to a defined measure of similarity.</p></li>
+</ul>
+</div>
+</body>
+</html>

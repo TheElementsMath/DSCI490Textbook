@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Combining sources</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="9-researching-secondary-data.html" accesskey="u" rel="up">Researching Secondary Data</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="9.7-ch09-census-and-geographic-data.html" accesskey="n" rel="next">Census and geographic data</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="9.5-ch09-the-source-log.html" accesskey="p" rel="previous">The source log</a>
+</span>
+</div>
+</nav>
+<h2 data-number="9.6" id="ch09-combining-sources"><span
+class="header-section-number">9.6</span> Combining sources</h2>
+<p>Never join sources using labels alone without checking definitions.
+Geographic names, age bands, fiscal years, service categories, and
+identifiers may differ. Preserve original fields and document every
+mapping.</p>
+<p>Before a join, ask:</p>
+<ul>
+<li>Do the two sources describe the same population?</li>
+<li>Are time periods aligned?</li>
+<li>Are counts measured at the same frequency?</li>
+<li>Are categories mutually compatible?</li>
+<li>Are geographic boundaries from the same version?</li>
+<li>Are identifiers unique at the intended grain?</li>
+<li>What proportion of records fail to match?</li>
+</ul>
+<p>After the join, verify row counts, duplicate keys, unmatched records,
+totals, and whether the join changed the unit of analysis.</p>
+<div class="example">
+<p><strong>Recurring case: selecting NVRW population data</strong></p>
+<p>NVRW wants population denominators for its four service areas. One
+source provides current municipal populations, while another provides
+projections for larger planning regions. Neither aligns perfectly with
+the organization’s postal-area service boundaries.</p>
+<p>The team documents three options: use municipalities and accept
+incomplete alignment, aggregate NVRW activity to planning regions, or
+construct a postal-area crosswalk using a compatible census geography.
+It selects the planning-region approach for long-term projections
+because the boundaries and projected populations are available
+consistently. The loss of local detail is reported as a limitation.</p>
+</div>
+</body>
+</html>

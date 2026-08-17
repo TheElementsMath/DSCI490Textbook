@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="7-data-dictionaries-and-codebooks.html" accesskey="u" rel="up">Data Dictionaries and Codebooks</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="8-a-reproducible-exploratory-data-analysis.html" accesskey="n" rel="next">A Reproducible Exploratory Data Analysis</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="7.8-ch07-using-the-dictionary-during-analysis.html" accesskey="p" rel="previous">Using the dictionary during analysis</a>
+</span>
+</div>
+</nav>
+<h2 data-number="7.9" id="ch07-review"><span
+class="header-section-number">7.9</span> Chapter Review</h2>
+<h3 data-number="7.9.1" id="chapter-summary-6"><span
+class="header-section-number">7.9.1</span> Chapter summary</h3>
+<p>A strong data dictionary documents the dataset’s grain, keys,
+coverage, provenance, and limitations as well as each variable’s
+meaning, type, units, allowed values, missing-value rules, source, and
+transformations. It should be created early, tested against the data,
+and updated when definitions or derived variables change.</p>
+<h3 data-number="7.9.2" id="common-mistakes-6"><span
+class="header-section-number">7.9.2</span> Common mistakes</h3>
+<ul>
+<li>copying the column name into the definition;</li>
+<li>documenting technical type without business meaning;</li>
+<li>omitting the unit of analysis;</li>
+<li>listing observed values as though they were necessarily valid;</li>
+<li>failing to document special missing codes;</li>
+<li>recording missing counts without a dataset version;</li>
+<li>overwriting source fields;</li>
+<li>omitting derived variables; and</li>
+<li>allowing report labels to drift away from dictionary
+definitions.</li>
+</ul>
+<h3 data-number="7.9.3" id="dictionary-review-checklist"><span
+class="header-section-number">7.9.3</span> Dictionary review
+checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Every table has a documented unit of
+analysis and key.</label></li>
+<li><label><input type="checkbox" />Dataset version, dimensions, source,
+and coverage are recorded.</label></li>
+<li><label><input type="checkbox" />Every source and derived variable
+has one row.</label></li>
+<li><label><input type="checkbox" />Definitions explain business
+meaning.</label></li>
+<li><label><input type="checkbox" />Types, formats, units, values, and
+missing codes are clear.</label></li>
+<li><label><input type="checkbox" />Relationships and join keys are
+documented.</label></li>
+<li><label><input type="checkbox" />Derived variables have reproducible
+rules.</label></li>
+<li><label><input type="checkbox" />Sensitivity and ownership are
+visible.</label></li>
+<li><label><input type="checkbox" />The dictionary matches the data used
+in final outputs.</label></li>
+</ul>
+<h3 data-number="7.9.4" id="exercises-6"><span
+class="header-section-number">7.9.4</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> An analyst defines
+<code>active_member</code> as “active member” and codes recent members
+without a full twelve-month observation period as <code>FALSE</code>.
+Identify two problems and rewrite the entry.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+The definition repeats the name without specifying the rule, and members
+who cannot yet be observed for twelve months are incorrectly treated as
+known non-retained cases. A stronger variable is
+<code>retained_12m</code>: “Member has an active membership on the date
+twelve months after the initial membership start.” Allowed values are
+<code>TRUE</code>, <code>FALSE</code>, and missing when twelve months of
+follow-up are unavailable. The entry should name the source dates and
+extract date used.
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Open
+<code>data/nvrw/data_dictionary.csv</code>. Select five variables from
+at least three datasets and evaluate whether each definition identifies
+the unit, timing, allowed values, and interpretation clearly enough for
+a new analyst.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+The existing dictionary is a useful starting point but several entries
+need more detail for independent use. For example,
+<code>renewed_next_period</code> should define the eligibility and
+censoring date; <code>contribution_margin</code> should name the revenue
+and cost fields and period; <code>duration_minutes</code> should
+document the raw quality rule; <code>campaign_spend</code> should state
+the campaign period and allocation; and <code>population</code> should
+distinguish estimates from projections and identify geography and
+reference year.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> Compare
+<code>data/nvrw/raw/members.csv</code> with
+<code>data/nvrw/clean/members.csv</code>. Document the standardization
+rule for <code>membership_type</code>, <code>service_area</code>, and
+<code>postal_fsa</code> without describing the cleaned result as the
+original source value.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+The rule should state that raw strings are mapped to the approved
+category labels for membership type and service area, while postal FSA
+values are trimmed and standardized to uppercase three-character codes.
+The raw field must remain identifiable as the source, and the dictionary
+or cleaning log should record the mapping, unmatched values, and the
+clean variable’s provenance. If the supplied raw and clean values
+already match, that is a validation result, not evidence that no rule
+exists.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Design dictionary entries for annual
+visits per active member and program fill rate. Include the formula,
+denominator, exclusions, time window, and source fields.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+<strong>Annual visits per active member:</strong> Count of valid,
+deduplicated visits during the calendar year divided by members with an
+active membership in the defined year; exclude invalid visit identifiers
+and document how partial-year memberships are treated. <strong>Program
+fill rate:</strong> Eligible registrations divided by the program
+capacity measured at the stated reference point; define the treatment of
+cancelled registrations, wait-list records, missing capacity, and zero
+capacity. Both entries should list the source tables, join keys, and
+calculation date.
+</p>
+</details>
+<h3 data-number="7.9.5" id="questions-for-discussion-6"><span
+class="header-section-number">7.9.5</span> Questions for discussion</h3>
+<ol type="1">
+<li>When should a data owner, rather than an analyst, approve a
+definition?</li>
+<li>Can a dictionary be complete when some meanings remain unknown?</li>
+<li>Which dictionary fields are most important for a public open
+dataset?</li>
+</ol>
+</body>
+</html>

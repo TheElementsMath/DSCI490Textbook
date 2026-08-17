@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Statistics refresher</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="15-technical-refreshers.html" accesskey="u" rel="up">Technical Refreshers</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="15.3-ch15-r-and-rstudio-refresher.html" accesskey="n" rel="next">R and RStudio refresher</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="15.1-ch15-use-refreshers-when-the-project-needs-them.html" accesskey="p" rel="previous">Use refreshers when the project needs them</a>
+</span>
+</div>
+</nav>
+<h2 data-number="15.2" id="ch15-statistics-refresher"><span
+class="header-section-number">15.2</span> Statistics refresher</h2>
+<h3 data-number="15.2.1" id="variables-and-measurement"><span
+class="header-section-number">15.2.1</span> Variables and
+measurement</h3>
+<p>Distinguish categorical from numeric variables and nominal from
+ordered categories. A numeric storage type does not guarantee a
+quantitative meaning. Member identifiers, postal codes, and category
+codes should not be averaged simply because they contain digits.</p>
+<p>Identify the observational unit, population, sampling or collection
+process, and time period. These decisions determine which summaries and
+comparisons are meaningful.</p>
+<h3 data-number="15.2.2" id="centre-and-spread"><span
+class="header-section-number">15.2.2</span> Centre and spread</h3>
+<p>The mean uses every value and is sensitive to extremes. The median
+identifies the middle ordered value and is resistant to extreme
+observations. Standard deviation summarizes typical distance from the
+mean under its usual interpretation, while the interquartile range
+describes the middle half of the distribution.</p>
+<p>Choose summaries that fit the distribution and decision. Median visit
+duration may be more representative when a small number of long events
+create strong skew. Total facility hours may still matter for staffing
+even when the median is preferred for describing a typical visit.</p>
+<h3 data-number="15.2.3" id="counts-proportions-and-rates"><span
+class="header-section-number">15.2.3</span> Counts, proportions, and
+rates</h3>
+<p>A count answers “how many?” A proportion answers “what share of the
+defined total?” A rate relates events to a population, exposure, or time
+period.</p>
+<p>Always show the denominator. A 20 percent cancellation rate could
+mean 2 of 10 registrations or 2,000 of 10,000. The proportions are
+equal, but their stability and operational importance differ.</p>
+<h3 data-number="15.2.4" id="conditional-comparison"><span
+class="header-section-number">15.2.4</span> Conditional comparison</h3>
+<p>Overall patterns can differ from subgroup patterns. Compare retention
+within acquisition channel, location, membership type, or joining period
+when those variables are relevant. Do not create so many subgroups that
+the analysis becomes unstable or disclosive.</p>
+<h3 data-number="15.2.5" id="confidence-intervals-and-tests"><span
+class="header-section-number">15.2.5</span> Confidence intervals and
+tests</h3>
+<p>A confidence interval expresses uncertainty under a statistical
+procedure and its assumptions. A hypothesis test evaluates compatibility
+with a stated null model. Neither determines whether the result matters
+to the organization.</p>
+<p>Report effect size, uncertainty, assumptions, and practical
+consequence. Avoid using “significant” without clarifying whether it
+means statistical or practical significance.</p>
+<p>The OpenIntro-based statistics reference provides deeper review <span
+class="citation" data-cites="openintro2015">(<a
+href="18.16-99b-nvrw-synthesis-complete-project-exercise.html#ref-openintro2015"
+role="doc-biblioref">Diez et al. 2015</a>)</span>.</p>
+<div class="example">
+<p><strong>Recurring case: statistical and practical
+importance</strong></p>
+<p>NVRW estimates that one acquisition channel has a twelve-month
+retention rate 1.2 percentage points higher than another. The confidence
+interval excludes zero because the dataset is large. However, the
+higher-retention channel costs substantially more per acquired member.
+The decision requires effect size, CAC, contribution margin, and
+uncertainty, not the p-value alone.</p>
+</div>
+</body>
+</html>

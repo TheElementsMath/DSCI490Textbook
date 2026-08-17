@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="13-professional-tables-and-visualizations.html" accesskey="u" rel="up">Professional Tables and Visualizations</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="14-reports-recommendations-and-presentations.html" accesskey="n" rel="next">Reports, Recommendations, and Presentations</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="13.11-ch13-dashboards-and-power-bi.html" accesskey="p" rel="previous">Dashboards and Power BI</a>
+</span>
+</div>
+</nav>
+<h2 data-number="13.12" id="ch13-review"><span
+class="header-section-number">13.12</span> Chapter Review</h2>
+<h3 data-number="13.12.1" id="chapter-summary-12"><span
+class="header-section-number">13.12.1</span> Chapter summary</h3>
+<p>Professional visual communication begins with the comparison the
+audience must make. The design should use accurate encodings,
+informative titles, deliberate emphasis, readable labels, appropriate
+uncertainty, accessible colour and structure, and enough context to
+prevent a technically correct display from becoming misleading.</p>
+<h3 data-number="13.12.2" id="common-mistakes-12"><span
+class="header-section-number">13.12.2</span> Common mistakes</h3>
+<ul>
+<li>choosing a chart type before identifying the intended
+comparison;</li>
+<li>using area, volume, or decorative effects that distort
+magnitude;</li>
+<li>removing labels, baselines, denominators, or uncertainty needed for
+interpretation;</li>
+<li>using colour as the only way to distinguish important categories;
+and</li>
+<li>building dashboards around available fields rather than user
+decisions.</li>
+</ul>
+<h3 data-number="13.12.3" id="visualization-checklist"><span
+class="header-section-number">13.12.3</span> Visualization
+checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />The display answers a specific
+question.</label></li>
+<li><label><input type="checkbox" />The title states the supported
+takeaway.</label></li>
+<li><label><input type="checkbox" />Units, period, population, and
+source are visible.</label></li>
+<li><label><input type="checkbox" />Axes and order support accurate
+comparison.</label></li>
+<li><label><input type="checkbox" />Colour is purposeful and not the
+only distinction.</label></li>
+<li><label><input type="checkbox" />Labels remain readable at final
+size.</label></li>
+<li><label><input type="checkbox" />Missing, suppressed, and zero values
+are distinguishable.</label></li>
+<li><label><input type="checkbox" />Uncertainty is labelled
+correctly.</label></li>
+<li><label><input type="checkbox" />The figure does not imply
+unsupported precision or causality.</label></li>
+<li><label><input type="checkbox" />Maps use appropriate geography,
+denominator, and attribution.</label></li>
+</ul>
+<h3 data-number="13.12.4" id="exercises-12"><span
+class="header-section-number">13.12.4</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> Choose the most appropriate primary
+display for each task: comparing retention across four acquisition
+channels, showing monthly visits for three years, reporting exact
+facility capacity and wait-list counts, and examining the relationship
+between first-month visits and twelve-month retention.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Use a bar or dot plot for retention by channel, a line chart for monthly
+visits, a concise table for exact capacity and wait-list values, and a
+grouped retention or probability plot for the relationship between early
+visits and a binary retention outcome.
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Create one excellent table and one
+excellent chart from <code>retention_by_facility.csv</code>. Give each
+an explanatory title and a note defining the denominator.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+The table should show facility, eligible members, retained members, and
+retention rate sorted meaningfully. A suitable chart is a horizontal dot
+plot of retention rate with a common percentage scale. A message title
+might note that North Ridge has the lowest observed retention. The note
+should define eligible members and explain that censored periods are
+excluded.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> Redesign the monthly visit figure for an
+audience interested primarily in North Ridge. Preserve the comparison
+with other facilities without making them visually dominant.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+Use one saturated, accessible colour and a slightly heavier line for
+North Ridge. Show the other facilities in thin neutral grey, keep a
+common axis, directly label North Ridge, and use a title that states its
+relevant pattern. Do not delete the comparison series or use separate
+scales.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Conduct an accessibility audit of your
+figure. Check colour dependence, contrast, text size, reading order,
+alternative text, and whether the main conclusion remains visible in
+grayscale.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+The figure should not depend on colour alone, should meet readable
+contrast and text-size expectations, and should preserve a logical
+title-to-chart-to-note reading order. Alternative text should state the
+chart’s purpose and principal comparison. A grayscale check should leave
+the highlighted series and conclusion distinguishable through line
+weight, labels, symbols, or position.
+</p>
+</details>
+<h3 data-number="13.12.5" id="questions-for-discussion-12"><span
+class="header-section-number">13.12.5</span> Questions for
+discussion</h3>
+<ol type="1">
+<li>When does highlighting become manipulation?</li>
+<li>Should every report figure have an explanatory title?</li>
+<li>When are exact values more important than rapid visual
+comparison?</li>
+</ol>
+</body>
+</html>

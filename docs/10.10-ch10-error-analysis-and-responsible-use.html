@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Error analysis and responsible use</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="10-analysis-and-machine-learning.html" accesskey="u" rel="up">Analysis and Machine Learning</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="10.11-ch10-review.html" accesskey="n" rel="next">Chapter Review</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="10.9-ch10-r-demonstration-structure.html" accesskey="p" rel="previous">R demonstration structure</a>
+</span>
+</div>
+</nav>
+<h2 data-number="10.10"
+id="ch10-error-analysis-and-responsible-use"><span
+class="header-section-number">10.10</span> Error analysis and
+responsible use</h2>
+<p>After evaluating overall performance, inspect where errors occur.
+Compare performance across time periods, locations, service types, and
+groups that matter to the decision. A model that performs poorly for a
+small facility may be unsuitable for facility-level staffing even if
+system-wide performance is strong.</p>
+<p>Ask whether the model could create unfair treatment, whether a
+feature acts as a proxy for sensitive information, and whether affected
+people have a reasonable way to correct inaccurate data or decisions.
+Prediction does not remove the need for human judgment and
+governance.</p>
+<div class="common-error">
+<p><strong>Common mistake:</strong> Selecting the model with the best
+single validation score without considering uncertainty, subgroup
+performance, interpretability, implementation cost, and the consequence
+of error.</p>
+</div>
+</body>
+</html>

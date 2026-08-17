@@ -61,6 +61,17 @@ td {
   padding: 0.8rem 1rem !important;
 }
 
+.book .chapter-learning,
+.book .key-terms {
+  border-left: 4px solid !important;
+  padding: 0.9rem 1.1rem !important;
+}
+
+.book .glossary-list {
+  border-left: 4px solid !important;
+  padding: 0.9rem 1.1rem !important;
+}
+
 .note,
 .example,
 .exercise,
@@ -73,6 +84,45 @@ td {
   border-radius: 8px;
   margin: 1.25rem 0;
   padding: 0.8rem 1rem;
+}
+
+.chapter-learning,
+.key-terms {
+  border-left: 4px solid;
+  border-radius: 8px;
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.1rem;
+}
+
+.glossary-list {
+  background: #f5f8fb;
+  border-left: 4px solid;
+  border-color: #587a95 !important;
+  border-radius: 8px;
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.1rem;
+}
+
+.chapter-learning {
+  background: #eef4f8;
+  border-color: #587a95 !important;
+}
+
+.key-terms {
+  background: #e3f2fd;
+  border-color: #1e88e5 !important;
+}
+
+.chapter-learning > p:first-child,
+.key-terms > p:first-child {
+  color: #17365d;
+  font-size: 1.08rem;
+  margin-top: 0;
+}
+
+.chapter-learning > :last-child,
+.key-terms > :last-child {
+  margin-bottom: 0;
 }
 
 .definition {

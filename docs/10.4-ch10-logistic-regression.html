@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Logistic regression</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="10-analysis-and-machine-learning.html" accesskey="u" rel="up">Analysis and Machine Learning</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="10.5-ch10-decision-trees.html" accesskey="n" rel="next">Decision trees</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="10.3-ch10-linear-regression.html" accesskey="p" rel="previous">Linear regression</a>
+</span>
+</div>
+</nav>
+<h2 data-number="10.4" id="ch10-logistic-regression"><span
+class="header-section-number">10.4</span> Logistic regression</h2>
+<p>Logistic regression estimates the probability of a binary outcome.
+Rather than modelling the outcome directly, it models the log-odds:</p>
+<p>[ ()=_0+_1X_1++_kX_k. ]</p>
+<p>Predicted probabilities must be separated from final class decisions.
+A threshold of 0.50 is not automatically appropriate. The best threshold
+depends on the cost of false positives, the cost of false negatives,
+available intervention capacity, and the distribution of predicted
+risk.</p>
+<p>For retention analysis, useful metrics may include area under the ROC
+curve, precision, recall, specificity, calibration, lift in a targeted
+group, and expected intervention value. Accuracy alone can be misleading
+when most members renew.</p>
+<div class="example">
+<p><strong>Recurring case: twelve-month retention</strong></p>
+<p>NVRW defines the target as whether a new member remains active twelve
+months after joining. Recent members without a complete observation
+window are excluded from model development rather than labelled as
+non-retained.</p>
+<p>The model uses information available during the first sixty days,
+such as membership type, location, acquisition channel, visit frequency,
+program registration, and service contacts. It does not use later
+renewal transactions, because that would leak the outcome into the
+features.</p>
+</div>
+</body>
+</html>

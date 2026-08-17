@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Geospatial visualization</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="13-professional-tables-and-visualizations.html" accesskey="u" rel="up">Professional Tables and Visualizations</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="13.10-ch13-accessibility.html" accesskey="n" rel="next">Accessibility</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="13.8-ch13-charts-requiring-caution.html" accesskey="p" rel="previous">Charts requiring caution</a>
+</span>
+</div>
+</nav>
+<h2 data-number="13.9" id="ch13-geospatial-visualization"><span
+class="header-section-number">13.9</span> Geospatial visualization</h2>
+<p>Use a map when location is part of the question, not merely because
+geographic fields exist. A choropleth often needs a relevant denominator
+such as population, households, eligible customers, or facility
+capacity.</p>
+<p>A reproducible mapping workflow should:</p>
+<ol type="1">
+<li>choose the geography that matches the decision;</li>
+<li>join with stable identifiers rather than labels alone;</li>
+<li>inspect unmatched, duplicated, and missing regions;</li>
+<li>select an appropriate coordinate reference system;</li>
+<li>simplify geometry only after checking important shapes;</li>
+<li>use an inset when a dense area would otherwise be unreadable;
+and</li>
+<li>include data, boundary, and basemap attribution.</li>
+</ol>
+<p>The UPGo tutorial demonstrates a script-based R workflow using
+<code>sf</code>, <code>ggplot2</code>, and census geography, including
+themes and inset maps <span class="citation"
+data-cites="wachsmuth2019">(<a
+href="18.16-99b-nvrw-synthesis-complete-project-exercise.html#ref-wachsmuth2019"
+role="doc-biblioref">Wachsmuth 2019</a>)</span>. CensusMapper and
+<code>cancensus</code> can support identification and retrieval of
+Canadian census variables and geometries <span class="citation"
+data-cites="censusmapper cancensus2026">(<a
+href="18.16-99b-nvrw-synthesis-complete-project-exercise.html#ref-censusmapper"
+role="doc-biblioref">CensusMapper, n.d.</a>; <a
+href="18.16-99b-nvrw-synthesis-complete-project-exercise.html#ref-cancensus2026"
+role="doc-biblioref">Bergmann, Shkolnik, and Jacobs
+2026</a>)</span>.</p>
+<div class="example">
+<p><strong>Recurring case: visits or utilization?</strong></p>
+<p>An NVRW map of total visits makes the most populated service area
+appear dominant. A second map shows visits per 1,000 residents. One
+rural area now has the highest utilization rate despite having fewer
+total visits.</p>
+<p>Neither map is universally better. Counts support total capacity
+decisions, while rates support comparison of relative service use. The
+report presents both and explains the different questions.</p>
+</div>
+</body>
+</html>

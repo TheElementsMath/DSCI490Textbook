@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Dataset-level metadata</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="7-data-dictionaries-and-codebooks.html" accesskey="u" rel="up">Data Dictionaries and Codebooks</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="7.4-ch07-variable-level-fields.html" accesskey="n" rel="next">Variable-level fields</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="7.2-ch07-begin-with-the-unit-of-analysis.html" accesskey="p" rel="previous">Begin with the unit of analysis</a>
+</span>
+</div>
+</nav>
+<h2 data-number="7.3" id="ch07-dataset-level-metadata"><span
+class="header-section-number">7.3</span> Dataset-level metadata</h2>
+<p>Information that applies to the complete file should be recorded once
+rather than repeated in every variable row. This commonly includes:</p>
+<ul>
+<li>dataset name and version;</li>
+<li>date received or extracted;</li>
+<li>source system and responsible owner;</li>
+<li>purpose for which the data were originally collected;</li>
+<li>number of rows and columns at the time of review;</li>
+<li>unit of analysis;</li>
+<li>primary and foreign keys;</li>
+<li>time and geographic coverage;</li>
+<li>expected update frequency;</li>
+<li>confidentiality or access classification; and</li>
+<li>lifecycle status, such as draft, current, superseded, or
+archived.</li>
+</ul>
+<p>Dimensions and missing counts change when the dataset changes. These
+values are meaningful only when they are attached to a date or
+version.</p>
+</body>
+</html>

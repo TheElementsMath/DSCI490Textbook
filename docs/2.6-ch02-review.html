@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="2-from-organizational-concern-to-analytical-question.html" accesskey="u" rel="up">From Organizational Concern to Analytical Question</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="3-planning-the-project.html" accesskey="n" rel="next">Planning the Project</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="2.5-ch02-questions-that-uncover-assumptions.html" accesskey="p" rel="previous">Questions that uncover assumptions</a>
+</span>
+</div>
+</nav>
+<h2 data-number="2.6" id="ch02-review"><span
+class="header-section-number">2.6</span> Chapter Review</h2>
+<h3 data-number="2.6.1" id="chapter-summary-1"><span
+class="header-section-number">2.6.1</span> Chapter summary</h3>
+<p>Questioning is analytical work because it determines what evidence
+will be gathered, which comparisons will be made, and how results may be
+used. A strong questioning process distinguishes decision needs from
+research tasks, exposes assumptions, and creates a traceable path from
+organizational concern to possible action.</p>
+<h3 data-number="2.6.2" id="common-mistakes-1"><span
+class="header-section-number">2.6.2</span> Common mistakes</h3>
+<ul>
+<li>asking only what output the client wants;</li>
+<li>using “why” when the available data can establish only
+association;</li>
+<li>combining several outcomes into one vague question;</li>
+<li>treating the requested method as fixed before assessing the
+data;</li>
+<li>failing to identify who will use the result;</li>
+<li>ignoring questions that the available evidence cannot answer;
+and</li>
+<li>continuing to answer an original question after the project’s
+purpose has changed.</li>
+</ul>
+<div class="quality">
+<p><strong>Quality standard:</strong> Every major analysis should
+connect to a documented question, and every major question should
+connect to a decision, understanding, or implementation need.</p>
+</div>
+<h3 data-number="2.6.3" id="exercises-1"><span
+class="header-section-number">2.6.3</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> Rewrite the concern “Our membership is
+not growing fast enough” as one management question, two research
+questions, three analytical questions, and one implementation
+question.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+<strong>Management:</strong> Which evidence-based actions could improve
+sustainable membership growth?
+</p>
+<p>
+<strong>Research:</strong> How do comparable organizations measure
+active membership? What external population or participation trends
+affect the service area?
+</p>
+<p>
+<strong>Analytical:</strong> How have new memberships, renewals,
+cancellations, and net growth changed by month? Which member groups have
+the lowest twelve-month retention? Which locations and acquisition
+channels produce members with the highest contribution margin and
+retention?
+</p>
+<p>
+<strong>Implementation:</strong> What pilot could be tested with a
+priority group, and which measures would determine whether it should
+continue?
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Build a question map for NVRW’s concern
+about uneven demand. Include one management question, two research
+questions, three analytical questions, and two implementation
+questions.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+<strong>Management:</strong> How should NVRW allocate programs,
+staffing, and capacity across facilities? <strong>Research:</strong> How
+are service-area populations expected to change, and what participation
+benchmarks are available? <strong>Analytical:</strong> How do visits per
+active member differ by facility and month? Which programs repeatedly
+operate below 60 percent or at least 95 percent capacity? Which service
+areas show the largest projected gap between population-driven demand
+and current capacity? <strong>Implementation:</strong> Which schedule
+change should be piloted first, and which utilization and access
+measures will determine whether it continues?
+</p>
+</details>
+<p><strong>Exercise 3.</strong> For each analytical question in your
+question map, identify the unit of analysis, comparison, time period,
+required data, and intended decision use.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Each question should name one defensible unit, such as a member-month,
+visit-month, program offering, or facility-year. It should also state
+the relevant groups or periods being compared, the observation window,
+the datasets and derived fields required, and the decision the result
+will inform. If any element is missing, the question is not yet ready to
+guide analysis.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Rewrite the question “Why is North Ridge
+failing?” to remove the unsupported premise and make the question
+answerable with the available data.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+How do retention, visit frequency, membership mix, and program access at
+North Ridge compare with the other NVRW facilities, and which observable
+factors are associated with any differences? This wording does not
+assume failure or claim causation.
+</p>
+</details>
+<h3 data-number="2.6.4" id="questions-for-discussion-1"><span
+class="header-section-number">2.6.4</span> Questions for discussion</h3>
+<ol type="1">
+<li>When can repeated questioning become unproductive?</li>
+<li>How should an analyst respond when a client insists on a method that
+does not fit the question?</li>
+<li>Which questions require a subject expert rather than additional data
+analysis?</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Begin with the unit of analysis</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="7-data-dictionaries-and-codebooks.html" accesskey="u" rel="up">Data Dictionaries and Codebooks</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="7.3-ch07-dataset-level-metadata.html" accesskey="n" rel="next">Dataset-level metadata</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="7.1-ch07-a-dictionary-controls-meaning.html" accesskey="p" rel="previous">A dictionary controls meaning</a>
+</span>
+</div>
+</nav>
+<h2 data-number="7.2" id="ch07-begin-with-the-unit-of-analysis"><span
+class="header-section-number">7.2</span> Begin with the unit of
+analysis</h2>
+<p>Before documenting individual variables, determine what one row
+represents. This is the unit of analysis or grain of the table. A table
+may contain one row per member, membership period, facility visit,
+program registration, transaction, location-day, or location-month.</p>
+<p>Confusing these units creates serious errors. A member with twenty
+visits appears twenty times in a visit table. Counting rows would
+measure visits, not members. Joining a one-row-per-member table to the
+visit table duplicates member characteristics across visits, which may
+be appropriate for visit-level analysis but not for estimating the
+number of members.</p>
+<p>The dictionary should state the unit clearly and explain the keys
+that identify one observation.</p>
+<div class="example">
+<p><strong>Recurring case: NVRW data structure</strong></p>
+<p>North Valley Recreation and Wellness provides four files:</p>
+<ul>
+<li><code>members</code>: one row per member;</li>
+<li><code>memberships</code>: one row per membership period;</li>
+<li><code>visits</code>: one row per recorded facility entry; and</li>
+<li><code>transactions</code>: one row per purchase line.</li>
+</ul>
+<p>The four tables cannot be summarized or joined in the same way. The
+dictionary records each table’s grain, primary identifier, time
+coverage, and relationship to the other files before the team begins
+analysis.</p>
+</div>
+</body>
+</html>

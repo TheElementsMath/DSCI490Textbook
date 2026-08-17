@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>A dictionary controls meaning</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="7-data-dictionaries-and-codebooks.html" accesskey="u" rel="up">Data Dictionaries and Codebooks</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="7.2-ch07-begin-with-the-unit-of-analysis.html" accesskey="n" rel="next">Begin with the unit of analysis</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="7-data-dictionaries-and-codebooks.html" accesskey="p" rel="previous">Data Dictionaries and Codebooks</a>
+</span>
+</div>
+</nav>
+<h2 data-number="7.1" id="ch07-a-dictionary-controls-meaning"><span
+class="header-section-number">7.1</span> A dictionary controls
+meaning</h2>
+<p>A column name is not a definition. A variable called
+<code>status</code>, <code>revenue</code>, <code>active</code>, or
+<code>date</code> may have an obvious technical format while still
+having an uncertain business meaning. Does <code>revenue</code> include
+tax, refunds, or discounts? Does <code>active</code> refer to a current
+contract, a recent visit, or any transaction during the year? Is
+<code>date</code> the date of purchase, entry, service, posting, or
+extraction?</p>
+<p>A data dictionary creates a shared and reviewable interpretation. It
+allows analysts, subject experts, and decision makers to identify
+disagreement before different definitions appear in code, charts,
+models, and recommendations.</p>
+<p>The dictionary is therefore a quality-control tool. It connects
+business meaning to technical implementation. When an analyst changes a
+category, derives a rate, or resolves missing values, the dictionary
+records the decision and makes it available to the rest of the
+project.</p>
+</body>
+</html>

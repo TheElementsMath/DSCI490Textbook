@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Retention model</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="18-appendix-nvrw-complete-project-synthesis.html" accesskey="u" rel="up">Appendix: NVRW Complete Project Synthesis</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="18.9-99b-nvrw-synthesis-forecasting-and-utilization-projections.html" accesskey="n" rel="next">Forecasting and utilization projections</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="18.7-99b-nvrw-synthesis-secondary-evidence.html" accesskey="p" rel="previous">Secondary evidence</a>
+</span>
+</div>
+</nav>
+<h2 data-number="18.8" id="99b-nvrw-synthesis-retention-model"><span
+class="header-section-number">18.8</span> Retention model</h2>
+<p>The modelling file contains one row per member and uses information
+that would be available during or at the end of the first membership
+period. The target is first-period renewal, with censored members
+removed from supervised modelling.</p>
+<p>A defensible workflow would compare:</p>
+<ul>
+<li>a majority-class or overall-rate baseline;</li>
+<li>logistic regression for an interpretable probability model;</li>
+<li>a decision tree for transparent nonlinear rules; and</li>
+<li>a random forest if it produces a material validation
+improvement.</li>
+</ul>
+<p>Data should be split by member, and preprocessing must be estimated
+using training data only. If the model will be used for future cohorts,
+a time-based validation is preferable to a purely random split.</p>
+<p>Accuracy is not sufficient. NVRW has limited outreach capacity, so
+evaluation should emphasize calibration, precision among the
+highest-risk members, recall within the contactable group, and expected
+contribution margin preserved under alternative intervention
+effects.</p>
+<p>The model may show that low first-90-day visit frequency is
+associated with non-renewal. That does not prove that increasing visits
+will cause renewal. The correct next step is a monitored pilot rather
+than a causal claim.</p>
+</body>
+</html>

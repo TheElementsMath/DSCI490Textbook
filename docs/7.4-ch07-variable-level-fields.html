@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Variable-level fields</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="7-data-dictionaries-and-codebooks.html" accesskey="u" rel="up">Data Dictionaries and Codebooks</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="7.5-ch07-source-standardized-and-derived-variables.html" accesskey="n" rel="next">Source, standardized, and derived variables</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="7.3-ch07-dataset-level-metadata.html" accesskey="p" rel="previous">Dataset-level metadata</a>
+</span>
+</div>
+</nav>
+<h2 data-number="7.4" id="ch07-variable-level-fields"><span
+class="header-section-number">7.4</span> Variable-level fields</h2>
+<p>Use one row per variable in a formatted table that can be filtered
+and reviewed.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data element name</td>
+<td>Client-friendly name</td>
+</tr>
+<tr class="even">
+<td>Dataset variable name</td>
+<td>Exact name used in code or software</td>
+</tr>
+<tr class="odd">
+<td>Definition</td>
+<td>Detailed business meaning</td>
+</tr>
+<tr class="even">
+<td>Data type</td>
+<td>Character, integer, decimal, date, logical, and so on</td>
+</tr>
+<tr class="odd">
+<td>Format</td>
+<td>Date pattern, precision, or code pattern</td>
+</tr>
+<tr class="even">
+<td>Allowed values or range</td>
+<td>Valid categories or numeric limits</td>
+</tr>
+<tr class="odd">
+<td>Default value</td>
+<td>Value supplied when no other value is entered</td>
+</tr>
+<tr class="even">
+<td>Requirement status</td>
+<td>Required, conditionally required, or optional</td>
+</tr>
+<tr class="odd">
+<td>Constraints and rules</td>
+<td>Uniqueness, business rules, keys, and restrictions</td>
+</tr>
+<tr class="even">
+<td>Source</td>
+<td>Original field, secondary source, or derived field</td>
+</tr>
+<tr class="odd">
+<td>Relationships</td>
+<td>Links to identifiers, tables, or related variables</td>
+</tr>
+<tr class="even">
+<td>Example values</td>
+<td>Safe examples that clarify interpretation</td>
+</tr>
+<tr class="odd">
+<td>Missing-value representation</td>
+<td>Blank, <code>NA</code>, <code>Unknown</code>, special code, and so
+on</td>
+</tr>
+<tr class="even">
+<td>Missing count or rate</td>
+<td>Extent of missingness for the stated version</td>
+</tr>
+<tr class="odd">
+<td>Unit</td>
+<td>Dollars, minutes, percentage, count, and so on</td>
+</tr>
+<tr class="even">
+<td>Derivation</td>
+<td>Reproducible rule for an engineered variable</td>
+</tr>
+<tr class="odd">
+<td>Sensitivity</td>
+<td>Privacy classification or handling restriction</td>
+</tr>
+<tr class="even">
+<td>Owner or steward</td>
+<td>Person or role responsible for meaning or quality</td>
+</tr>
+<tr class="odd">
+<td>Status and notes</td>
+<td>Changes, ambiguities, corrections, or caveats</td>
+</tr>
+</tbody>
+</table>
+<p>Not every variable will have a default, constraint, or relationship.
+Record <code>None</code> or <code>Not applicable</code> when the absence
+matters. Zero missing values should also be documented rather than left
+blank.</p>
+</body>
+</html>

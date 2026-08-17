@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Recurring case: connecting EDA to the problem</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="8-a-reproducible-exploratory-data-analysis.html" accesskey="u" rel="up">A Reproducible Exploratory Data Analysis</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="8.6-ch08-a-professional-eda-report.html" accesskey="n" rel="next">A professional EDA report</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="8.4-ch08-outlier-decisions.html" accesskey="p" rel="previous">Outlier decisions</a>
+</span>
+</div>
+</nav>
+<h2 data-number="8.5"
+id="ch08-recurring-case-connecting-eda-to-the-problem"><span
+class="header-section-number">8.5</span> Recurring case: connecting EDA
+to the problem</h2>
+<p>NVRW’s initial concern is uneven demand and possible capacity
+pressure. The EDA establishes:</p>
+<ul>
+<li>total visits increased over three complete years;</li>
+<li>growth is concentrated at Central and Lakeside during weekday
+evenings;</li>
+<li>family-program wait lists increased, but one year of capacity data
+is incomplete;</li>
+<li>members acquired through community events have lower initial volume
+but higher twelve-month retention;</li>
+<li>recent members cannot yet be classified on twelve-month retention;
+and</li>
+<li>facility-entry data contain duplicate scanner events requiring an
+episode rule.</li>
+</ul>
+<p>These findings change the project. The team narrows capacity analysis
+to reliable periods, separates visits from unique users, adds a
+retention model with a valid observation window, and seeks population
+projections for the two growing service areas.</p>
+</body>
+</html>

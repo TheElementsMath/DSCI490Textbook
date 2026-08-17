@@ -22,6 +22,8 @@ The searchable HTML book will be written to `docs/`.
 
 The GitBook is split by second-level sections. Each `##` heading begins a separate page, while third-level `###` headings remain on the same page as their parent section. This keeps individual topics shorter and easier to navigate, consistent with the page structure used in the Precalculus textbook.
 
+Each substantive chapter begins with a short orientation paragraph followed by learning outcomes and an individually defined key-term list on the chapter-title page. Each chapter ends with one Chapter Review page containing a summary, common mistakes, exercises, and questions for discussion. Every exercise is followed immediately by a Check Your Work or One Possible Answer dropdown.
+
 ## Contents
 
 The book contains developed chapters on:

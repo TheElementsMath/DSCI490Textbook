@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Excel refresher</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="15-technical-refreshers.html" accesskey="u" rel="up">Technical Refreshers</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="15.5-ch15-power-bi-refresher.html" accesskey="n" rel="next">Power BI refresher</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="15.3-ch15-r-and-rstudio-refresher.html" accesskey="p" rel="previous">R and RStudio refresher</a>
+</span>
+</div>
+</nav>
+<h2 data-number="15.4" id="ch15-excel-refresher"><span
+class="header-section-number">15.4</span> Excel refresher</h2>
+<p>Excel is effective for small-to-medium auditable models, assumption
+tables, data dictionaries, review logs, and outputs used by
+non-programming audiences. It becomes fragile when transformations
+depend on hidden manual steps or formulas are copied inconsistently.</p>
+<h3 data-number="15.4.1"
+id="separate-inputs-calculations-and-outputs"><span
+class="header-section-number">15.4.1</span> Separate inputs,
+calculations, and outputs</h3>
+<p>Use clearly labelled sections or sheets. Inputs should be typed
+values with units and sources. Calculations should reference inputs
+rather than embed assumptions. Outputs should present the results needed
+for review.</p>
+<h3 data-number="15.4.2" id="references"><span
+class="header-section-number">15.4.2</span> References</h3>
+<p>If a formula copied down should always use the discount rate in cell
+<code>B3</code>, use an absolute reference such as <code>$B$3</code>. If
+the year should change by row, use a relative reference such as
+<code>A8</code>.</p>
+<h3 data-number="15.4.3" id="tables-lookups-and-pivots"><span
+class="header-section-number">15.4.3</span> Tables, lookups, and
+pivots</h3>
+<p>Excel tables create structured ranges that expand consistently. Use
+lookups with stable keys and inspect unmatched values. Pivot tables are
+useful for rapid summaries, but their source range, refresh state,
+filters, and calculated fields must be documented.</p>
+<h3 data-number="15.4.4" id="formula-auditing"><span
+class="header-section-number">15.4.4</span> Formula auditing</h3>
+<p>Check for inconsistent formulas, hard-coded values, omitted rows,
+hidden cells, text-formatted numbers, and error suppression. Use
+reasonableness tests and reconcile totals with the source.</p>
+<div class="example">
+<p><strong>Recurring case: CLV workbook</strong></p>
+<p>NVRW’s workbook contains an assumptions sheet for revenue, margin,
+retention, discount rate, horizon, and CAC. A calculation sheet shows
+yearly survival probability, margin, discount factor, present value, and
+cumulative CLV. A summary sheet compares scenarios. Changing one
+assumption updates the complete model without editing formulas.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Explaining technical methods</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="14-reports-recommendations-and-presentations.html" accesskey="u" rel="up">Reports, Recommendations, and Presentations</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="14.10-ch14-delivery-and-questions.html" accesskey="n" rel="next">Delivery and questions</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="14.8-ch14-presentation-design.html" accesskey="p" rel="previous">Presentation design</a>
+</span>
+</div>
+</nav>
+<h2 data-number="14.9" id="ch14-explaining-technical-methods"><span
+class="header-section-number">14.9</span> Explaining technical
+methods</h2>
+<p>Prepare a plain-language explanation for every model, metric, and
+projection assumption. A useful explanation covers:</p>
+<ol type="1">
+<li>what the method is trying to estimate;</li>
+<li>which information it uses;</li>
+<li>how performance was checked;</li>
+<li>what the result means; and</li>
+<li>what the method cannot establish.</li>
+</ol>
+<p>For example: “The retention model estimates the probability that an
+eligible new member will remain active for twelve months using
+information available in the first sixty days. We tested it on members
+not used to fit the model and compared it with a majority baseline. It
+identifies a group for a pilot, but it does not establish why members
+leave or prove that contact will improve retention.”</p>
+</body>
+</html>

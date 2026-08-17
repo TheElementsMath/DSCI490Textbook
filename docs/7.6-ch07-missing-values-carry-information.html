@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Missing values carry information</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="7-data-dictionaries-and-codebooks.html" accesskey="u" rel="up">Data Dictionaries and Codebooks</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="7.7-ch07-building-the-dictionary.html" accesskey="n" rel="next">Building the dictionary</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="7.5-ch07-source-standardized-and-derived-variables.html" accesskey="p" rel="previous">Source, standardized, and derived variables</a>
+</span>
+</div>
+</nav>
+<h2 data-number="7.6" id="ch07-missing-values-carry-information"><span
+class="header-section-number">7.6</span> Missing values carry
+information</h2>
+<p><code>NA</code>, blank, zero, <code>Unknown</code>,
+<code>Not asked</code>, and <code>Not applicable</code> may describe
+different processes. Combining them without investigation can hide a
+system problem or change the population being analyzed.</p>
+<p>For each variable, determine:</p>
+<ul>
+<li>how missing information is stored;</li>
+<li>whether different missing states have different meanings;</li>
+<li>whether missingness is expected under a business rule;</li>
+<li>whether the pattern changes by time, source, location, or group;
+and</li>
+<li>whether the missing value prevents a valid calculation.</li>
+</ul>
+<p>If no values are missing, record a count of zero for the current
+version. This confirms that the field was checked.</p>
+</body>
+</html>

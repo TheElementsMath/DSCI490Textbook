@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="10-analysis-and-machine-learning.html" accesskey="u" rel="up">Analysis and Machine Learning</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="11-forecasting-projections-and-customer-value.html" accesskey="n" rel="next">Forecasting, Projections, and Customer Value</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="10.10-ch10-error-analysis-and-responsible-use.html" accesskey="p" rel="previous">Error analysis and responsible use</a>
+</span>
+</div>
+</nav>
+<h2 data-number="10.11" id="ch10-review"><span
+class="header-section-number">10.11</span> Chapter Review</h2>
+<h3 data-number="10.11.1" id="chapter-summary-9"><span
+class="header-section-number">10.11.1</span> Chapter summary</h3>
+<p>Defensible modelling begins with the decision, outcome, unit of
+analysis, and error consequences rather than with a preferred algorithm.
+Candidate methods should be compared with relevant baselines using
+validation that matches intended use, then examined for stability,
+subgroup performance, leakage, interpretability, and responsible
+use.</p>
+<h3 data-number="10.11.2" id="common-mistakes-9"><span
+class="header-section-number">10.11.2</span> Common mistakes</h3>
+<ul>
+<li>choosing a method before defining the outcome and decision use;</li>
+<li>evaluating performance on data used to fit or tune the model;</li>
+<li>allowing future or post-outcome information to leak into
+predictors;</li>
+<li>reporting one aggregate metric without examining error types or
+subgroups; and</li>
+<li>presenting association or predictive importance as proof of
+causation.</li>
+</ul>
+<h3 data-number="10.11.3" id="model-quality-checklist"><span
+class="header-section-number">10.11.3</span> Model quality
+checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />The target, unit, population, and
+prediction time are defined.</label></li>
+<li><label><input type="checkbox" />Features would be available when the
+model is used.</label></li>
+<li><label><input type="checkbox" />Splitting prevents time, entity, and
+preprocessing leakage.</label></li>
+<li><label><input type="checkbox" />A relevant baseline is
+included.</label></li>
+<li><label><input type="checkbox" />Tuning uses training or validation
+data only.</label></li>
+<li><label><input type="checkbox" />Metrics reflect the decision and
+class balance.</label></li>
+<li><label><input type="checkbox" />Final performance is measured on
+untouched data.</label></li>
+<li><label><input type="checkbox" />Errors and subgroup performance are
+examined.</label></li>
+<li><label><input type="checkbox" />Interpretation avoids unsupported
+causal language.</label></li>
+<li><label><input type="checkbox" />Monitoring and retraining needs are
+documented.</label></li>
+</ul>
+<h3 data-number="10.11.4" id="exercises-9"><span
+class="header-section-number">10.11.4</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> NVRW’s retention dataset contains 85
+percent renewals. A model that predicts renewal for every member has 85
+percent accuracy. Has the model succeeded?</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+No. The model only reproduces the majority-class rate and identifies no
+non-renewals. Treat it as a baseline. Evaluation should include recall
+and precision for the actionable class, calibration, lift in the group
+NVRW could contact, and expected value under intervention capacity and
+cost.
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Use
+<code>data/nvrw/derived/member_model.csv</code> to define the target,
+prediction time, eligible population, features, and excluded information
+for a first-period retention model.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+The target is first-period renewal among members with complete
+follow-up. The prediction time should be fixed before the renewal
+decision, such as after a defined early-engagement window. Eligible
+cases exclude censored members. Features may include information
+available by the prediction time, such as membership type, facility,
+acquisition channel, and early visits. Exclude later visits, renewal
+status fields, and any value calculated after the prediction time.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> Construct a baseline and compare
+logistic regression with one tree-based method. Use a split that
+prevents the same member from appearing in both training and test
+data.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Use a majority-class or simple rate baseline, then split by member
+identifier so all records for one member remain in one partition. Fit
+preprocessing and tuning only on training data, compare both methods
+with decision-relevant metrics, and evaluate the selected method once on
+the untouched test set. Report uncertainty and whether the improvement
+over baseline is practically meaningful.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Assume NVRW can contact only 150
+members. Evaluate precision, recall, calibration, and expected
+contribution margin among the 150 highest-risk eligible members. Explain
+which metric best fits the decision.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Rank only eligible members using predictions generated without test-set
+leakage. Precision among the top 150 indicates how concentrated
+non-renewals are in the contact group, recall shows how many total
+non-renewals the limited program reaches, calibration checks whether
+predicted risks are credible, and expected contribution margin connects
+targeting to value. The primary measure should reflect the actual
+objective and the cost and expected effect of contact, not accuracy
+alone.
+</p>
+</details>
+<h3 data-number="10.11.5" id="questions-for-discussion-9"><span
+class="header-section-number">10.11.5</span> Questions for
+discussion</h3>
+<ol type="1">
+<li>When is a simpler model preferable even if a complex model performs
+slightly better?</li>
+<li>What makes a customer segment operationally useful?</li>
+<li>How should a team respond when no model improves meaningfully on the
+baseline?</li>
+</ol>
+</body>
+</html>

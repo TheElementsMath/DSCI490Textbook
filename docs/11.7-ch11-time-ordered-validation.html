@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Time-ordered validation</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="11-forecasting-projections-and-customer-value.html" accesskey="u" rel="up">Forecasting, Projections, and Customer Value</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="11.8-ch11-population-utilization-projections.html" accesskey="n" rel="next">Population-utilization projections</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="11.6-ch11-arima.html" accesskey="p" rel="previous">ARIMA</a>
+</span>
+</div>
+</nav>
+<h2 data-number="11.7" id="ch11-time-ordered-validation"><span
+class="header-section-number">11.7</span> Time-ordered validation</h2>
+<p>Forecasting methods should be evaluated as they would be used. A
+random train-test split destroys the time order. Instead, fit on earlier
+periods and evaluate on later periods.</p>
+<p>Rolling-origin evaluation repeats this process across several
+cutoffs:</p>
+<ol type="1">
+<li>fit using data available at the first cutoff;</li>
+<li>forecast the chosen horizon;</li>
+<li>record error when actual values become available;</li>
+<li>move the cutoff forward; and</li>
+<li>repeat.</li>
+</ol>
+<p>Compare MAE, RMSE, scaled error, interval coverage, and performance
+at the required horizon. A method that is strong one month ahead may be
+poor twelve months ahead.</p>
+<div class="example">
+<p><strong>Recurring case: monthly visits</strong></p>
+<p>NVRW compares a seasonal naive baseline, a three-month moving
+average, seasonal regression, ETS, and seasonal ARIMA for monthly
+facility visits. Evaluation uses rolling cutoffs with a twelve-month
+horizon.</p>
+<p>ETS has the lowest average MAE, but its errors are concentrated at
+Lakeside after a facility expansion. The team reports separate location
+models and notes that the post-expansion period provides limited
+evidence for long-range forecasting.</p>
+</div>
+</body>
+</html>

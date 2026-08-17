@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="3-planning-the-project.html" accesskey="u" rel="up">Planning the Project</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="4-team-charters-and-collaboration.html" accesskey="n" rel="next">Team Charters and Collaboration</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="3.7-ch03-risk-management.html" accesskey="p" rel="previous">Risk management</a>
+</span>
+</div>
+</nav>
+<h2 data-number="3.8" id="ch03-review"><span
+class="header-section-number">3.8</span> Chapter Review</h2>
+<h3 data-number="3.8.1" id="chapter-summary-2"><span
+class="header-section-number">3.8.1</span> Chapter summary</h3>
+<p>Effective planning begins with the decision and final deliverables,
+then works backward to identify tasks, dependencies, milestones,
+reviews, and risks. Estimates should distinguish active effort from
+calendar time, include integration and revision, and be updated when new
+evidence changes the scope or sequence of work.</p>
+<h3 data-number="3.8.2" id="common-mistakes-2"><span
+class="header-section-number">3.8.2</span> Common mistakes</h3>
+<ul>
+<li>estimating only first-pass production time;</li>
+<li>using the final deadline as the first integration date;</li>
+<li>assigning tasks without reviewers;</li>
+<li>failing to distinguish effort from waiting time;</li>
+<li>recording risks without owners or responses;</li>
+<li>leaving large tasks such as “finish report” undecomposed; and</li>
+<li>treating the schedule as fixed after project assumptions
+change.</li>
+</ul>
+<div class="common-error">
+<p><strong>Common mistake:</strong> Integration is not a final
+formatting step. It is analytical work that reconciles definitions,
+methods, evidence, citations, conclusions, and recommendations across
+the project.</p>
+</div>
+<h3 data-number="3.8.3" id="project-planning-checklist"><span
+class="header-section-number">3.8.3</span> Project planning
+checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />Every deliverable has a definition
+of done.</label></li>
+<li><label><input type="checkbox" />Large work packages have been
+decomposed into observable tasks.</label></li>
+<li><label><input type="checkbox" />Every task has an owner and
+reviewer.</label></li>
+<li><label><input type="checkbox" />Dependencies and waiting periods are
+visible.</label></li>
+<li><label><input type="checkbox" />Internal review dates occur before
+external deadlines.</label></li>
+<li><label><input type="checkbox" />Verification, revision, integration,
+rehearsal, and contingency are included.</label></li>
+<li><label><input type="checkbox" />Major risks have warning signs,
+owners, and response plans.</label></li>
+<li><label><input type="checkbox" />The schedule is updated when
+assumptions or scope change.</label></li>
+</ul>
+<h3 data-number="3.8.4" id="exercises-2"><span
+class="header-section-number">3.8.4</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> Choose one major deliverable and
+decompose it into tasks that take no more than four hours each. Identify
+the output, owner, dependency, reviewer, definition of done, estimated
+effort, and one realistic risk for every major stage.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+For an EDA report, work packages could include importing and validating
+files, confirming grain and keys, producing a data-quality table,
+analyzing individual variables, examining priority relationships,
+drafting findings, reproducing all outputs, and completing editorial
+review. Each package should name its output and reviewer. A definition
+of done should be observable, such as “all figures regenerate from the
+clean data and every reported denominator is documented,” rather than
+“EDA complete.”
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Create a twelve-week NVRW timeline with
+dependencies, review gates, contingency, and named deliverables. Include
+integration and revision before the final handoff.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+A defensible sequence is: weeks 1 to 2 for scope, charter, access, and
+dictionary; weeks 3 to 4 for data validation and EDA; week 5 for an
+integrated evidence review; weeks 6 to 7 for secondary research and
+modelling; week 8 for forecasting and CLV; week 9 for recommendation
+synthesis; week 10 for a complete report draft; week 11 for technical
+and communication review; and week 12 for revision and handoff.
+Contingency should be reserved before final delivery, not added after
+it.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> Build a risk register containing at
+least one data, analytical, collaboration, client, and communication
+risk.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+Examples include undocumented membership status codes, too few eligible
+cases for a proposed model, an unavailable team reviewer, delayed
+confirmation of a business definition, and a presentation that cannot be
+understood without the report. Each entry should include likelihood,
+impact, warning signs, mitigation, contingency, owner, and review date.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Estimate the effort required for the EDA
+report using separate production, verification, revision, integration,
+and contingency estimates.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+One reasonable estimate is 18 hours for production, 6 hours for
+independent verification, 6 hours for revision, 5 hours for integration
+with the project narrative, and 5 hours of contingency, for 40 hours
+total. The exact values will vary, but verification, integration, and
+revision must appear as explicit work rather than being hidden inside
+the production estimate.
+</p>
+</details>
+<h3 data-number="3.8.5" id="questions-for-discussion-2"><span
+class="header-section-number">3.8.5</span> Questions for discussion</h3>
+<ol type="1">
+<li>When should a timeline be revised rather than protected?</li>
+<li>Which project risks are reduced by narrowing scope?</li>
+<li>Why can adding more people fail to recover a delayed analytical
+project?</li>
+</ol>
+</body>
+</html>

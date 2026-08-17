@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="12-data-storytelling-and-thematic-cohesion.html" accesskey="u" rel="up">Data Storytelling and Thematic Cohesion</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="13-professional-tables-and-visualizations.html" accesskey="n" rel="next">Professional Tables and Visualizations</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="12.9-ch12-ethical-storytelling.html" accesskey="p" rel="previous">Ethical storytelling</a>
+</span>
+</div>
+</nav>
+<h2 data-number="12.10" id="ch12-review"><span
+class="header-section-number">12.10</span> Chapter Review</h2>
+<h3 data-number="12.10.1" id="chapter-summary-11"><span
+class="header-section-number">12.10.1</span> Chapter summary</h3>
+<p>An effective analytical story is a selective but honest sequence that
+connects context, evidence, interpretation, and action. It begins with
+the audience and decision, uses a clear central message and evidence
+hierarchy, and maintains cohesion across text, visuals, recommendations,
+and limitations.</p>
+<h3 data-number="12.10.2" id="common-mistakes-11"><span
+class="header-section-number">12.10.2</span> Common mistakes</h3>
+<ul>
+<li>presenting results in the order produced;</li>
+<li>using a topic as the central message;</li>
+<li>including every graph from the EDA;</li>
+<li>changing key terms across sections;</li>
+<li>introducing recommendations not prepared by the findings;</li>
+<li>hiding uncertainty because it complicates the narrative;</li>
+<li>building slides before agreeing on the story; and</li>
+<li>using a memorable persona to disguise unsupported assumptions.</li>
+</ul>
+<h3 data-number="12.10.3" id="story-review-checklist"><span
+class="header-section-number">12.10.3</span> Story review checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />The audience and intended decision
+are explicit.</label></li>
+<li><label><input type="checkbox" />The central message states a
+supported conclusion.</label></li>
+<li><label><input type="checkbox" />Each section advances the same
+purpose.</label></li>
+<li><label><input type="checkbox" />Evidence is ordered by audience need
+rather than analysis chronology.</label></li>
+<li><label><input type="checkbox" />Recommendations follow from
+established findings.</label></li>
+<li><label><input type="checkbox" />Material assumptions and limitations
+appear near affected claims.</label></li>
+<li><label><input type="checkbox" />Repetition and exploratory clutter
+have been removed.</label></li>
+<li><label><input type="checkbox" />Segment descriptions are based on
+observed evidence.</label></li>
+</ul>
+<h3 data-number="12.10.4" id="exercises-11"><span
+class="header-section-number">12.10.4</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> Convert the topic “NVRW membership
+cancellations” into a central message using this finding: cancellation
+is highest among new members with fewer than three visits in their first
+sixty days, but the data do not record reasons for leaving.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+Low early engagement identifies a practical group for a retention pilot,
+although the available data cannot establish why individual members
+leave. This message states the pattern, its possible use, and the main
+limitation without claiming causation.
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Create a six-panel storyboard for the
+NVRW retention question. Each panel should contain a message sentence,
+the evidence needed, and the implication for the next panel.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+A coherent sequence is: (1) retention is the decision priority; (2)
+retention differs meaningfully across member groups; (3) low early
+engagement identifies a practical risk group; (4) predictive evidence
+helps prioritize limited contact capacity; (5) observational data cannot
+establish the effect of an intervention; and (6) NVRW should run and
+evaluate a defined pilot. Each panel should use only the evidence
+required to support its message.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> Write two versions of the same finding:
+one for an analyst reviewing model performance and one for an executive
+deciding whether to authorize a pilot.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+<strong>Analyst:</strong> The model improves lift among the 150
+highest-risk eligible members, but calibration and subgroup stability
+require continued monitoring. <strong>Executive:</strong> The analysis
+can identify a manageable group with elevated non-renewal risk,
+supporting a limited pilot, but the pilot must measure whether contact
+actually changes retention.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Review the NVRW synthesis appendix and
+identify one table or result that belongs in a technical appendix rather
+than the main narrative. Defend your choice.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+A full model-diagnostics or validation table belongs in a technical
+appendix when the main audience needs only the baseline comparison,
+selected performance measures, and decision implication. Moving it
+preserves transparency for technical reviewers without interrupting the
+central story. A short main-text reference should explain why the method
+was considered adequate.
+</p>
+</details>
+<h3 data-number="12.10.5" id="questions-for-discussion-11"><span
+class="header-section-number">12.10.5</span> Questions for
+discussion</h3>
+<ol type="1">
+<li>Can a data story remain coherent when the evidence supports no
+action?</li>
+<li>When should technical detail appear in the main narrative rather
+than an appendix?</li>
+<li>How can a team simplify a method without making the explanation
+inaccurate?</li>
+</ol>
+</body>
+</html>

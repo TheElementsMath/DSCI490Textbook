@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Forecasting, Projections, and Customer Value</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="index.html" accesskey="u" rel="up">Data Science in Practice</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="11.1-ch11-forecast-projection-scenario-or-target.html" accesskey="n" rel="next">Forecast, projection, scenario, or target?</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="10.11-ch10-review.html" accesskey="p" rel="previous">Chapter Review</a>
+</span>
+</div>
+</nav>
+<h1 data-number="11"
+id="forecasting-projections-and-customer-value"><span
+class="header-section-number">11</span> Forecasting, Projections, and
+Customer Value</h1>
+<p>Future-oriented estimates are useful only when their assumptions and
+uncertainty are visible. This chapter distinguishes forecasts,
+projections, scenarios, and targets; compares major forecasting
+approaches; develops utilization-based projections; and builds customer
+lifetime value from revenue, gross margin, retention, churn, acquisition
+cost, and discounting.</p>
+<div class="chapter-learning">
+<p><strong>Learning outcomes</strong></p>
+<p>After completing this chapter, you should be able to:</p>
+<ul>
+<li>distinguish forecasts, projections, scenarios, and targets;</li>
+<li>compare moving averages, regression trends, exponential smoothing,
+ETS, and ARIMA;</li>
+<li>validate forecasting methods using time-ordered data;</li>
+<li>construct population-utilization and scenario projections;</li>
+<li>calculate and interpret revenue-based and margin-based CLV; and</li>
+<li>incorporate retention, churn, acquisition cost, discounting, and
+uncertainty into customer-value analysis.</li>
+</ul>
+</div>
+<div class="key-terms">
+<p><strong>Key terms</strong></p>
+<ul>
+<li><p><strong>Forecast:</strong> An estimate of a future value based
+primarily on patterns learned from observed data.</p></li>
+<li><p><strong>Projection:</strong> A conditional estimate of a future
+quantity under stated assumptions.</p></li>
+<li><p><strong>Scenario:</strong> A coherent combination of assumptions
+used to examine one possible outcome.</p></li>
+<li><p><strong>Forecast horizon:</strong> The number of future periods
+covered by a forecast.</p></li>
+<li><p><strong>Seasonality:</strong> A recurring pattern associated with
+a regular calendar or operational cycle.</p></li>
+<li><p><strong>Utilization rate:</strong> The number of events or
+services used relative to a defined population and period.</p></li>
+<li><p><strong>Retention rate:</strong> The proportion of eligible
+customers who remain active from one defined period to the
+next.</p></li>
+<li><p><strong>Churn rate:</strong> The proportion of eligible customers
+who end or fail to continue the relationship during a defined
+period.</p></li>
+<li><p><strong>Customer acquisition cost (CAC):</strong> The
+attributable cost of acquiring a new customer under a stated allocation
+rule.</p></li>
+<li><p><strong>Customer lifetime value (CLV):</strong> The estimated
+economic value produced by a customer over the relationship, under a
+stated revenue, margin, retention, cost, and discounting model.</p></li>
+<li><p><strong>Discount rate:</strong> The rate used to convert future
+amounts into present value.</p></li>
+<li><p><strong>Sensitivity analysis:</strong> An examination of how
+results change when important assumptions or inputs change.</p></li>
+</ul>
+</div>
+</body>
+</html>

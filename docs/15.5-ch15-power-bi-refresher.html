@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Power BI refresher</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="15-technical-refreshers.html" accesskey="u" rel="up">Technical Refreshers</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="15.6-ch15-selecting-the-best-tool.html" accesskey="n" rel="next">Selecting the best tool</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="15.4-ch15-excel-refresher.html" accesskey="p" rel="previous">Excel refresher</a>
+</span>
+</div>
+</nav>
+<h2 data-number="15.5" id="ch15-power-bi-refresher"><span
+class="header-section-number">15.5</span> Power BI refresher</h2>
+<p>Power BI is useful when audiences need repeatable interactive
+exploration across related tables. A strong report begins with a sound
+data model.</p>
+<h3 data-number="15.5.1" id="grain-and-relationships"><span
+class="header-section-number">15.5.1</span> Grain and relationships</h3>
+<p>Identify the grain of every table. Dimension tables may contain one
+row per member, centre, program, or date. Fact tables may contain
+visits, transactions, or registrations. Relationships should follow
+stable keys and expected cardinality.</p>
+<p>Avoid many-to-many relationships unless their meaning is understood.
+An incorrect relationship can produce plausible but duplicated
+totals.</p>
+<h3 data-number="15.5.2" id="columns-and-measures"><span
+class="header-section-number">15.5.2</span> Columns and measures</h3>
+<p>Calculated columns are evaluated row by row during refresh. Measures
+are evaluated in filter context. Ratios should usually be measures so
+the denominator responds correctly to filters.</p>
+<pre class="text"><code>Visit Rate per 1,000 =
+DIVIDE([Total Visits], [Service Population]) * 1000</code></pre>
+<p>The source and filter behaviour of both measures must be validated. A
+population denominator should not accidentally change when a facility
+filter has no corresponding population relationship.</p>
+<h3 data-number="15.5.3" id="date-tables"><span
+class="header-section-number">15.5.3</span> Date tables</h3>
+<p>Use a complete date table for year, quarter, month, and
+comparable-period calculations. Connect each fact table through the
+correct date meaning. A transaction date and a membership-start date are
+not interchangeable.</p>
+<h3 data-number="15.5.4" id="validation"><span
+class="header-section-number">15.5.4</span> Validation</h3>
+<p>Reconcile report totals with source extracts and independent
+calculations. Test filters one at a time. Verify empty categories,
+totals, and interactions between visuals.</p>
+</body>
+</html>

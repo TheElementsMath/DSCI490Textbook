@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="9-researching-secondary-data.html" accesskey="u" rel="up">Researching Secondary Data</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="10-analysis-and-machine-learning.html" accesskey="n" rel="next">Analysis and Machine Learning</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="9.8-ch09-secondary-evidence-as-context-not-substitution.html" accesskey="p" rel="previous">Secondary evidence as context, not substitution</a>
+</span>
+</div>
+</nav>
+<h2 data-number="9.9" id="ch09-review"><span
+class="header-section-number">9.9</span> Chapter Review</h2>
+<h3 data-number="9.9.1" id="chapter-summary-8"><span
+class="header-section-number">9.9.1</span> Chapter summary</h3>
+<p>Secondary-data research should begin with a defined information need
+and end with documented, reproducible evidence. Source quality depends
+on authority, purpose, coverage, definitions, methods, timeliness,
+granularity, permission, and citation, while successful integration also
+requires compatible populations, geography, time periods, and units.</p>
+<h3 data-number="9.9.2" id="common-mistakes-8"><span
+class="header-section-number">9.9.2</span> Common mistakes</h3>
+<ul>
+<li>beginning with a general web search rather than an information
+need;</li>
+<li>citing a search result or summary instead of the original
+source;</li>
+<li>comparing percentages with different denominators;</li>
+<li>using a national benchmark as though it represented a local
+target;</li>
+<li>ignoring boundary or category changes;</li>
+<li>joining on labels without checking unmatched records;</li>
+<li>presenting projected populations as observed counts; and</li>
+<li>including external facts that do not affect the project.</li>
+</ul>
+<h3 data-number="9.9.3" id="source-review-checklist"><span
+class="header-section-number">9.9.3</span> Source review checklist</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" />The information need is
+stated.</label></li>
+<li><label><input type="checkbox" />The producer and collection purpose
+are known.</label></li>
+<li><label><input type="checkbox" />Population, coverage, period, unit,
+and method are documented.</label></li>
+<li><label><input type="checkbox" />Comparability with organizational
+data has been assessed.</label></li>
+<li><label><input type="checkbox" />Metadata and limitations have been
+read.</label></li>
+<li><label><input type="checkbox" />Transformations and joins are
+reproducible.</label></li>
+<li><label><input type="checkbox" />Reuse and citation requirements are
+satisfied.</label></li>
+<li><label><input type="checkbox" />The source contributes to a question
+or decision.</label></li>
+</ul>
+<h3 data-number="9.9.4" id="exercises-8"><span
+class="header-section-number">9.9.4</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> One source reports that 62 percent of
+residents participated in recreation during the past year. NVRW reports
+that 18 percent of residents held a membership at year-end. Can the
+values be used to estimate NVRW’s market share?</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Not without additional evidence. Annual recreation participation and
+year-end membership have different numerator definitions. The
+populations, geographic boundaries, age eligibility, reference periods,
+and data-collection methods must also be compared. The external
+percentage may provide context, but it is not automatically a compatible
+market denominator.
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Build a source log for three real
+sources that could contextualize NVRW demand: a population source, a
+municipal planning source, and a recreation-participation source. Record
+the geography, population, period, method, and intended use.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Each entry should include the organization and direct source location,
+title, publication and access dates, geographic coverage, target
+population, reference period, collection or projection method, revision
+status, permitted use, and the exact NVRW question it supports. A source
+is not ready for use if its population, geography, or measure cannot be
+reconciled with the project.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> Create a crosswalk between the fictional
+NVRW service areas and a hypothetical census geography. Identify what
+evidence would be required before aggregating or splitting population
+values.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+The crosswalk should list every service area, the contributing census
+units, overlap type, effective date, and allocation rule. Exact
+aggregation requires nested boundaries. Splitting a census unit requires
+defensible weights, such as population counts from smaller geographic
+units, rather than area alone. Boundary files, coordinate reference
+systems, vintage, and unmatched areas should be documented.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Critique this statement: “The West
+Valley population is projected to grow, so Westbrook visits will grow by
+the same percentage.” Rewrite it as a defensible conditional projection
+statement.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+If the relevant West Valley population changes as projected and the
+visit utilization rate, service boundaries, access conditions, and
+recording definitions remain constant, Westbrook visits would be
+expected to change proportionally. This is a utilization-based
+projection under stated assumptions, not a guaranteed forecast.
+</p>
+</details>
+<h3 data-number="9.9.5" id="questions-for-discussion-8"><span
+class="header-section-number">9.9.5</span> Questions for discussion</h3>
+<ol type="1">
+<li>When is a less detailed authoritative source preferable to a
+detailed uncertain source?</li>
+<li>How should conflicting estimates from credible sources be
+handled?</li>
+<li>When does a benchmark become an inappropriate target?</li>
+</ol>
+</body>
+</html>

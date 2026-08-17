@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>De-identification is not anonymity</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="6-data-responsibility-and-confidentiality.html" accesskey="u" rel="up">Data Responsibility and Confidentiality</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="6.5-ch06-generative-ai-and-external-tools.html" accesskey="n" rel="next">Generative AI and external tools</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="6.3-ch06-minimum-necessary-use.html" accesskey="p" rel="previous">Minimum necessary use</a>
+</span>
+</div>
+</nav>
+<h2 data-number="6.4" id="ch06-de-identification-is-not-anonymity"><span
+class="header-section-number">6.4</span> De-identification is not
+anonymity</h2>
+<p>Removing names is often necessary, but it may not be sufficient. A
+combination of age, postal area, event date, occupation, diagnosis,
+transaction history, or another uncommon attribute can make a record
+recognizable. External information may also allow apparently anonymous
+records to be linked back to individuals or organizations.</p>
+<p>The level of risk depends on the data, the population, the audience,
+and the release environment. A detailed internal table in an approved
+secure location may be acceptable while the same table would be
+inappropriate in a public presentation.</p>
+<div class="example">
+<p><strong>Worked example: indirect disclosure</strong></p>
+<p>A report compares service use across small regions. One region
+contains only two cases in a rare category. The report does not include
+names, but local staff may know who the two people are.</p>
+<p>Possible responses include aggregating regions, combining categories,
+suppressing the small value, reporting a rate only when the denominator
+is sufficient, or moving the detail to a restricted internal output. The
+correct response depends on the applicable rules and the analytical
+need.</p>
+</div>
+</body>
+</html>

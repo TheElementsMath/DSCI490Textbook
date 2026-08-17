@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Chapter Review</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="1-applied-data-science-projects.html" accesskey="u" rel="up">Applied Data Science Projects</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="2-from-organizational-concern-to-analytical-question.html" accesskey="n" rel="next">From Organizational Concern to Analytical Question</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="1.6-ch01-defining-success.html" accesskey="p" rel="previous">Defining success</a>
+</span>
+</div>
+</nav>
+<h2 data-number="1.7" id="ch01-review"><span
+class="header-section-number">1.7</span> Chapter Review</h2>
+<h3 data-number="1.7.1" id="chapter-summary"><span
+class="header-section-number">1.7.1</span> Chapter summary</h3>
+<p>An applied data science project is a bounded, iterative investigation
+designed to improve understanding or support a real decision. Strong
+projects connect the client’s concern to a precise analytical question,
+define success in observable terms, and treat planning, data work,
+analysis, communication, and implementation as interdependent
+responsibilities.</p>
+<h3 data-number="1.7.2" id="common-mistakes"><span
+class="header-section-number">1.7.2</span> Common mistakes</h3>
+<ul>
+<li>accepting the initial request without clarifying what decision it
+supports;</li>
+<li>defining success only as submitting the final files;</li>
+<li>selecting a preferred method before understanding the data;</li>
+<li>treating every requested analysis as equally useful;</li>
+<li>confusing a conditional projection with a guaranteed forecast;
+and</li>
+<li>delaying integration until each team member believes their
+individual work is finished.</li>
+</ul>
+<h3 data-number="1.7.3" id="exercises"><span
+class="header-section-number">1.7.3</span> Exercises</h3>
+<p><strong>Exercise 1.</strong> Write a project brief for NVRW that
+identifies the decision, audience, population, time period,
+deliverables, exclusions, and success criteria.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+<strong>Decision:</strong> Determine where NVRW should focus retention
+and capacity-planning efforts. <strong>Audience:</strong> NVRW
+leadership and facility managers. <strong>Population and
+period:</strong> Members, visits, and program activity from 2022 through
+2025. <strong>Deliverables:</strong> Data dictionary, EDA report,
+retention analysis, utilization projection, recommendations, final
+report, and presentation. <strong>Exclusions:</strong> Claims about
+causal effects or motives not recorded in the data. <strong>Success
+criteria:</strong> Reproducible results, validated definitions and
+denominators, documented limitations, and recommendations that can be
+traced to evidence.
+</p>
+</details>
+<p><strong>Exercise 2.</strong> Trace one possible error from data
+definition through analysis, recommendation, implementation, and
+evaluation. Explain where a review gate could prevent the error from
+travelling further.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+If censored membership periods are incorrectly coded as non-renewals,
+the analysis understates retention. A model then identifies false risk
+patterns, the team recommends targeting the wrong members, and the pilot
+appears ineffective. A data-dictionary review should identify the
+censoring rule before modelling. A second review gate should compare
+model eligibility counts with independently calculated retention totals.
+</p>
+</details>
+<p><strong>Exercise 3.</strong> Classify each proposed project output as
+evidence, interpretation, action, or evaluation. Revise any output that
+does not contribute to the decision.</p>
+<details class="answer-dropdown">
+<summary>
+Check Your Work
+</summary>
+<p>
+Evidence includes validated tables, model results, forecasts, and
+documented source findings. Interpretation explains what those results
+mean and how strong the evidence is. Action specifies what should be
+done, by whom, and under what conditions. Evaluation defines how
+implementation will be assessed. An output that fits none of these
+categories should be removed, moved to an appendix, or revised so its
+decision purpose is clear.
+</p>
+</details>
+<p><strong>Exercise 4.</strong> Choose an organizational concern from
+health, retail, government, education, or nonprofit work. Write two
+analytical questions that could support the same concern, then explain
+how the required data and methods would differ.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+<strong>Concern:</strong> A food bank is struggling to match inventory
+with demand. <strong>Question 1:</strong> How does weekly demand vary by
+location, household size, and season? This requires transaction-level
+service records and descriptive or time-series analysis.
+<strong>Question 2:</strong> Which products are most likely to
+experience a shortage during the next four weeks? This requires
+inventory, deliveries, product demand, and lead-time data, followed by
+item-level forecasting or scenario analysis.
+</p>
+</details>
+<p><strong>Exercise 5.</strong> Create a one-page evidence map that
+connects a decision to required evidence, analytical outputs,
+limitations, and a possible recommendation.</p>
+<details class="answer-dropdown">
+<summary>
+One Possible Answer
+</summary>
+<p>
+For an NVRW retention decision, the map could connect member
+eligibility, renewal outcomes, early visits, facility, membership type,
+and acquisition channel to a validated retention table and risk model.
+The main limitations would include observational data, unavailable
+reasons for cancellation, and incomplete follow-up for recent members. A
+supported recommendation would be a measured early-engagement pilot for
+an eligible high-risk group, not a claim that low visit frequency causes
+cancellation.
+</p>
+</details>
+<h3 data-number="1.7.4" id="questions-for-discussion"><span
+class="header-section-number">1.7.4</span> Questions for discussion</h3>
+<ol type="1">
+<li>Why might a technically accurate model still fail as a professional
+deliverable?</li>
+<li>What evidence would show that a project has become too broad?</li>
+<li>When should a team revise its original analytical question?</li>
+<li>Which success criteria would matter most for a public-facing
+dashboard? Which would matter most for an internal forecasting
+model?</li>
+</ol>
+</body>
+</html>

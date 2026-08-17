@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Population-utilization projections</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="11-forecasting-projections-and-customer-value.html" accesskey="u" rel="up">Forecasting, Projections, and Customer Value</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="11.9-ch11-scenario-and-sensitivity-analysis.html" accesskey="n" rel="next">Scenario and sensitivity analysis</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="11.7-ch11-time-ordered-validation.html" accesskey="p" rel="previous">Time-ordered validation</a>
+</span>
+</div>
+</nav>
+<h2 data-number="11.8"
+id="ch11-population-utilization-projections"><span
+class="header-section-number">11.8</span> Population-utilization
+projections</h2>
+<p>Suppose an organization observed <span
+class="math inline"><em>E</em><sub><em>g</em>, <em>t</em></sub></span>
+events for group <span class="math inline"><em>g</em></span> in period
+<span class="math inline"><em>t</em></span>, and the corresponding
+population was <span
+class="math inline"><em>P</em><sub><em>g</em>, <em>t</em></sub></span>.
+The utilization rate per 1,000 people is</p>
+<p>[ R_{g,t}=. ]</p>
+<p>If the projected future population is <span
+class="math inline"><em>P</em><sub><em>g</em>, <em>f</em></sub></span>,
+a constant-rate projection is</p>
+<p>[ _{g,f}=R_g. ]</p>
+<p>The rate may use the latest complete year, a selected comparable
+year, an average of recent years, a recent minimum or maximum for
+scenarios, or a modelled rate. The choice should reflect data quality,
+stability, horizon, and decision purpose.</p>
+<div class="example">
+<p><strong>Recurring case: projected aquatics demand</strong></p>
+<p>NVRW records 3,600 annual aquatics visits among 24,000 residents in
+one age group.</p>
+<p>[ R==150. ]</p>
+<p>If the projected population is 27,200, the constant-rate projection
+is</p>
+<p>[ =150=4,080. ]</p>
+<p>The result is conditional on the rate remaining constant. It does not
+account for pricing, capacity, program changes, competition, weather, or
+the facility expansion.</p>
+</div>
+<p>Client and population data must share compatible age, location, or
+other grouping variables. Details available only in the organizational
+data can be allocated after the population projection only when a
+defensible rule exists.</p>
+<p>Unknown locations should not be silently deleted. They may be
+reported separately, assigned a broader valid denominator, or carried
+forward as a stable share. Each treatment changes interpretation.</p>
+</body>
+</html>

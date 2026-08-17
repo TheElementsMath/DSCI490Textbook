@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>Customer lifetime value</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="11-forecasting-projections-and-customer-value.html" accesskey="u" rel="up">Forecasting, Projections, and Customer Value</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="11.11-ch11-review.html" accesskey="n" rel="next">Chapter Review</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="11.9-ch11-scenario-and-sensitivity-analysis.html" accesskey="p" rel="previous">Scenario and sensitivity analysis</a>
+</span>
+</div>
+</nav>
+<h2 data-number="11.10" id="ch11-customer-lifetime-value"><span
+class="header-section-number">11.10</span> Customer lifetime value</h2>
+<p>CLV translates customer behaviour into a long-term economic measure.
+It can support acquisition spending, retention priorities, segment
+strategy, service design, and evaluation of customer relationships. The
+formula must match the decision and available data.</p>
+<p>CLV is not one universal formula. Different models answer different
+questions and require different assumptions <span class="citation"
+data-cites="gupta2006">(<a
+href="18.16-99b-nvrw-synthesis-complete-project-exercise.html#ref-gupta2006"
+role="doc-biblioref">Gupta et al. 2006</a>)</span>.</p>
+<h3 data-number="11.10.1" id="introductory-revenue-clv"><span
+class="header-section-number">11.10.1</span> Introductory revenue
+CLV</h3>
+<p>A simple revenue-based model is</p>
+<p>[ =() () (). ]</p>
+<p>This version is useful for understanding the role of value,
+frequency, and lifespan. It should not be called profit because it
+ignores cost, margin, acquisition, retention variation, and the time
+value of money.</p>
+<h3 data-number="11.10.2" id="margin-based-clv"><span
+class="header-section-number">11.10.2</span> Margin-based CLV</h3>
+<p>An improved model uses contribution margin:</p>
+<p>[ =() () () -. ]</p>
+<p>Define which costs are included in contribution margin. Gross margin,
+contribution margin, and operating profit are not interchangeable.</p>
+<h3 data-number="11.10.3" id="retention-and-churn"><span
+class="header-section-number">11.10.3</span> Retention and churn</h3>
+<p>For a closed cohort over one period,</p>
+<p>[ =. ]</p>
+<p>When every eligible customer is either retained or lost,</p>
+<p>[ =1-. ]</p>
+<p>New customers should not be included in the retention numerator. Net
+customer growth is a different measure:</p>
+<p>[ = {}. ]</p>
+<p>The approximation (1/) is sometimes used for expected lifespan under
+a constant independent churn process. It is not a universal identity.
+Churn often changes with tenure, segment, contract type, and period.</p>
+<p>Do not convert annual churn to quarterly churn by simply dividing by
+four when compounding matters. Under a constant quarterly retention
+assumption,</p>
+<p>[ r_{quarter}=r_{annual}^{1/4}, c_{quarter}=1-r_{annual}^{1/4}. ]</p>
+<h3 data-number="11.10.4" id="discounted-clv"><span
+class="header-section-number">11.10.4</span> Discounted CLV</h3>
+<p>Future contribution is worth less than contribution received today. A
+flexible finite-horizon model is</p>
+<p>[ CLV=-CAC+_{t=1}^{T} , ]</p>
+<p>where <span
+class="math inline"><em>M</em><sub><em>t</em></sub></span> is expected
+contribution margin if active in period <span
+class="math inline"><em>t</em></span>, <span
+class="math inline"><em>S</em><sub><em>t</em></sub></span> is the
+probability of remaining active at the start of that period, <span
+class="math inline"><em>d</em></span> is the discount rate per period,
+and <span class="math inline"><em>T</em></span> is the horizon.</p>
+<div class="example">
+<p><strong>Recurring case: discounted membership CLV</strong></p>
+<p>NVRW estimates annual contribution margin of $144 for a new
+membership, annual retention of 75 percent, a four-year horizon, an
+annual discount rate of 8 percent, and CAC of $75. The customer is
+active in year 1, so survival probabilities are <span
+class="math inline">1</span>, <span class="math inline">0.75</span>,
+<span class="math inline">0.75<sup>2</sup></span>, and <span
+class="math inline">0.75<sup>3</sup></span>.</p>
+<p>[ CLV=-75+ + + + . ]</p>
+<p>The estimated CLV is approximately $260. The result is conditional on
+the margin, retention, discount, horizon, and CAC assumptions. It should
+be compared with alternative assumptions rather than presented as an
+exact customer value.</p>
+</div>
+<h3 data-number="11.10.5" id="cohorts-and-segments"><span
+class="header-section-number">11.10.5</span> Cohorts and segments</h3>
+<p>Average CLV can hide meaningful differences. Compare cohorts defined
+by acquisition period, channel, membership type, or another
+characteristic known at the relevant decision time. Ensure every cohort
+has enough follow-up. Recent cohorts should not appear to have lower
+lifetime value merely because less time has passed.</p>
+<p>Segment-level CLV should not encourage the organization to neglect
+low-value groups when it has public-service, access, or fairness
+obligations. Economic value is one decision measure, not a complete
+statement of social or organizational value.</p>
+<h3 data-number="11.10.6" id="clv-in-excel"><span
+class="header-section-number">11.10.6</span> CLV in Excel</h3>
+<p>An auditable spreadsheet should separate inputs, yearly calculations,
+and outputs. A row for year <span class="math inline"><em>t</em></span>
+can contain:</p>
+<ul>
+<li>survival probability;</li>
+<li>expected revenue;</li>
+<li>contribution margin;</li>
+<li>discount factor;</li>
+<li>present value; and</li>
+<li>cumulative CLV after CAC.</li>
+</ul>
+<p>For a yearly contribution in cell <code>C8</code>, survival
+probability in <code>D8</code>, discount rate in <code>$B$3</code>, and
+year in <code>A8</code>, present value can be calculated as:</p>
+<pre class="text"><code>=C8*D8/(1+$B$3)^A8</code></pre>
+<p>Use typed numeric cells for rates and currency. Do not hide
+assumptions inside long formulas.</p>
+</body>
+</html>

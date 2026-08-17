@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Okanagan College Data Science" />
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <title>From concern to analytical question</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="1-applied-data-science-projects.html" accesskey="u" rel="up">Applied Data Science Projects</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Data Science in Practice</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="1.6-ch01-defining-success.html" accesskey="n" rel="next">Defining success</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="1.4-ch01-integrated-project-evidence.html" accesskey="p" rel="previous">Integrated project evidence</a>
+</span>
+</div>
+</nav>
+<h2 data-number="1.5"
+id="ch01-from-concern-to-analytical-question"><span
+class="header-section-number">1.5</span> From concern to analytical
+question</h2>
+<p>Suppose a service organization says, “Demand seems to be increasing,
+and we do not know whether current capacity will be enough.” This
+statement identifies a concern, but it does not yet specify what should
+be measured.</p>
+<p>The concern can be separated into several analytical questions:</p>
+<ul>
+<li>How has service volume changed over time?</li>
+<li>How has utilization changed by location and age group?</li>
+<li>Is the change associated with population growth, changing
+utilization rates, or both?</li>
+<li>What demand would be expected if current group-specific utilization
+rates continued?</li>
+<li>Which groups or locations account for the greatest projected
+increase?</li>
+<li>Which operational constraints would become important under each
+scenario?</li>
+</ul>
+<p>Each question implies different data, definitions, methods, and
+limitations. The first is descriptive. The third requires compatible
+population denominators. The fourth is a conditional projection rather
+than a promise about the future. The final question may require
+information that is not present in the service dataset at all.</p>
+<div class="example">
+<p><strong>Worked example: refining a broad request</strong></p>
+<p>A retailer asks, “Which customers should we target?”</p>
+<p>A useful refinement process might produce the following
+questions:</p>
+<ol type="1">
+<li>Which customer groups differ meaningfully in purchase frequency,
+contribution margin, product mix, or retention?</li>
+<li>Are the differences stable across time periods and sales
+channels?</li>
+<li>Which groups have sufficient size and potential value to justify a
+distinct strategy?</li>
+<li>What action could the retailer take for each selected group?</li>
+<li>Which metric would indicate that the action was working?</li>
+</ol>
+<p>The refined questions prevent the team from creating attractive
+customer labels that have no analytical or operational purpose.</p>
+</div>
+</body>
+</html>

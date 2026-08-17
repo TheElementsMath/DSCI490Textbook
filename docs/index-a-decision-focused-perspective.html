@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>A decision-focused perspective | Data Science in Practice</title>
+  <meta name="description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="A decision-focused perspective | Data Science in Practice" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A decision-focused perspective | Data Science in Practice" />
+  
+  <meta name="twitter:description" content="A practical guide to planning, conducting, and communicating applied data science projects." />
+  
+
+<meta name="author" content="Okanagan College Data Science" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index-learning-goals.html"/>
+<link rel="next" href="index-recurring-case-north-valley-recreation-and-wellness.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Data Science in Practice</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a>
+<ul>
+<li class="chapter" data-level="" data-path="index-how-to-use-this-book.html"><a href="index-how-to-use-this-book.html"><i class="fa fa-check"></i>How to use this book</a></li>
+<li class="chapter" data-level="" data-path="index-learning-goals.html"><a href="index-learning-goals.html"><i class="fa fa-check"></i>Learning goals</a></li>
+<li class="chapter" data-level="" data-path="index-a-decision-focused-perspective.html"><a href="index-a-decision-focused-perspective.html"><i class="fa fa-check"></i>A decision-focused perspective</a></li>
+<li class="chapter" data-level="" data-path="index-recurring-case-north-valley-recreation-and-wellness.html"><a href="index-recurring-case-north-valley-recreation-and-wellness.html"><i class="fa fa-check"></i>Recurring case: North Valley Recreation and Wellness</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="applied-data-science-projects.html"><a href="applied-data-science-projects.html"><i class="fa fa-check"></i><b>1</b> Applied Data Science Projects</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="ch01-what-makes-an-applied-project-different.html"><a href="ch01-what-makes-an-applied-project-different.html"><i class="fa fa-check"></i><b>1.1</b> What makes an applied project different?</a></li>
+<li class="chapter" data-level="1.2" data-path="ch01-projects-as-decision-systems.html"><a href="ch01-projects-as-decision-systems.html"><i class="fa fa-check"></i><b>1.2</b> Projects as decision systems</a></li>
+<li class="chapter" data-level="1.3" data-path="ch01-the-applied-project-cycle.html"><a href="ch01-the-applied-project-cycle.html"><i class="fa fa-check"></i><b>1.3</b> The applied project cycle</a></li>
+<li class="chapter" data-level="1.4" data-path="ch01-integrated-project-evidence.html"><a href="ch01-integrated-project-evidence.html"><i class="fa fa-check"></i><b>1.4</b> Integrated project evidence</a></li>
+<li class="chapter" data-level="1.5" data-path="ch01-from-concern-to-analytical-question.html"><a href="ch01-from-concern-to-analytical-question.html"><i class="fa fa-check"></i><b>1.5</b> From concern to analytical question</a></li>
+<li class="chapter" data-level="1.6" data-path="ch01-defining-success.html"><a href="ch01-defining-success.html"><i class="fa fa-check"></i><b>1.6</b> Defining success</a></li>
+<li class="chapter" data-level="1.7" data-path="ch01-review.html"><a href="ch01-review.html"><i class="fa fa-check"></i><b>1.7</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="ch01-review.html"><a href="ch01-review.html#chapter-summary"><i class="fa fa-check"></i><b>1.7.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="1.7.2" data-path="ch01-review.html"><a href="ch01-review.html#common-mistakes"><i class="fa fa-check"></i><b>1.7.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="1.7.3" data-path="ch01-review.html"><a href="ch01-review.html#exercises"><i class="fa fa-check"></i><b>1.7.3</b> Exercises</a></li>
+<li class="chapter" data-level="1.7.4" data-path="ch01-review.html"><a href="ch01-review.html#questions-for-discussion"><i class="fa fa-check"></i><b>1.7.4</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="from-organizational-concern-to-analytical-question.html"><a href="from-organizational-concern-to-analytical-question.html"><i class="fa fa-check"></i><b>2</b> From Organizational Concern to Analytical Question</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="ch02-why-questioning-is-analytical-work.html"><a href="ch02-why-questioning-is-analytical-work.html"><i class="fa fa-check"></i><b>2.1</b> Why questioning is analytical work</a></li>
+<li class="chapter" data-level="2.2" data-path="ch02-four-kinds-of-project-questions.html"><a href="ch02-four-kinds-of-project-questions.html"><i class="fa fa-check"></i><b>2.2</b> Four kinds of project questions</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="ch02-four-kinds-of-project-questions.html"><a href="ch02-four-kinds-of-project-questions.html#management-questions"><i class="fa fa-check"></i><b>2.2.1</b> Management questions</a></li>
+<li class="chapter" data-level="2.2.2" data-path="ch02-four-kinds-of-project-questions.html"><a href="ch02-four-kinds-of-project-questions.html#research-questions"><i class="fa fa-check"></i><b>2.2.2</b> Research questions</a></li>
+<li class="chapter" data-level="2.2.3" data-path="ch02-four-kinds-of-project-questions.html"><a href="ch02-four-kinds-of-project-questions.html#analytical-questions"><i class="fa fa-check"></i><b>2.2.3</b> Analytical questions</a></li>
+<li class="chapter" data-level="2.2.4" data-path="ch02-four-kinds-of-project-questions.html"><a href="ch02-four-kinds-of-project-questions.html#implementation-questions"><i class="fa fa-check"></i><b>2.2.4</b> Implementation questions</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="ch02-a-questioning-sequence.html"><a href="ch02-a-questioning-sequence.html"><i class="fa fa-check"></i><b>2.3</b> A questioning sequence</a></li>
+<li class="chapter" data-level="2.4" data-path="ch02-question-maps.html"><a href="ch02-question-maps.html"><i class="fa fa-check"></i><b>2.4</b> Question maps</a></li>
+<li class="chapter" data-level="2.5" data-path="ch02-questions-that-uncover-assumptions.html"><a href="ch02-questions-that-uncover-assumptions.html"><i class="fa fa-check"></i><b>2.5</b> Questions that uncover assumptions</a></li>
+<li class="chapter" data-level="2.6" data-path="ch02-review.html"><a href="ch02-review.html"><i class="fa fa-check"></i><b>2.6</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="ch02-review.html"><a href="ch02-review.html#chapter-summary-1"><i class="fa fa-check"></i><b>2.6.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="2.6.2" data-path="ch02-review.html"><a href="ch02-review.html#common-mistakes-1"><i class="fa fa-check"></i><b>2.6.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="2.6.3" data-path="ch02-review.html"><a href="ch02-review.html#exercises-1"><i class="fa fa-check"></i><b>2.6.3</b> Exercises</a></li>
+<li class="chapter" data-level="2.6.4" data-path="ch02-review.html"><a href="ch02-review.html#questions-for-discussion-1"><i class="fa fa-check"></i><b>2.6.4</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="planning-the-project.html"><a href="planning-the-project.html"><i class="fa fa-check"></i><b>3</b> Planning the Project</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="ch03-why-project-plans-fail.html"><a href="ch03-why-project-plans-fail.html"><i class="fa fa-check"></i><b>3.1</b> Why project plans fail</a></li>
+<li class="chapter" data-level="3.2" data-path="ch03-plan-backward-from-the-decision.html"><a href="ch03-plan-backward-from-the-decision.html"><i class="fa fa-check"></i><b>3.2</b> Plan backward from the decision</a></li>
+<li class="chapter" data-level="3.3" data-path="ch03-decomposing-the-work.html"><a href="ch03-decomposing-the-work.html"><i class="fa fa-check"></i><b>3.3</b> Decomposing the work</a></li>
+<li class="chapter" data-level="3.4" data-path="ch03-estimating-effort-and-calendar-time.html"><a href="ch03-estimating-effort-and-calendar-time.html"><i class="fa fa-check"></i><b>3.4</b> Estimating effort and calendar time</a></li>
+<li class="chapter" data-level="3.5" data-path="ch03-a-deliverable-based-timeline.html"><a href="ch03-a-deliverable-based-timeline.html"><i class="fa fa-check"></i><b>3.5</b> A deliverable-based timeline</a></li>
+<li class="chapter" data-level="3.6" data-path="ch03-milestones-and-review-gates.html"><a href="ch03-milestones-and-review-gates.html"><i class="fa fa-check"></i><b>3.6</b> Milestones and review gates</a></li>
+<li class="chapter" data-level="3.7" data-path="ch03-risk-management.html"><a href="ch03-risk-management.html"><i class="fa fa-check"></i><b>3.7</b> Risk management</a></li>
+<li class="chapter" data-level="3.8" data-path="ch03-review.html"><a href="ch03-review.html"><i class="fa fa-check"></i><b>3.8</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="ch03-review.html"><a href="ch03-review.html#chapter-summary-2"><i class="fa fa-check"></i><b>3.8.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="3.8.2" data-path="ch03-review.html"><a href="ch03-review.html#common-mistakes-2"><i class="fa fa-check"></i><b>3.8.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="3.8.3" data-path="ch03-review.html"><a href="ch03-review.html#project-planning-checklist"><i class="fa fa-check"></i><b>3.8.3</b> Project planning checklist</a></li>
+<li class="chapter" data-level="3.8.4" data-path="ch03-review.html"><a href="ch03-review.html#exercises-2"><i class="fa fa-check"></i><b>3.8.4</b> Exercises</a></li>
+<li class="chapter" data-level="3.8.5" data-path="ch03-review.html"><a href="ch03-review.html#questions-for-discussion-2"><i class="fa fa-check"></i><b>3.8.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="team-charters-and-collaboration.html"><a href="team-charters-and-collaboration.html"><i class="fa fa-check"></i><b>4</b> Team Charters and Collaboration</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="ch04-what-a-team-charter-is.html"><a href="ch04-what-a-team-charter-is.html"><i class="fa fa-check"></i><b>4.1</b> What a team charter is</a></li>
+<li class="chapter" data-level="4.2" data-path="ch04-the-components-of-a-strong-charter.html"><a href="ch04-the-components-of-a-strong-charter.html"><i class="fa fa-check"></i><b>4.2</b> The components of a strong charter</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="ch04-the-components-of-a-strong-charter.html"><a href="ch04-the-components-of-a-strong-charter.html#purpose-and-goals"><i class="fa fa-check"></i><b>4.2.1</b> Purpose and goals</a></li>
+<li class="chapter" data-level="4.2.2" data-path="ch04-the-components-of-a-strong-charter.html"><a href="ch04-the-components-of-a-strong-charter.html#roles-and-responsibilities"><i class="fa fa-check"></i><b>4.2.2</b> Roles and responsibilities</a></li>
+<li class="chapter" data-level="4.2.3" data-path="ch04-the-components-of-a-strong-charter.html"><a href="ch04-the-components-of-a-strong-charter.html#communication-and-meetings"><i class="fa fa-check"></i><b>4.2.3</b> Communication and meetings</a></li>
+<li class="chapter" data-level="4.2.4" data-path="ch04-the-components-of-a-strong-charter.html"><a href="ch04-the-components-of-a-strong-charter.html#decisions-and-review"><i class="fa fa-check"></i><b>4.2.4</b> Decisions and review</a></li>
+<li class="chapter" data-level="4.2.5" data-path="ch04-the-components-of-a-strong-charter.html"><a href="ch04-the-components-of-a-strong-charter.html#files-and-handoffs"><i class="fa fa-check"></i><b>4.2.5</b> Files and handoffs</a></li>
+<li class="chapter" data-level="4.2.6" data-path="ch04-the-components-of-a-strong-charter.html"><a href="ch04-the-components-of-a-strong-charter.html#conflict-and-revision"><i class="fa fa-check"></i><b>4.2.6</b> Conflict and revision</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="ch04-roles-without-silos.html"><a href="ch04-roles-without-silos.html"><i class="fa fa-check"></i><b>4.3</b> Roles without silos</a></li>
+<li class="chapter" data-level="4.4" data-path="ch04-decision-rights.html"><a href="ch04-decision-rights.html"><i class="fa fa-check"></i><b>4.4</b> Decision rights</a></li>
+<li class="chapter" data-level="4.5" data-path="ch04-meetings-that-produce-evidence.html"><a href="ch04-meetings-that-produce-evidence.html"><i class="fa fa-check"></i><b>4.5</b> Meetings that produce evidence</a></li>
+<li class="chapter" data-level="4.6" data-path="ch04-conflict-and-missed-commitments.html"><a href="ch04-conflict-and-missed-commitments.html"><i class="fa fa-check"></i><b>4.6</b> Conflict and missed commitments</a></li>
+<li class="chapter" data-level="4.7" data-path="ch04-review.html"><a href="ch04-review.html"><i class="fa fa-check"></i><b>4.7</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="ch04-review.html"><a href="ch04-review.html#chapter-summary-3"><i class="fa fa-check"></i><b>4.7.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="4.7.2" data-path="ch04-review.html"><a href="ch04-review.html#common-mistakes-3"><i class="fa fa-check"></i><b>4.7.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="4.7.3" data-path="ch04-review.html"><a href="ch04-review.html#charter-quality-checklist"><i class="fa fa-check"></i><b>4.7.3</b> Charter quality checklist</a></li>
+<li class="chapter" data-level="4.7.4" data-path="ch04-review.html"><a href="ch04-review.html#exercises-3"><i class="fa fa-check"></i><b>4.7.4</b> Exercises</a></li>
+<li class="chapter" data-level="4.7.5" data-path="ch04-review.html"><a href="ch04-review.html#questions-for-discussion-3"><i class="fa fa-check"></i><b>4.7.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="interim-project-reviews.html"><a href="interim-project-reviews.html"><i class="fa fa-check"></i><b>5</b> Interim Project Reviews</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="ch05-why-interim-reviews-matter.html"><a href="ch05-why-interim-reviews-matter.html"><i class="fa fa-check"></i><b>5.1</b> Why interim reviews matter</a></li>
+<li class="chapter" data-level="5.2" data-path="ch05-what-an-interim-review-should-establish.html"><a href="ch05-what-an-interim-review-should-establish.html"><i class="fa fa-check"></i><b>5.2</b> What an interim review should establish</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="ch05-what-an-interim-review-should-establish.html"><a href="ch05-what-an-interim-review-should-establish.html#what-problem-is-the-project-addressing"><i class="fa fa-check"></i><b>5.2.1</b> What problem is the project addressing?</a></li>
+<li class="chapter" data-level="5.2.2" data-path="ch05-what-an-interim-review-should-establish.html"><a href="ch05-what-an-interim-review-should-establish.html#what-has-been-established-so-far"><i class="fa fa-check"></i><b>5.2.2</b> What has been established so far?</a></li>
+<li class="chapter" data-level="5.2.3" data-path="ch05-what-an-interim-review-should-establish.html"><a href="ch05-what-an-interim-review-should-establish.html#what-remains-uncertain"><i class="fa fa-check"></i><b>5.2.3</b> What remains uncertain?</a></li>
+<li class="chapter" data-level="5.2.4" data-path="ch05-what-an-interim-review-should-establish.html"><a href="ch05-what-an-interim-review-should-establish.html#is-the-project-on-track"><i class="fa fa-check"></i><b>5.2.4</b> Is the project on track?</a></li>
+<li class="chapter" data-level="5.2.5" data-path="ch05-what-an-interim-review-should-establish.html"><a href="ch05-what-an-interim-review-should-establish.html#what-is-needed-next"><i class="fa fa-check"></i><b>5.2.5</b> What is needed next?</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="ch05-evidence-of-progress.html"><a href="ch05-evidence-of-progress.html"><i class="fa fa-check"></i><b>5.3</b> Evidence of progress</a></li>
+<li class="chapter" data-level="5.4" data-path="ch05-structure-of-an-interim-presentation.html"><a href="ch05-structure-of-an-interim-presentation.html"><i class="fa fa-check"></i><b>5.4</b> Structure of an interim presentation</a></li>
+<li class="chapter" data-level="5.5" data-path="ch05-assessing-trajectory.html"><a href="ch05-assessing-trajectory.html"><i class="fa fa-check"></i><b>5.5</b> Assessing trajectory</a></li>
+<li class="chapter" data-level="5.6" data-path="ch05-receiving-and-using-feedback.html"><a href="ch05-receiving-and-using-feedback.html"><i class="fa fa-check"></i><b>5.6</b> Receiving and using feedback</a></li>
+<li class="chapter" data-level="5.7" data-path="ch05-review.html"><a href="ch05-review.html"><i class="fa fa-check"></i><b>5.7</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="5.7.1" data-path="ch05-review.html"><a href="ch05-review.html#chapter-summary-4"><i class="fa fa-check"></i><b>5.7.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="5.7.2" data-path="ch05-review.html"><a href="ch05-review.html#common-mistakes-4"><i class="fa fa-check"></i><b>5.7.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="5.7.3" data-path="ch05-review.html"><a href="ch05-review.html#interim-review-checklist"><i class="fa fa-check"></i><b>5.7.3</b> Interim review checklist</a></li>
+<li class="chapter" data-level="5.7.4" data-path="ch05-review.html"><a href="ch05-review.html#exercises-4"><i class="fa fa-check"></i><b>5.7.4</b> Exercises</a></li>
+<li class="chapter" data-level="5.7.5" data-path="ch05-review.html"><a href="ch05-review.html#questions-for-discussion-4"><i class="fa fa-check"></i><b>5.7.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="data-responsibility-and-confidentiality.html"><a href="data-responsibility-and-confidentiality.html"><i class="fa fa-check"></i><b>6</b> Data Responsibility and Confidentiality</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="ch06-data-access-creates-obligations.html"><a href="ch06-data-access-creates-obligations.html"><i class="fa fa-check"></i><b>6.1</b> Data access creates obligations</a></li>
+<li class="chapter" data-level="6.2" data-path="ch06-privacy-confidentiality-security-and-ethics.html"><a href="ch06-privacy-confidentiality-security-and-ethics.html"><i class="fa fa-check"></i><b>6.2</b> Privacy, confidentiality, security, and ethics</a></li>
+<li class="chapter" data-level="6.3" data-path="ch06-minimum-necessary-use.html"><a href="ch06-minimum-necessary-use.html"><i class="fa fa-check"></i><b>6.3</b> Minimum necessary use</a></li>
+<li class="chapter" data-level="6.4" data-path="ch06-de-identification-is-not-anonymity.html"><a href="ch06-de-identification-is-not-anonymity.html"><i class="fa fa-check"></i><b>6.4</b> De-identification is not anonymity</a></li>
+<li class="chapter" data-level="6.5" data-path="ch06-generative-ai-and-external-tools.html"><a href="ch06-generative-ai-and-external-tools.html"><i class="fa fa-check"></i><b>6.5</b> Generative AI and external tools</a></li>
+<li class="chapter" data-level="6.6" data-path="ch06-responsible-analytical-use.html"><a href="ch06-responsible-analytical-use.html"><i class="fa fa-check"></i><b>6.6</b> Responsible analytical use</a></li>
+<li class="chapter" data-level="6.7" data-path="ch06-the-data-lifecycle.html"><a href="ch06-the-data-lifecycle.html"><i class="fa fa-check"></i><b>6.7</b> The data lifecycle</a></li>
+<li class="chapter" data-level="6.8" data-path="ch06-review.html"><a href="ch06-review.html"><i class="fa fa-check"></i><b>6.8</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="6.8.1" data-path="ch06-review.html"><a href="ch06-review.html#chapter-summary-5"><i class="fa fa-check"></i><b>6.8.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="6.8.2" data-path="ch06-review.html"><a href="ch06-review.html#common-mistakes-5"><i class="fa fa-check"></i><b>6.8.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="6.8.3" data-path="ch06-review.html"><a href="ch06-review.html#data-responsibility-checklist"><i class="fa fa-check"></i><b>6.8.3</b> Data responsibility checklist</a></li>
+<li class="chapter" data-level="6.8.4" data-path="ch06-review.html"><a href="ch06-review.html#exercises-5"><i class="fa fa-check"></i><b>6.8.4</b> Exercises</a></li>
+<li class="chapter" data-level="6.8.5" data-path="ch06-review.html"><a href="ch06-review.html#questions-for-discussion-5"><i class="fa fa-check"></i><b>6.8.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="data-dictionaries-and-codebooks.html"><a href="data-dictionaries-and-codebooks.html"><i class="fa fa-check"></i><b>7</b> Data Dictionaries and Codebooks</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="ch07-a-dictionary-controls-meaning.html"><a href="ch07-a-dictionary-controls-meaning.html"><i class="fa fa-check"></i><b>7.1</b> A dictionary controls meaning</a></li>
+<li class="chapter" data-level="7.2" data-path="ch07-begin-with-the-unit-of-analysis.html"><a href="ch07-begin-with-the-unit-of-analysis.html"><i class="fa fa-check"></i><b>7.2</b> Begin with the unit of analysis</a></li>
+<li class="chapter" data-level="7.3" data-path="ch07-dataset-level-metadata.html"><a href="ch07-dataset-level-metadata.html"><i class="fa fa-check"></i><b>7.3</b> Dataset-level metadata</a></li>
+<li class="chapter" data-level="7.4" data-path="ch07-variable-level-fields.html"><a href="ch07-variable-level-fields.html"><i class="fa fa-check"></i><b>7.4</b> Variable-level fields</a></li>
+<li class="chapter" data-level="7.5" data-path="ch07-source-standardized-and-derived-variables.html"><a href="ch07-source-standardized-and-derived-variables.html"><i class="fa fa-check"></i><b>7.5</b> Source, standardized, and derived variables</a></li>
+<li class="chapter" data-level="7.6" data-path="ch07-missing-values-carry-information.html"><a href="ch07-missing-values-carry-information.html"><i class="fa fa-check"></i><b>7.6</b> Missing values carry information</a></li>
+<li class="chapter" data-level="7.7" data-path="ch07-building-the-dictionary.html"><a href="ch07-building-the-dictionary.html"><i class="fa fa-check"></i><b>7.7</b> Building the dictionary</a></li>
+<li class="chapter" data-level="7.8" data-path="ch07-using-the-dictionary-during-analysis.html"><a href="ch07-using-the-dictionary-during-analysis.html"><i class="fa fa-check"></i><b>7.8</b> Using the dictionary during analysis</a></li>
+<li class="chapter" data-level="7.9" data-path="ch07-review.html"><a href="ch07-review.html"><i class="fa fa-check"></i><b>7.9</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="7.9.1" data-path="ch07-review.html"><a href="ch07-review.html#chapter-summary-6"><i class="fa fa-check"></i><b>7.9.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="7.9.2" data-path="ch07-review.html"><a href="ch07-review.html#common-mistakes-6"><i class="fa fa-check"></i><b>7.9.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="7.9.3" data-path="ch07-review.html"><a href="ch07-review.html#dictionary-review-checklist"><i class="fa fa-check"></i><b>7.9.3</b> Dictionary review checklist</a></li>
+<li class="chapter" data-level="7.9.4" data-path="ch07-review.html"><a href="ch07-review.html#exercises-6"><i class="fa fa-check"></i><b>7.9.4</b> Exercises</a></li>
+<li class="chapter" data-level="7.9.5" data-path="ch07-review.html"><a href="ch07-review.html#questions-for-discussion-6"><i class="fa fa-check"></i><b>7.9.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="a-reproducible-exploratory-data-analysis.html"><a href="a-reproducible-exploratory-data-analysis.html"><i class="fa fa-check"></i><b>8</b> A Reproducible Exploratory Data Analysis</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="ch08-eda-is-an-investigation.html"><a href="ch08-eda-is-an-investigation.html"><i class="fa fa-check"></i><b>8.1</b> EDA is an investigation</a></li>
+<li class="chapter" data-level="8.2" data-path="ch08-a-reproducible-eda-workflow.html"><a href="ch08-a-reproducible-eda-workflow.html"><i class="fa fa-check"></i><b>8.2</b> A reproducible EDA workflow</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="ch08-a-reproducible-eda-workflow.html"><a href="ch08-a-reproducible-eda-workflow.html#stage-1-orient-to-the-data"><i class="fa fa-check"></i><b>8.2.1</b> Stage 1: Orient to the data</a></li>
+<li class="chapter" data-level="8.2.2" data-path="ch08-a-reproducible-eda-workflow.html"><a href="ch08-a-reproducible-eda-workflow.html#stage-2-assess-data-quality"><i class="fa fa-check"></i><b>8.2.2</b> Stage 2: Assess data quality</a></li>
+<li class="chapter" data-level="8.2.3" data-path="ch08-a-reproducible-eda-workflow.html"><a href="ch08-a-reproducible-eda-workflow.html#stage-3-examine-variables-individually"><i class="fa fa-check"></i><b>8.2.3</b> Stage 3: Examine variables individually</a></li>
+<li class="chapter" data-level="8.2.4" data-path="ch08-a-reproducible-eda-workflow.html"><a href="ch08-a-reproducible-eda-workflow.html#stage-4-examine-relationships"><i class="fa fa-check"></i><b>8.2.4</b> Stage 4: Examine relationships</a></li>
+<li class="chapter" data-level="8.2.5" data-path="ch08-a-reproducible-eda-workflow.html"><a href="ch08-a-reproducible-eda-workflow.html#stage-5-add-relevant-dimensions"><i class="fa fa-check"></i><b>8.2.5</b> Stage 5: Add relevant dimensions</a></li>
+<li class="chapter" data-level="8.2.6" data-path="ch08-a-reproducible-eda-workflow.html"><a href="ch08-a-reproducible-eda-workflow.html#stage-6-convert-findings-into-decisions"><i class="fa fa-check"></i><b>8.2.6</b> Stage 6: Convert findings into decisions</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="ch08-missing-data-decisions.html"><a href="ch08-missing-data-decisions.html"><i class="fa fa-check"></i><b>8.3</b> Missing-data decisions</a></li>
+<li class="chapter" data-level="8.4" data-path="ch08-outlier-decisions.html"><a href="ch08-outlier-decisions.html"><i class="fa fa-check"></i><b>8.4</b> Outlier decisions</a></li>
+<li class="chapter" data-level="8.5" data-path="ch08-recurring-case-connecting-eda-to-the-problem.html"><a href="ch08-recurring-case-connecting-eda-to-the-problem.html"><i class="fa fa-check"></i><b>8.5</b> Recurring case: connecting EDA to the problem</a></li>
+<li class="chapter" data-level="8.6" data-path="ch08-a-professional-eda-report.html"><a href="ch08-a-professional-eda-report.html"><i class="fa fa-check"></i><b>8.6</b> A professional EDA report</a></li>
+<li class="chapter" data-level="8.7" data-path="ch08-review.html"><a href="ch08-review.html"><i class="fa fa-check"></i><b>8.7</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="ch08-review.html"><a href="ch08-review.html#chapter-summary-7"><i class="fa fa-check"></i><b>8.7.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="8.7.2" data-path="ch08-review.html"><a href="ch08-review.html#common-mistakes-7"><i class="fa fa-check"></i><b>8.7.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="8.7.3" data-path="ch08-review.html"><a href="ch08-review.html#reproducibility-checklist"><i class="fa fa-check"></i><b>8.7.3</b> Reproducibility checklist</a></li>
+<li class="chapter" data-level="8.7.4" data-path="ch08-review.html"><a href="ch08-review.html#exercises-7"><i class="fa fa-check"></i><b>8.7.4</b> Exercises</a></li>
+<li class="chapter" data-level="8.7.5" data-path="ch08-review.html"><a href="ch08-review.html#questions-for-discussion-7"><i class="fa fa-check"></i><b>8.7.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="researching-secondary-data.html"><a href="researching-secondary-data.html"><i class="fa fa-check"></i><b>9</b> Researching Secondary Data</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="ch09-why-secondary-evidence-matters.html"><a href="ch09-why-secondary-evidence-matters.html"><i class="fa fa-check"></i><b>9.1</b> Why secondary evidence matters</a></li>
+<li class="chapter" data-level="9.2" data-path="ch09-begin-with-an-information-need.html"><a href="ch09-begin-with-an-information-need.html"><i class="fa fa-check"></i><b>9.2</b> Begin with an information need</a></li>
+<li class="chapter" data-level="9.3" data-path="ch09-a-structured-search-process.html"><a href="ch09-a-structured-search-process.html"><i class="fa fa-check"></i><b>9.3</b> A structured search process</a></li>
+<li class="chapter" data-level="9.4" data-path="ch09-evaluating-a-source.html"><a href="ch09-evaluating-a-source.html"><i class="fa fa-check"></i><b>9.4</b> Evaluating a source</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="ch09-evaluating-a-source.html"><a href="ch09-evaluating-a-source.html#authority-and-purpose"><i class="fa fa-check"></i><b>9.4.1</b> Authority and purpose</a></li>
+<li class="chapter" data-level="9.4.2" data-path="ch09-evaluating-a-source.html"><a href="ch09-evaluating-a-source.html#coverage-and-selection"><i class="fa fa-check"></i><b>9.4.2</b> Coverage and selection</a></li>
+<li class="chapter" data-level="9.4.3" data-path="ch09-evaluating-a-source.html"><a href="ch09-evaluating-a-source.html#definition-and-method"><i class="fa fa-check"></i><b>9.4.3</b> Definition and method</a></li>
+<li class="chapter" data-level="9.4.4" data-path="ch09-evaluating-a-source.html"><a href="ch09-evaluating-a-source.html#timeliness-and-revision"><i class="fa fa-check"></i><b>9.4.4</b> Timeliness and revision</a></li>
+<li class="chapter" data-level="9.4.5" data-path="ch09-evaluating-a-source.html"><a href="ch09-evaluating-a-source.html#granularity"><i class="fa fa-check"></i><b>9.4.5</b> Granularity</a></li>
+<li class="chapter" data-level="9.4.6" data-path="ch09-evaluating-a-source.html"><a href="ch09-evaluating-a-source.html#permission-and-citation"><i class="fa fa-check"></i><b>9.4.6</b> Permission and citation</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="ch09-the-source-log.html"><a href="ch09-the-source-log.html"><i class="fa fa-check"></i><b>9.5</b> The source log</a></li>
+<li class="chapter" data-level="9.6" data-path="ch09-combining-sources.html"><a href="ch09-combining-sources.html"><i class="fa fa-check"></i><b>9.6</b> Combining sources</a></li>
+<li class="chapter" data-level="9.7" data-path="ch09-census-and-geographic-data.html"><a href="ch09-census-and-geographic-data.html"><i class="fa fa-check"></i><b>9.7</b> Census and geographic data</a></li>
+<li class="chapter" data-level="9.8" data-path="ch09-secondary-evidence-as-context-not-substitution.html"><a href="ch09-secondary-evidence-as-context-not-substitution.html"><i class="fa fa-check"></i><b>9.8</b> Secondary evidence as context, not substitution</a></li>
+<li class="chapter" data-level="9.9" data-path="ch09-review.html"><a href="ch09-review.html"><i class="fa fa-check"></i><b>9.9</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="9.9.1" data-path="ch09-review.html"><a href="ch09-review.html#chapter-summary-8"><i class="fa fa-check"></i><b>9.9.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="9.9.2" data-path="ch09-review.html"><a href="ch09-review.html#common-mistakes-8"><i class="fa fa-check"></i><b>9.9.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="9.9.3" data-path="ch09-review.html"><a href="ch09-review.html#source-review-checklist"><i class="fa fa-check"></i><b>9.9.3</b> Source review checklist</a></li>
+<li class="chapter" data-level="9.9.4" data-path="ch09-review.html"><a href="ch09-review.html#exercises-8"><i class="fa fa-check"></i><b>9.9.4</b> Exercises</a></li>
+<li class="chapter" data-level="9.9.5" data-path="ch09-review.html"><a href="ch09-review.html#questions-for-discussion-8"><i class="fa fa-check"></i><b>9.9.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="analysis-and-machine-learning.html"><a href="analysis-and-machine-learning.html"><i class="fa fa-check"></i><b>10</b> Analysis and Machine Learning</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="ch10-begin-with-the-purpose.html"><a href="ch10-begin-with-the-purpose.html"><i class="fa fa-check"></i><b>10.1</b> Begin with the purpose</a></li>
+<li class="chapter" data-level="10.2" data-path="ch10-a-defensible-modelling-workflow.html"><a href="ch10-a-defensible-modelling-workflow.html"><i class="fa fa-check"></i><b>10.2</b> A defensible modelling workflow</a></li>
+<li class="chapter" data-level="10.3" data-path="ch10-linear-regression.html"><a href="ch10-linear-regression.html"><i class="fa fa-check"></i><b>10.3</b> Linear regression</a></li>
+<li class="chapter" data-level="10.4" data-path="ch10-logistic-regression.html"><a href="ch10-logistic-regression.html"><i class="fa fa-check"></i><b>10.4</b> Logistic regression</a></li>
+<li class="chapter" data-level="10.5" data-path="ch10-decision-trees.html"><a href="ch10-decision-trees.html"><i class="fa fa-check"></i><b>10.5</b> Decision trees</a></li>
+<li class="chapter" data-level="10.6" data-path="ch10-random-forests.html"><a href="ch10-random-forests.html"><i class="fa fa-check"></i><b>10.6</b> Random forests</a></li>
+<li class="chapter" data-level="10.7" data-path="ch10-clustering-and-segmentation.html"><a href="ch10-clustering-and-segmentation.html"><i class="fa fa-check"></i><b>10.7</b> Clustering and segmentation</a></li>
+<li class="chapter" data-level="10.8" data-path="ch10-evaluation-must-match-the-decision.html"><a href="ch10-evaluation-must-match-the-decision.html"><i class="fa fa-check"></i><b>10.8</b> Evaluation must match the decision</a>
+<ul>
+<li class="chapter" data-level="10.8.1" data-path="ch10-evaluation-must-match-the-decision.html"><a href="ch10-evaluation-must-match-the-decision.html#regression-metrics"><i class="fa fa-check"></i><b>10.8.1</b> Regression metrics</a></li>
+<li class="chapter" data-level="10.8.2" data-path="ch10-evaluation-must-match-the-decision.html"><a href="ch10-evaluation-must-match-the-decision.html#classification-metrics"><i class="fa fa-check"></i><b>10.8.2</b> Classification metrics</a></li>
+</ul></li>
+<li class="chapter" data-level="10.9" data-path="ch10-r-demonstration-structure.html"><a href="ch10-r-demonstration-structure.html"><i class="fa fa-check"></i><b>10.9</b> R demonstration structure</a></li>
+<li class="chapter" data-level="10.10" data-path="ch10-error-analysis-and-responsible-use.html"><a href="ch10-error-analysis-and-responsible-use.html"><i class="fa fa-check"></i><b>10.10</b> Error analysis and responsible use</a></li>
+<li class="chapter" data-level="10.11" data-path="ch10-review.html"><a href="ch10-review.html"><i class="fa fa-check"></i><b>10.11</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="10.11.1" data-path="ch10-review.html"><a href="ch10-review.html#chapter-summary-9"><i class="fa fa-check"></i><b>10.11.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="10.11.2" data-path="ch10-review.html"><a href="ch10-review.html#common-mistakes-9"><i class="fa fa-check"></i><b>10.11.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="10.11.3" data-path="ch10-review.html"><a href="ch10-review.html#model-quality-checklist"><i class="fa fa-check"></i><b>10.11.3</b> Model quality checklist</a></li>
+<li class="chapter" data-level="10.11.4" data-path="ch10-review.html"><a href="ch10-review.html#exercises-9"><i class="fa fa-check"></i><b>10.11.4</b> Exercises</a></li>
+<li class="chapter" data-level="10.11.5" data-path="ch10-review.html"><a href="ch10-review.html#questions-for-discussion-9"><i class="fa fa-check"></i><b>10.11.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="forecasting-projections-and-customer-value.html"><a href="forecasting-projections-and-customer-value.html"><i class="fa fa-check"></i><b>11</b> Forecasting, Projections, and Customer Value</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="ch11-forecast-projection-scenario-or-target.html"><a href="ch11-forecast-projection-scenario-or-target.html"><i class="fa fa-check"></i><b>11.1</b> Forecast, projection, scenario, or target?</a></li>
+<li class="chapter" data-level="11.2" data-path="ch11-preparing-time-series-data.html"><a href="ch11-preparing-time-series-data.html"><i class="fa fa-check"></i><b>11.2</b> Preparing time-series data</a></li>
+<li class="chapter" data-level="11.3" data-path="ch11-moving-averages.html"><a href="ch11-moving-averages.html"><i class="fa fa-check"></i><b>11.3</b> Moving averages</a></li>
+<li class="chapter" data-level="11.4" data-path="ch11-regression-forecasting.html"><a href="ch11-regression-forecasting.html"><i class="fa fa-check"></i><b>11.4</b> Regression forecasting</a></li>
+<li class="chapter" data-level="11.5" data-path="ch11-exponential-smoothing-and-ets.html"><a href="ch11-exponential-smoothing-and-ets.html"><i class="fa fa-check"></i><b>11.5</b> Exponential smoothing and ETS</a></li>
+<li class="chapter" data-level="11.6" data-path="ch11-arima.html"><a href="ch11-arima.html"><i class="fa fa-check"></i><b>11.6</b> ARIMA</a></li>
+<li class="chapter" data-level="11.7" data-path="ch11-time-ordered-validation.html"><a href="ch11-time-ordered-validation.html"><i class="fa fa-check"></i><b>11.7</b> Time-ordered validation</a></li>
+<li class="chapter" data-level="11.8" data-path="ch11-population-utilization-projections.html"><a href="ch11-population-utilization-projections.html"><i class="fa fa-check"></i><b>11.8</b> Population-utilization projections</a></li>
+<li class="chapter" data-level="11.9" data-path="ch11-scenario-and-sensitivity-analysis.html"><a href="ch11-scenario-and-sensitivity-analysis.html"><i class="fa fa-check"></i><b>11.9</b> Scenario and sensitivity analysis</a></li>
+<li class="chapter" data-level="11.10" data-path="ch11-customer-lifetime-value.html"><a href="ch11-customer-lifetime-value.html"><i class="fa fa-check"></i><b>11.10</b> Customer lifetime value</a>
+<ul>
+<li class="chapter" data-level="11.10.1" data-path="ch11-customer-lifetime-value.html"><a href="ch11-customer-lifetime-value.html#introductory-revenue-clv"><i class="fa fa-check"></i><b>11.10.1</b> Introductory revenue CLV</a></li>
+<li class="chapter" data-level="11.10.2" data-path="ch11-customer-lifetime-value.html"><a href="ch11-customer-lifetime-value.html#margin-based-clv"><i class="fa fa-check"></i><b>11.10.2</b> Margin-based CLV</a></li>
+<li class="chapter" data-level="11.10.3" data-path="ch11-customer-lifetime-value.html"><a href="ch11-customer-lifetime-value.html#retention-and-churn"><i class="fa fa-check"></i><b>11.10.3</b> Retention and churn</a></li>
+<li class="chapter" data-level="11.10.4" data-path="ch11-customer-lifetime-value.html"><a href="ch11-customer-lifetime-value.html#discounted-clv"><i class="fa fa-check"></i><b>11.10.4</b> Discounted CLV</a></li>
+<li class="chapter" data-level="11.10.5" data-path="ch11-customer-lifetime-value.html"><a href="ch11-customer-lifetime-value.html#cohorts-and-segments"><i class="fa fa-check"></i><b>11.10.5</b> Cohorts and segments</a></li>
+<li class="chapter" data-level="11.10.6" data-path="ch11-customer-lifetime-value.html"><a href="ch11-customer-lifetime-value.html#clv-in-excel"><i class="fa fa-check"></i><b>11.10.6</b> CLV in Excel</a></li>
+</ul></li>
+<li class="chapter" data-level="11.11" data-path="ch11-review.html"><a href="ch11-review.html"><i class="fa fa-check"></i><b>11.11</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="11.11.1" data-path="ch11-review.html"><a href="ch11-review.html#chapter-summary-10"><i class="fa fa-check"></i><b>11.11.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="11.11.2" data-path="ch11-review.html"><a href="ch11-review.html#common-mistakes-10"><i class="fa fa-check"></i><b>11.11.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="11.11.3" data-path="ch11-review.html"><a href="ch11-review.html#forecast-and-value-checklist"><i class="fa fa-check"></i><b>11.11.3</b> Forecast and value checklist</a></li>
+<li class="chapter" data-level="11.11.4" data-path="ch11-review.html"><a href="ch11-review.html#exercises-10"><i class="fa fa-check"></i><b>11.11.4</b> Exercises</a></li>
+<li class="chapter" data-level="11.11.5" data-path="ch11-review.html"><a href="ch11-review.html#questions-for-discussion-10"><i class="fa fa-check"></i><b>11.11.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="data-storytelling-and-thematic-cohesion.html"><a href="data-storytelling-and-thematic-cohesion.html"><i class="fa fa-check"></i><b>12</b> Data Storytelling and Thematic Cohesion</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ch12-exploration-is-not-the-final-story.html"><a href="ch12-exploration-is-not-the-final-story.html"><i class="fa fa-check"></i><b>12.1</b> Exploration is not the final story</a></li>
+<li class="chapter" data-level="12.2" data-path="ch12-begin-with-the-audience.html"><a href="ch12-begin-with-the-audience.html"><i class="fa fa-check"></i><b>12.2</b> Begin with the audience</a></li>
+<li class="chapter" data-level="12.3" data-path="ch12-build-a-central-message.html"><a href="ch12-build-a-central-message.html"><i class="fa fa-check"></i><b>12.3</b> Build a central message</a></li>
+<li class="chapter" data-level="12.4" data-path="ch12-a-client-focused-narrative.html"><a href="ch12-a-client-focused-narrative.html"><i class="fa fa-check"></i><b>12.4</b> A client-focused narrative</a></li>
+<li class="chapter" data-level="12.5" data-path="ch12-storyboards.html"><a href="ch12-storyboards.html"><i class="fa fa-check"></i><b>12.5</b> Storyboards</a></li>
+<li class="chapter" data-level="12.6" data-path="ch12-evidence-hierarchy.html"><a href="ch12-evidence-hierarchy.html"><i class="fa fa-check"></i><b>12.6</b> Evidence hierarchy</a></li>
+<li class="chapter" data-level="12.7" data-path="ch12-editing-for-signal.html"><a href="ch12-editing-for-signal.html"><i class="fa fa-check"></i><b>12.7</b> Editing for signal</a></li>
+<li class="chapter" data-level="12.8" data-path="ch12-personas-and-segment-stories.html"><a href="ch12-personas-and-segment-stories.html"><i class="fa fa-check"></i><b>12.8</b> Personas and segment stories</a></li>
+<li class="chapter" data-level="12.9" data-path="ch12-ethical-storytelling.html"><a href="ch12-ethical-storytelling.html"><i class="fa fa-check"></i><b>12.9</b> Ethical storytelling</a></li>
+<li class="chapter" data-level="12.10" data-path="ch12-review.html"><a href="ch12-review.html"><i class="fa fa-check"></i><b>12.10</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="12.10.1" data-path="ch12-review.html"><a href="ch12-review.html#chapter-summary-11"><i class="fa fa-check"></i><b>12.10.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="12.10.2" data-path="ch12-review.html"><a href="ch12-review.html#common-mistakes-11"><i class="fa fa-check"></i><b>12.10.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="12.10.3" data-path="ch12-review.html"><a href="ch12-review.html#story-review-checklist"><i class="fa fa-check"></i><b>12.10.3</b> Story review checklist</a></li>
+<li class="chapter" data-level="12.10.4" data-path="ch12-review.html"><a href="ch12-review.html#exercises-11"><i class="fa fa-check"></i><b>12.10.4</b> Exercises</a></li>
+<li class="chapter" data-level="12.10.5" data-path="ch12-review.html"><a href="ch12-review.html#questions-for-discussion-11"><i class="fa fa-check"></i><b>12.10.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="professional-tables-and-visualizations.html"><a href="professional-tables-and-visualizations.html"><i class="fa fa-check"></i><b>13</b> Professional Tables and Visualizations</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="ch13-begin-with-the-comparison.html"><a href="ch13-begin-with-the-comparison.html"><i class="fa fa-check"></i><b>13.1</b> Begin with the comparison</a></li>
+<li class="chapter" data-level="13.2" data-path="ch13-tables-are-analytical-displays.html"><a href="ch13-tables-are-analytical-displays.html"><i class="fa fa-check"></i><b>13.2</b> Tables are analytical displays</a></li>
+<li class="chapter" data-level="13.3" data-path="ch13-use-perceptually-accurate-encodings.html"><a href="ch13-use-perceptually-accurate-encodings.html"><i class="fa fa-check"></i><b>13.3</b> Use perceptually accurate encodings</a></li>
+<li class="chapter" data-level="13.4" data-path="ch13-reduce-clutter.html"><a href="ch13-reduce-clutter.html"><i class="fa fa-check"></i><b>13.4</b> Reduce clutter</a></li>
+<li class="chapter" data-level="13.5" data-path="ch13-direct-attention.html"><a href="ch13-direct-attention.html"><i class="fa fa-check"></i><b>13.5</b> Direct attention</a></li>
+<li class="chapter" data-level="13.6" data-path="ch13-explanatory-titles-and-annotation.html"><a href="ch13-explanatory-titles-and-annotation.html"><i class="fa fa-check"></i><b>13.6</b> Explanatory titles and annotation</a></li>
+<li class="chapter" data-level="13.7" data-path="ch13-showing-uncertainty.html"><a href="ch13-showing-uncertainty.html"><i class="fa fa-check"></i><b>13.7</b> Showing uncertainty</a></li>
+<li class="chapter" data-level="13.8" data-path="ch13-charts-requiring-caution.html"><a href="ch13-charts-requiring-caution.html"><i class="fa fa-check"></i><b>13.8</b> Charts requiring caution</a></li>
+<li class="chapter" data-level="13.9" data-path="ch13-geospatial-visualization.html"><a href="ch13-geospatial-visualization.html"><i class="fa fa-check"></i><b>13.9</b> Geospatial visualization</a></li>
+<li class="chapter" data-level="13.10" data-path="ch13-accessibility.html"><a href="ch13-accessibility.html"><i class="fa fa-check"></i><b>13.10</b> Accessibility</a></li>
+<li class="chapter" data-level="13.11" data-path="ch13-dashboards-and-power-bi.html"><a href="ch13-dashboards-and-power-bi.html"><i class="fa fa-check"></i><b>13.11</b> Dashboards and Power BI</a></li>
+<li class="chapter" data-level="13.12" data-path="ch13-review.html"><a href="ch13-review.html"><i class="fa fa-check"></i><b>13.12</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="13.12.1" data-path="ch13-review.html"><a href="ch13-review.html#chapter-summary-12"><i class="fa fa-check"></i><b>13.12.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="13.12.2" data-path="ch13-review.html"><a href="ch13-review.html#common-mistakes-12"><i class="fa fa-check"></i><b>13.12.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="13.12.3" data-path="ch13-review.html"><a href="ch13-review.html#visualization-checklist"><i class="fa fa-check"></i><b>13.12.3</b> Visualization checklist</a></li>
+<li class="chapter" data-level="13.12.4" data-path="ch13-review.html"><a href="ch13-review.html#exercises-12"><i class="fa fa-check"></i><b>13.12.4</b> Exercises</a></li>
+<li class="chapter" data-level="13.12.5" data-path="ch13-review.html"><a href="ch13-review.html#questions-for-discussion-12"><i class="fa fa-check"></i><b>13.12.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="reports-recommendations-and-presentations.html"><a href="reports-recommendations-and-presentations.html"><i class="fa fa-check"></i><b>14</b> Reports, Recommendations, and Presentations</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="ch14-reports-are-arguments-supported-by-evidence.html"><a href="ch14-reports-are-arguments-supported-by-evidence.html"><i class="fa fa-check"></i><b>14.1</b> Reports are arguments supported by evidence</a></li>
+<li class="chapter" data-level="14.2" data-path="ch14-full-report-structure.html"><a href="ch14-full-report-structure.html"><i class="fa fa-check"></i><b>14.2</b> Full report structure</a></li>
+<li class="chapter" data-level="14.3" data-path="ch14-short-decision-reports.html"><a href="ch14-short-decision-reports.html"><i class="fa fa-check"></i><b>14.3</b> Short decision reports</a></li>
+<li class="chapter" data-level="14.4" data-path="ch14-executive-summaries.html"><a href="ch14-executive-summaries.html"><i class="fa fa-check"></i><b>14.4</b> Executive summaries</a></li>
+<li class="chapter" data-level="14.5" data-path="ch14-the-recommendation-chain.html"><a href="ch14-the-recommendation-chain.html"><i class="fa fa-check"></i><b>14.5</b> The recommendation chain</a></li>
+<li class="chapter" data-level="14.6" data-path="ch14-recommendations-and-smart-objectives.html"><a href="ch14-recommendations-and-smart-objectives.html"><i class="fa fa-check"></i><b>14.6</b> Recommendations and SMART objectives</a></li>
+<li class="chapter" data-level="14.7" data-path="ch14-selecting-evaluation-metrics.html"><a href="ch14-selecting-evaluation-metrics.html"><i class="fa fa-check"></i><b>14.7</b> Selecting evaluation metrics</a></li>
+<li class="chapter" data-level="14.8" data-path="ch14-presentation-design.html"><a href="ch14-presentation-design.html"><i class="fa fa-check"></i><b>14.8</b> Presentation design</a></li>
+<li class="chapter" data-level="14.9" data-path="ch14-explaining-technical-methods.html"><a href="ch14-explaining-technical-methods.html"><i class="fa fa-check"></i><b>14.9</b> Explaining technical methods</a></li>
+<li class="chapter" data-level="14.10" data-path="ch14-delivery-and-questions.html"><a href="ch14-delivery-and-questions.html"><i class="fa fa-check"></i><b>14.10</b> Delivery and questions</a></li>
+<li class="chapter" data-level="14.11" data-path="ch14-from-complete-to-convincing.html"><a href="ch14-from-complete-to-convincing.html"><i class="fa fa-check"></i><b>14.11</b> From complete to convincing</a></li>
+<li class="chapter" data-level="14.12" data-path="ch14-quality-assurance.html"><a href="ch14-quality-assurance.html"><i class="fa fa-check"></i><b>14.12</b> Quality assurance</a></li>
+<li class="chapter" data-level="14.13" data-path="ch14-professional-handoff.html"><a href="ch14-professional-handoff.html"><i class="fa fa-check"></i><b>14.13</b> Professional handoff</a></li>
+<li class="chapter" data-level="14.14" data-path="ch14-review.html"><a href="ch14-review.html"><i class="fa fa-check"></i><b>14.14</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="14.14.1" data-path="ch14-review.html"><a href="ch14-review.html#chapter-summary-13"><i class="fa fa-check"></i><b>14.14.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="14.14.2" data-path="ch14-review.html"><a href="ch14-review.html#common-mistakes-13"><i class="fa fa-check"></i><b>14.14.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="14.14.3" data-path="ch14-review.html"><a href="ch14-review.html#final-communication-checklist"><i class="fa fa-check"></i><b>14.14.3</b> Final communication checklist</a></li>
+<li class="chapter" data-level="14.14.4" data-path="ch14-review.html"><a href="ch14-review.html#exercises-13"><i class="fa fa-check"></i><b>14.14.4</b> Exercises</a></li>
+<li class="chapter" data-level="14.14.5" data-path="ch14-review.html"><a href="ch14-review.html#questions-for-discussion-13"><i class="fa fa-check"></i><b>14.14.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="technical-refreshers.html"><a href="technical-refreshers.html"><i class="fa fa-check"></i><b>15</b> Technical Refreshers</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="ch15-use-refreshers-when-the-project-needs-them.html"><a href="ch15-use-refreshers-when-the-project-needs-them.html"><i class="fa fa-check"></i><b>15.1</b> Use refreshers when the project needs them</a></li>
+<li class="chapter" data-level="15.2" data-path="ch15-statistics-refresher.html"><a href="ch15-statistics-refresher.html"><i class="fa fa-check"></i><b>15.2</b> Statistics refresher</a>
+<ul>
+<li class="chapter" data-level="15.2.1" data-path="ch15-statistics-refresher.html"><a href="ch15-statistics-refresher.html#variables-and-measurement"><i class="fa fa-check"></i><b>15.2.1</b> Variables and measurement</a></li>
+<li class="chapter" data-level="15.2.2" data-path="ch15-statistics-refresher.html"><a href="ch15-statistics-refresher.html#centre-and-spread"><i class="fa fa-check"></i><b>15.2.2</b> Centre and spread</a></li>
+<li class="chapter" data-level="15.2.3" data-path="ch15-statistics-refresher.html"><a href="ch15-statistics-refresher.html#counts-proportions-and-rates"><i class="fa fa-check"></i><b>15.2.3</b> Counts, proportions, and rates</a></li>
+<li class="chapter" data-level="15.2.4" data-path="ch15-statistics-refresher.html"><a href="ch15-statistics-refresher.html#conditional-comparison"><i class="fa fa-check"></i><b>15.2.4</b> Conditional comparison</a></li>
+<li class="chapter" data-level="15.2.5" data-path="ch15-statistics-refresher.html"><a href="ch15-statistics-refresher.html#confidence-intervals-and-tests"><i class="fa fa-check"></i><b>15.2.5</b> Confidence intervals and tests</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="ch15-r-and-rstudio-refresher.html"><a href="ch15-r-and-rstudio-refresher.html"><i class="fa fa-check"></i><b>15.3</b> R and RStudio refresher</a>
+<ul>
+<li class="chapter" data-level="15.3.1" data-path="ch15-r-and-rstudio-refresher.html"><a href="ch15-r-and-rstudio-refresher.html#project-organization"><i class="fa fa-check"></i><b>15.3.1</b> Project organization</a></li>
+<li class="chapter" data-level="15.3.2" data-path="ch15-r-and-rstudio-refresher.html"><a href="ch15-r-and-rstudio-refresher.html#import-and-inspection"><i class="fa fa-check"></i><b>15.3.2</b> Import and inspection</a></li>
+<li class="chapter" data-level="15.3.3" data-path="ch15-r-and-rstudio-refresher.html"><a href="ch15-r-and-rstudio-refresher.html#transformation"><i class="fa fa-check"></i><b>15.3.3</b> Transformation</a></li>
+<li class="chapter" data-level="15.3.4" data-path="ch15-r-and-rstudio-refresher.html"><a href="ch15-r-and-rstudio-refresher.html#grouped-summaries"><i class="fa fa-check"></i><b>15.3.4</b> Grouped summaries</a></li>
+<li class="chapter" data-level="15.3.5" data-path="ch15-r-and-rstudio-refresher.html"><a href="ch15-r-and-rstudio-refresher.html#reproducible-outputs"><i class="fa fa-check"></i><b>15.3.5</b> Reproducible outputs</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="ch15-excel-refresher.html"><a href="ch15-excel-refresher.html"><i class="fa fa-check"></i><b>15.4</b> Excel refresher</a>
+<ul>
+<li class="chapter" data-level="15.4.1" data-path="ch15-excel-refresher.html"><a href="ch15-excel-refresher.html#separate-inputs-calculations-and-outputs"><i class="fa fa-check"></i><b>15.4.1</b> Separate inputs, calculations, and outputs</a></li>
+<li class="chapter" data-level="15.4.2" data-path="ch15-excel-refresher.html"><a href="ch15-excel-refresher.html#references"><i class="fa fa-check"></i><b>15.4.2</b> References</a></li>
+<li class="chapter" data-level="15.4.3" data-path="ch15-excel-refresher.html"><a href="ch15-excel-refresher.html#tables-lookups-and-pivots"><i class="fa fa-check"></i><b>15.4.3</b> Tables, lookups, and pivots</a></li>
+<li class="chapter" data-level="15.4.4" data-path="ch15-excel-refresher.html"><a href="ch15-excel-refresher.html#formula-auditing"><i class="fa fa-check"></i><b>15.4.4</b> Formula auditing</a></li>
+</ul></li>
+<li class="chapter" data-level="15.5" data-path="ch15-power-bi-refresher.html"><a href="ch15-power-bi-refresher.html"><i class="fa fa-check"></i><b>15.5</b> Power BI refresher</a>
+<ul>
+<li class="chapter" data-level="15.5.1" data-path="ch15-power-bi-refresher.html"><a href="ch15-power-bi-refresher.html#grain-and-relationships"><i class="fa fa-check"></i><b>15.5.1</b> Grain and relationships</a></li>
+<li class="chapter" data-level="15.5.2" data-path="ch15-power-bi-refresher.html"><a href="ch15-power-bi-refresher.html#columns-and-measures"><i class="fa fa-check"></i><b>15.5.2</b> Columns and measures</a></li>
+<li class="chapter" data-level="15.5.3" data-path="ch15-power-bi-refresher.html"><a href="ch15-power-bi-refresher.html#date-tables"><i class="fa fa-check"></i><b>15.5.3</b> Date tables</a></li>
+<li class="chapter" data-level="15.5.4" data-path="ch15-power-bi-refresher.html"><a href="ch15-power-bi-refresher.html#validation"><i class="fa fa-check"></i><b>15.5.4</b> Validation</a></li>
+</ul></li>
+<li class="chapter" data-level="15.6" data-path="ch15-selecting-the-best-tool.html"><a href="ch15-selecting-the-best-tool.html"><i class="fa fa-check"></i><b>15.6</b> Selecting the best tool</a></li>
+<li class="chapter" data-level="15.7" data-path="ch15-reproducible-software-demonstrations.html"><a href="ch15-reproducible-software-demonstrations.html"><i class="fa fa-check"></i><b>15.7</b> Reproducible software demonstrations</a></li>
+<li class="chapter" data-level="15.8" data-path="ch15-review.html"><a href="ch15-review.html"><i class="fa fa-check"></i><b>15.8</b> Chapter Review</a>
+<ul>
+<li class="chapter" data-level="15.8.1" data-path="ch15-review.html"><a href="ch15-review.html#chapter-summary-14"><i class="fa fa-check"></i><b>15.8.1</b> Chapter summary</a></li>
+<li class="chapter" data-level="15.8.2" data-path="ch15-review.html"><a href="ch15-review.html#common-mistakes-14"><i class="fa fa-check"></i><b>15.8.2</b> Common mistakes</a></li>
+<li class="chapter" data-level="15.8.3" data-path="ch15-review.html"><a href="ch15-review.html#technical-review-checklist"><i class="fa fa-check"></i><b>15.8.3</b> Technical review checklist</a></li>
+<li class="chapter" data-level="15.8.4" data-path="ch15-review.html"><a href="ch15-review.html#exercises-14"><i class="fa fa-check"></i><b>15.8.4</b> Exercises</a></li>
+<li class="chapter" data-level="15.8.5" data-path="ch15-review.html"><a href="ch15-review.html#questions-for-discussion-14"><i class="fa fa-check"></i><b>15.8.5</b> Questions for discussion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>16</b> Glossary</a></li>
+<li class="chapter" data-level="17" data-path="project-templates-and-checklists.html"><a href="project-templates-and-checklists.html"><i class="fa fa-check"></i><b>17</b> Project Templates and Checklists</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="id_99-appendices-project-brief-template.html"><a href="id_99-appendices-project-brief-template.html"><i class="fa fa-check"></i><b>17.1</b> Project brief template</a></li>
+<li class="chapter" data-level="17.2" data-path="id_99-appendices-question-map-template.html"><a href="id_99-appendices-question-map-template.html"><i class="fa fa-check"></i><b>17.2</b> Question map template</a></li>
+<li class="chapter" data-level="17.3" data-path="id_99-appendices-timeline-and-milestone-template.html"><a href="id_99-appendices-timeline-and-milestone-template.html"><i class="fa fa-check"></i><b>17.3</b> Timeline and milestone template</a></li>
+<li class="chapter" data-level="17.4" data-path="id_99-appendices-risk-register-template.html"><a href="id_99-appendices-risk-register-template.html"><i class="fa fa-check"></i><b>17.4</b> Risk register template</a></li>
+<li class="chapter" data-level="17.5" data-path="id_99-appendices-team-charter-template.html"><a href="id_99-appendices-team-charter-template.html"><i class="fa fa-check"></i><b>17.5</b> Team charter template</a>
+<ul>
+<li class="chapter" data-level="17.5.1" data-path="id_99-appendices-team-charter-template.html"><a href="id_99-appendices-team-charter-template.html#purpose-and-goals-1"><i class="fa fa-check"></i><b>17.5.1</b> Purpose and goals</a></li>
+<li class="chapter" data-level="17.5.2" data-path="id_99-appendices-team-charter-template.html"><a href="id_99-appendices-team-charter-template.html#roles-and-review"><i class="fa fa-check"></i><b>17.5.2</b> Roles and review</a></li>
+<li class="chapter" data-level="17.5.3" data-path="id_99-appendices-team-charter-template.html"><a href="id_99-appendices-team-charter-template.html#operating-agreements"><i class="fa fa-check"></i><b>17.5.3</b> Operating agreements</a></li>
+</ul></li>
+<li class="chapter" data-level="17.6" data-path="id_99-appendices-meeting-record-template.html"><a href="id_99-appendices-meeting-record-template.html"><i class="fa fa-check"></i><b>17.6</b> Meeting record template</a></li>
+<li class="chapter" data-level="17.7" data-path="id_99-appendices-data-dictionary-review-checklist.html"><a href="id_99-appendices-data-dictionary-review-checklist.html"><i class="fa fa-check"></i><b>17.7</b> Data dictionary review checklist</a></li>
+<li class="chapter" data-level="17.8" data-path="id_99-appendices-eda-report-outline.html"><a href="id_99-appendices-eda-report-outline.html"><i class="fa fa-check"></i><b>17.8</b> EDA report outline</a></li>
+<li class="chapter" data-level="17.9" data-path="id_99-appendices-secondary-source-log-template.html"><a href="id_99-appendices-secondary-source-log-template.html"><i class="fa fa-check"></i><b>17.9</b> Secondary-source log template</a></li>
+<li class="chapter" data-level="17.10" data-path="id_99-appendices-analytical-plan-template.html"><a href="id_99-appendices-analytical-plan-template.html"><i class="fa fa-check"></i><b>17.10</b> Analytical plan template</a></li>
+<li class="chapter" data-level="17.11" data-path="id_99-appendices-projection-assumption-template.html"><a href="id_99-appendices-projection-assumption-template.html"><i class="fa fa-check"></i><b>17.11</b> Projection assumption template</a></li>
+<li class="chapter" data-level="17.12" data-path="id_99-appendices-clv-assumption-template.html"><a href="id_99-appendices-clv-assumption-template.html"><i class="fa fa-check"></i><b>17.12</b> CLV assumption template</a></li>
+<li class="chapter" data-level="17.13" data-path="id_99-appendices-recommendation-evidence-matrix.html"><a href="id_99-appendices-recommendation-evidence-matrix.html"><i class="fa fa-check"></i><b>17.13</b> Recommendation-evidence matrix</a></li>
+<li class="chapter" data-level="17.14" data-path="id_99-appendices-smart-implementation-template.html"><a href="id_99-appendices-smart-implementation-template.html"><i class="fa fa-check"></i><b>17.14</b> SMART implementation template</a></li>
+<li class="chapter" data-level="17.15" data-path="id_99-appendices-interim-review-checklist.html"><a href="id_99-appendices-interim-review-checklist.html"><i class="fa fa-check"></i><b>17.15</b> Interim review checklist</a></li>
+<li class="chapter" data-level="17.16" data-path="id_99-appendices-final-report-revision-audit.html"><a href="id_99-appendices-final-report-revision-audit.html"><i class="fa fa-check"></i><b>17.16</b> Final report revision audit</a></li>
+<li class="chapter" data-level="17.17" data-path="id_99-appendices-final-deliverable-checklist.html"><a href="id_99-appendices-final-deliverable-checklist.html"><i class="fa fa-check"></i><b>17.17</b> Final deliverable checklist</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="appendix-nvrw-complete-project-synthesis.html"><a href="appendix-nvrw-complete-project-synthesis.html"><i class="fa fa-check"></i><b>18</b> Appendix: NVRW Complete Project Synthesis</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="id_99b-nvrw-synthesis-executive-summary.html"><a href="id_99b-nvrw-synthesis-executive-summary.html"><i class="fa fa-check"></i><b>18.1</b> Executive summary</a></li>
+<li class="chapter" data-level="18.2" data-path="id_99b-nvrw-synthesis-project-brief.html"><a href="id_99b-nvrw-synthesis-project-brief.html"><i class="fa fa-check"></i><b>18.2</b> Project brief</a></li>
+<li class="chapter" data-level="18.3" data-path="id_99b-nvrw-synthesis-team-charter-and-work-plan.html"><a href="id_99b-nvrw-synthesis-team-charter-and-work-plan.html"><i class="fa fa-check"></i><b>18.3</b> Team charter and work plan</a></li>
+<li class="chapter" data-level="18.4" data-path="id_99b-nvrw-synthesis-data-package-and-relationships.html"><a href="id_99b-nvrw-synthesis-data-package-and-relationships.html"><i class="fa fa-check"></i><b>18.4</b> Data package and relationships</a></li>
+<li class="chapter" data-level="18.5" data-path="id_99b-nvrw-synthesis-data-dictionary-and-quality-assessment.html"><a href="id_99b-nvrw-synthesis-data-dictionary-and-quality-assessment.html"><i class="fa fa-check"></i><b>18.5</b> Data dictionary and quality assessment</a></li>
+<li class="chapter" data-level="18.6" data-path="id_99b-nvrw-synthesis-exploratory-analysis.html"><a href="id_99b-nvrw-synthesis-exploratory-analysis.html"><i class="fa fa-check"></i><b>18.6</b> Exploratory analysis</a></li>
+<li class="chapter" data-level="18.7" data-path="id_99b-nvrw-synthesis-secondary-evidence.html"><a href="id_99b-nvrw-synthesis-secondary-evidence.html"><i class="fa fa-check"></i><b>18.7</b> Secondary evidence</a></li>
+<li class="chapter" data-level="18.8" data-path="id_99b-nvrw-synthesis-retention-model.html"><a href="id_99b-nvrw-synthesis-retention-model.html"><i class="fa fa-check"></i><b>18.8</b> Retention model</a></li>
+<li class="chapter" data-level="18.9" data-path="id_99b-nvrw-synthesis-forecasting-and-utilization-projections.html"><a href="id_99b-nvrw-synthesis-forecasting-and-utilization-projections.html"><i class="fa fa-check"></i><b>18.9</b> Forecasting and utilization projections</a></li>
+<li class="chapter" data-level="18.10" data-path="id_99b-nvrw-synthesis-customer-lifetime-value.html"><a href="id_99b-nvrw-synthesis-customer-lifetime-value.html"><i class="fa fa-check"></i><b>18.10</b> Customer lifetime value</a></li>
+<li class="chapter" data-level="18.11" data-path="id_99b-nvrw-synthesis-story-and-recommendations.html"><a href="id_99b-nvrw-synthesis-story-and-recommendations.html"><i class="fa fa-check"></i><b>18.11</b> Story and recommendations</a>
+<ul>
+<li class="chapter" data-level="18.11.1" data-path="id_99b-nvrw-synthesis-story-and-recommendations.html"><a href="id_99b-nvrw-synthesis-story-and-recommendations.html#recommendation-1-pilot-early-engagement-outreach"><i class="fa fa-check"></i><b>18.11.1</b> Recommendation 1: Pilot early-engagement outreach</a></li>
+<li class="chapter" data-level="18.11.2" data-path="id_99b-nvrw-synthesis-story-and-recommendations.html"><a href="id_99b-nvrw-synthesis-story-and-recommendations.html#recommendation-2-review-capacity-at-the-program-level"><i class="fa fa-check"></i><b>18.11.2</b> Recommendation 2: Review capacity at the program level</a></li>
+<li class="chapter" data-level="18.11.3" data-path="id_99b-nvrw-synthesis-story-and-recommendations.html"><a href="id_99b-nvrw-synthesis-story-and-recommendations.html#recommendation-3-incorporate-utilization-scenarios-into-facility-planning"><i class="fa fa-check"></i><b>18.11.3</b> Recommendation 3: Incorporate utilization scenarios into facility planning</a></li>
+</ul></li>
+<li class="chapter" data-level="18.12" data-path="id_99b-nvrw-synthesis-evaluation-plan.html"><a href="id_99b-nvrw-synthesis-evaluation-plan.html"><i class="fa fa-check"></i><b>18.12</b> Evaluation plan</a></li>
+<li class="chapter" data-level="18.13" data-path="id_99b-nvrw-synthesis-excellent-final-report-structure.html"><a href="id_99b-nvrw-synthesis-excellent-final-report-structure.html"><i class="fa fa-check"></i><b>18.13</b> Excellent final report structure</a></li>
+<li class="chapter" data-level="18.14" data-path="id_99b-nvrw-synthesis-excellent-presentation-storyboard.html"><a href="id_99b-nvrw-synthesis-excellent-presentation-storyboard.html"><i class="fa fa-check"></i><b>18.14</b> Excellent presentation storyboard</a></li>
+<li class="chapter" data-level="18.15" data-path="id_99b-nvrw-synthesis-reproducible-assets.html"><a href="id_99b-nvrw-synthesis-reproducible-assets.html"><i class="fa fa-check"></i><b>18.15</b> Reproducible assets</a></li>
+<li class="chapter" data-level="18.16" data-path="id_99b-nvrw-synthesis-complete-project-exercise.html"><a href="id_99b-nvrw-synthesis-complete-project-exercise.html"><i class="fa fa-check"></i><b>18.16</b> Complete-project exercise</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Data Science in Practice</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="index-a-decision-focused-perspective" class="section level2 unnumbered hasAnchor">
+<h2>A decision-focused perspective<a href="index-a-decision-focused-perspective.html#index-a-decision-focused-perspective" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>An analysis is not complete when the code runs or the model produces output. It is complete when the evidence has been checked, the limitations are understood, the result answers a meaningful question, and the audience can see what the result implies. Throughout the book, technical work is therefore connected to four recurring questions:</p>
+<ol style="list-style-type: decimal">
+<li>What decision or understanding is needed?</li>
+<li>What evidence can support it?</li>
+<li>How strong is that evidence?</li>
+<li>What action, if any, is justified?</li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index-learning-goals.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="index-recurring-case-north-valley-recreation-and-wellness.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": null,
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": {
+      "isCaseSensitive": false,
+      "threshold": 0.3
+    }
+  },
+  "toc": {
+    "collapse": "section"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
