@@ -74,5 +74,31 @@ effects.</p>
 associated with non-renewal. That does not prove that increasing visits
 will cause renewal. The correct next step is a monitored pilot rather
 than a causal claim.</p>
+<script>
+(function () {
+  function removeExampleParentheses() {
+    document.querySelectorAll('.example').forEach(function (box) {
+      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
+      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
+      let node;
+
+      while ((node = walker.nextNode())) {
+        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
+
+        node.nodeValue = node.nodeValue
+          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
+          .replace(/^(\s*)\(Example\b/i, '$1Example');
+        break;
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
+  } else {
+    removeExampleParentheses();
+  }
+}());
+</script>
 </body>
 </html>

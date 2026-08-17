@@ -58,5 +58,31 @@ class="math inline"><em>k</em></span>,</p>
 window responds quickly but can be noisy. A long window is stable but
 reacts slowly to change. A simple moving average does not represent
 trend or seasonality unless those features are addressed separately.</p>
+<script>
+(function () {
+  function removeExampleParentheses() {
+    document.querySelectorAll('.example').forEach(function (box) {
+      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
+      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
+      let node;
+
+      while ((node = walker.nextNode())) {
+        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
+
+        node.nodeValue = node.nodeValue
+          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
+          .replace(/^(\s*)\(Example\b/i, '$1Example');
+        break;
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
+  } else {
+    removeExampleParentheses();
+  }
+}());
+</script>
 </body>
 </html>

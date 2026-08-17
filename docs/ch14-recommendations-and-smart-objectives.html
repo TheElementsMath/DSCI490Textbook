@@ -600,6 +600,32 @@ div.csl-indent {
 <p>SMART objective: “During the September to November intake period, the membership team will contact 80 percent of eligible new members who record fewer than two visits in their first 30 days and will compare 90-day engagement and twelve-month renewal with a defined comparison group.”</p>
 <p>The objective is specific, measurable, achievable only if capacity and permissions exist, relevant to the retention problem, and time-bound. SMART structure does not make an unsupported recommendation valid.</p>
 </div>
+<script>
+(function () {
+  function removeExampleParentheses() {
+    document.querySelectorAll('.example').forEach(function (box) {
+      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
+      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
+      let node;
+
+      while ((node = walker.nextNode())) {
+        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
+
+        node.nodeValue = node.nodeValue
+          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
+          .replace(/^(\s*)\(Example\b/i, '$1Example');
+        break;
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
+  } else {
+    removeExampleParentheses();
+  }
+}());
+</script>
             </section>
 
           </div>

@@ -598,6 +598,32 @@ div.csl-indent {
 <p>Forecasts, survey estimates, and model effects should not be presented as exact future facts. Depending on the method, show prediction intervals, confidence intervals, scenario bands, error bars, or a range of plausible outcomes.</p>
 <p>The display must label the type of uncertainty. A low-base-high scenario range is not a statistical prediction interval. If intervals become wider over the forecast horizon, the visualization should preserve that feature rather than showing a single smooth line.</p>
 </div>
+<script>
+(function () {
+  function removeExampleParentheses() {
+    document.querySelectorAll('.example').forEach(function (box) {
+      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
+      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
+      let node;
+
+      while ((node = walker.nextNode())) {
+        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
+
+        node.nodeValue = node.nodeValue
+          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
+          .replace(/^(\s*)\(Example\b/i, '$1Example');
+        break;
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
+  } else {
+    removeExampleParentheses();
+  }
+}());
+</script>
             </section>
 
           </div>

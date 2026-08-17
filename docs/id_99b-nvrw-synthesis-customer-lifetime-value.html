@@ -654,6 +654,32 @@ div.csl-indent {
 <p>Family annual memberships have the highest estimated CLV because both annual contribution margin and retention are comparatively high. This does not mean that other members are unimportant. NVRW may have access, community-service, and inclusion goals that are not represented by financial CLV.</p>
 <p>Campaign spending totals $49,900 and produces 283 attributed conversions, an overall attributed CAC of approximately $176. This value is much higher than the simplified membership-type CAC assumptions used in the CLV table. The discrepancy should be investigated before acquisition decisions are made. Possible explanations include different cost-allocation rules, assisted conversions, incomplete attribution, and the difference between campaign-specific and blended acquisition cost.</p>
 </div>
+<script>
+(function () {
+  function removeExampleParentheses() {
+    document.querySelectorAll('.example').forEach(function (box) {
+      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
+      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
+      let node;
+
+      while ((node = walker.nextNode())) {
+        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
+
+        node.nodeValue = node.nodeValue
+          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
+          .replace(/^(\s*)\(Example\b/i, '$1Example');
+        break;
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
+  } else {
+    removeExampleParentheses();
+  }
+}());
+</script>
             </section>
 
           </div>
