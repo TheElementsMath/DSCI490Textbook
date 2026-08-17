@@ -1,8 +1,6 @@
 bookdown::gitbook:
   css: style.css
   split_by: section
-  includes:
-    after_body: example-label-fix.html
   config:
     toc:
       collapse: section

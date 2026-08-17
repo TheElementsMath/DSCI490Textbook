@@ -604,8 +604,8 @@ R_{g,t}=\frac{E_{g,t}}{P_{g,t}}\times1000.
 \widehat{E}_{g,f}=R_g\times\frac{P_{g,f}}{1000}.
 \]</span></p>
 <p>The rate may use the latest complete year, a selected comparable year, an average of recent years, a recent minimum or maximum for scenarios, or a modelled rate. The choice should reflect data quality, stability, horizon, and decision purpose.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-16" class="example"><strong>Example 11.2  </strong></span><strong>Recurring case: projected aquatics demand</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Projecting Aquatics Demand</strong></p>
 <p>NVRW records 3,600 annual aquatics visits among 24,000 residents in one age group.</p>
 <p><span class="math display">\[
 R=\frac{3600}{24000}\times1000=150\text{ visits per 1,000 residents}.
@@ -619,32 +619,6 @@ R=\frac{3600}{24000}\times1000=150\text{ visits per 1,000 residents}.
 <p>Client and population data must share compatible age, location, or other grouping variables. Details available only in the organizational data can be allocated after the population projection only when a defensible rule exists.</p>
 <p>Unknown locations should not be silently deleted. They may be reported separately, assigned a broader valid denominator, or carried forward as a stable share. Each treatment changes interpretation.</p>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

@@ -608,38 +608,12 @@ div.csl-indent {
 <li>a practical action that differs across segments.</li>
 </ul>
 <p>K-means seeks groups that minimize within-cluster squared distance from cluster centres. It works best for roughly compact clusters in appropriately scaled numeric features. Hierarchical clustering can reveal nested structure. Other methods may be preferable for irregular shapes, mixed variable types, or noise.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-14" class="example"><strong>Example 10.3  </strong></span><strong>Recurring case: NVRW member segments</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Interpreting NVRW Member Segments</strong></p>
 <p>NVRW constructs one row per member with first-year visit frequency, program diversity, average contribution margin, digital-service use, location diversity, and twelve-month retention eligibility. After scaling the numeric features, the team compares several k-means solutions and examines stability across resamples.</p>
 <p>One useful solution identifies frequent multi-service members, program-focused households, occasional drop-in users, and recent low-engagement members. The labels describe observed behaviour. The team does not infer income, motivation, or preferences that are absent from the data.</p>
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

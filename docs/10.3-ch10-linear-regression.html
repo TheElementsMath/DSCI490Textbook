@@ -62,8 +62,8 @@ influential observations, changing variance, collinearity, and
 performance on appropriate evaluation data. A low p-value does not
 establish useful predictive accuracy, and a high coefficient of
 determination does not guarantee that the model will generalize.</p>
-<div class="example">
-<p><strong>Recurring case: predicting program attendance</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Predicting Program Attendance</strong></p>
 <p>NVRW models the number of attendees for a scheduled program using
 capacity, registration count, wait-list count, program category,
 location, day, start time, season, and lead time before the program
@@ -74,31 +74,5 @@ weeks earlier. The team therefore creates features measured at a common
 four-week cutoff and compares the model with a baseline that uses the
 historical average for the same program category and season.</p>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
 </body>
 </html>

@@ -606,32 +606,6 @@ div.csl-indent {
 </ol>
 <p>An error early in this chain can travel through the entire project. For example, if customer activity is measured using transactions rather than unique customers, later claims about customer growth may be misleading. If a projection uses a population denominator that does not match the client’s service area, the final capacity recommendation may be inaccurate even when the arithmetic is correct.</p>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

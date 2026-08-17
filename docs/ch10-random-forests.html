@@ -599,32 +599,6 @@ div.csl-indent {
 <p>The cost is reduced simplicity. Feature-importance measures can help describe the model, but they should be interpreted carefully. Importance may be affected by correlated features, variable scale, and the chosen measure. Partial-dependence or accumulated-effect displays describe model behaviour, not causal intervention effects.</p>
 <p>Compare the random forest with a baseline and simpler model. If performance improves only slightly, the simpler model may be easier to explain, maintain, and monitor.</p>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

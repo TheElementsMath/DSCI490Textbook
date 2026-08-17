@@ -598,8 +598,8 @@ div.csl-indent {
 <p>Before documenting individual variables, determine what one row represents. This is the unit of analysis or grain of the table. A table may contain one row per member, membership period, facility visit, program registration, transaction, location-day, or location-month.</p>
 <p>Confusing these units creates serious errors. A member with twenty visits appears twenty times in a visit table. Counting rows would measure visits, not members. Joining a one-row-per-member table to the visit table duplicates member characteristics across visits, which may be appropriate for visit-level analysis but not for estimating the number of members.</p>
 <p>The dictionary should state the unit clearly and explain the keys that identify one observation.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-8" class="example"><strong>Example 7.1  </strong></span><strong>Recurring case: NVRW data structure</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Documenting NVRW’s Data Structure</strong></p>
 <p>North Valley Recreation and Wellness provides four files:</p>
 <ul>
 <li><code>members</code>: one row per member;</li>
@@ -610,32 +610,6 @@ div.csl-indent {
 <p>The four tables cannot be summarized or joined in the same way. The dictionary records each table’s grain, primary identifier, time coverage, and relationship to the other files before the team begins analysis.</p>
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

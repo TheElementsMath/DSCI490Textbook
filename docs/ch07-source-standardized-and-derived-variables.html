@@ -598,8 +598,8 @@ div.csl-indent {
 <p>Preserve the original source field. Create new variables for corrections, standardization, and analysis. This makes the transformation visible and allows the analyst to compare the result with the original.</p>
 <p>For example, NVRW’s source field <code>home_site</code> contains <code>Central</code>, <code>CENTRAL</code>, <code>Ctr</code>, and <code>01</code>. The team creates <code>home_centre_std</code> using a documented mapping. A separate field, <code>centre_region</code>, groups centres for a regional comparison. The dictionary identifies the first field as source data, the second as standardized, and the third as derived.</p>
 <p>Derived variables need enough detail to reproduce them. “Member tenure” is incomplete. A useful entry identifies the dates used, unit, treatment of partial periods, and reference date.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-9" class="example"><strong>Example 7.2  </strong></span><strong>Sample dictionary entries</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Writing Data-Dictionary Entries</strong></p>
 <table style="width:100%;">
 <colgroup>
 <col width="16%" />
@@ -657,32 +657,6 @@ div.csl-indent {
 <p>The entries reveal that <code>retained_12m</code> cannot be calculated for recent members. Treating those cases as non-retained would bias the analysis.</p>
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

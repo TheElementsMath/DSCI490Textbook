@@ -75,8 +75,9 @@ is unfinished. A central message such as “Growth is concentrated in two
 locations, but incomplete capacity records must be resolved before
 expansion can be recommended” is more informative than a sequence of
 unrelated updates.</p>
-<div class="example">
-<p><strong>Recurring case: NVRW interim review</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Reviewing NVRW’s Interim
+Progress</strong></p>
 <p>The NVRW team has completed its data dictionary and initial EDA. It
 has verified that total visits increased, but most growth occurred at
 Lakeside and Central during weekday evenings. It has also found that
@@ -95,31 +96,5 @@ analysis to the two years with reliable records or seek a corrected
 historical extract. This is a useful interim review because it connects
 findings, uncertainty, trajectory, and a decision request.</p>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
 </body>
 </html>

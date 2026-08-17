@@ -50,7 +50,6 @@ td {
 
 /* Remove GitBook's default border so custom callouts render consistently. */
 .book .note,
-.book .example,
 .book .exercise,
 .book .definition,
 .book .quality,
@@ -78,7 +77,6 @@ td {
 }
 
 .note,
-.example,
 .exercise,
 .definition,
 .quality,
@@ -156,9 +154,39 @@ td {
   margin-bottom: 0;
 }
 
-.example {
-  background: #fff3e0;
-  border-color: #fb8c00 !important;
+.book .worked-example {
+  background: #fff8ed;
+  border: 1px solid #efc17c !important;
+  border-left: 4px solid #b45309 !important;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0 1rem 1rem !important;
+}
+
+.worked-example {
+  background: #fff8ed;
+  border: 1px solid #efc17c;
+  border-left: 4px solid #b45309;
+  border-radius: 8px;
+  margin: 1.25rem 0;
+  overflow: hidden;
+  padding: 0 1rem 1rem;
+}
+
+.worked-example > p:first-child {
+  background: #b45309;
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin: 0 -1rem 1rem;
+  padding: 0.7rem 1rem;
+}
+
+.worked-example > p:first-child strong {
+  color: inherit;
+}
+
+.worked-example > :last-child {
+  margin-bottom: 0;
 }
 
 .exercise {

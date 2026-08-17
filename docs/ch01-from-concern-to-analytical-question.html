@@ -606,8 +606,8 @@ div.csl-indent {
 <li>Which operational constraints would become important under each scenario?</li>
 </ul>
 <p>Each question implies different data, definitions, methods, and limitations. The first is descriptive. The third requires compatible population denominators. The fourth is a conditional projection rather than a promise about the future. The final question may require information that is not present in the service dataset at all.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-1" class="example"><strong>Example 1.1  </strong></span><strong>Worked example: refining a broad request</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Refining a Broad Request</strong></p>
 <p>A retailer asks, “Which customers should we target?”</p>
 <p>A useful refinement process might produce the following questions:</p>
 <ol style="list-style-type: decimal">
@@ -620,32 +620,6 @@ div.csl-indent {
 <p>The refined questions prevent the team from creating attractive customer labels that have no analytical or operational purpose.</p>
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

@@ -607,38 +607,12 @@ div.csl-indent {
 <li>What proportion of records fail to match?</li>
 </ul>
 <p>After the join, verify row counts, duplicate keys, unmatched records, totals, and whether the join changed the unit of analysis.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-11" class="example"><strong>Example 9.1  </strong></span><strong>Recurring case: selecting NVRW population data</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Selecting Population Data for NVRW</strong></p>
 <p>NVRW wants population denominators for its four service areas. One source provides current municipal populations, while another provides projections for larger planning regions. Neither aligns perfectly with the organization’s postal-area service boundaries.</p>
 <p>The team documents three options: use municipalities and accept incomplete alignment, aggregate NVRW activity to planning regions, or construct a postal-area crosswalk using a compatible census geography. It selects the planning-region approach for long-term projections because the boundaries and projected populations are available consistently. The loss of local detail is reported as a limitation.</p>
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

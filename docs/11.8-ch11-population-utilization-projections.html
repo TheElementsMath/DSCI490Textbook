@@ -68,8 +68,8 @@ a constant-rate projection is</p>
 year, an average of recent years, a recent minimum or maximum for
 scenarios, or a modelled rate. The choice should reflect data quality,
 stability, horizon, and decision purpose.</p>
-<div class="example">
-<p><strong>Recurring case: projected aquatics demand</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Projecting Aquatics Demand</strong></p>
 <p>NVRW records 3,600 annual aquatics visits among 24,000 residents in
 one age group.</p>
 <p>[ R==150. ]</p>
@@ -87,31 +87,5 @@ defensible rule exists.</p>
 <p>Unknown locations should not be silently deleted. They may be
 reported separately, assigned a broader valid denominator, or carried
 forward as a stable share. Each treatment changes interpretation.</p>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
 </body>
 </html>

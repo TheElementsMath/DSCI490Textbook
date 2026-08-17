@@ -57,8 +57,8 @@ source, units, context, and influence before deciding what to do.</p>
 retaining and explaining a valid extreme, analyzing with and without the
 observation, using a robust method, separating a different population,
 or flagging the case for operational review.</p>
-<div class="example">
-<p><strong>Recurring case: NVRW visit data</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Investigating NVRW Visit Data</strong></p>
 <p>The NVRW EDA finds one member with 642 recorded visits in a year.
 Automatic deletion would be premature. The team checks timestamps and
 discovers that many entries occur seconds apart at the same gate,
@@ -69,31 +69,5 @@ scan within a defined interval.</p>
 interval rule, number of affected scans, and consequence for facility
 totals are documented in code and in the dictionary.</p>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
 </body>
 </html>

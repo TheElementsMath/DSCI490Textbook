@@ -103,8 +103,9 @@ class="math inline"><em>S</em><sub><em>t</em></sub></span> is the
 probability of remaining active at the start of that period, <span
 class="math inline"><em>d</em></span> is the discount rate per period,
 and <span class="math inline"><em>T</em></span> is the horizon.</p>
-<div class="example">
-<p><strong>Recurring case: discounted membership CLV</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Calculating Discounted Membership
+CLV</strong></p>
 <p>NVRW estimates annual contribution margin of $144 for a new
 membership, annual retention of 75 percent, a four-year horizon, an
 annual discount rate of 8 percent, and CAC of $75. The customer is
@@ -148,31 +149,5 @@ year in <code>A8</code>, present value can be calculated as:</p>
 <pre class="text"><code>=C8*D8/(1+$B$3)^A8</code></pre>
 <p>Use typed numeric cells for rates and currency. Do not hide
 assumptions inside long formulas.</p>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
 </body>
 </html>

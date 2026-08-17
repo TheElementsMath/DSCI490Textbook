@@ -619,8 +619,8 @@ div.csl-indent {
 <p>A confidence interval expresses uncertainty under a statistical procedure and its assumptions. A hypothesis test evaluates compatibility with a stated null model. Neither determines whether the result matters to the organization.</p>
 <p>Report effect size, uncertainty, assumptions, and practical consequence. Avoid using “significant” without clarifying whether it means statistical or practical significance.</p>
 <p>The OpenIntro-based statistics reference provides deeper review <span class="citation">(<a href="#ref-openintro2015">Diez et al. 2015</a>)</span>.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-22" class="example"><strong>Example 15.1  </strong></span><strong>Recurring case: statistical and practical importance</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Distinguishing Statistical and Practical Importance</strong></p>
 <p>NVRW estimates that one acquisition channel has a twelve-month retention rate 1.2 percentage points higher than another. The confidence interval excludes zero because the dataset is large. However, the higher-retention channel costs substantially more per acquired member. The decision requires effect size, CAC, contribution margin, and uncertainty, not the p-value alone.</p>
 </div>
 </div>
@@ -631,32 +631,6 @@ div.csl-indent {
 Diez, David M., Christopher D. Barr, Mine Cetinkaya-Rundel, Bevan Ferreira, Jennifer Hobart, Joe Hobart, Emelie Lee, and Chris Melin. 2015. <em>Elementary and Business Statistics: A Derivative of OpenIntro Statistics, Third Edition</em>.
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

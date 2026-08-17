@@ -605,39 +605,13 @@ div.csl-indent {
 <li>changes to scope, assumptions, responsibilities, or schedule.</li>
 </ol>
 <p>Meetings should focus on decisions, integration, and obstacles. Routine status information can often be shared before the meeting. A concise agenda and decision record are more valuable than lengthy minutes that do not identify what changed.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-5" class="example"><strong>Example 4.1  </strong></span><strong>Worked example: converting a vague agreement into a charter rule</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Turning a Vague Agreement into a Charter Rule</strong></p>
 <p>Vague statement: “Everyone will review the report.”</p>
 <p>Operational charter rule: “The report editor will assign each major section to a reviewer at least three working days before internal approval. Reviewers will check numerical consistency, interpretation, citations, and alignment with the central message. The section owner will record how each material comment was resolved.”</p>
 <p>The revised rule identifies timing, ownership, review criteria, and evidence of completion.</p>
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

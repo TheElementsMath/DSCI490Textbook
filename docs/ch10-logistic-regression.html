@@ -601,38 +601,12 @@ div.csl-indent {
 \]</span></p>
 <p>Predicted probabilities must be separated from final class decisions. A threshold of 0.50 is not automatically appropriate. The best threshold depends on the cost of false positives, the cost of false negatives, available intervention capacity, and the distribution of predicted risk.</p>
 <p>For retention analysis, useful metrics may include area under the ROC curve, precision, recall, specificity, calibration, lift in a targeted group, and expected intervention value. Accuracy alone can be misleading when most members renew.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-13" class="example"><strong>Example 10.2  </strong></span><strong>Recurring case: twelve-month retention</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Defining Twelve-Month Retention</strong></p>
 <p>NVRW defines the target as whether a new member remains active twelve months after joining. Recent members without a complete observation window are excluded from model development rather than labelled as non-retained.</p>
 <p>The model uses information available during the first sixty days, such as membership type, location, acquisition channel, visit frequency, program registration, and service contacts. It does not use later renewal transactions, because that would leak the outcome into the features.</p>
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

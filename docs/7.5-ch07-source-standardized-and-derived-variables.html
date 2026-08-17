@@ -66,8 +66,8 @@ derived.</p>
 <p>Derived variables need enough detail to reproduce them. “Member
 tenure” is incomplete. A useful entry identifies the dates used, unit,
 treatment of partial periods, and reference date.</p>
-<div class="example">
-<p><strong>Sample dictionary entries</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Writing Data-Dictionary Entries</strong></p>
 <table style="width:100%;">
 <colgroup>
 <col style="width: 16%" />
@@ -127,31 +127,5 @@ initial start</td>
 calculated for recent members. Treating those cases as non-retained
 would bias the analysis.</p>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
 </body>
 </html>

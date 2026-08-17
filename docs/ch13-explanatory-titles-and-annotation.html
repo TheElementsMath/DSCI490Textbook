@@ -598,38 +598,12 @@ div.csl-indent {
 <p>A topic title names the subject: “Annual Visits by Centre.”</p>
 <p>An explanatory title states the conclusion: “Visit growth is concentrated at Central and Lakeside.”</p>
 <p>The title should communicate the intended takeaway without claiming more than the figure shows. An annotation can identify a policy change, missing period, facility closure, or other context required to interpret the pattern.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-19" class="example"><strong>Example 13.1  </strong></span><strong>Recurring case: redesigning an NVRW chart</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Redesigning an NVRW Chart</strong></p>
 <p>The first chart displays monthly visits for four centres using four saturated colours, a dark background, twelve vertical gridlines, a separate legend, and the title “Visits.”</p>
 <p>The revision uses thin grey lines for stable centres, two direct-labelled accent lines for Central and Lakeside, a light reference line for the facility-expansion month, and the title “Evening visit growth is concentrated at two centres.” The underlying values do not change. The design makes the project conclusion easier to see.</p>
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

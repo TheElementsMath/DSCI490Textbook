@@ -611,38 +611,12 @@ div.csl-indent {
 <div id="formula-auditing" class="section level3 hasAnchor" number="15.4.4">
 <h3><span class="header-section-number">15.4.4</span> Formula auditing<a href="ch15-excel-refresher.html#formula-auditing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Check for inconsistent formulas, hard-coded values, omitted rows, hidden cells, text-formatted numbers, and error suppression. Use reasonableness tests and reconcile totals with the source.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-23" class="example"><strong>Example 15.2  </strong></span><strong>Recurring case: CLV workbook</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Building an Auditable CLV Workbook</strong></p>
 <p>NVRW’s workbook contains an assumptions sheet for revenue, margin, retention, discount rate, horizon, and CAC. A calculation sheet shows yearly survival probability, margin, discount factor, present value, and cumulative CLV. A summary sheet compares scenarios. Changing one assumption updates the complete model without editing formulas.</p>
 </div>
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>

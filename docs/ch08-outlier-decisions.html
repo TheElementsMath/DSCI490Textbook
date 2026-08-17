@@ -597,38 +597,12 @@ div.csl-indent {
 <h2><span class="header-section-number">8.4</span> Outlier decisions<a href="ch08-outlier-decisions.html#ch08-outlier-decisions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>An outlier may be a data error, a rare valid event, a different population, or the most important case in the dataset. Investigate its source, units, context, and influence before deciding what to do.</p>
 <p>Appropriate actions may include correcting a verified error, retaining and explaining a valid extreme, analyzing with and without the observation, using a robust method, separating a different population, or flagging the case for operational review.</p>
-<div class="example">
-<p><span id="exm:unlabeled-div-10" class="example"><strong>Example 8.1  </strong></span><strong>Recurring case: NVRW visit data</strong></p>
+<div class="worked-example">
+<p><strong>Worked Example: Investigating NVRW Visit Data</strong></p>
 <p>The NVRW EDA finds one member with 642 recorded visits in a year. Automatic deletion would be premature. The team checks timestamps and discovers that many entries occur seconds apart at the same gate, indicating repeated scanner events. After confirming the system behaviour, it creates a visit episode rule that keeps only the first scan within a defined interval.</p>
 <p>The source records remain unchanged. The derived episode identifier, interval rule, number of affected scans, and consequence for facility totals are documented in code and in the dictionary.</p>
 </div>
 </div>
-<script>
-(function () {
-  function removeExampleParentheses() {
-    document.querySelectorAll('.example').forEach(function (box) {
-      const labelArea = box.querySelector(':scope > p:first-child') || box.firstElementChild || box;
-      const walker = document.createTreeWalker(labelArea, NodeFilter.SHOW_TEXT);
-      let node;
-
-      while ((node = walker.nextNode())) {
-        if (!/^\s*\(Example\b/i.test(node.nodeValue)) continue;
-
-        node.nodeValue = node.nodeValue
-          .replace(/^(\s*)\(Example(\s+\d+(?:\.\d+)*)\)/i, '$1Example$2')
-          .replace(/^(\s*)\(Example\b/i, '$1Example');
-        break;
-      }
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', removeExampleParentheses);
-  } else {
-    removeExampleParentheses();
-  }
-}());
-</script>
             </section>
 
           </div>
